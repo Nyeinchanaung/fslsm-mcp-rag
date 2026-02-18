@@ -1,0 +1,5 @@
+/venv
+.env
+/d2l-en
+/d2l/__pycache__
+/d2l/output/generation_log.txt

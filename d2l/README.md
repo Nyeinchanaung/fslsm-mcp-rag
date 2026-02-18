@@ -5,6 +5,7 @@ Generate a high-quality question-answer ground truth dataset from the *Dive into
 ## Features
 
 ✅ **Multi-type Question Generation**: Factual, conceptual, procedural, comparative, mathematical, and code-based questions  
+✅ **Smart API Routing**: Auto-detects OpenAI vs Anthropic based on model name — no manual switching  
 ✅ **Quality Filtering**: Automated groundedness checks, LLM-as-judge validation, and deduplication  
 ✅ **Evaluation Metrics**: Retrieval evaluation (Recall@K, MRR) and answer correctness (StringEM, LLM Judge)  
 ✅ **Stratified Sampling**: Ensures balanced coverage across chapters and difficulty levels  
@@ -12,48 +13,82 @@ Generate a high-quality question-answer ground truth dataset from the *Dive into
 ## Installation
 
 ```bash
-# Clone the D2L repository
+# 1. Clone the D2L repository
 git clone https://github.com/d2l-ai/d2l-en.git
 
-# Install dependencies
-pip install -r requirements.txt
+# 2. Create and activate virtual environment
+python3 -m venv venv
+source venv/bin/activate
+
+# 3. Install dependencies
+pip install -r d2l/requirements.txt
 ```
+
+## API Key Setup
+
+Copy `.env.example` to `.env` and add your API key:
+
+```bash
+cp .env.example .env
+```
+
+Edit `.env`:
+```bash
+# For OpenAI (gpt-4o, gpt-4o-mini, etc.)
+OPENAI_API_KEY=sk-proj-your-key-here
+
+# For Anthropic (claude-* models)
+ANTHROPIC_API_KEY=sk-ant-your-key-here
+```
+
+The script automatically loads `.env` and picks the right API based on the model name you specify.
 
 ## Quick Start
 
-### Basic Usage
+### Test Run (Recommended First)
+**Cost**: ~$1–2 | **Time**: ~5–10 min | **Questions**: 50
 
 ```bash
-python d2l_qa_generator.py /path/to/d2l-en \
-  --output-dir ./output \
-  --model claude-sonnet-4-20250514 \
+python d2l/d2l_qa_generator.py ./d2l-en \
+  --output-dir ./d2l/output \
+  --model gpt-4o-mini \
+  --questions-per-chunk 2 \
+  --sample-size 50 \
+  --skip-validation
+```
+
+### Full Production Run
+**Cost**: ~$30–40 | **Time**: ~3–4 hours | **Questions**: 500
+
+```bash
+python d2l/d2l_qa_generator.py ./d2l-en \
+  --output-dir ./d2l/output \
+  --model gpt-4o \
   --questions-per-chunk 3 \
-  --sample-size 500 \
-  --api-key YOUR_API_KEY
+  --sample-size 500
 ```
 
 ### Using as a Python Module
 
 ```python
-from d2l_qa_generator import main
+from d2l.d2l_qa_generator import main
 
 main(
-    d2l_root="/path/to/d2l-en",
-    output_dir="./output",
-    model="claude-sonnet-4-20250514",
-    n_questions_per_chunk=3,
+    d2l_root="./d2l-en",
+    output_dir="./d2l/output",
+    model="gpt-4o-mini",       # or "claude-sonnet-4-20250514"
+    n_questions_per_chunk=2,
     sample_size=500,
-    api_key="YOUR_API_KEY"
+    skip_validation=True
 )
 ```
 
-### Fast Mode (Skip LLM Validation)
+## Supported Models
 
-```bash
-python d2l_qa_generator.py /path/to/d2l-en \
-  --skip-validation \
-  --output-dir ./output
-```
+| Provider | Models | Auto-detected by |
+|----------|--------|-----------------|
+| **OpenAI** | `gpt-4o`, `gpt-4o-mini`, `o1-*`, `o3-*` | `gpt`, `o1`, `o3` prefix |
+| **Anthropic** | `claude-*`, `claude-sonnet-*`, `claude-opus-*` | `claude`, `sonnet`, `opus`, `haiku` prefix |
 
 ## Output
 
@@ -68,9 +103,9 @@ Complete dataset with questions, answers, and metadata:
     "name": "D2L-QA",
     "version": "1.0",
     "total_questions": 500,
-    "total_corpus_chunks": 1247,
-    "question_types": {...},
-    "difficulty_distribution": {...}
+    "total_corpus_chunks": 2467,
+    "question_types": {"factual": 148, "conceptual": 126, ...},
+    "difficulty_distribution": {"easy": 125, "medium": 250, "hard": 125}
   },
   "corpus": [...],
   "questions": [
@@ -89,18 +124,17 @@ Complete dataset with questions, answers, and metadata:
 ```
 
 ### 2. `d2l_corpus_chunks.json`
-Corpus chunks for RAG indexing (subset of the full dataset for convenience).
+All corpus chunks for RAG indexing.
 
 ## Evaluation
 
 Use the generated dataset to evaluate your RAG pipeline:
 
 ```python
-from d2l_qa_generator import evaluate_retrieval, evaluate_answers
+from d2l.d2l_qa_generator import evaluate_retrieval, evaluate_answers
 import json
 
-# Load dataset
-with open("output/d2l_qa_ground_truth.json") as f:
+with open("d2l/output/d2l_qa_ground_truth.json") as f:
     dataset = json.load(f)
 
 # Evaluate retrieval
@@ -141,20 +175,23 @@ print(answer_metrics)
 
 | Option | Default | Description |
 |--------|---------|-------------|
-| `--model` | `claude-sonnet-4-20250514` | LLM model for generation & validation |
+| `--model` | `claude-sonnet-4-20250514` | LLM model — auto-detects OpenAI or Anthropic |
 | `--questions-per-chunk` | `3` | Number of questions to generate per chunk |
 | `--sample-size` | `500` | Final dataset size (stratified sampling) |
-| `--skip-validation` | `False` | Skip LLM-as-judge validation (faster) |
-| `--api-key` | `None` | API key (or set `ANTHROPIC_API_KEY` env var) |
+| `--skip-validation` | `False` | Skip LLM-as-judge validation (faster, lower cost) |
+| `--output-dir` | `.` | Directory to save output JSON files |
 
-## Expected Output Scale
+> **API keys** are loaded automatically from `.env`. No `--api-key` flag needed.
+
+## Actual Output Scale (D2L English Edition)
 
 ```
-Total sections parsed: ~250–400
-Total chunks generated: ~800–1500
-Raw QA pairs:          ~2400–4500
-After filtering:       ~1200–2500
-Final dataset:         500 (configurable)
+Total sections parsed:  1,508
+Total chunks generated: 2,467
+Raw QA pairs:           ~3,800  (at 2 questions/chunk)
+After filtering:        ~2,800  (75% retained)
+After deduplication:    ~2,750
+Final dataset:          configurable (50–2,000+)
 ```
 
 ## Question Types
@@ -176,7 +213,7 @@ Final dataset:         500 (configurable)
 
 ### Answer Metrics
 - **StringEM**: Exact string match (strict, from PersonaRAG)
-- **LLM Judge Score**: Semantic similarity (0-9 scale)
+- **LLM Judge Score**: Semantic similarity (0–9 scale)
 - **Judge Pass Rate**: % scoring ≥6
 
 ### Target Performance
@@ -191,35 +228,30 @@ Final dataset:         500 (configurable)
 
 ## Best Practices
 
-1. **Use a strong model for generation**: Claude Sonnet 4.5 or GPT-4 recommended
-2. **Version your dataset**: Tag with D2L commit hash for reproducibility
-3. **Combine metrics**: StringEM is strict; use with LLM judge for balance
-4. **Start with 500 questions**: Following PersonaRAG methodology
-5. **Enable validation for production**: Skip only for rapid prototyping
+1. **Start small**: Use `--sample-size 50 --skip-validation` to verify setup before a full run
+2. **Model choice**: `gpt-4o-mini` is cost-effective; use `gpt-4o` or `claude-sonnet-*` for higher quality
+3. **Skip validation first**: Generation + filtering alone gives good results; add validation for production
+4. **Version your dataset**: Tag with D2L commit hash for reproducibility
+5. **Combine metrics**: StringEM is strict; use alongside LLM judge score for a balanced view
 
 ## Troubleshooting
 
+### JSON Parse Errors (`Invalid \escape`)
+D2L contains heavy LaTeX math. The LLM may include unescaped backslashes in responses.
+These chunks are skipped automatically — expect ~10–15% failure rate on math-heavy sections.
+
 ### API Rate Limits
-Add delays between chunks or use batch processing:
+Add delays between chunks:
 ```python
 import time
 # In generate_qa_pairs loop:
-time.sleep(1)  # 1 second between chunks
+time.sleep(0.5)
 ```
 
 ### Low Quality Questions
-- Reduce `n_questions_per_chunk` (e.g., 2 instead of 3)
-- Use a stronger model for generation
-- Enable validation with `n_validations=5` for stricter filtering
-
-### Memory Issues
-Process in batches:
-```python
-# Process chunks 100 at a time
-for i in range(0, len(chunks), 100):
-    batch = chunks[i:i+100]
-    generate_qa_pairs(batch, ...)
-```
+- Reduce `--questions-per-chunk` to 2
+- Use a stronger model (`gpt-4o` instead of `gpt-4o-mini`)
+- Enable validation: remove `--skip-validation`
 
 ## Citation
 
@@ -230,4 +262,4 @@ Based on methodology from:
 
 ## License
 
-MIT License - See textbook license at https://d2l.ai
+MIT License — See textbook license at https://d2l.ai

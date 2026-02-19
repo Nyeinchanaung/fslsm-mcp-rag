@@ -22,6 +22,7 @@ source venv/bin/activate
 
 # 3. Install dependencies
 pip install -r d2l/requirements.txt
+# Includes: anthropic, openai, scikit-learn, python-dotenv, json-repair
 ```
 
 ## API Key Setup
@@ -49,8 +50,8 @@ The script automatically loads `.env` and picks the right API based on the model
 **Cost**: ~$1–2 | **Time**: ~5–10 min | **Questions**: 50
 
 ```bash
-python d2l/d2l_qa_generator.py ./d2l-en \
-  --output-dir ./d2l/output \
+python d2l/single_hop/d2l_qa_generator.py ./d2l-en \
+  --output-dir ./d2l/single_hop/output \
   --model gpt-4o-mini \
   --questions-per-chunk 2 \
   --sample-size 50 \
@@ -61,8 +62,8 @@ python d2l/d2l_qa_generator.py ./d2l-en \
 **Cost**: ~$30–40 | **Time**: ~3–4 hours | **Questions**: 500
 
 ```bash
-python d2l/d2l_qa_generator.py ./d2l-en \
-  --output-dir ./d2l/output \
+python d2l/single_hop/d2l_qa_generator.py ./d2l-en \
+  --output-dir ./d2l/single_hop/output \
   --model gpt-4o \
   --questions-per-chunk 3 \
   --sample-size 500
@@ -71,11 +72,11 @@ python d2l/d2l_qa_generator.py ./d2l-en \
 ### Using as a Python Module
 
 ```python
-from d2l.d2l_qa_generator import main
+from d2l.single_hop.d2l_qa_generator import main
 
 main(
     d2l_root="./d2l-en",
-    output_dir="./d2l/output",
+    output_dir="./d2l/single_hop/output",
     model="gpt-4o-mini",       # or "claude-sonnet-4-20250514"
     n_questions_per_chunk=2,
     sample_size=500,
@@ -131,10 +132,10 @@ All corpus chunks for RAG indexing.
 Use the generated dataset to evaluate your RAG pipeline:
 
 ```python
-from d2l.d2l_qa_generator import evaluate_retrieval, evaluate_answers
+from d2l.single_hop.d2l_qa_generator import evaluate_retrieval, evaluate_answers
 import json
 
-with open("d2l/output/d2l_qa_ground_truth.json") as f:
+with open("d2l/single_hop/output/d2l_qa_ground_truth.json") as f:
     dataset = json.load(f)
 
 # Evaluate retrieval
@@ -237,8 +238,15 @@ Final dataset:          configurable (50–2,000+)
 ## Troubleshooting
 
 ### JSON Parse Errors (`Invalid \escape`)
-D2L contains heavy LaTeX math. The LLM may include unescaped backslashes in responses.
-These chunks are skipped automatically — expect ~10–15% failure rate on math-heavy sections.
+D2L contains heavy LaTeX math (e.g. `\alpha`, `\frac`). The LLM may include bare
+backslashes in JSON responses that `json.loads` rejects.
+
+**This is handled automatically** via a 3-stage fallback in `parse_json_response`:
+1. Direct `json.loads` (fast path)
+2. Regex-escape invalid backslashes, retry
+3. `json-repair` library (catches apostrophes, trailing commas, etc.)
+
+Failures are now rare — only if the LLM returns completely malformed output.
 
 ### API Rate Limits
 Add delays between chunks:

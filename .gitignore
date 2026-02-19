@@ -183,5 +183,11 @@ cython_debug/
 /venv
 .env
 /d2l-en
-/d2l/__pycache__
-/d2l/output/generation_log.txt
+
+# Generated dataset files (large; regenerate with the scripts)
+/d2l/output/
+/d2l/single_hop/output/
+/d2l/multi_hop/output/
+
+# macOS metadata
+.DS_Store

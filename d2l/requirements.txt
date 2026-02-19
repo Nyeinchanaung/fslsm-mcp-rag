@@ -10,6 +10,9 @@ openai>=1.0.0
 # Text processing and ML
 scikit-learn>=1.3.0
 
+# JSON repair for robust LLM output parsing (handles LaTeX escapes, etc.)
+json-repair>=0.28.0
+
 # Optional: For advanced text processing
 # nltk>=3.8
 # spacy>=3.7

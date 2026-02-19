@@ -274,11 +274,48 @@ def call_llm(
 
 
 def parse_json_response(response_text: str) -> List[Dict]:
-    """Safely parse JSON from LLM response, handling markdown fences."""
+    """
+    Robustly parse JSON from LLM response with 3-stage fallback:
+      1. Direct json.loads (clean responses)
+      2. Fix invalid LaTeX backslash escapes with regex, retry
+      3. json-repair library (handles apostrophes, trailing commas, etc.)
+
+    D2L's heavy LaTeX content causes LLMs to include bare backslashes
+    (e.g. \\alpha, \\frac) in JSON strings, which json.loads rejects.
+    """
     text = response_text.strip()
-    text = re.sub(r'^```json\s*', '', text)
+    # Strip markdown code fences
+    text = re.sub(r'^```(?:json)?\s*', '', text)
     text = re.sub(r'\s*```$', '', text)
-    return json.loads(text)
+    text = text.strip()
+
+    # Stage 1: Try direct parse
+    try:
+        return json.loads(text)
+    except json.JSONDecodeError:
+        pass
+
+    # Stage 2: Fix invalid backslash escapes (LaTeX: \alpha, \frac, etc.)
+    # Replace any \ not followed by a valid JSON escape char with \\\\
+    fixed = re.sub(r'\\(?!["\\\//bfnrtu])', r'\\\\', text)
+    try:
+        return json.loads(fixed)
+    except json.JSONDecodeError:
+        pass
+
+    # Stage 3: Fall back to json-repair for other malformed JSON
+    try:
+        from json_repair import repair_json
+        repaired = repair_json(text)
+        result = json.loads(repaired)
+        if isinstance(result, list):
+            return result
+        return [result] if isinstance(result, dict) else []
+    except Exception:
+        pass
+
+    # All stages failed — re-raise original error for caller to catch
+    raise json.JSONDecodeError("All parse strategies failed", text, 0)
 
 
 def generate_qa_pairs(
@@ -304,7 +341,7 @@ def generate_qa_pairs(
     all_qa_pairs = []
     
     for i, chunk in enumerate(chunks):
-        print(f"Processing chunk {i+1}/{len(chunks)}...", end='\r')
+        print(f"Processing chunk {i+1}/{len(chunks)}...")
         
         prompt = QA_GENERATION_PROMPT.format(
             n_questions=n_questions_per_chunk,
@@ -433,7 +470,7 @@ def validate_with_llm_judge(
     validated = []
     
     for i, qa in enumerate(qa_pairs):
-        print(f"Validating {i+1}/{len(qa_pairs)}...", end='\r')
+        print(f"Validating {i+1}/{len(qa_pairs)}...")
         
         votes = []
         for _ in range(n_validations):

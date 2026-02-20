@@ -92,12 +92,16 @@ RULES:
 5. Difficulty must be "medium" or "hard" — these are multi-hop questions.
 6. Do NOT ask questions answerable from a single passage.
 7. For mathematical content, reference the formulas in context.
+8. CRITICAL: Do NOT say "Passage 1", "Passage 2", "as described in Passage N",
+   or any similar label in your question or gold_answer. Reference concepts and
+   techniques by NAME (e.g. "self-attention", "VGG", "dropout") — the reader
+   will NOT see the passage labels.
 
 Respond in JSON format:
 [
   {{
     "question": "...",
-    "gold_answer": "... (3–5 sentences synthesizing all 5 passages) ...",
+    "gold_answer": "... (3–5 sentences synthesizing all 5 passages, citing concepts by name) ...",
     "answer_type": "compare|trace_evolution|explain_relationship|synthesize_workflow|debug_scenario",
     "difficulty": "medium|hard",
     "chunk_contributions": {{
@@ -145,6 +149,22 @@ Rate the pipeline answer on a 0–9 scale:
 
 Respond as JSON:
 {{"score": N, "reasoning": "one sentence"}}
+"""
+
+CLEAN_PASSAGE_PROMPT = """The following QA pair contains references like "Passage 1", "Passage 2",
+"as described in Passage N", etc. These labels are an artifact of the generation
+process and must be removed — the reader will not see any labelled passages.
+
+Rewrite ONLY the gold_answer so it references concepts and techniques by name
+instead of by passage label. Keep the meaning identical; only remove/replace the
+passage references. Return just the rewritten answer text, no JSON, no extra words.
+
+QUESTION: {question}
+
+ORIGINAL GOLD ANSWER:
+{gold_answer}
+
+REWRITTEN GOLD ANSWER (no Passage N references):
 """
 
 
@@ -242,6 +262,62 @@ def parse_json_response(response_text: str):
         pass
 
     raise json.JSONDecodeError("All parse strategies failed", text, 0)
+
+
+def clean_passage_references(
+    qa_pairs: List[Dict],
+    model: str,
+    api_key: Optional[str] = None,
+) -> List[Dict]:
+    """
+    Post-processing pass: remove "Passage N" / "as described in Passage 3" etc.
+    from questions and gold_answers.
+
+    Strategy:
+      1. Fast regex substitution catches ~80% of cases (e.g. "in Passage 1",
+         "Passage 2 explains", "as shown in passage N").
+      2. If references remain, call the LLM with CLEAN_PASSAGE_PROMPT to
+         rewrite the answer preserving meaning but replacing labels with
+         concept names.
+    """
+    PASSAGE_RE = re.compile(
+        r"(?:as\s+(?:described|shown|explained|discussed|detailed|stated|\w+)\s+in\s+)?"
+        r"[Pp]assage\s*\d+",
+        re.IGNORECASE,
+    )
+
+    cleaned = []
+    for qa in qa_pairs:
+        for field in ("question", "gold_answer"):
+            text = qa.get(field, "")
+            if not PASSAGE_RE.search(text):
+                continue  # already clean
+
+            # Stage 1: regex strip
+            text = PASSAGE_RE.sub("", text)
+            # Clean up double spaces and leading/trailing whitespace per sentence
+            text = re.sub(r"  +", " ", text).strip()
+            qa[field] = text
+
+            # Stage 2: if still dirty (e.g. "the passage" without a number)
+            # or if the sentence reads awkwardly, ask the LLM to rewrite
+            if re.search(r"\bpassage\b", text, re.IGNORECASE):
+                try:
+                    prompt = CLEAN_PASSAGE_PROMPT.format(
+                        question=qa.get("question", ""),
+                        gold_answer=text,
+                    )
+                    rewritten = call_llm(
+                        model, prompt, temperature=0.2, max_tokens=800, api_key=api_key
+                    )
+                    rewritten = rewritten.strip().strip('"')
+                    if rewritten:
+                        qa[field] = rewritten
+                except Exception:
+                    pass  # keep regex-cleaned version
+
+        cleaned.append(qa)
+    return cleaned
 
 
 # ── D2L Parser (shared with single-hop logic) ─────────────────────────────────
@@ -616,6 +692,8 @@ def generate_multihop_qa(
         for qa in raw:
             qa["gold_chunk_ids"] = [chunk_data[j]["chunk_id"] for j in range(5)]
             qa["strategy"] = group.get("strategy", "unknown")
+        # Remove any residual "Passage N" references the LLM snuck in
+        raw = clean_passage_references(raw, model, api_key=api_key)
         return raw
     except Exception as e:
         print(f"\nWarning: QA generation failed for group: {e}")

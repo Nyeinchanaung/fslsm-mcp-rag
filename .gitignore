@@ -186,8 +186,7 @@ cython_debug/
 
 # Generated dataset files (large; regenerate with the scripts)
 /d2l/output/
-/d2l/single_hop/output/
-/d2l/multi_hop/output/
+/d2l/multi_hop/output/multihop_generation_log.txt
 
 # macOS metadata
 .DS_Store

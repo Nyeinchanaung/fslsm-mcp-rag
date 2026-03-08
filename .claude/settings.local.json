@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(wc -l /Users/nyeinchanaung/Documents/GitHub/mcp-rag/d2l/multi_hop/output/*.json)",
+      "Bash(wc -l /Users/nyeinchanaung/Documents/GitHub/mcp-rag/d2l/output/*.json)",
+      "Bash(python3 -c \"import json; d = json.load\\(open\\(''/Users/nyeinchanaung/Documents/GitHub/mcp-rag/d2l/output/d2l_corpus_chunks.json''\\)\\); print\\(f''chunks: {len\\(d\\)}''\\); print\\(''sample keys:'', list\\(d[0].keys\\(\\)\\) if d else ''empty''\\)\")",
+      "Bash(python3 -c \"import json; d = json.load\\(open\\(''/Users/nyeinchanaung/Documents/GitHub/mcp-rag/d2l/multi_hop/output/d2l_multihop_ground_truth.json''\\)\\); print\\(f''questions: {len\\(d\\)}''\\); print\\(''sample keys:'', list\\(d[0].keys\\(\\)\\) if d else ''empty''\\); print\\(''sample:'', json.dumps\\(d[0], indent=2\\)[:600]\\)\")",
+      "Bash(python3 -c \":*)",
+      "Bash(source /Users/nyeinchanaung/Documents/GitHub/mcp-rag/venv/bin/activate)",
+      "Bash(pip list)"
+    ]
+  }
+}

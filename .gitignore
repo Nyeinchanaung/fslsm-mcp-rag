@@ -190,3 +190,4 @@ cython_debug/
 
 # macOS metadata
 .DS_Store
+config/__init__.py

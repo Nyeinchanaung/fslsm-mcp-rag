@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -c \":*)",
+      "Bash(./venv/bin/pip install tenacity -q)",
+      "Bash(echo $ANTHROPIC_API_KEY)",
+      "Bash(./venv/bin/python -c \":*)",
+      "Bash(ollama pull llama3.1:8b)",
+      "Bash(./venv/bin/python scripts/create_profiles.py)"
+    ],
+    "additionalDirectories": [
+      "/Users/nyeinchanaung/Documents/GitHub/mcp-rag/results/exp1/raw_responses"
+    ]
+  }
+}

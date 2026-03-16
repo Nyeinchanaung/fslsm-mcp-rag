@@ -1,0 +1,368 @@
+{
+  "agent_uid": "gpt41mini_P13_RefIntVisSeq_I02_int",
+  "knowledge_level": "intermediate",
+  "model": "gpt-4.1-mini",
+  "litellm_model": "openai/gpt-4.1-mini",
+  "trial": 2,
+  "dim_scores": {
+    "act_ref": 11,
+    "sen_int": 5,
+    "vis_ver": -9,
+    "seq_glo": -1
+  },
+  "total_cost_usd": 0.009242799999999997,
+  "raw": [
+    {
+      "q_num": 1,
+      "answer": "b",
+      "raw_text": "b",
+      "prompt_tokens": 511,
+      "completion_tokens": 1,
+      "cost_usd": 0.000206
+    },
+    {
+      "q_num": 2,
+      "answer": "b",
+      "raw_text": "b",
+      "prompt_tokens": 506,
+      "completion_tokens": 1,
+      "cost_usd": 0.000204
+    },
+    {
+      "q_num": 3,
+      "answer": "a",
+      "raw_text": "a",
+      "prompt_tokens": 517,
+      "completion_tokens": 1,
+      "cost_usd": 0.0002084
+    },
+    {
+      "q_num": 4,
+      "answer": "b",
+      "raw_text": "b",
+      "prompt_tokens": 525,
+      "completion_tokens": 1,
+      "cost_usd": 0.0002116
+    },
+    {
+      "q_num": 5,
+      "answer": "b",
+      "raw_text": "b",
+      "prompt_tokens": 516,
+      "completion_tokens": 1,
+      "cost_usd": 0.00020800000000000001
+    },
+    {
+      "q_num": 6,
+      "answer": "b",
+      "raw_text": "b",
+      "prompt_tokens": 524,
+      "completion_tokens": 1,
+      "cost_usd": 0.0002112
+    },
+    {
+      "q_num": 7,
+      "answer": "a",
+      "raw_text": "a",
+      "prompt_tokens": 519,
+      "completion_tokens": 1,
+      "cost_usd": 0.0002092
+    },
+    {
+      "q_num": 8,
+      "answer": "b",
+      "raw_text": "b",
+      "prompt_tokens": 520,
+      "completion_tokens": 1,
+      "cost_usd": 0.0002096
+    },
+    {
+      "q_num": 9,
+      "answer": "b",
+      "raw_text": "b",
+      "prompt_tokens": 522,
+      "completion_tokens": 1,
+      "cost_usd": 0.0002104
+    },
+    {
+      "q_num": 10,
+      "answer": "b",
+      "raw_text": "b",
+      "prompt_tokens": 509,
+      "completion_tokens": 1,
+      "cost_usd": 0.0002052
+    },
+    {
+      "q_num": 11,
+      "answer": "a",
+      "raw_text": "a",
+      "prompt_tokens": 525,
+      "completion_tokens": 1,
+      "cost_usd": 0.0002116
+    },
+    {
+      "q_num": 12,
+      "answer": "a",
+      "raw_text": "a",
+      "prompt_tokens": 537,
+      "completion_tokens": 1,
+      "cost_usd": 0.0002164
+    },
+    {
+      "q_num": 13,
+      "answer": "b",
+      "raw_text": "b",
+      "prompt_tokens": 524,
+      "completion_tokens": 1,
+      "cost_usd": 0.0002112
+    },
+    {
+      "q_num": 14,
+      "answer": "b",
+      "raw_text": "b",
+      "prompt_tokens": 527,
+      "completion_tokens": 1,
+      "cost_usd": 0.0002124
+    },
+    {
+      "q_num": 15,
+      "answer": "a",
+      "raw_text": "a",
+      "prompt_tokens": 518,
+      "completion_tokens": 1,
+      "cost_usd": 0.0002088
+    },
+    {
+      "q_num": 16,
+      "answer": "a",
+      "raw_text": "a",
+      "prompt_tokens": 549,
+      "completion_tokens": 1,
+      "cost_usd": 0.0002212
+    },
+    {
+      "q_num": 17,
+      "answer": "b",
+      "raw_text": "b",
+      "prompt_tokens": 524,
+      "completion_tokens": 1,
+      "cost_usd": 0.0002112
+    },
+    {
+      "q_num": 18,
+      "answer": "b",
+      "raw_text": "b",
+      "prompt_tokens": 506,
+      "completion_tokens": 1,
+      "cost_usd": 0.000204
+    },
+    {
+      "q_num": 19,
+      "answer": "a",
+      "raw_text": "a",
+      "prompt_tokens": 508,
+      "completion_tokens": 1,
+      "cost_usd": 0.0002048
+    },
+    {
+      "q_num": 20,
+      "answer": "a",
+      "raw_text": "a",
+      "prompt_tokens": 528,
+      "completion_tokens": 1,
+      "cost_usd": 0.0002128
+    },
+    {
+      "q_num": 21,
+      "answer": "b",
+      "raw_text": "b",
+      "prompt_tokens": 507,
+      "completion_tokens": 1,
+      "cost_usd": 0.0002044
+    },
+    {
+      "q_num": 22,
+      "answer": "a",
+      "raw_text": "a",
+      "prompt_tokens": 520,
+      "completion_tokens": 1,
+      "cost_usd": 0.0002096
+    },
+    {
+      "q_num": 23,
+      "answer": "a",
+      "raw_text": "a",
+      "prompt_tokens": 514,
+      "completion_tokens": 1,
+      "cost_usd": 0.0002072
+    },
+    {
+      "q_num": 24,
+      "answer": "a",
+      "raw_text": "a",
+      "prompt_tokens": 536,
+      "completion_tokens": 1,
+      "cost_usd": 0.000216
+    },
+    {
+      "q_num": 25,
+      "answer": "b",
+      "raw_text": "b",
+      "prompt_tokens": 514,
+      "completion_tokens": 1,
+      "cost_usd": 0.0002072
+    },
+    {
+      "q_num": 26,
+      "answer": "b",
+      "raw_text": "b",
+      "prompt_tokens": 522,
+      "completion_tokens": 1,
+      "cost_usd": 0.0002104
+    },
+    {
+      "q_num": 27,
+      "answer": "a",
+      "raw_text": "a",
+      "prompt_tokens": 523,
+      "completion_tokens": 1,
+      "cost_usd": 0.0002108
+    },
+    {
+      "q_num": 28,
+      "answer": "b",
+      "raw_text": "b",
+      "prompt_tokens": 530,
+      "completion_tokens": 1,
+      "cost_usd": 0.00021360000000000001
+    },
+    {
+      "q_num": 29,
+      "answer": "b",
+      "raw_text": "b",
+      "prompt_tokens": 514,
+      "completion_tokens": 1,
+      "cost_usd": 0.0002072
+    },
+    {
+      "q_num": 30,
+      "answer": "a",
+      "raw_text": "a",
+      "prompt_tokens": 524,
+      "completion_tokens": 1,
+      "cost_usd": 0.0002112
+    },
+    {
+      "q_num": 31,
+      "answer": "a",
+      "raw_text": "a",
+      "prompt_tokens": 516,
+      "completion_tokens": 1,
+      "cost_usd": 0.00020800000000000001
+    },
+    {
+      "q_num": 32,
+      "answer": "a",
+      "raw_text": "a",
+      "prompt_tokens": 542,
+      "completion_tokens": 1,
+      "cost_usd": 0.0002184
+    },
+    {
+      "q_num": 33,
+      "answer": "b",
+      "raw_text": "b",
+      "prompt_tokens": 534,
+      "completion_tokens": 1,
+      "cost_usd": 0.0002152
+    },
+    {
+      "q_num": 34,
+      "answer": "b",
+      "raw_text": "b",
+      "prompt_tokens": 509,
+      "completion_tokens": 1,
+      "cost_usd": 0.0002052
+    },
+    {
+      "q_num": 35,
+      "answer": "a",
+      "raw_text": "a",
+      "prompt_tokens": 522,
+      "completion_tokens": 1,
+      "cost_usd": 0.0002104
+    },
+    {
+      "q_num": 36,
+      "answer": "b",
+      "raw_text": "b",
+      "prompt_tokens": 534,
+      "completion_tokens": 1,
+      "cost_usd": 0.0002152
+    },
+    {
+      "q_num": 37,
+      "answer": "b",
+      "raw_text": "b",
+      "prompt_tokens": 508,
+      "completion_tokens": 1,
+      "cost_usd": 0.0002048
+    },
+    {
+      "q_num": 38,
+      "answer": "b",
+      "raw_text": "b",
+      "prompt_tokens": 517,
+      "completion_tokens": 1,
+      "cost_usd": 0.0002084
+    },
+    {
+      "q_num": 39,
+      "answer": "b",
+      "raw_text": "b",
+      "prompt_tokens": 510,
+      "completion_tokens": 1,
+      "cost_usd": 0.0002056
+    },
+    {
+      "q_num": 40,
+      "answer": "b",
+      "raw_text": "b",
+      "prompt_tokens": 524,
+      "completion_tokens": 1,
+      "cost_usd": 0.0002112
+    },
+    {
+      "q_num": 41,
+      "answer": "b",
+      "raw_text": "b",
+      "prompt_tokens": 522,
+      "completion_tokens": 1,
+      "cost_usd": 0.0002104
+    },
+    {
+      "q_num": 42,
+      "answer": "a",
+      "raw_text": "a",
+      "prompt_tokens": 532,
+      "completion_tokens": 1,
+      "cost_usd": 0.0002144
+    },
+    {
+      "q_num": 43,
+      "answer": "a",
+      "raw_text": "a",
+      "prompt_tokens": 517,
+      "completion_tokens": 1,
+      "cost_usd": 0.0002084
+    },
+    {
+      "q_num": 44,
+      "answer": "a",
+      "raw_text": "a",
+      "prompt_tokens": 525,
+      "completion_tokens": 1,
+      "cost_usd": 0.0002116
+    }
+  ]
+}

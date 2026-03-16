@@ -190,5 +190,17 @@
       "seq_glo": "You prefer to understand the big picture and overall framework first. You learn in large conceptual leaps. You often say: 'What is the overarching idea?' or 'Give me the theoretical context before the details.'"
     },
     "style_descriptor_graf": "Prefers reflective, theoretical, verbal instruction with a holistic, overview-first approach. Responds well to high-level theoretical narratives, abstract proofs, and independent deep reading time."
+  },
+  {
+    "profile_code": "P00_Baseline",
+    "label": "Non-Personalized Baseline",
+    "dimensions": { "act_ref": 0, "sen_int": 0, "vis_ver": 0, "seq_glo": 0 },
+    "behavioral_instructions": {
+      "act_ref": "",
+      "sen_int": "",
+      "vis_ver": "",
+      "seq_glo": ""
+    },
+    "style_descriptor_graf": "No learning style preference assigned."
   }
 ]

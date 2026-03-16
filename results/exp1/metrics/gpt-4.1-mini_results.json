@@ -1,0 +1,6242 @@
+[
+  {
+    "agent_uid": "gpt41mini_P01_ActSenVisSeq_I01_beg",
+    "knowledge_level": "beginner",
+    "profile_code": "P01_ActSenVisSeq",
+    "instance_num": 1,
+    "trial": 1,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -9
+    },
+    "cost_usd": 0.010738800000000001
+  },
+  {
+    "agent_uid": "gpt41mini_P01_ActSenVisSeq_I01_beg",
+    "knowledge_level": "beginner",
+    "profile_code": "P01_ActSenVisSeq",
+    "instance_num": 1,
+    "trial": 2,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -9,
+      "vis_ver": -11,
+      "seq_glo": -9
+    },
+    "cost_usd": 0.010738800000000001
+  },
+  {
+    "agent_uid": "gpt41mini_P01_ActSenVisSeq_I01_beg",
+    "knowledge_level": "beginner",
+    "profile_code": "P01_ActSenVisSeq",
+    "instance_num": 1,
+    "trial": 3,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -9
+    },
+    "cost_usd": 0.010738800000000001
+  },
+  {
+    "agent_uid": "gpt41mini_P01_ActSenVisSeq_I02_int",
+    "knowledge_level": "intermediate",
+    "profile_code": "P01_ActSenVisSeq",
+    "instance_num": 2,
+    "trial": 1,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -9
+    },
+    "cost_usd": 0.010686000000000001
+  },
+  {
+    "agent_uid": "gpt41mini_P01_ActSenVisSeq_I02_int",
+    "knowledge_level": "intermediate",
+    "profile_code": "P01_ActSenVisSeq",
+    "instance_num": 2,
+    "trial": 2,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -9
+    },
+    "cost_usd": 0.010686000000000001
+  },
+  {
+    "agent_uid": "gpt41mini_P01_ActSenVisSeq_I02_int",
+    "knowledge_level": "intermediate",
+    "profile_code": "P01_ActSenVisSeq",
+    "instance_num": 2,
+    "trial": 3,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -9
+    },
+    "cost_usd": 0.010686000000000001
+  },
+  {
+    "agent_uid": "gpt41mini_P01_ActSenVisSeq_I03_adv",
+    "knowledge_level": "advanced",
+    "profile_code": "P01_ActSenVisSeq",
+    "instance_num": 3,
+    "trial": 1,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -9
+    },
+    "cost_usd": 0.0106156
+  },
+  {
+    "agent_uid": "gpt41mini_P01_ActSenVisSeq_I03_adv",
+    "knowledge_level": "advanced",
+    "profile_code": "P01_ActSenVisSeq",
+    "instance_num": 3,
+    "trial": 2,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -9
+    },
+    "cost_usd": 0.0106156
+  },
+  {
+    "agent_uid": "gpt41mini_P01_ActSenVisSeq_I03_adv",
+    "knowledge_level": "advanced",
+    "profile_code": "P01_ActSenVisSeq",
+    "instance_num": 3,
+    "trial": 3,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -9
+    },
+    "cost_usd": 0.0106156
+  },
+  {
+    "agent_uid": "gpt41mini_P01_ActSenVisSeq_I04_gen",
+    "knowledge_level": null,
+    "profile_code": "P01_ActSenVisSeq",
+    "instance_num": 4,
+    "trial": 1,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -9
+    },
+    "cost_usd": 0.009665199999999999
+  },
+  {
+    "agent_uid": "gpt41mini_P01_ActSenVisSeq_I04_gen",
+    "knowledge_level": null,
+    "profile_code": "P01_ActSenVisSeq",
+    "instance_num": 4,
+    "trial": 2,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -9
+    },
+    "cost_usd": 0.009665199999999999
+  },
+  {
+    "agent_uid": "gpt41mini_P01_ActSenVisSeq_I04_gen",
+    "knowledge_level": null,
+    "profile_code": "P01_ActSenVisSeq",
+    "instance_num": 4,
+    "trial": 3,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -9
+    },
+    "cost_usd": 0.009665199999999999
+  },
+  {
+    "agent_uid": "gpt41mini_P01_ActSenVisSeq_I05_gen",
+    "knowledge_level": null,
+    "profile_code": "P01_ActSenVisSeq",
+    "instance_num": 5,
+    "trial": 1,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -9
+    },
+    "cost_usd": 0.009665199999999999
+  },
+  {
+    "agent_uid": "gpt41mini_P01_ActSenVisSeq_I05_gen",
+    "knowledge_level": null,
+    "profile_code": "P01_ActSenVisSeq",
+    "instance_num": 5,
+    "trial": 2,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -9
+    },
+    "cost_usd": 0.009665199999999999
+  },
+  {
+    "agent_uid": "gpt41mini_P01_ActSenVisSeq_I05_gen",
+    "knowledge_level": null,
+    "profile_code": "P01_ActSenVisSeq",
+    "instance_num": 5,
+    "trial": 3,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -9
+    },
+    "cost_usd": 0.009665199999999999
+  },
+  {
+    "agent_uid": "gpt41mini_P02_ActSenVisGlo_I01_beg",
+    "knowledge_level": "beginner",
+    "profile_code": "P02_ActSenVisGlo",
+    "instance_num": 1,
+    "trial": 1,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -7,
+      "vis_ver": -11,
+      "seq_glo": 11
+    },
+    "cost_usd": 0.009682800000000002
+  },
+  {
+    "agent_uid": "gpt41mini_P02_ActSenVisGlo_I01_beg",
+    "knowledge_level": "beginner",
+    "profile_code": "P02_ActSenVisGlo",
+    "instance_num": 1,
+    "trial": 2,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -7,
+      "vis_ver": -11,
+      "seq_glo": 11
+    },
+    "cost_usd": 0.009682800000000002
+  },
+  {
+    "agent_uid": "gpt41mini_P02_ActSenVisGlo_I01_beg",
+    "knowledge_level": "beginner",
+    "profile_code": "P02_ActSenVisGlo",
+    "instance_num": 1,
+    "trial": 3,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -7,
+      "vis_ver": -11,
+      "seq_glo": 9
+    },
+    "cost_usd": 0.009682800000000002
+  },
+  {
+    "agent_uid": "gpt41mini_P02_ActSenVisGlo_I02_int",
+    "knowledge_level": "intermediate",
+    "profile_code": "P02_ActSenVisGlo",
+    "instance_num": 2,
+    "trial": 1,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -9,
+      "vis_ver": -11,
+      "seq_glo": 11
+    },
+    "cost_usd": 0.009630000000000001
+  },
+  {
+    "agent_uid": "gpt41mini_P02_ActSenVisGlo_I02_int",
+    "knowledge_level": "intermediate",
+    "profile_code": "P02_ActSenVisGlo",
+    "instance_num": 2,
+    "trial": 2,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -7,
+      "vis_ver": -11,
+      "seq_glo": 11
+    },
+    "cost_usd": 0.009630000000000001
+  },
+  {
+    "agent_uid": "gpt41mini_P02_ActSenVisGlo_I02_int",
+    "knowledge_level": "intermediate",
+    "profile_code": "P02_ActSenVisGlo",
+    "instance_num": 2,
+    "trial": 3,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -7,
+      "vis_ver": -11,
+      "seq_glo": 9
+    },
+    "cost_usd": 0.009630000000000001
+  },
+  {
+    "agent_uid": "gpt41mini_P02_ActSenVisGlo_I03_adv",
+    "knowledge_level": "advanced",
+    "profile_code": "P02_ActSenVisGlo",
+    "instance_num": 3,
+    "trial": 1,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -7,
+      "vis_ver": -11,
+      "seq_glo": 11
+    },
+    "cost_usd": 0.009559600000000001
+  },
+  {
+    "agent_uid": "gpt41mini_P02_ActSenVisGlo_I03_adv",
+    "knowledge_level": "advanced",
+    "profile_code": "P02_ActSenVisGlo",
+    "instance_num": 3,
+    "trial": 2,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -7,
+      "vis_ver": -11,
+      "seq_glo": 11
+    },
+    "cost_usd": 0.009559600000000001
+  },
+  {
+    "agent_uid": "gpt41mini_P02_ActSenVisGlo_I03_adv",
+    "knowledge_level": "advanced",
+    "profile_code": "P02_ActSenVisGlo",
+    "instance_num": 3,
+    "trial": 3,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -9,
+      "vis_ver": -11,
+      "seq_glo": 11
+    },
+    "cost_usd": 0.009559600000000001
+  },
+  {
+    "agent_uid": "gpt41mini_P02_ActSenVisGlo_I04_gen",
+    "knowledge_level": null,
+    "profile_code": "P02_ActSenVisGlo",
+    "instance_num": 4,
+    "trial": 1,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -9,
+      "vis_ver": -11,
+      "seq_glo": 9
+    },
+    "cost_usd": 0.008609200000000001
+  },
+  {
+    "agent_uid": "gpt41mini_P02_ActSenVisGlo_I04_gen",
+    "knowledge_level": null,
+    "profile_code": "P02_ActSenVisGlo",
+    "instance_num": 4,
+    "trial": 2,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -7,
+      "vis_ver": -11,
+      "seq_glo": 9
+    },
+    "cost_usd": 0.008609200000000001
+  },
+  {
+    "agent_uid": "gpt41mini_P02_ActSenVisGlo_I04_gen",
+    "knowledge_level": null,
+    "profile_code": "P02_ActSenVisGlo",
+    "instance_num": 4,
+    "trial": 3,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -9,
+      "vis_ver": -11,
+      "seq_glo": 11
+    },
+    "cost_usd": 0.008609200000000001
+  },
+  {
+    "agent_uid": "gpt41mini_P02_ActSenVisGlo_I05_gen",
+    "knowledge_level": null,
+    "profile_code": "P02_ActSenVisGlo",
+    "instance_num": 5,
+    "trial": 1,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -9,
+      "vis_ver": -11,
+      "seq_glo": 9
+    },
+    "cost_usd": 0.008609200000000001
+  },
+  {
+    "agent_uid": "gpt41mini_P02_ActSenVisGlo_I05_gen",
+    "knowledge_level": null,
+    "profile_code": "P02_ActSenVisGlo",
+    "instance_num": 5,
+    "trial": 2,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -7,
+      "vis_ver": -11,
+      "seq_glo": 9
+    },
+    "cost_usd": 0.008609200000000001
+  },
+  {
+    "agent_uid": "gpt41mini_P02_ActSenVisGlo_I05_gen",
+    "knowledge_level": null,
+    "profile_code": "P02_ActSenVisGlo",
+    "instance_num": 5,
+    "trial": 3,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -9,
+      "vis_ver": -11,
+      "seq_glo": 7
+    },
+    "cost_usd": 0.008609200000000001
+  },
+  {
+    "agent_uid": "gpt41mini_P03_ActSenVerSeq_I01_beg",
+    "knowledge_level": "beginner",
+    "profile_code": "P03_ActSenVerSeq",
+    "instance_num": 1,
+    "trial": 1,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": 11,
+      "seq_glo": -9
+    },
+    "cost_usd": 0.009119599999999999
+  },
+  {
+    "agent_uid": "gpt41mini_P03_ActSenVerSeq_I01_beg",
+    "knowledge_level": "beginner",
+    "profile_code": "P03_ActSenVerSeq",
+    "instance_num": 1,
+    "trial": 2,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": 11,
+      "seq_glo": -9
+    },
+    "cost_usd": 0.009119599999999999
+  },
+  {
+    "agent_uid": "gpt41mini_P03_ActSenVerSeq_I01_beg",
+    "knowledge_level": "beginner",
+    "profile_code": "P03_ActSenVerSeq",
+    "instance_num": 1,
+    "trial": 3,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": 11,
+      "seq_glo": -9
+    },
+    "cost_usd": 0.009119599999999999
+  },
+  {
+    "agent_uid": "gpt41mini_P03_ActSenVerSeq_I02_int",
+    "knowledge_level": "intermediate",
+    "profile_code": "P03_ActSenVerSeq",
+    "instance_num": 2,
+    "trial": 1,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": 11,
+      "seq_glo": -9
+    },
+    "cost_usd": 0.0090668
+  },
+  {
+    "agent_uid": "gpt41mini_P03_ActSenVerSeq_I02_int",
+    "knowledge_level": "intermediate",
+    "profile_code": "P03_ActSenVerSeq",
+    "instance_num": 2,
+    "trial": 2,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": 11,
+      "seq_glo": -9
+    },
+    "cost_usd": 0.0090668
+  },
+  {
+    "agent_uid": "gpt41mini_P03_ActSenVerSeq_I02_int",
+    "knowledge_level": "intermediate",
+    "profile_code": "P03_ActSenVerSeq",
+    "instance_num": 2,
+    "trial": 3,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": 11,
+      "seq_glo": -9
+    },
+    "cost_usd": 0.0090668
+  },
+  {
+    "agent_uid": "gpt41mini_P03_ActSenVerSeq_I03_adv",
+    "knowledge_level": "advanced",
+    "profile_code": "P03_ActSenVerSeq",
+    "instance_num": 3,
+    "trial": 1,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": 11,
+      "seq_glo": -9
+    },
+    "cost_usd": 0.0089964
+  },
+  {
+    "agent_uid": "gpt41mini_P03_ActSenVerSeq_I03_adv",
+    "knowledge_level": "advanced",
+    "profile_code": "P03_ActSenVerSeq",
+    "instance_num": 3,
+    "trial": 2,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": 11,
+      "seq_glo": -9
+    },
+    "cost_usd": 0.0089964
+  },
+  {
+    "agent_uid": "gpt41mini_P03_ActSenVerSeq_I03_adv",
+    "knowledge_level": "advanced",
+    "profile_code": "P03_ActSenVerSeq",
+    "instance_num": 3,
+    "trial": 3,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": 11,
+      "seq_glo": -9
+    },
+    "cost_usd": 0.0089964
+  },
+  {
+    "agent_uid": "gpt41mini_P03_ActSenVerSeq_I04_gen",
+    "knowledge_level": null,
+    "profile_code": "P03_ActSenVerSeq",
+    "instance_num": 4,
+    "trial": 1,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": 11,
+      "seq_glo": -9
+    },
+    "cost_usd": 0.008045999999999998
+  },
+  {
+    "agent_uid": "gpt41mini_P03_ActSenVerSeq_I04_gen",
+    "knowledge_level": null,
+    "profile_code": "P03_ActSenVerSeq",
+    "instance_num": 4,
+    "trial": 2,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": 11,
+      "seq_glo": -9
+    },
+    "cost_usd": 0.008045999999999998
+  },
+  {
+    "agent_uid": "gpt41mini_P03_ActSenVerSeq_I04_gen",
+    "knowledge_level": null,
+    "profile_code": "P03_ActSenVerSeq",
+    "instance_num": 4,
+    "trial": 3,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": 11,
+      "seq_glo": -9
+    },
+    "cost_usd": 0.008045999999999998
+  },
+  {
+    "agent_uid": "gpt41mini_P03_ActSenVerSeq_I05_gen",
+    "knowledge_level": null,
+    "profile_code": "P03_ActSenVerSeq",
+    "instance_num": 5,
+    "trial": 1,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": 11,
+      "seq_glo": -9
+    },
+    "cost_usd": 0.008045999999999998
+  },
+  {
+    "agent_uid": "gpt41mini_P03_ActSenVerSeq_I05_gen",
+    "knowledge_level": null,
+    "profile_code": "P03_ActSenVerSeq",
+    "instance_num": 5,
+    "trial": 2,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": 11,
+      "seq_glo": -9
+    },
+    "cost_usd": 0.008045999999999998
+  },
+  {
+    "agent_uid": "gpt41mini_P03_ActSenVerSeq_I05_gen",
+    "knowledge_level": null,
+    "profile_code": "P03_ActSenVerSeq",
+    "instance_num": 5,
+    "trial": 3,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": 11,
+      "seq_glo": -9
+    },
+    "cost_usd": 0.008045999999999998
+  },
+  {
+    "agent_uid": "gpt41mini_P04_ActSenVerGlo_I01_beg",
+    "knowledge_level": "beginner",
+    "profile_code": "P04_ActSenVerGlo",
+    "instance_num": 1,
+    "trial": 1,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -5,
+      "vis_ver": 11,
+      "seq_glo": 11
+    },
+    "cost_usd": 0.008732400000000001
+  },
+  {
+    "agent_uid": "gpt41mini_P04_ActSenVerGlo_I01_beg",
+    "knowledge_level": "beginner",
+    "profile_code": "P04_ActSenVerGlo",
+    "instance_num": 1,
+    "trial": 2,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -5,
+      "vis_ver": 11,
+      "seq_glo": 11
+    },
+    "cost_usd": 0.008732400000000001
+  },
+  {
+    "agent_uid": "gpt41mini_P04_ActSenVerGlo_I01_beg",
+    "knowledge_level": "beginner",
+    "profile_code": "P04_ActSenVerGlo",
+    "instance_num": 1,
+    "trial": 3,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -5,
+      "vis_ver": 11,
+      "seq_glo": 11
+    },
+    "cost_usd": 0.008732400000000001
+  },
+  {
+    "agent_uid": "gpt41mini_P04_ActSenVerGlo_I02_int",
+    "knowledge_level": "intermediate",
+    "profile_code": "P04_ActSenVerGlo",
+    "instance_num": 2,
+    "trial": 1,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -7,
+      "vis_ver": 11,
+      "seq_glo": 11
+    },
+    "cost_usd": 0.0086796
+  },
+  {
+    "agent_uid": "gpt41mini_P04_ActSenVerGlo_I02_int",
+    "knowledge_level": "intermediate",
+    "profile_code": "P04_ActSenVerGlo",
+    "instance_num": 2,
+    "trial": 2,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -7,
+      "vis_ver": 11,
+      "seq_glo": 11
+    },
+    "cost_usd": 0.0086796
+  },
+  {
+    "agent_uid": "gpt41mini_P04_ActSenVerGlo_I02_int",
+    "knowledge_level": "intermediate",
+    "profile_code": "P04_ActSenVerGlo",
+    "instance_num": 2,
+    "trial": 3,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -5,
+      "vis_ver": 11,
+      "seq_glo": 11
+    },
+    "cost_usd": 0.0086796
+  },
+  {
+    "agent_uid": "gpt41mini_P04_ActSenVerGlo_I03_adv",
+    "knowledge_level": "advanced",
+    "profile_code": "P04_ActSenVerGlo",
+    "instance_num": 3,
+    "trial": 1,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -3,
+      "vis_ver": 11,
+      "seq_glo": 11
+    },
+    "cost_usd": 0.008609200000000001
+  },
+  {
+    "agent_uid": "gpt41mini_P04_ActSenVerGlo_I03_adv",
+    "knowledge_level": "advanced",
+    "profile_code": "P04_ActSenVerGlo",
+    "instance_num": 3,
+    "trial": 2,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -5,
+      "vis_ver": 11,
+      "seq_glo": 11
+    },
+    "cost_usd": 0.008609200000000001
+  },
+  {
+    "agent_uid": "gpt41mini_P04_ActSenVerGlo_I03_adv",
+    "knowledge_level": "advanced",
+    "profile_code": "P04_ActSenVerGlo",
+    "instance_num": 3,
+    "trial": 3,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -7,
+      "vis_ver": 11,
+      "seq_glo": 11
+    },
+    "cost_usd": 0.008609200000000001
+  },
+  {
+    "agent_uid": "gpt41mini_P04_ActSenVerGlo_I04_gen",
+    "knowledge_level": null,
+    "profile_code": "P04_ActSenVerGlo",
+    "instance_num": 4,
+    "trial": 1,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -5,
+      "vis_ver": 11,
+      "seq_glo": 11
+    },
+    "cost_usd": 0.0076588
+  },
+  {
+    "agent_uid": "gpt41mini_P04_ActSenVerGlo_I04_gen",
+    "knowledge_level": null,
+    "profile_code": "P04_ActSenVerGlo",
+    "instance_num": 4,
+    "trial": 2,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -5,
+      "vis_ver": 11,
+      "seq_glo": 11
+    },
+    "cost_usd": 0.0076588
+  },
+  {
+    "agent_uid": "gpt41mini_P04_ActSenVerGlo_I04_gen",
+    "knowledge_level": null,
+    "profile_code": "P04_ActSenVerGlo",
+    "instance_num": 4,
+    "trial": 3,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -7,
+      "vis_ver": 11,
+      "seq_glo": 11
+    },
+    "cost_usd": 0.0076588
+  },
+  {
+    "agent_uid": "gpt41mini_P04_ActSenVerGlo_I05_gen",
+    "knowledge_level": null,
+    "profile_code": "P04_ActSenVerGlo",
+    "instance_num": 5,
+    "trial": 1,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -5,
+      "vis_ver": 11,
+      "seq_glo": 11
+    },
+    "cost_usd": 0.0076588
+  },
+  {
+    "agent_uid": "gpt41mini_P04_ActSenVerGlo_I05_gen",
+    "knowledge_level": null,
+    "profile_code": "P04_ActSenVerGlo",
+    "instance_num": 5,
+    "trial": 2,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -7,
+      "vis_ver": 11,
+      "seq_glo": 11
+    },
+    "cost_usd": 0.0076588
+  },
+  {
+    "agent_uid": "gpt41mini_P04_ActSenVerGlo_I05_gen",
+    "knowledge_level": null,
+    "profile_code": "P04_ActSenVerGlo",
+    "instance_num": 5,
+    "trial": 3,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -5,
+      "vis_ver": 11,
+      "seq_glo": 11
+    },
+    "cost_usd": 0.0076588
+  },
+  {
+    "agent_uid": "gpt41mini_P05_ActIntVisSeq_I01_beg",
+    "knowledge_level": "beginner",
+    "profile_code": "P05_ActIntVisSeq",
+    "instance_num": 1,
+    "trial": 1,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -9,
+      "sen_int": 9,
+      "vis_ver": -11,
+      "seq_glo": -5
+    },
+    "cost_usd": 0.0090668
+  },
+  {
+    "agent_uid": "gpt41mini_P05_ActIntVisSeq_I01_beg",
+    "knowledge_level": "beginner",
+    "profile_code": "P05_ActIntVisSeq",
+    "instance_num": 1,
+    "trial": 2,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": 9,
+      "vis_ver": -11,
+      "seq_glo": -3
+    },
+    "cost_usd": 0.0090668
+  },
+  {
+    "agent_uid": "gpt41mini_P05_ActIntVisSeq_I01_beg",
+    "knowledge_level": "beginner",
+    "profile_code": "P05_ActIntVisSeq",
+    "instance_num": 1,
+    "trial": 3,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -9,
+      "sen_int": 9,
+      "vis_ver": -11,
+      "seq_glo": -3
+    },
+    "cost_usd": 0.0090668
+  },
+  {
+    "agent_uid": "gpt41mini_P05_ActIntVisSeq_I02_int",
+    "knowledge_level": "intermediate",
+    "profile_code": "P05_ActIntVisSeq",
+    "instance_num": 2,
+    "trial": 1,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": 9,
+      "vis_ver": -11,
+      "seq_glo": -5
+    },
+    "cost_usd": 0.009014
+  },
+  {
+    "agent_uid": "gpt41mini_P05_ActIntVisSeq_I02_int",
+    "knowledge_level": "intermediate",
+    "profile_code": "P05_ActIntVisSeq",
+    "instance_num": 2,
+    "trial": 2,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": 9,
+      "vis_ver": -11,
+      "seq_glo": -5
+    },
+    "cost_usd": 0.009014
+  },
+  {
+    "agent_uid": "gpt41mini_P05_ActIntVisSeq_I02_int",
+    "knowledge_level": "intermediate",
+    "profile_code": "P05_ActIntVisSeq",
+    "instance_num": 2,
+    "trial": 3,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -9,
+      "sen_int": 9,
+      "vis_ver": -11,
+      "seq_glo": -5
+    },
+    "cost_usd": 0.009014
+  },
+  {
+    "agent_uid": "gpt41mini_P05_ActIntVisSeq_I03_adv",
+    "knowledge_level": "advanced",
+    "profile_code": "P05_ActIntVisSeq",
+    "instance_num": 3,
+    "trial": 1,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -9,
+      "sen_int": 9,
+      "vis_ver": -11,
+      "seq_glo": -5
+    },
+    "cost_usd": 0.0089436
+  },
+  {
+    "agent_uid": "gpt41mini_P05_ActIntVisSeq_I03_adv",
+    "knowledge_level": "advanced",
+    "profile_code": "P05_ActIntVisSeq",
+    "instance_num": 3,
+    "trial": 2,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -9,
+      "sen_int": 9,
+      "vis_ver": -11,
+      "seq_glo": -3
+    },
+    "cost_usd": 0.0089436
+  },
+  {
+    "agent_uid": "gpt41mini_P05_ActIntVisSeq_I03_adv",
+    "knowledge_level": "advanced",
+    "profile_code": "P05_ActIntVisSeq",
+    "instance_num": 3,
+    "trial": 3,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -9,
+      "sen_int": 9,
+      "vis_ver": -11,
+      "seq_glo": -5
+    },
+    "cost_usd": 0.0089436
+  },
+  {
+    "agent_uid": "gpt41mini_P05_ActIntVisSeq_I04_gen",
+    "knowledge_level": null,
+    "profile_code": "P05_ActIntVisSeq",
+    "instance_num": 4,
+    "trial": 1,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -9,
+      "sen_int": 9,
+      "vis_ver": -11,
+      "seq_glo": -5
+    },
+    "cost_usd": 0.0079932
+  },
+  {
+    "agent_uid": "gpt41mini_P05_ActIntVisSeq_I04_gen",
+    "knowledge_level": null,
+    "profile_code": "P05_ActIntVisSeq",
+    "instance_num": 4,
+    "trial": 2,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -7,
+      "sen_int": 9,
+      "vis_ver": -9,
+      "seq_glo": -5
+    },
+    "cost_usd": 0.0079932
+  },
+  {
+    "agent_uid": "gpt41mini_P05_ActIntVisSeq_I04_gen",
+    "knowledge_level": null,
+    "profile_code": "P05_ActIntVisSeq",
+    "instance_num": 4,
+    "trial": 3,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -7,
+      "sen_int": 9,
+      "vis_ver": -9,
+      "seq_glo": -3
+    },
+    "cost_usd": 0.0079932
+  },
+  {
+    "agent_uid": "gpt41mini_P05_ActIntVisSeq_I05_gen",
+    "knowledge_level": null,
+    "profile_code": "P05_ActIntVisSeq",
+    "instance_num": 5,
+    "trial": 1,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -9,
+      "sen_int": 9,
+      "vis_ver": -11,
+      "seq_glo": -3
+    },
+    "cost_usd": 0.0079932
+  },
+  {
+    "agent_uid": "gpt41mini_P05_ActIntVisSeq_I05_gen",
+    "knowledge_level": null,
+    "profile_code": "P05_ActIntVisSeq",
+    "instance_num": 5,
+    "trial": 2,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -9,
+      "sen_int": 9,
+      "vis_ver": -9,
+      "seq_glo": -5
+    },
+    "cost_usd": 0.0079932
+  },
+  {
+    "agent_uid": "gpt41mini_P05_ActIntVisSeq_I05_gen",
+    "knowledge_level": null,
+    "profile_code": "P05_ActIntVisSeq",
+    "instance_num": 5,
+    "trial": 3,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": 9,
+      "vis_ver": -9,
+      "seq_glo": -3
+    },
+    "cost_usd": 0.0079932
+  },
+  {
+    "agent_uid": "gpt41mini_P06_ActIntVisGlo_I01_beg",
+    "knowledge_level": "beginner",
+    "profile_code": "P06_ActIntVisGlo",
+    "instance_num": 1,
+    "trial": 1,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": 9,
+      "vis_ver": -11,
+      "seq_glo": 11
+    },
+    "cost_usd": 0.0088028
+  },
+  {
+    "agent_uid": "gpt41mini_P06_ActIntVisGlo_I01_beg",
+    "knowledge_level": "beginner",
+    "profile_code": "P06_ActIntVisGlo",
+    "instance_num": 1,
+    "trial": 2,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": 9,
+      "vis_ver": -11,
+      "seq_glo": 11
+    },
+    "cost_usd": 0.0088028
+  },
+  {
+    "agent_uid": "gpt41mini_P06_ActIntVisGlo_I01_beg",
+    "knowledge_level": "beginner",
+    "profile_code": "P06_ActIntVisGlo",
+    "instance_num": 1,
+    "trial": 3,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": 9,
+      "vis_ver": -11,
+      "seq_glo": 11
+    },
+    "cost_usd": 0.0088028
+  },
+  {
+    "agent_uid": "gpt41mini_P06_ActIntVisGlo_I02_int",
+    "knowledge_level": "intermediate",
+    "profile_code": "P06_ActIntVisGlo",
+    "instance_num": 2,
+    "trial": 1,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": 9,
+      "vis_ver": -11,
+      "seq_glo": 11
+    },
+    "cost_usd": 0.00875
+  },
+  {
+    "agent_uid": "gpt41mini_P06_ActIntVisGlo_I02_int",
+    "knowledge_level": "intermediate",
+    "profile_code": "P06_ActIntVisGlo",
+    "instance_num": 2,
+    "trial": 2,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": -9,
+      "sen_int": 9,
+      "vis_ver": -11,
+      "seq_glo": 11
+    },
+    "cost_usd": 0.00875
+  },
+  {
+    "agent_uid": "gpt41mini_P06_ActIntVisGlo_I02_int",
+    "knowledge_level": "intermediate",
+    "profile_code": "P06_ActIntVisGlo",
+    "instance_num": 2,
+    "trial": 3,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": 9,
+      "vis_ver": -11,
+      "seq_glo": 11
+    },
+    "cost_usd": 0.00875
+  },
+  {
+    "agent_uid": "gpt41mini_P06_ActIntVisGlo_I03_adv",
+    "knowledge_level": "advanced",
+    "profile_code": "P06_ActIntVisGlo",
+    "instance_num": 3,
+    "trial": 1,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": -9,
+      "sen_int": 9,
+      "vis_ver": -11,
+      "seq_glo": 11
+    },
+    "cost_usd": 0.0086796
+  },
+  {
+    "agent_uid": "gpt41mini_P06_ActIntVisGlo_I03_adv",
+    "knowledge_level": "advanced",
+    "profile_code": "P06_ActIntVisGlo",
+    "instance_num": 3,
+    "trial": 2,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": -9,
+      "sen_int": 9,
+      "vis_ver": -11,
+      "seq_glo": 11
+    },
+    "cost_usd": 0.0086796
+  },
+  {
+    "agent_uid": "gpt41mini_P06_ActIntVisGlo_I03_adv",
+    "knowledge_level": "advanced",
+    "profile_code": "P06_ActIntVisGlo",
+    "instance_num": 3,
+    "trial": 3,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": -9,
+      "sen_int": 9,
+      "vis_ver": -11,
+      "seq_glo": 11
+    },
+    "cost_usd": 0.0086796
+  },
+  {
+    "agent_uid": "gpt41mini_P06_ActIntVisGlo_I04_gen",
+    "knowledge_level": null,
+    "profile_code": "P06_ActIntVisGlo",
+    "instance_num": 4,
+    "trial": 1,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": -9,
+      "sen_int": 9,
+      "vis_ver": -11,
+      "seq_glo": 11
+    },
+    "cost_usd": 0.007729199999999999
+  },
+  {
+    "agent_uid": "gpt41mini_P06_ActIntVisGlo_I04_gen",
+    "knowledge_level": null,
+    "profile_code": "P06_ActIntVisGlo",
+    "instance_num": 4,
+    "trial": 2,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": 9,
+      "vis_ver": -11,
+      "seq_glo": 11
+    },
+    "cost_usd": 0.007729199999999999
+  },
+  {
+    "agent_uid": "gpt41mini_P06_ActIntVisGlo_I04_gen",
+    "knowledge_level": null,
+    "profile_code": "P06_ActIntVisGlo",
+    "instance_num": 4,
+    "trial": 3,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": 9,
+      "vis_ver": -11,
+      "seq_glo": 11
+    },
+    "cost_usd": 0.007729199999999999
+  },
+  {
+    "agent_uid": "gpt41mini_P10_RefSenVisGlo_I03_adv",
+    "knowledge_level": "advanced",
+    "profile_code": "P10_RefSenVisGlo",
+    "instance_num": 3,
+    "trial": 1,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": -9,
+      "vis_ver": -9,
+      "seq_glo": 9
+    },
+    "cost_usd": 0.008820400000000003
+  },
+  {
+    "agent_uid": "gpt41mini_P10_RefSenVisGlo_I03_adv",
+    "knowledge_level": "advanced",
+    "profile_code": "P10_RefSenVisGlo",
+    "instance_num": 3,
+    "trial": 2,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": -11,
+      "vis_ver": -9,
+      "seq_glo": 7
+    },
+    "cost_usd": 0.008820400000000003
+  },
+  {
+    "agent_uid": "gpt41mini_P10_RefSenVisGlo_I03_adv",
+    "knowledge_level": "advanced",
+    "profile_code": "P10_RefSenVisGlo",
+    "instance_num": 3,
+    "trial": 3,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": -11,
+      "vis_ver": -9,
+      "seq_glo": 7
+    },
+    "cost_usd": 0.008820400000000003
+  },
+  {
+    "agent_uid": "gpt41mini_P06_ActIntVisGlo_I05_gen",
+    "knowledge_level": null,
+    "profile_code": "P06_ActIntVisGlo",
+    "instance_num": 5,
+    "trial": 1,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": -9,
+      "sen_int": 9,
+      "vis_ver": -11,
+      "seq_glo": 11
+    },
+    "cost_usd": 0.007729199999999999
+  },
+  {
+    "agent_uid": "gpt41mini_P06_ActIntVisGlo_I05_gen",
+    "knowledge_level": null,
+    "profile_code": "P06_ActIntVisGlo",
+    "instance_num": 5,
+    "trial": 2,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": -9,
+      "sen_int": 9,
+      "vis_ver": -11,
+      "seq_glo": 11
+    },
+    "cost_usd": 0.007729199999999999
+  },
+  {
+    "agent_uid": "gpt41mini_P06_ActIntVisGlo_I05_gen",
+    "knowledge_level": null,
+    "profile_code": "P06_ActIntVisGlo",
+    "instance_num": 5,
+    "trial": 3,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": 9,
+      "vis_ver": -11,
+      "seq_glo": 11
+    },
+    "cost_usd": 0.007729199999999999
+  },
+  {
+    "agent_uid": "gpt41mini_P07_ActIntVerSeq_I01_beg",
+    "knowledge_level": "beginner",
+    "profile_code": "P07_ActIntVerSeq",
+    "instance_num": 1,
+    "trial": 1,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": 9,
+      "vis_ver": 11,
+      "seq_glo": -5
+    },
+    "cost_usd": 0.0088028
+  },
+  {
+    "agent_uid": "gpt41mini_P07_ActIntVerSeq_I01_beg",
+    "knowledge_level": "beginner",
+    "profile_code": "P07_ActIntVerSeq",
+    "instance_num": 1,
+    "trial": 2,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": 9,
+      "vis_ver": 11,
+      "seq_glo": -7
+    },
+    "cost_usd": 0.0088028
+  },
+  {
+    "agent_uid": "gpt41mini_P07_ActIntVerSeq_I01_beg",
+    "knowledge_level": "beginner",
+    "profile_code": "P07_ActIntVerSeq",
+    "instance_num": 1,
+    "trial": 3,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": 7,
+      "vis_ver": 11,
+      "seq_glo": -5
+    },
+    "cost_usd": 0.0088028
+  },
+  {
+    "agent_uid": "gpt41mini_P07_ActIntVerSeq_I02_int",
+    "knowledge_level": "intermediate",
+    "profile_code": "P07_ActIntVerSeq",
+    "instance_num": 2,
+    "trial": 1,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -9,
+      "sen_int": 7,
+      "vis_ver": 11,
+      "seq_glo": -5
+    },
+    "cost_usd": 0.00875
+  },
+  {
+    "agent_uid": "gpt41mini_P07_ActIntVerSeq_I02_int",
+    "knowledge_level": "intermediate",
+    "profile_code": "P07_ActIntVerSeq",
+    "instance_num": 2,
+    "trial": 2,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": 9,
+      "vis_ver": 11,
+      "seq_glo": -7
+    },
+    "cost_usd": 0.00875
+  },
+  {
+    "agent_uid": "gpt41mini_P07_ActIntVerSeq_I02_int",
+    "knowledge_level": "intermediate",
+    "profile_code": "P07_ActIntVerSeq",
+    "instance_num": 2,
+    "trial": 3,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -9,
+      "sen_int": 7,
+      "vis_ver": 11,
+      "seq_glo": -5
+    },
+    "cost_usd": 0.00875
+  },
+  {
+    "agent_uid": "gpt41mini_P07_ActIntVerSeq_I03_adv",
+    "knowledge_level": "advanced",
+    "profile_code": "P07_ActIntVerSeq",
+    "instance_num": 3,
+    "trial": 1,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -7,
+      "sen_int": 7,
+      "vis_ver": 11,
+      "seq_glo": -3
+    },
+    "cost_usd": 0.0086796
+  },
+  {
+    "agent_uid": "gpt41mini_P07_ActIntVerSeq_I03_adv",
+    "knowledge_level": "advanced",
+    "profile_code": "P07_ActIntVerSeq",
+    "instance_num": 3,
+    "trial": 2,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -7,
+      "sen_int": 7,
+      "vis_ver": 11,
+      "seq_glo": -3
+    },
+    "cost_usd": 0.0086796
+  },
+  {
+    "agent_uid": "gpt41mini_P07_ActIntVerSeq_I03_adv",
+    "knowledge_level": "advanced",
+    "profile_code": "P07_ActIntVerSeq",
+    "instance_num": 3,
+    "trial": 3,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -7,
+      "sen_int": 7,
+      "vis_ver": 11,
+      "seq_glo": -3
+    },
+    "cost_usd": 0.0086796
+  },
+  {
+    "agent_uid": "gpt41mini_P08_ActIntVerGlo_I04_gen",
+    "knowledge_level": null,
+    "profile_code": "P08_ActIntVerGlo",
+    "instance_num": 4,
+    "trial": 1,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": -9,
+      "sen_int": 7,
+      "vis_ver": 11,
+      "seq_glo": 11
+    },
+    "cost_usd": 0.007570800000000002
+  },
+  {
+    "agent_uid": "gpt41mini_P08_ActIntVerGlo_I04_gen",
+    "knowledge_level": null,
+    "profile_code": "P08_ActIntVerGlo",
+    "instance_num": 4,
+    "trial": 2,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": -9,
+      "sen_int": 7,
+      "vis_ver": 11,
+      "seq_glo": 11
+    },
+    "cost_usd": 0.007570800000000002
+  },
+  {
+    "agent_uid": "gpt41mini_P08_ActIntVerGlo_I04_gen",
+    "knowledge_level": null,
+    "profile_code": "P08_ActIntVerGlo",
+    "instance_num": 4,
+    "trial": 3,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": -9,
+      "sen_int": 7,
+      "vis_ver": 11,
+      "seq_glo": 11
+    },
+    "cost_usd": 0.007570800000000002
+  },
+  {
+    "agent_uid": "gpt41mini_P07_ActIntVerSeq_I04_gen",
+    "knowledge_level": null,
+    "profile_code": "P07_ActIntVerSeq",
+    "instance_num": 4,
+    "trial": 1,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -9,
+      "sen_int": 7,
+      "vis_ver": 11,
+      "seq_glo": -5
+    },
+    "cost_usd": 0.007729199999999999
+  },
+  {
+    "agent_uid": "gpt41mini_P07_ActIntVerSeq_I04_gen",
+    "knowledge_level": null,
+    "profile_code": "P07_ActIntVerSeq",
+    "instance_num": 4,
+    "trial": 2,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -9,
+      "sen_int": 7,
+      "vis_ver": 11,
+      "seq_glo": -5
+    },
+    "cost_usd": 0.007729199999999999
+  },
+  {
+    "agent_uid": "gpt41mini_P07_ActIntVerSeq_I04_gen",
+    "knowledge_level": null,
+    "profile_code": "P07_ActIntVerSeq",
+    "instance_num": 4,
+    "trial": 3,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -9,
+      "sen_int": 7,
+      "vis_ver": 11,
+      "seq_glo": -5
+    },
+    "cost_usd": 0.007729199999999999
+  },
+  {
+    "agent_uid": "gpt41mini_P07_ActIntVerSeq_I05_gen",
+    "knowledge_level": null,
+    "profile_code": "P07_ActIntVerSeq",
+    "instance_num": 5,
+    "trial": 1,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -9,
+      "sen_int": 7,
+      "vis_ver": 11,
+      "seq_glo": -5
+    },
+    "cost_usd": 0.007729199999999999
+  },
+  {
+    "agent_uid": "gpt41mini_P07_ActIntVerSeq_I05_gen",
+    "knowledge_level": null,
+    "profile_code": "P07_ActIntVerSeq",
+    "instance_num": 5,
+    "trial": 2,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -7,
+      "sen_int": 7,
+      "vis_ver": 11,
+      "seq_glo": -7
+    },
+    "cost_usd": 0.007729199999999999
+  },
+  {
+    "agent_uid": "gpt41mini_P07_ActIntVerSeq_I05_gen",
+    "knowledge_level": null,
+    "profile_code": "P07_ActIntVerSeq",
+    "instance_num": 5,
+    "trial": 3,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -9,
+      "sen_int": 7,
+      "vis_ver": 11,
+      "seq_glo": -5
+    },
+    "cost_usd": 0.007729199999999999
+  },
+  {
+    "agent_uid": "gpt41mini_P08_ActIntVerGlo_I01_beg",
+    "knowledge_level": "beginner",
+    "profile_code": "P08_ActIntVerGlo",
+    "instance_num": 1,
+    "trial": 1,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": 7,
+      "vis_ver": 11,
+      "seq_glo": 11
+    },
+    "cost_usd": 0.008644399999999998
+  },
+  {
+    "agent_uid": "gpt41mini_P08_ActIntVerGlo_I01_beg",
+    "knowledge_level": "beginner",
+    "profile_code": "P08_ActIntVerGlo",
+    "instance_num": 1,
+    "trial": 2,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": 7,
+      "vis_ver": 11,
+      "seq_glo": 11
+    },
+    "cost_usd": 0.008644399999999998
+  },
+  {
+    "agent_uid": "gpt41mini_P08_ActIntVerGlo_I01_beg",
+    "knowledge_level": "beginner",
+    "profile_code": "P08_ActIntVerGlo",
+    "instance_num": 1,
+    "trial": 3,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": 7,
+      "vis_ver": 11,
+      "seq_glo": 11
+    },
+    "cost_usd": 0.008644399999999998
+  },
+  {
+    "agent_uid": "gpt41mini_P08_ActIntVerGlo_I02_int",
+    "knowledge_level": "intermediate",
+    "profile_code": "P08_ActIntVerGlo",
+    "instance_num": 2,
+    "trial": 1,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": 7,
+      "vis_ver": 11,
+      "seq_glo": 11
+    },
+    "cost_usd": 0.0085916
+  },
+  {
+    "agent_uid": "gpt41mini_P08_ActIntVerGlo_I02_int",
+    "knowledge_level": "intermediate",
+    "profile_code": "P08_ActIntVerGlo",
+    "instance_num": 2,
+    "trial": 2,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": 7,
+      "vis_ver": 11,
+      "seq_glo": 11
+    },
+    "cost_usd": 0.0085916
+  },
+  {
+    "agent_uid": "gpt41mini_P08_ActIntVerGlo_I02_int",
+    "knowledge_level": "intermediate",
+    "profile_code": "P08_ActIntVerGlo",
+    "instance_num": 2,
+    "trial": 3,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": 7,
+      "vis_ver": 11,
+      "seq_glo": 11
+    },
+    "cost_usd": 0.0085916
+  },
+  {
+    "agent_uid": "gpt41mini_P08_ActIntVerGlo_I03_adv",
+    "knowledge_level": "advanced",
+    "profile_code": "P08_ActIntVerGlo",
+    "instance_num": 3,
+    "trial": 1,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": 7,
+      "vis_ver": 11,
+      "seq_glo": 11
+    },
+    "cost_usd": 0.008521199999999998
+  },
+  {
+    "agent_uid": "gpt41mini_P08_ActIntVerGlo_I03_adv",
+    "knowledge_level": "advanced",
+    "profile_code": "P08_ActIntVerGlo",
+    "instance_num": 3,
+    "trial": 2,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": 9,
+      "vis_ver": 11,
+      "seq_glo": 11
+    },
+    "cost_usd": 0.008521199999999998
+  },
+  {
+    "agent_uid": "gpt41mini_P08_ActIntVerGlo_I03_adv",
+    "knowledge_level": "advanced",
+    "profile_code": "P08_ActIntVerGlo",
+    "instance_num": 3,
+    "trial": 3,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": 9,
+      "vis_ver": 11,
+      "seq_glo": 11
+    },
+    "cost_usd": 0.008521199999999998
+  },
+  {
+    "agent_uid": "gpt41mini_P08_ActIntVerGlo_I05_gen",
+    "knowledge_level": null,
+    "profile_code": "P08_ActIntVerGlo",
+    "instance_num": 5,
+    "trial": 1,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": -9,
+      "sen_int": 7,
+      "vis_ver": 11,
+      "seq_glo": 11
+    },
+    "cost_usd": 0.007570800000000002
+  },
+  {
+    "agent_uid": "gpt41mini_P08_ActIntVerGlo_I05_gen",
+    "knowledge_level": null,
+    "profile_code": "P08_ActIntVerGlo",
+    "instance_num": 5,
+    "trial": 2,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": -9,
+      "sen_int": 7,
+      "vis_ver": 11,
+      "seq_glo": 11
+    },
+    "cost_usd": 0.007570800000000002
+  },
+  {
+    "agent_uid": "gpt41mini_P08_ActIntVerGlo_I05_gen",
+    "knowledge_level": null,
+    "profile_code": "P08_ActIntVerGlo",
+    "instance_num": 5,
+    "trial": 3,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": -9,
+      "sen_int": 7,
+      "vis_ver": 11,
+      "seq_glo": 11
+    },
+    "cost_usd": 0.007570800000000002
+  },
+  {
+    "agent_uid": "gpt41mini_P09_RefSenVisSeq_I01_beg",
+    "knowledge_level": "beginner",
+    "profile_code": "P09_RefSenVisSeq",
+    "instance_num": 1,
+    "trial": 1,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": -11,
+      "vis_ver": -9,
+      "seq_glo": -9
+    },
+    "cost_usd": 0.0094716
+  },
+  {
+    "agent_uid": "gpt41mini_P09_RefSenVisSeq_I01_beg",
+    "knowledge_level": "beginner",
+    "profile_code": "P09_RefSenVisSeq",
+    "instance_num": 1,
+    "trial": 2,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": -11,
+      "vis_ver": -9,
+      "seq_glo": -9
+    },
+    "cost_usd": 0.0094716
+  },
+  {
+    "agent_uid": "gpt41mini_P09_RefSenVisSeq_I01_beg",
+    "knowledge_level": "beginner",
+    "profile_code": "P09_RefSenVisSeq",
+    "instance_num": 1,
+    "trial": 3,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": -11,
+      "vis_ver": -9,
+      "seq_glo": -9
+    },
+    "cost_usd": 0.0094716
+  },
+  {
+    "agent_uid": "gpt41mini_P09_RefSenVisSeq_I02_int",
+    "knowledge_level": "intermediate",
+    "profile_code": "P09_RefSenVisSeq",
+    "instance_num": 2,
+    "trial": 1,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": -11,
+      "vis_ver": -9,
+      "seq_glo": -9
+    },
+    "cost_usd": 0.009418800000000001
+  },
+  {
+    "agent_uid": "gpt41mini_P09_RefSenVisSeq_I02_int",
+    "knowledge_level": "intermediate",
+    "profile_code": "P09_RefSenVisSeq",
+    "instance_num": 2,
+    "trial": 2,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": -11,
+      "vis_ver": -9,
+      "seq_glo": -9
+    },
+    "cost_usd": 0.009418800000000001
+  },
+  {
+    "agent_uid": "gpt41mini_P09_RefSenVisSeq_I02_int",
+    "knowledge_level": "intermediate",
+    "profile_code": "P09_RefSenVisSeq",
+    "instance_num": 2,
+    "trial": 3,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": -11,
+      "vis_ver": -9,
+      "seq_glo": -9
+    },
+    "cost_usd": 0.009418800000000001
+  },
+  {
+    "agent_uid": "gpt41mini_P09_RefSenVisSeq_I03_adv",
+    "knowledge_level": "advanced",
+    "profile_code": "P09_RefSenVisSeq",
+    "instance_num": 3,
+    "trial": 1,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": -11,
+      "vis_ver": -9,
+      "seq_glo": -9
+    },
+    "cost_usd": 0.009348400000000002
+  },
+  {
+    "agent_uid": "gpt41mini_P09_RefSenVisSeq_I03_adv",
+    "knowledge_level": "advanced",
+    "profile_code": "P09_RefSenVisSeq",
+    "instance_num": 3,
+    "trial": 2,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": -11,
+      "vis_ver": -9,
+      "seq_glo": -9
+    },
+    "cost_usd": 0.009348400000000002
+  },
+  {
+    "agent_uid": "gpt41mini_P09_RefSenVisSeq_I03_adv",
+    "knowledge_level": "advanced",
+    "profile_code": "P09_RefSenVisSeq",
+    "instance_num": 3,
+    "trial": 3,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": -11,
+      "vis_ver": -9,
+      "seq_glo": -9
+    },
+    "cost_usd": 0.009348400000000002
+  },
+  {
+    "agent_uid": "gpt41mini_P09_RefSenVisSeq_I04_gen",
+    "knowledge_level": null,
+    "profile_code": "P09_RefSenVisSeq",
+    "instance_num": 4,
+    "trial": 1,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": -11,
+      "vis_ver": -9,
+      "seq_glo": -9
+    },
+    "cost_usd": 0.008398000000000003
+  },
+  {
+    "agent_uid": "gpt41mini_P09_RefSenVisSeq_I04_gen",
+    "knowledge_level": null,
+    "profile_code": "P09_RefSenVisSeq",
+    "instance_num": 4,
+    "trial": 2,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": -11,
+      "vis_ver": -9,
+      "seq_glo": -9
+    },
+    "cost_usd": 0.008398000000000003
+  },
+  {
+    "agent_uid": "gpt41mini_P09_RefSenVisSeq_I04_gen",
+    "knowledge_level": null,
+    "profile_code": "P09_RefSenVisSeq",
+    "instance_num": 4,
+    "trial": 3,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": -11,
+      "vis_ver": -9,
+      "seq_glo": -9
+    },
+    "cost_usd": 0.008398000000000003
+  },
+  {
+    "agent_uid": "gpt41mini_P09_RefSenVisSeq_I05_gen",
+    "knowledge_level": null,
+    "profile_code": "P09_RefSenVisSeq",
+    "instance_num": 5,
+    "trial": 1,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": -11,
+      "vis_ver": -9,
+      "seq_glo": -9
+    },
+    "cost_usd": 0.008398000000000003
+  },
+  {
+    "agent_uid": "gpt41mini_P09_RefSenVisSeq_I05_gen",
+    "knowledge_level": null,
+    "profile_code": "P09_RefSenVisSeq",
+    "instance_num": 5,
+    "trial": 2,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": -11,
+      "vis_ver": -9,
+      "seq_glo": -9
+    },
+    "cost_usd": 0.008398000000000003
+  },
+  {
+    "agent_uid": "gpt41mini_P09_RefSenVisSeq_I05_gen",
+    "knowledge_level": null,
+    "profile_code": "P09_RefSenVisSeq",
+    "instance_num": 5,
+    "trial": 3,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": -11,
+      "vis_ver": -9,
+      "seq_glo": -9
+    },
+    "cost_usd": 0.008398000000000003
+  },
+  {
+    "agent_uid": "gpt41mini_P10_RefSenVisGlo_I01_beg",
+    "knowledge_level": "beginner",
+    "profile_code": "P10_RefSenVisGlo",
+    "instance_num": 1,
+    "trial": 1,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": -11,
+      "vis_ver": -9,
+      "seq_glo": 3
+    },
+    "cost_usd": 0.0089436
+  },
+  {
+    "agent_uid": "gpt41mini_P10_RefSenVisGlo_I01_beg",
+    "knowledge_level": "beginner",
+    "profile_code": "P10_RefSenVisGlo",
+    "instance_num": 1,
+    "trial": 2,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": -11,
+      "vis_ver": -9,
+      "seq_glo": 5
+    },
+    "cost_usd": 0.0089436
+  },
+  {
+    "agent_uid": "gpt41mini_P10_RefSenVisGlo_I01_beg",
+    "knowledge_level": "beginner",
+    "profile_code": "P10_RefSenVisGlo",
+    "instance_num": 1,
+    "trial": 3,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": -11,
+      "vis_ver": -9,
+      "seq_glo": 5
+    },
+    "cost_usd": 0.0089436
+  },
+  {
+    "agent_uid": "gpt41mini_P10_RefSenVisGlo_I02_int",
+    "knowledge_level": "intermediate",
+    "profile_code": "P10_RefSenVisGlo",
+    "instance_num": 2,
+    "trial": 1,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": -11,
+      "vis_ver": -9,
+      "seq_glo": 5
+    },
+    "cost_usd": 0.008890800000000003
+  },
+  {
+    "agent_uid": "gpt41mini_P10_RefSenVisGlo_I02_int",
+    "knowledge_level": "intermediate",
+    "profile_code": "P10_RefSenVisGlo",
+    "instance_num": 2,
+    "trial": 2,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": -11,
+      "vis_ver": -9,
+      "seq_glo": 5
+    },
+    "cost_usd": 0.008890800000000003
+  },
+  {
+    "agent_uid": "gpt41mini_P10_RefSenVisGlo_I02_int",
+    "knowledge_level": "intermediate",
+    "profile_code": "P10_RefSenVisGlo",
+    "instance_num": 2,
+    "trial": 3,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": -11,
+      "vis_ver": -9,
+      "seq_glo": 5
+    },
+    "cost_usd": 0.008890800000000003
+  },
+  {
+    "agent_uid": "gpt41mini_P10_RefSenVisGlo_I04_gen",
+    "knowledge_level": null,
+    "profile_code": "P10_RefSenVisGlo",
+    "instance_num": 4,
+    "trial": 1,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": -11,
+      "vis_ver": -9,
+      "seq_glo": 3
+    },
+    "cost_usd": 0.007869999999999999
+  },
+  {
+    "agent_uid": "gpt41mini_P10_RefSenVisGlo_I04_gen",
+    "knowledge_level": null,
+    "profile_code": "P10_RefSenVisGlo",
+    "instance_num": 4,
+    "trial": 2,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": -11,
+      "vis_ver": -7,
+      "seq_glo": 5
+    },
+    "cost_usd": 0.007869999999999999
+  },
+  {
+    "agent_uid": "gpt41mini_P10_RefSenVisGlo_I04_gen",
+    "knowledge_level": null,
+    "profile_code": "P10_RefSenVisGlo",
+    "instance_num": 4,
+    "trial": 3,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": -11,
+      "vis_ver": -7,
+      "seq_glo": 7
+    },
+    "cost_usd": 0.007869999999999999
+  },
+  {
+    "agent_uid": "gpt41mini_P10_RefSenVisGlo_I05_gen",
+    "knowledge_level": null,
+    "profile_code": "P10_RefSenVisGlo",
+    "instance_num": 5,
+    "trial": 1,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": -11,
+      "vis_ver": -7,
+      "seq_glo": 5
+    },
+    "cost_usd": 0.007869999999999999
+  },
+  {
+    "agent_uid": "gpt41mini_P10_RefSenVisGlo_I05_gen",
+    "knowledge_level": null,
+    "profile_code": "P10_RefSenVisGlo",
+    "instance_num": 5,
+    "trial": 2,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": -11,
+      "vis_ver": -7,
+      "seq_glo": 7
+    },
+    "cost_usd": 0.007869999999999999
+  },
+  {
+    "agent_uid": "gpt41mini_P10_RefSenVisGlo_I05_gen",
+    "knowledge_level": null,
+    "profile_code": "P10_RefSenVisGlo",
+    "instance_num": 5,
+    "trial": 3,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": -11,
+      "vis_ver": -7,
+      "seq_glo": 5
+    },
+    "cost_usd": 0.007869999999999999
+  },
+  {
+    "agent_uid": "gpt41mini_P11_RefSenVerSeq_I01_beg",
+    "knowledge_level": "beginner",
+    "profile_code": "P11_RefSenVerSeq",
+    "instance_num": 1,
+    "trial": 1,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": -11,
+      "vis_ver": 11,
+      "seq_glo": -9
+    },
+    "cost_usd": 0.009119599999999999
+  },
+  {
+    "agent_uid": "gpt41mini_P11_RefSenVerSeq_I01_beg",
+    "knowledge_level": "beginner",
+    "profile_code": "P11_RefSenVerSeq",
+    "instance_num": 1,
+    "trial": 2,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": -11,
+      "vis_ver": 11,
+      "seq_glo": -9
+    },
+    "cost_usd": 0.009119599999999999
+  },
+  {
+    "agent_uid": "gpt41mini_P11_RefSenVerSeq_I01_beg",
+    "knowledge_level": "beginner",
+    "profile_code": "P11_RefSenVerSeq",
+    "instance_num": 1,
+    "trial": 3,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": -11,
+      "vis_ver": 11,
+      "seq_glo": -9
+    },
+    "cost_usd": 0.009119599999999999
+  },
+  {
+    "agent_uid": "gpt41mini_P11_RefSenVerSeq_I02_int",
+    "knowledge_level": "intermediate",
+    "profile_code": "P11_RefSenVerSeq",
+    "instance_num": 2,
+    "trial": 1,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": -11,
+      "vis_ver": 11,
+      "seq_glo": -9
+    },
+    "cost_usd": 0.0090668
+  },
+  {
+    "agent_uid": "gpt41mini_P11_RefSenVerSeq_I02_int",
+    "knowledge_level": "intermediate",
+    "profile_code": "P11_RefSenVerSeq",
+    "instance_num": 2,
+    "trial": 2,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": -11,
+      "vis_ver": 11,
+      "seq_glo": -9
+    },
+    "cost_usd": 0.0090668
+  },
+  {
+    "agent_uid": "gpt41mini_P11_RefSenVerSeq_I02_int",
+    "knowledge_level": "intermediate",
+    "profile_code": "P11_RefSenVerSeq",
+    "instance_num": 2,
+    "trial": 3,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": -11,
+      "vis_ver": 11,
+      "seq_glo": -9
+    },
+    "cost_usd": 0.0090668
+  },
+  {
+    "agent_uid": "gpt41mini_P11_RefSenVerSeq_I03_adv",
+    "knowledge_level": "advanced",
+    "profile_code": "P11_RefSenVerSeq",
+    "instance_num": 3,
+    "trial": 1,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": -11,
+      "vis_ver": 11,
+      "seq_glo": -9
+    },
+    "cost_usd": 0.0089964
+  },
+  {
+    "agent_uid": "gpt41mini_P11_RefSenVerSeq_I03_adv",
+    "knowledge_level": "advanced",
+    "profile_code": "P11_RefSenVerSeq",
+    "instance_num": 3,
+    "trial": 2,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": -11,
+      "vis_ver": 11,
+      "seq_glo": -9
+    },
+    "cost_usd": 0.0089964
+  },
+  {
+    "agent_uid": "gpt41mini_P11_RefSenVerSeq_I03_adv",
+    "knowledge_level": "advanced",
+    "profile_code": "P11_RefSenVerSeq",
+    "instance_num": 3,
+    "trial": 3,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": -11,
+      "vis_ver": 11,
+      "seq_glo": -9
+    },
+    "cost_usd": 0.0089964
+  },
+  {
+    "agent_uid": "gpt41mini_P11_RefSenVerSeq_I04_gen",
+    "knowledge_level": null,
+    "profile_code": "P11_RefSenVerSeq",
+    "instance_num": 4,
+    "trial": 1,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": -11,
+      "vis_ver": 11,
+      "seq_glo": -9
+    },
+    "cost_usd": 0.008045999999999998
+  },
+  {
+    "agent_uid": "gpt41mini_P11_RefSenVerSeq_I04_gen",
+    "knowledge_level": null,
+    "profile_code": "P11_RefSenVerSeq",
+    "instance_num": 4,
+    "trial": 2,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": -11,
+      "vis_ver": 11,
+      "seq_glo": -9
+    },
+    "cost_usd": 0.008045999999999998
+  },
+  {
+    "agent_uid": "gpt41mini_P11_RefSenVerSeq_I04_gen",
+    "knowledge_level": null,
+    "profile_code": "P11_RefSenVerSeq",
+    "instance_num": 4,
+    "trial": 3,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": -11,
+      "vis_ver": 11,
+      "seq_glo": -9
+    },
+    "cost_usd": 0.008045999999999998
+  },
+  {
+    "agent_uid": "gpt41mini_P11_RefSenVerSeq_I05_gen",
+    "knowledge_level": null,
+    "profile_code": "P11_RefSenVerSeq",
+    "instance_num": 5,
+    "trial": 1,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": -11,
+      "vis_ver": 11,
+      "seq_glo": -9
+    },
+    "cost_usd": 0.008045999999999998
+  },
+  {
+    "agent_uid": "gpt41mini_P11_RefSenVerSeq_I05_gen",
+    "knowledge_level": null,
+    "profile_code": "P11_RefSenVerSeq",
+    "instance_num": 5,
+    "trial": 2,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": -11,
+      "vis_ver": 11,
+      "seq_glo": -9
+    },
+    "cost_usd": 0.008045999999999998
+  },
+  {
+    "agent_uid": "gpt41mini_P11_RefSenVerSeq_I05_gen",
+    "knowledge_level": null,
+    "profile_code": "P11_RefSenVerSeq",
+    "instance_num": 5,
+    "trial": 3,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": -11,
+      "vis_ver": 11,
+      "seq_glo": -9
+    },
+    "cost_usd": 0.008045999999999998
+  },
+  {
+    "agent_uid": "gpt41mini_P12_RefSenVerGlo_I01_beg",
+    "knowledge_level": "beginner",
+    "profile_code": "P12_RefSenVerGlo",
+    "instance_num": 1,
+    "trial": 1,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": -9,
+      "vis_ver": 11,
+      "seq_glo": 11
+    },
+    "cost_usd": 0.00875
+  },
+  {
+    "agent_uid": "gpt41mini_P12_RefSenVerGlo_I01_beg",
+    "knowledge_level": "beginner",
+    "profile_code": "P12_RefSenVerGlo",
+    "instance_num": 1,
+    "trial": 2,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": -9,
+      "vis_ver": 11,
+      "seq_glo": 9
+    },
+    "cost_usd": 0.00875
+  },
+  {
+    "agent_uid": "gpt41mini_P12_RefSenVerGlo_I01_beg",
+    "knowledge_level": "beginner",
+    "profile_code": "P12_RefSenVerGlo",
+    "instance_num": 1,
+    "trial": 3,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": -9,
+      "vis_ver": 11,
+      "seq_glo": 11
+    },
+    "cost_usd": 0.00875
+  },
+  {
+    "agent_uid": "gpt41mini_P12_RefSenVerGlo_I02_int",
+    "knowledge_level": "intermediate",
+    "profile_code": "P12_RefSenVerGlo",
+    "instance_num": 2,
+    "trial": 1,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": -9,
+      "vis_ver": 11,
+      "seq_glo": 11
+    },
+    "cost_usd": 0.008697200000000002
+  },
+  {
+    "agent_uid": "gpt41mini_P12_RefSenVerGlo_I02_int",
+    "knowledge_level": "intermediate",
+    "profile_code": "P12_RefSenVerGlo",
+    "instance_num": 2,
+    "trial": 2,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": -9,
+      "vis_ver": 11,
+      "seq_glo": 9
+    },
+    "cost_usd": 0.008697200000000002
+  },
+  {
+    "agent_uid": "gpt41mini_P12_RefSenVerGlo_I02_int",
+    "knowledge_level": "intermediate",
+    "profile_code": "P12_RefSenVerGlo",
+    "instance_num": 2,
+    "trial": 3,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": -7,
+      "vis_ver": 11,
+      "seq_glo": 11
+    },
+    "cost_usd": 0.008697200000000002
+  },
+  {
+    "agent_uid": "gpt41mini_P12_RefSenVerGlo_I03_adv",
+    "knowledge_level": "advanced",
+    "profile_code": "P12_RefSenVerGlo",
+    "instance_num": 3,
+    "trial": 1,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": -9,
+      "vis_ver": 11,
+      "seq_glo": 11
+    },
+    "cost_usd": 0.008626800000000002
+  },
+  {
+    "agent_uid": "gpt41mini_P12_RefSenVerGlo_I03_adv",
+    "knowledge_level": "advanced",
+    "profile_code": "P12_RefSenVerGlo",
+    "instance_num": 3,
+    "trial": 2,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": -9,
+      "vis_ver": 11,
+      "seq_glo": 11
+    },
+    "cost_usd": 0.008626800000000002
+  },
+  {
+    "agent_uid": "gpt41mini_P12_RefSenVerGlo_I03_adv",
+    "knowledge_level": "advanced",
+    "profile_code": "P12_RefSenVerGlo",
+    "instance_num": 3,
+    "trial": 3,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": -9,
+      "vis_ver": 11,
+      "seq_glo": 11
+    },
+    "cost_usd": 0.008626800000000002
+  },
+  {
+    "agent_uid": "gpt41mini_P12_RefSenVerGlo_I04_gen",
+    "knowledge_level": null,
+    "profile_code": "P12_RefSenVerGlo",
+    "instance_num": 4,
+    "trial": 1,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": -7,
+      "vis_ver": 11,
+      "seq_glo": 11
+    },
+    "cost_usd": 0.007676400000000002
+  },
+  {
+    "agent_uid": "gpt41mini_P12_RefSenVerGlo_I04_gen",
+    "knowledge_level": null,
+    "profile_code": "P12_RefSenVerGlo",
+    "instance_num": 4,
+    "trial": 2,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": -7,
+      "vis_ver": 11,
+      "seq_glo": 9
+    },
+    "cost_usd": 0.007676400000000002
+  },
+  {
+    "agent_uid": "gpt41mini_P12_RefSenVerGlo_I04_gen",
+    "knowledge_level": null,
+    "profile_code": "P12_RefSenVerGlo",
+    "instance_num": 4,
+    "trial": 3,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": -9,
+      "vis_ver": 11,
+      "seq_glo": 9
+    },
+    "cost_usd": 0.007676400000000002
+  },
+  {
+    "agent_uid": "gpt41mini_P12_RefSenVerGlo_I05_gen",
+    "knowledge_level": null,
+    "profile_code": "P12_RefSenVerGlo",
+    "instance_num": 5,
+    "trial": 1,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": -9,
+      "vis_ver": 11,
+      "seq_glo": 11
+    },
+    "cost_usd": 0.007676400000000002
+  },
+  {
+    "agent_uid": "gpt41mini_P12_RefSenVerGlo_I05_gen",
+    "knowledge_level": null,
+    "profile_code": "P12_RefSenVerGlo",
+    "instance_num": 5,
+    "trial": 2,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": -7,
+      "vis_ver": 11,
+      "seq_glo": 11
+    },
+    "cost_usd": 0.007676400000000002
+  },
+  {
+    "agent_uid": "gpt41mini_P12_RefSenVerGlo_I05_gen",
+    "knowledge_level": null,
+    "profile_code": "P12_RefSenVerGlo",
+    "instance_num": 5,
+    "trial": 3,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": -9,
+      "vis_ver": 11,
+      "seq_glo": 9
+    },
+    "cost_usd": 0.007676400000000002
+  },
+  {
+    "agent_uid": "gpt41mini_P15_RefIntVerSeq_I03_adv",
+    "knowledge_level": "advanced",
+    "profile_code": "P15_RefIntVerSeq",
+    "instance_num": 3,
+    "trial": 1,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": 3,
+      "vis_ver": 11,
+      "seq_glo": 1
+    },
+    "cost_usd": 0.009014
+  },
+  {
+    "agent_uid": "gpt41mini_P15_RefIntVerSeq_I03_adv",
+    "knowledge_level": "advanced",
+    "profile_code": "P15_RefIntVerSeq",
+    "instance_num": 3,
+    "trial": 2,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": 3,
+      "vis_ver": 11,
+      "seq_glo": 1
+    },
+    "cost_usd": 0.009014
+  },
+  {
+    "agent_uid": "gpt41mini_P15_RefIntVerSeq_I03_adv",
+    "knowledge_level": "advanced",
+    "profile_code": "P15_RefIntVerSeq",
+    "instance_num": 3,
+    "trial": 3,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": 3,
+      "vis_ver": 11,
+      "seq_glo": 1
+    },
+    "cost_usd": 0.009014
+  },
+  {
+    "agent_uid": "gpt41mini_P13_RefIntVisSeq_I01_beg",
+    "knowledge_level": "beginner",
+    "profile_code": "P13_RefIntVisSeq",
+    "instance_num": 1,
+    "trial": 1,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": 5,
+      "vis_ver": -9,
+      "seq_glo": -1
+    },
+    "cost_usd": 0.009295600000000003
+  },
+  {
+    "agent_uid": "gpt41mini_P13_RefIntVisSeq_I01_beg",
+    "knowledge_level": "beginner",
+    "profile_code": "P13_RefIntVisSeq",
+    "instance_num": 1,
+    "trial": 2,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": 5,
+      "vis_ver": -9,
+      "seq_glo": 1
+    },
+    "cost_usd": 0.009295600000000003
+  },
+  {
+    "agent_uid": "gpt41mini_P13_RefIntVisSeq_I01_beg",
+    "knowledge_level": "beginner",
+    "profile_code": "P13_RefIntVisSeq",
+    "instance_num": 1,
+    "trial": 3,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": 5,
+      "vis_ver": -9,
+      "seq_glo": -1
+    },
+    "cost_usd": 0.009295600000000003
+  },
+  {
+    "agent_uid": "gpt41mini_P13_RefIntVisSeq_I02_int",
+    "knowledge_level": "intermediate",
+    "profile_code": "P13_RefIntVisSeq",
+    "instance_num": 2,
+    "trial": 1,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": 5,
+      "vis_ver": -9,
+      "seq_glo": -1
+    },
+    "cost_usd": 0.009242799999999997
+  },
+  {
+    "agent_uid": "gpt41mini_P13_RefIntVisSeq_I02_int",
+    "knowledge_level": "intermediate",
+    "profile_code": "P13_RefIntVisSeq",
+    "instance_num": 2,
+    "trial": 2,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": 5,
+      "vis_ver": -9,
+      "seq_glo": -1
+    },
+    "cost_usd": 0.009242799999999997
+  },
+  {
+    "agent_uid": "gpt41mini_P13_RefIntVisSeq_I02_int",
+    "knowledge_level": "intermediate",
+    "profile_code": "P13_RefIntVisSeq",
+    "instance_num": 2,
+    "trial": 3,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": 5,
+      "vis_ver": -9,
+      "seq_glo": -1
+    },
+    "cost_usd": 0.009242799999999997
+  },
+  {
+    "agent_uid": "gpt41mini_P13_RefIntVisSeq_I03_adv",
+    "knowledge_level": "advanced",
+    "profile_code": "P13_RefIntVisSeq",
+    "instance_num": 3,
+    "trial": 1,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": 5,
+      "vis_ver": -9,
+      "seq_glo": -1
+    },
+    "cost_usd": 0.009172400000000002
+  },
+  {
+    "agent_uid": "gpt41mini_P13_RefIntVisSeq_I03_adv",
+    "knowledge_level": "advanced",
+    "profile_code": "P13_RefIntVisSeq",
+    "instance_num": 3,
+    "trial": 2,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": 5,
+      "vis_ver": -9,
+      "seq_glo": -1
+    },
+    "cost_usd": 0.009172400000000002
+  },
+  {
+    "agent_uid": "gpt41mini_P13_RefIntVisSeq_I03_adv",
+    "knowledge_level": "advanced",
+    "profile_code": "P13_RefIntVisSeq",
+    "instance_num": 3,
+    "trial": 3,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": 5,
+      "vis_ver": -9,
+      "seq_glo": -1
+    },
+    "cost_usd": 0.009172400000000002
+  },
+  {
+    "agent_uid": "gpt41mini_P13_RefIntVisSeq_I04_gen",
+    "knowledge_level": null,
+    "profile_code": "P13_RefIntVisSeq",
+    "instance_num": 4,
+    "trial": 1,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": 3,
+      "vis_ver": -9,
+      "seq_glo": -1
+    },
+    "cost_usd": 0.008222000000000002
+  },
+  {
+    "agent_uid": "gpt41mini_P13_RefIntVisSeq_I04_gen",
+    "knowledge_level": null,
+    "profile_code": "P13_RefIntVisSeq",
+    "instance_num": 4,
+    "trial": 2,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": 3,
+      "vis_ver": -9,
+      "seq_glo": -1
+    },
+    "cost_usd": 0.008222000000000002
+  },
+  {
+    "agent_uid": "gpt41mini_P13_RefIntVisSeq_I04_gen",
+    "knowledge_level": null,
+    "profile_code": "P13_RefIntVisSeq",
+    "instance_num": 4,
+    "trial": 3,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": 5,
+      "vis_ver": -9,
+      "seq_glo": -1
+    },
+    "cost_usd": 0.008222000000000002
+  },
+  {
+    "agent_uid": "gpt41mini_P13_RefIntVisSeq_I05_gen",
+    "knowledge_level": null,
+    "profile_code": "P13_RefIntVisSeq",
+    "instance_num": 5,
+    "trial": 1,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": 5,
+      "vis_ver": -9,
+      "seq_glo": -1
+    },
+    "cost_usd": 0.008222000000000002
+  },
+  {
+    "agent_uid": "gpt41mini_P13_RefIntVisSeq_I05_gen",
+    "knowledge_level": null,
+    "profile_code": "P13_RefIntVisSeq",
+    "instance_num": 5,
+    "trial": 2,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": 3,
+      "vis_ver": -9,
+      "seq_glo": -1
+    },
+    "cost_usd": 0.008222000000000002
+  },
+  {
+    "agent_uid": "gpt41mini_P13_RefIntVisSeq_I05_gen",
+    "knowledge_level": null,
+    "profile_code": "P13_RefIntVisSeq",
+    "instance_num": 5,
+    "trial": 3,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": 3,
+      "vis_ver": -9,
+      "seq_glo": -3
+    },
+    "cost_usd": 0.008222000000000002
+  },
+  {
+    "agent_uid": "gpt41mini_P14_RefIntVisGlo_I01_beg",
+    "knowledge_level": "beginner",
+    "profile_code": "P14_RefIntVisGlo",
+    "instance_num": 1,
+    "trial": 1,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": 7,
+      "vis_ver": -9,
+      "seq_glo": 11
+    },
+    "cost_usd": 0.008961199999999999
+  },
+  {
+    "agent_uid": "gpt41mini_P14_RefIntVisGlo_I01_beg",
+    "knowledge_level": "beginner",
+    "profile_code": "P14_RefIntVisGlo",
+    "instance_num": 1,
+    "trial": 2,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": 9,
+      "vis_ver": -9,
+      "seq_glo": 11
+    },
+    "cost_usd": 0.008961199999999999
+  },
+  {
+    "agent_uid": "gpt41mini_P14_RefIntVisGlo_I01_beg",
+    "knowledge_level": "beginner",
+    "profile_code": "P14_RefIntVisGlo",
+    "instance_num": 1,
+    "trial": 3,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": 7,
+      "vis_ver": -9,
+      "seq_glo": 11
+    },
+    "cost_usd": 0.008961199999999999
+  },
+  {
+    "agent_uid": "gpt41mini_P14_RefIntVisGlo_I02_int",
+    "knowledge_level": "intermediate",
+    "profile_code": "P14_RefIntVisGlo",
+    "instance_num": 2,
+    "trial": 1,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": 9,
+      "vis_ver": -9,
+      "seq_glo": 11
+    },
+    "cost_usd": 0.008908399999999997
+  },
+  {
+    "agent_uid": "gpt41mini_P14_RefIntVisGlo_I02_int",
+    "knowledge_level": "intermediate",
+    "profile_code": "P14_RefIntVisGlo",
+    "instance_num": 2,
+    "trial": 2,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": 9,
+      "vis_ver": -9,
+      "seq_glo": 11
+    },
+    "cost_usd": 0.008908399999999997
+  },
+  {
+    "agent_uid": "gpt41mini_P14_RefIntVisGlo_I02_int",
+    "knowledge_level": "intermediate",
+    "profile_code": "P14_RefIntVisGlo",
+    "instance_num": 2,
+    "trial": 3,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": 9,
+      "vis_ver": -9,
+      "seq_glo": 11
+    },
+    "cost_usd": 0.008908399999999997
+  },
+  {
+    "agent_uid": "gpt41mini_P14_RefIntVisGlo_I03_adv",
+    "knowledge_level": "advanced",
+    "profile_code": "P14_RefIntVisGlo",
+    "instance_num": 3,
+    "trial": 1,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": 7,
+      "vis_ver": -9,
+      "seq_glo": 11
+    },
+    "cost_usd": 0.008838
+  },
+  {
+    "agent_uid": "gpt41mini_P14_RefIntVisGlo_I03_adv",
+    "knowledge_level": "advanced",
+    "profile_code": "P14_RefIntVisGlo",
+    "instance_num": 3,
+    "trial": 2,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": 7,
+      "vis_ver": -9,
+      "seq_glo": 11
+    },
+    "cost_usd": 0.008838
+  },
+  {
+    "agent_uid": "gpt41mini_P14_RefIntVisGlo_I03_adv",
+    "knowledge_level": "advanced",
+    "profile_code": "P14_RefIntVisGlo",
+    "instance_num": 3,
+    "trial": 3,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": 7,
+      "vis_ver": -9,
+      "seq_glo": 11
+    },
+    "cost_usd": 0.008838
+  },
+  {
+    "agent_uid": "gpt41mini_P14_RefIntVisGlo_I04_gen",
+    "knowledge_level": null,
+    "profile_code": "P14_RefIntVisGlo",
+    "instance_num": 4,
+    "trial": 1,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": 9,
+      "vis_ver": -9,
+      "seq_glo": 11
+    },
+    "cost_usd": 0.007887600000000002
+  },
+  {
+    "agent_uid": "gpt41mini_P14_RefIntVisGlo_I04_gen",
+    "knowledge_level": null,
+    "profile_code": "P14_RefIntVisGlo",
+    "instance_num": 4,
+    "trial": 2,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": 9,
+      "vis_ver": -9,
+      "seq_glo": 11
+    },
+    "cost_usd": 0.007887600000000002
+  },
+  {
+    "agent_uid": "gpt41mini_P14_RefIntVisGlo_I04_gen",
+    "knowledge_level": null,
+    "profile_code": "P14_RefIntVisGlo",
+    "instance_num": 4,
+    "trial": 3,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": 9,
+      "vis_ver": -9,
+      "seq_glo": 11
+    },
+    "cost_usd": 0.007887600000000002
+  },
+  {
+    "agent_uid": "gpt41mini_P14_RefIntVisGlo_I05_gen",
+    "knowledge_level": null,
+    "profile_code": "P14_RefIntVisGlo",
+    "instance_num": 5,
+    "trial": 1,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": 9,
+      "vis_ver": -9,
+      "seq_glo": 11
+    },
+    "cost_usd": 0.007887600000000002
+  },
+  {
+    "agent_uid": "gpt41mini_P14_RefIntVisGlo_I05_gen",
+    "knowledge_level": null,
+    "profile_code": "P14_RefIntVisGlo",
+    "instance_num": 5,
+    "trial": 2,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": 9,
+      "vis_ver": -9,
+      "seq_glo": 11
+    },
+    "cost_usd": 0.007887600000000002
+  },
+  {
+    "agent_uid": "gpt41mini_P14_RefIntVisGlo_I05_gen",
+    "knowledge_level": null,
+    "profile_code": "P14_RefIntVisGlo",
+    "instance_num": 5,
+    "trial": 3,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": 9,
+      "vis_ver": -9,
+      "seq_glo": 11
+    },
+    "cost_usd": 0.007887600000000002
+  },
+  {
+    "agent_uid": "gpt41mini_P15_RefIntVerSeq_I01_beg",
+    "knowledge_level": "beginner",
+    "profile_code": "P15_RefIntVerSeq",
+    "instance_num": 1,
+    "trial": 1,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": 3,
+      "vis_ver": 11,
+      "seq_glo": -3
+    },
+    "cost_usd": 0.009137200000000002
+  },
+  {
+    "agent_uid": "gpt41mini_P15_RefIntVerSeq_I01_beg",
+    "knowledge_level": "beginner",
+    "profile_code": "P15_RefIntVerSeq",
+    "instance_num": 1,
+    "trial": 2,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": 3,
+      "vis_ver": 11,
+      "seq_glo": -5
+    },
+    "cost_usd": 0.009137200000000002
+  },
+  {
+    "agent_uid": "gpt41mini_P15_RefIntVerSeq_I01_beg",
+    "knowledge_level": "beginner",
+    "profile_code": "P15_RefIntVerSeq",
+    "instance_num": 1,
+    "trial": 3,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": 3,
+      "vis_ver": 11,
+      "seq_glo": -3
+    },
+    "cost_usd": 0.009137200000000002
+  },
+  {
+    "agent_uid": "gpt41mini_P15_RefIntVerSeq_I02_int",
+    "knowledge_level": "intermediate",
+    "profile_code": "P15_RefIntVerSeq",
+    "instance_num": 2,
+    "trial": 1,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": 3,
+      "vis_ver": 11,
+      "seq_glo": -5
+    },
+    "cost_usd": 0.009084400000000001
+  },
+  {
+    "agent_uid": "gpt41mini_P15_RefIntVerSeq_I02_int",
+    "knowledge_level": "intermediate",
+    "profile_code": "P15_RefIntVerSeq",
+    "instance_num": 2,
+    "trial": 2,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": 3,
+      "vis_ver": 11,
+      "seq_glo": -5
+    },
+    "cost_usd": 0.009084400000000001
+  },
+  {
+    "agent_uid": "gpt41mini_P15_RefIntVerSeq_I02_int",
+    "knowledge_level": "intermediate",
+    "profile_code": "P15_RefIntVerSeq",
+    "instance_num": 2,
+    "trial": 3,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": 3,
+      "vis_ver": 11,
+      "seq_glo": -1
+    },
+    "cost_usd": 0.009084400000000001
+  },
+  {
+    "agent_uid": "gpt41mini_P15_RefIntVerSeq_I04_gen",
+    "knowledge_level": null,
+    "profile_code": "P15_RefIntVerSeq",
+    "instance_num": 4,
+    "trial": 1,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": 3,
+      "vis_ver": 11,
+      "seq_glo": -3
+    },
+    "cost_usd": 0.008063600000000002
+  },
+  {
+    "agent_uid": "gpt41mini_P15_RefIntVerSeq_I04_gen",
+    "knowledge_level": null,
+    "profile_code": "P15_RefIntVerSeq",
+    "instance_num": 4,
+    "trial": 2,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": 3,
+      "vis_ver": 11,
+      "seq_glo": -3
+    },
+    "cost_usd": 0.008063600000000002
+  },
+  {
+    "agent_uid": "gpt41mini_P15_RefIntVerSeq_I04_gen",
+    "knowledge_level": null,
+    "profile_code": "P15_RefIntVerSeq",
+    "instance_num": 4,
+    "trial": 3,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": 3,
+      "vis_ver": 11,
+      "seq_glo": -3
+    },
+    "cost_usd": 0.008063600000000002
+  },
+  {
+    "agent_uid": "gpt41mini_P15_RefIntVerSeq_I05_gen",
+    "knowledge_level": null,
+    "profile_code": "P15_RefIntVerSeq",
+    "instance_num": 5,
+    "trial": 1,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": 3,
+      "vis_ver": 11,
+      "seq_glo": -3
+    },
+    "cost_usd": 0.008063600000000002
+  },
+  {
+    "agent_uid": "gpt41mini_P15_RefIntVerSeq_I05_gen",
+    "knowledge_level": null,
+    "profile_code": "P15_RefIntVerSeq",
+    "instance_num": 5,
+    "trial": 2,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": 3,
+      "vis_ver": 11,
+      "seq_glo": -3
+    },
+    "cost_usd": 0.008063600000000002
+  },
+  {
+    "agent_uid": "gpt41mini_P15_RefIntVerSeq_I05_gen",
+    "knowledge_level": null,
+    "profile_code": "P15_RefIntVerSeq",
+    "instance_num": 5,
+    "trial": 3,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": 3,
+      "vis_ver": 11,
+      "seq_glo": -3
+    },
+    "cost_usd": 0.008063600000000002
+  },
+  {
+    "agent_uid": "gpt41mini_P16_RefIntVerGlo_I01_beg",
+    "knowledge_level": "beginner",
+    "profile_code": "P16_RefIntVerGlo",
+    "instance_num": 1,
+    "trial": 1,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": 5,
+      "vis_ver": 11,
+      "seq_glo": 11
+    },
+    "cost_usd": 0.009436400000000001
+  },
+  {
+    "agent_uid": "gpt41mini_P16_RefIntVerGlo_I01_beg",
+    "knowledge_level": "beginner",
+    "profile_code": "P16_RefIntVerGlo",
+    "instance_num": 1,
+    "trial": 2,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": 5,
+      "vis_ver": 11,
+      "seq_glo": 11
+    },
+    "cost_usd": 0.009436400000000001
+  },
+  {
+    "agent_uid": "gpt41mini_P16_RefIntVerGlo_I01_beg",
+    "knowledge_level": "beginner",
+    "profile_code": "P16_RefIntVerGlo",
+    "instance_num": 1,
+    "trial": 3,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": 5,
+      "vis_ver": 11,
+      "seq_glo": 11
+    },
+    "cost_usd": 0.009436400000000001
+  },
+  {
+    "agent_uid": "gpt41mini_P16_RefIntVerGlo_I02_int",
+    "knowledge_level": "intermediate",
+    "profile_code": "P16_RefIntVerGlo",
+    "instance_num": 2,
+    "trial": 1,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": 5,
+      "vis_ver": 11,
+      "seq_glo": 11
+    },
+    "cost_usd": 0.009383599999999997
+  },
+  {
+    "agent_uid": "gpt41mini_P16_RefIntVerGlo_I02_int",
+    "knowledge_level": "intermediate",
+    "profile_code": "P16_RefIntVerGlo",
+    "instance_num": 2,
+    "trial": 2,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": 5,
+      "vis_ver": 11,
+      "seq_glo": 11
+    },
+    "cost_usd": 0.009383599999999997
+  },
+  {
+    "agent_uid": "gpt41mini_P16_RefIntVerGlo_I02_int",
+    "knowledge_level": "intermediate",
+    "profile_code": "P16_RefIntVerGlo",
+    "instance_num": 2,
+    "trial": 3,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": 5,
+      "vis_ver": 11,
+      "seq_glo": 11
+    },
+    "cost_usd": 0.009383599999999997
+  },
+  {
+    "agent_uid": "gpt41mini_P16_RefIntVerGlo_I03_adv",
+    "knowledge_level": "advanced",
+    "profile_code": "P16_RefIntVerGlo",
+    "instance_num": 3,
+    "trial": 1,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": 7,
+      "vis_ver": 11,
+      "seq_glo": 11
+    },
+    "cost_usd": 0.009313199999999999
+  },
+  {
+    "agent_uid": "gpt41mini_P16_RefIntVerGlo_I03_adv",
+    "knowledge_level": "advanced",
+    "profile_code": "P16_RefIntVerGlo",
+    "instance_num": 3,
+    "trial": 2,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": 5,
+      "vis_ver": 11,
+      "seq_glo": 11
+    },
+    "cost_usd": 0.009313199999999999
+  },
+  {
+    "agent_uid": "gpt41mini_P16_RefIntVerGlo_I03_adv",
+    "knowledge_level": "advanced",
+    "profile_code": "P16_RefIntVerGlo",
+    "instance_num": 3,
+    "trial": 3,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": 7,
+      "vis_ver": 11,
+      "seq_glo": 11
+    },
+    "cost_usd": 0.009313199999999999
+  },
+  {
+    "agent_uid": "gpt41mini_P16_RefIntVerGlo_I04_gen",
+    "knowledge_level": null,
+    "profile_code": "P16_RefIntVerGlo",
+    "instance_num": 4,
+    "trial": 1,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": 5,
+      "vis_ver": 11,
+      "seq_glo": 11
+    },
+    "cost_usd": 0.008362800000000002
+  },
+  {
+    "agent_uid": "gpt41mini_P16_RefIntVerGlo_I04_gen",
+    "knowledge_level": null,
+    "profile_code": "P16_RefIntVerGlo",
+    "instance_num": 4,
+    "trial": 2,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": 5,
+      "vis_ver": 11,
+      "seq_glo": 11
+    },
+    "cost_usd": 0.008362800000000002
+  },
+  {
+    "agent_uid": "gpt41mini_P16_RefIntVerGlo_I04_gen",
+    "knowledge_level": null,
+    "profile_code": "P16_RefIntVerGlo",
+    "instance_num": 4,
+    "trial": 3,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": 5,
+      "vis_ver": 11,
+      "seq_glo": 11
+    },
+    "cost_usd": 0.008362800000000002
+  },
+  {
+    "agent_uid": "gpt41mini_P16_RefIntVerGlo_I05_gen",
+    "knowledge_level": null,
+    "profile_code": "P16_RefIntVerGlo",
+    "instance_num": 5,
+    "trial": 1,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": 5,
+      "vis_ver": 11,
+      "seq_glo": 11
+    },
+    "cost_usd": 0.008362800000000002
+  },
+  {
+    "agent_uid": "gpt41mini_P16_RefIntVerGlo_I05_gen",
+    "knowledge_level": null,
+    "profile_code": "P16_RefIntVerGlo",
+    "instance_num": 5,
+    "trial": 2,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": 5,
+      "vis_ver": 11,
+      "seq_glo": 11
+    },
+    "cost_usd": 0.008362800000000002
+  },
+  {
+    "agent_uid": "gpt41mini_P16_RefIntVerGlo_I05_gen",
+    "knowledge_level": null,
+    "profile_code": "P16_RefIntVerGlo",
+    "instance_num": 5,
+    "trial": 3,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "raw_scores": {
+      "act_ref": 11,
+      "sen_int": 5,
+      "vis_ver": 11,
+      "seq_glo": 11
+    },
+    "cost_usd": 0.008362800000000002
+  }
+]

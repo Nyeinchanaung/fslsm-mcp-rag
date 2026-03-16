@@ -1,0 +1,55 @@
+experiment: exp1_agent_fidelity
+description: "Fidelity of Virtual Student Agent Encoding (RQ2) — LiteLLM + knowledge_level"
+
+agents:
+  num_profiles: 16
+  instances_per_profile: 5
+  total_agents: 80
+  knowledge_level_map:
+    1: beginner
+    2: intermediate
+    3: advanced
+    4: null
+    5: null
+
+# LiteLLM resolves provider from model name prefix.
+# MODEL_REGISTRY in llm_client.py maps these short names
+# to LiteLLM's provider-prefixed format.
+models:
+  - name: gpt-4.1-mini
+    temperature: 0.3
+  - name: claude-sonnet-4-20250514
+    temperature: 0.3
+  - name: llama3.1:8b
+    temperature: 0.3
+
+ils_questionnaire:
+  num_questions: 44
+  num_trials: 3
+
+evaluation:
+  metrics:
+    - profile_recovery_accuracy
+    - dimension_alignment_score
+  analysis_slices:
+    - by_model
+    - by_knowledge_level
+    - by_dimension
+    - by_profile
+    - by_cost
+  visualization:
+    - radar_chart_per_agent
+    - heatmap_profiles_x_dimensions
+    - model_comparison_bar_chart
+    - knowledge_level_pra_comparison
+    - cost_per_model_bar_chart
+    - fslsm_vs_baseline_bar_chart
+    - baseline_bias_radar
+
+baseline:
+  num_agents: 5
+  profile_code: "P00_Baseline"
+  description: >
+    Non-personalized agents with no FSLSM profile.
+    Same knowledge_level distribution as FSLSM agents.
+    Used to establish lower-bound PRA for Table 3.2.

@@ -14,6 +14,22 @@ NUM_PROFILES = 16        # 2^4 binary FSLSM combinations
 NUM_INSTANCES = 5        # agent instances per profile
 NUM_AGENTS = 80          # total = 16 × 5
 
+# Knowledge levels per agent instance
+KNOWLEDGE_LEVELS = ["beginner", "intermediate", "advanced"]
+KNOWLEDGE_LEVEL_MAP: dict[int, str | None] = {
+    1: "beginner",
+    2: "intermediate",
+    3: "advanced",
+    4: None,   # general
+    5: None,   # general
+}
+NUM_LEVELED_AGENTS = 48  # 16 profiles × 3 leveled instances
+NUM_GENERAL_AGENTS = 32  # 16 profiles × 2 general instances
+
+# Non-Personalized Baseline
+BASELINE_PROFILE_CODE = "P00_Baseline"
+NUM_BASELINE_INSTANCES = 5
+
 # ILS questionnaire
 ILS_NUM_QUESTIONS = 44
 ILS_SCORE_MIN = -11      # max preference for negative pole
@@ -45,7 +61,7 @@ TOOL_IDS = [
 
 # LLM models used across experiments
 MODELS = {
-    "gpt-4o-mini": "openai",
-    "claude-sonnet-4-5-20251001": "anthropic",
+    "gpt-4.1-mini": "openai",
+    "claude-sonnet-4-20250514": "anthropic",
     "llama3.1:8b": "ollama",
 }

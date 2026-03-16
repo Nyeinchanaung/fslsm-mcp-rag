@@ -104,6 +104,7 @@ class Agent(Base):
     profile_id: Mapped[Optional[int]] = mapped_column(ForeignKey("fslsm_profiles.id"))
     instance_num: Mapped[int] = mapped_column(SmallInteger, nullable=False)
     llm_model: Mapped[Optional[str]] = mapped_column(String(100))
+    knowledge_level: Mapped[Optional[str]] = mapped_column(String(20))
     system_prompt: Mapped[Optional[str]] = mapped_column(Text)
     created_at: Mapped[datetime.datetime] = mapped_column(
         DateTime(timezone=True), server_default=func.now()

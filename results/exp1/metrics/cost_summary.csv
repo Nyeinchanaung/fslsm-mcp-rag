@@ -1,0 +1,7 @@
+model,condition,total_usd,mean_per_agent_trial_usd,num_records
+gpt-4.1-mini,FSLSM,2.0890704,0.00870446,240
+gpt-4.1-mini,Baseline,0.0644052,0.004293679999999999,15
+claude-sonnet-4-20250514,FSLSM,17.881128,0.07450470000000002,240
+claude-sonnet-4-20250514,Baseline,0.553419,0.03689459999999999,15
+llama3.1:8b,FSLSM,0.0,0.0,240
+llama3.1:8b,Baseline,0.0,0.0,15

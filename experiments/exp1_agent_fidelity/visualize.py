@@ -23,7 +23,14 @@ from src.evaluation.visualizer import (
     model_comparison_bar,
 )
 
-MODELS = ["gpt-4.1-mini", "claude-sonnet-4-20250514", "llama3.1:8b"]
+MODELS = [
+    "gpt-4.1-mini",
+    "claude-sonnet-4-20250514",
+    "llama3.1:8b",
+    "qwen2.5:7b",
+    "gemma2:9b",
+    "gemma3:12b",
+]
 
 
 def main():

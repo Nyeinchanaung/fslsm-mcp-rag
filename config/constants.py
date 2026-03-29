@@ -64,4 +64,7 @@ MODELS = {
     "gpt-4.1-mini": "openai",
     "claude-sonnet-4-20250514": "anthropic",
     "llama3.1:8b": "ollama",
+    "qwen2.5:7b": "ollama",
+    "gemma2:9b": "ollama",
+    "gemma3:12b": "ollama",
 }

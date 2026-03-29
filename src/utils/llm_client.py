@@ -45,6 +45,9 @@ MODEL_REGISTRY: dict[str, str] = {
     # Local via Ollama
     "llama3.1:8b":                  "ollama/llama3.1:8b",
     "llama3.1:70b":                 "ollama/llama3.1:70b",
+    "qwen2.5:7b":                   "ollama/qwen2.5:7b",
+    "gemma2:9b":                    "ollama/gemma2:9b",
+    "gemma3:12b":                   "ollama/gemma3:12b",
 }
 
 

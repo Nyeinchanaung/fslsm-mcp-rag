@@ -22,6 +22,12 @@ models:
     temperature: 0.3
   - name: llama3.1:8b
     temperature: 0.3
+  - name: qwen2.5:7b
+    temperature: 0.3
+  - name: gemma2:9b
+    temperature: 0.3
+  - name: gemma3:12b
+    temperature: 0.3
 
 ils_questionnaire:
   num_questions: 44

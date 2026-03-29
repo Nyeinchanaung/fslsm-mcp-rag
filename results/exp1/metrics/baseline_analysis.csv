@@ -2,3 +2,6 @@ model,avg_pra_vs_all,std_pra_vs_all,best_match_profile,best_match_pra,bias_act_r
 gpt-4.1-mini,0.5,0.20615528128088306,P14_RefIntVisGlo,0.9,Reflective,Intuitive,Visual,Global,5.4,3.0,-6.6,3.8
 claude-sonnet-4-20250514,0.5,0.25,P16_RefIntVerGlo,1.0,Reflective,Intuitive,Verbal,Global,10.066666666666666,9.266666666666667,6.733333333333333,9.8
 llama3.1:8b,0.5,0.25,P01_ActSenVisSeq,1.0,Active,Sensing,Visual,Sequential,-10.733333333333333,-9.8,-11.0,-11.0
+qwen2.5:7b,0.5,0.19364916731037085,P15_RefIntVerSeq,0.85,Reflective,Intuitive,Verbal,Sequential,3.0,5.933333333333334,4.333333333333333,-0.3333333333333333
+gemma2:9b,0.5,0.23511226632776475,P01_ActSenVisSeq,0.9666666666666667,Active,Sensing,Visual,Sequential,-8.866666666666667,-8.333333333333334,-10.333333333333334,-9.8
+gemma3:12b,0.5,0.22912878474779197,P01_ActSenVisSeq,0.95,Active,Sensing,Visual,Sequential,-3.0,-9.0,-9.4,-8.6

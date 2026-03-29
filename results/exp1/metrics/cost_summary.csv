@@ -5,3 +5,9 @@ claude-sonnet-4-20250514,FSLSM,17.881128,0.07450470000000002,240
 claude-sonnet-4-20250514,Baseline,0.553419,0.03689459999999999,15
 llama3.1:8b,FSLSM,0.0,0.0,240
 llama3.1:8b,Baseline,0.0,0.0,15
+qwen2.5:7b,FSLSM,0.0,0.0,240
+qwen2.5:7b,Baseline,0.0,0.0,15
+gemma2:9b,FSLSM,0.0,0.0,240
+gemma2:9b,Baseline,0.0,0.0,15
+gemma3:12b,FSLSM,0.0,0.0,240
+gemma3:12b,Baseline,0.0,0.0,15

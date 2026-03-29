@@ -1,6 +1,7 @@
 """Experiment 1 runner — Virtual Student Agent Fidelity (RQ2)."""
 from __future__ import annotations
 
+import argparse
 import json
 import sys
 from pathlib import Path
@@ -22,7 +23,13 @@ CONFIG = yaml.safe_load(
 
 
 def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--model", default=None, help="Run only this model (short name from config.yaml)")
+    args = parser.parse_args()
+
     for model_cfg in CONFIG["models"]:
+        if args.model and model_cfg["name"] != args.model:
+            continue
         model_name = model_cfg["name"]
         temperature = model_cfg.get("temperature", 0.3)
 

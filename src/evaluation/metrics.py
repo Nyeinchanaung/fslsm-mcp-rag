@@ -1,6 +1,9 @@
 """Metrics computation for Experiment 1 (agent fidelity)."""
 from __future__ import annotations
 
+import json
+from pathlib import Path
+
 import numpy as np
 
 from config.constants import FSLSM_DIM_LABELS, FSLSM_DIMENSIONS
@@ -183,6 +186,113 @@ def compute_das_for_results(results: list[dict]) -> list[dict]:
         })
 
     return das_rows
+
+
+def compute_per_question_alignment(
+    model: str,
+    results: list[dict],
+    raw_responses_dir: Path,
+    questionnaire: list[dict],
+) -> list[dict]:
+    """
+    Per-question alignment rate across all 44 ILS items for a given model.
+
+    For each question, determines the expected answer based on the agent's
+    assigned profile pole, then checks whether the actual answer matched.
+    Baseline agents (no assigned profile) are automatically excluded.
+
+    Args:
+        model: short model name (e.g. "gpt-4.1-mini")
+        results: records from {model}_results.json (FSLSM agents only)
+        raw_responses_dir: path to results/exp1/raw_responses/
+        questionnaire: list of 44 question dicts from ils_questionnaire.json
+
+    Returns:
+        264 rows (44 × 6 models), each with:
+        {model, q_num, dimension, aligned_count, total_count, alignment_rate}
+    """
+    # agent_uid → assigned poles (from FSLSM results — no baseline entries)
+    assigned_lookup = {r["agent_uid"]: r["assigned"] for r in results}
+
+    # q_num → question dict
+    q_lookup = {q["q_num"]: q for q in questionnaire}
+
+    counts: dict[int, dict[str, int]] = {
+        q["q_num"]: {"aligned": 0, "total": 0} for q in questionnaire
+    }
+
+    for raw_file in Path(raw_responses_dir).glob("*.json"):
+        data = json.loads(raw_file.read_text())
+        if data["model"] != model:
+            continue
+        agent_uid = data["agent_uid"]
+        if agent_uid not in assigned_lookup:
+            continue  # skip baseline files
+        assigned = assigned_lookup[agent_uid]
+
+        for item in data["raw"]:
+            qn = item["q_num"]
+            actual = item.get("answer")
+            if actual not in ("a", "b"):
+                continue
+            q = q_lookup[qn]
+            assigned_pole = assigned[q["dimension"]]
+            expected = "a" if q["option_a"]["pole"] == assigned_pole else "b"
+            counts[qn]["aligned"] += int(actual == expected)
+            counts[qn]["total"] += 1
+
+    return [
+        {
+            "model": model,
+            "q_num": q["q_num"],
+            "dimension": q["dimension"],
+            "aligned_count": counts[q["q_num"]]["aligned"],
+            "total_count": counts[q["q_num"]]["total"],
+            "alignment_rate": (
+                counts[q["q_num"]]["aligned"] / counts[q["q_num"]]["total"]
+                if counts[q["q_num"]]["total"] > 0 else None
+            ),
+        }
+        for q in questionnaire
+    ]
+
+
+def compute_baseline_natural_style(
+    model: str,
+    baseline_results: list[dict],
+) -> dict:
+    """
+    Determine the natural learning style of an LLM (no persona) by
+    aggregating raw ILS scores across all 5 baseline agents × 3 trials.
+
+    Returns one dict per model with mean scores, detected poles, pole labels,
+    and a combined style string (e.g. "Active-Sensing-Visual-Sequential").
+    """
+    dim_scores: dict[str, list[float]] = {d: [] for d in FSLSM_DIMENSIONS}
+    for r in baseline_results:
+        for d in FSLSM_DIMENSIONS:
+            dim_scores[d].append(r["raw_scores"][d])
+
+    row: dict = {"model": model}
+    style_parts: list[str] = []
+    for d in FSLSM_DIMENSIONS:
+        mean_score = float(np.mean(dim_scores[d]))
+        if mean_score < 0:
+            label = FSLSM_DIM_LABELS[d][0]   # e.g. "Active"
+            pole = -1
+        elif mean_score > 0:
+            label = FSLSM_DIM_LABELS[d][1]   # e.g. "Reflective"
+            pole = 1
+        else:
+            label = "Neutral"
+            pole = 0
+        row[f"{d}_mean_score"] = round(mean_score, 3)
+        row[f"{d}_detected_pole"] = pole
+        row[f"{d}_label"] = label
+        style_parts.append(label)
+
+    row["detected_style"] = "-".join(style_parts)
+    return row
 
 
 def compute_baseline_das(

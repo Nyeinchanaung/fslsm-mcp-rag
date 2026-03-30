@@ -6,7 +6,12 @@
       "Bash(echo $ANTHROPIC_API_KEY)",
       "Bash(./venv/bin/python -c \":*)",
       "Bash(ollama pull llama3.1:8b)",
-      "Bash(./venv/bin/python scripts/create_profiles.py)"
+      "Bash(./venv/bin/python scripts/create_profiles.py)",
+      "Bash(ollama list)",
+      "Bash(ollama pull qwen2.5:7b)",
+      "Bash(python experiments/exp1_agent_fidelity/run.py --model qwen2.5:7b)",
+      "Bash(python experiments/exp1_agent_fidelity/run.py --model gemma3:12b)",
+      "Bash(python experiments/exp1_agent_fidelity/visualize.py)"
     ],
     "additionalDirectories": [
       "/Users/nyeinchanaung/Documents/GitHub/mcp-rag/results/exp1/raw_responses"

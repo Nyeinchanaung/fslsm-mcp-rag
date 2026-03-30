@@ -130,7 +130,6 @@ def model_comparison_bar(
     df = df_pra[
         (df_pra["knowledge_level"] == "ALL")
         & (df_pra["dimension"] != "overall_4d")
-        & (df_pra["condition"] == "FSLSM")
     ].copy()
 
     models = df["model"].unique()
@@ -183,7 +182,6 @@ def knowledge_level_comparison(
     df = df_pra[
         (df_pra["dimension"] == "overall_4d")
         & (df_pra["knowledge_level"] != "ALL")
-        & (df_pra["condition"] == "FSLSM")
     ].copy()
 
     models = df["model"].unique()
@@ -472,7 +470,97 @@ def das_fslsm_vs_baseline_bar(
     return path
 
 
-# ── 10. DAS model comparison bar chart ──────────────────────────────
+# ── 10. Per-question alignment heatmap ──────────────────────────────
+
+def per_question_alignment_heatmap(
+    df_pq: pd.DataFrame,
+    save_path: str | Path | None = None,
+):
+    """
+    44-row × N-model heatmap showing per-question alignment rate.
+
+    Questions are ordered 1-44; dimension group dividers and color-coded
+    y-axis labels make it easy to see which dimension drives misalignment.
+
+    Args:
+        df_pq: DataFrame with columns model, q_num, dimension, alignment_rate
+    """
+    _ensure_dir()
+
+    models = list(df_pq["model"].unique())
+    q_nums = sorted(df_pq["q_num"].unique())
+
+    # Build matrix (44 × n_models)
+    matrix = np.array([
+        [
+            df_pq[(df_pq["q_num"] == qn) & (df_pq["model"] == m)]["alignment_rate"].values[0]
+            if len(df_pq[(df_pq["q_num"] == qn) & (df_pq["model"] == m)]) > 0 else np.nan
+            for m in models
+        ]
+        for qn in q_nums
+    ])
+
+    # Dimension boundaries (questions are interleaved every 4)
+    dim_order = ["act_ref", "sen_int", "vis_ver", "seq_glo"]
+    dim_colors = {"act_ref": "#1f77b4", "sen_int": "#ff7f0e",
+                  "vis_ver": "#2ca02c", "seq_glo": "#d62728"}
+    # Map q_num → dimension
+    q_dim = dict(zip(
+        df_pq["q_num"].unique(),
+        df_pq.set_index("q_num")["dimension"].to_dict().values()
+    ))
+    q_dim = df_pq.drop_duplicates("q_num").set_index("q_num")["dimension"].to_dict()
+
+    fig, ax = plt.subplots(figsize=(max(8, len(models) * 1.5), 18))
+    im = ax.imshow(matrix, cmap="RdYlGn", aspect="auto", vmin=0, vmax=1)
+
+    ax.set_xticks(range(len(models)))
+    short_names = [m.split(":")[0].split("-")[0] for m in models]
+    ax.set_xticklabels(short_names, fontsize=8, rotation=30, ha="right")
+    ax.set_yticks(range(len(q_nums)))
+
+    # Color-coded y-axis labels by dimension
+    ax.set_yticklabels([f"Q{qn}" for qn in q_nums], fontsize=7)
+    for tick, qn in zip(ax.get_yticklabels(), q_nums):
+        dim = q_dim.get(qn, "act_ref")
+        tick.set_color(dim_colors[dim])
+
+    # Annotate each cell
+    for i, qn in enumerate(q_nums):
+        for j in range(len(models)):
+            val = matrix[i, j]
+            if not np.isnan(val):
+                ax.text(j, i, f"{val:.2f}", ha="center", va="center",
+                        fontsize=5.5, color="black")
+
+    # Horizontal dividers between dimension groups
+    prev_dim = None
+    for i, qn in enumerate(q_nums):
+        curr_dim = q_dim.get(qn)
+        if curr_dim != prev_dim and prev_dim is not None:
+            ax.axhline(i - 0.5, color="white", linewidth=2)
+        prev_dim = curr_dim
+
+    ax.set_title("Per-Question Alignment Rate — All Models", fontsize=12, pad=12)
+    fig.colorbar(im, ax=ax, shrink=0.4, label="Alignment Rate (0–1)")
+
+    # Legend for dimension colors
+    from matplotlib.patches import Patch
+    legend_handles = [
+        Patch(color=dim_colors[d], label=f"{FSLSM_DIM_LABELS[d][0]}/{FSLSM_DIM_LABELS[d][1]}")
+        for d in dim_order
+    ]
+    ax.legend(handles=legend_handles, loc="upper right",
+              bbox_to_anchor=(1.25, 1.0), fontsize=8, title="Dimension")
+
+    plt.tight_layout()
+    path = save_path or FIGURES_DIR / "per_question_alignment_heatmap.png"
+    plt.savefig(path, dpi=150, bbox_inches="tight")
+    plt.close()
+    return path
+
+
+# ── 11. DAS model comparison bar chart ──────────────────────────────
 
 def das_comparison_bar(
     df_das: pd.DataFrame,
@@ -487,7 +575,6 @@ def das_comparison_bar(
     df = df_das[
         (df_das["knowledge_level"] == "ALL")
         & (df_das["dimension"] != "overall_4d")
-        & (df_das["condition"] == "FSLSM")
     ].copy()
 
     models = df["model"].unique()

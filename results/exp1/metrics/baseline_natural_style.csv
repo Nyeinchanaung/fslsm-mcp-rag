@@ -1,0 +1,7 @@
+model,act_ref_mean_score,act_ref_detected_pole,act_ref_label,sen_int_mean_score,sen_int_detected_pole,sen_int_label,vis_ver_mean_score,vis_ver_detected_pole,vis_ver_label,seq_glo_mean_score,seq_glo_detected_pole,seq_glo_label,detected_style
+gpt-4.1-mini,5.4,1,Reflective,3.0,1,Intuitive,-6.6,-1,Visual,3.8,1,Global,Reflective-Intuitive-Visual-Global
+claude-sonnet-4-20250514,10.067,1,Reflective,9.267,1,Intuitive,6.733,1,Verbal,9.8,1,Global,Reflective-Intuitive-Verbal-Global
+llama3.1:8b,-10.733,-1,Active,-9.8,-1,Sensing,-11.0,-1,Visual,-11.0,-1,Sequential,Active-Sensing-Visual-Sequential
+qwen2.5:7b,3.0,1,Reflective,5.933,1,Intuitive,4.333,1,Verbal,-0.333,-1,Sequential,Reflective-Intuitive-Verbal-Sequential
+gemma2:9b,-8.867,-1,Active,-8.333,-1,Sensing,-10.333,-1,Visual,-9.8,-1,Sequential,Active-Sensing-Visual-Sequential
+gemma3:12b,-3.0,-1,Active,-9.0,-1,Sensing,-9.4,-1,Visual,-8.6,-1,Sequential,Active-Sensing-Visual-Sequential

@@ -12,15 +12,12 @@ if _project_root not in sys.path:
 import pandas as pd
 
 from src.evaluation.visualizer import (
-    baseline_bias_radar,
     cost_per_model_bar,
     das_comparison_bar,
-    das_fslsm_vs_baseline_bar,
-    fslsm_vs_baseline_bar,
-    heatmap_baseline_bias,
     heatmap_profiles,
     knowledge_level_comparison,
     model_comparison_bar,
+    per_question_alignment_heatmap,
 )
 
 MODELS = [
@@ -38,7 +35,6 @@ def main():
 
     # Load CSVs
     df_pra = pd.read_csv(metrics_dir / "pra_das_summary.csv")
-    df_baseline = pd.read_csv(metrics_dir / "baseline_analysis.csv")
     df_cost = pd.read_csv(metrics_dir / "cost_summary.csv")
 
     # 1. Model comparison bar (FSLSM per-dimension PRA)
@@ -53,47 +49,32 @@ def main():
     p = cost_per_model_bar(df_cost)
     print(f"3. Cost per model → {p}")
 
-    # 4. FSLSM vs Baseline PRA
-    p = fslsm_vs_baseline_bar(df_pra)
-    print(f"4. FSLSM vs Baseline → {p}")
-
-    # 5. Baseline bias radar
-    p = baseline_bias_radar(df_baseline)
-    print(f"5. Baseline bias radar → {p}")
-
-    # 6. DAS comparison bar
+    # 4. DAS comparison bar
     das_path = metrics_dir / "das_summary.csv"
     if das_path.exists():
         df_das = pd.read_csv(das_path)
         p = das_comparison_bar(df_das)
-        print(f"6. DAS comparison bar → {p}")
+        print(f"4. DAS comparison bar → {p}")
     else:
-        print("6. DAS comparison bar — skipped (das_summary.csv not found)")
+        print("4. DAS comparison bar — skipped (das_summary.csv not found)")
 
-    # 7. Heatmaps per model (from FSLSM results JSON)
+    # 5. Heatmaps per model (from FSLSM results JSON)
     for model in MODELS:
         safe = model.replace("/", "_").replace(":", "_")
         results_file = metrics_dir / f"{safe}_results.json"
         if results_file.exists():
             results = json.loads(results_file.read_text())
             p = heatmap_profiles(results, model)
-            print(f"7. Heatmap {model} → {p}")
+            print(f"5. Heatmap {model} → {p}")
 
-    # 8. Baseline heatmaps per model
-    for model in MODELS:
-        safe = model.replace("/", "_").replace(":", "_")
-        bl_file = metrics_dir / f"{safe}_baseline_results.json"
-        if bl_file.exists():
-            bl_results = json.loads(bl_file.read_text())
-            p = heatmap_baseline_bias(bl_results, model)
-            print(f"8. Baseline heatmap {model} → {p}")
-
-    # 9. DAS FSLSM vs Baseline
-    das_path = metrics_dir / "das_summary.csv"
-    if das_path.exists():
-        df_das = pd.read_csv(das_path)
-        p = das_fslsm_vs_baseline_bar(df_das)
-        print(f"9. DAS FSLSM vs Baseline → {p}")
+    # 6. Per-question alignment heatmap
+    pq_path = metrics_dir / "per_question_alignment.csv"
+    if pq_path.exists():
+        df_pq = pd.read_csv(pq_path)
+        p = per_question_alignment_heatmap(df_pq)
+        print(f"6. Per-question alignment heatmap → {p}")
+    else:
+        print("6. Per-question alignment heatmap — skipped (per_question_alignment.csv not found)")
 
     print("\nAll visualizations generated.")
 

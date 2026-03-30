@@ -1,13 +1,13 @@
-model,condition,total_usd,mean_per_agent_trial_usd,num_records
-gpt-4.1-mini,FSLSM,2.0890704,0.00870446,240
-gpt-4.1-mini,Baseline,0.0644052,0.004293679999999999,15
-claude-sonnet-4-20250514,FSLSM,17.881128,0.07450470000000002,240
-claude-sonnet-4-20250514,Baseline,0.553419,0.03689459999999999,15
-llama3.1:8b,FSLSM,0.0,0.0,240
-llama3.1:8b,Baseline,0.0,0.0,15
-qwen2.5:7b,FSLSM,0.0,0.0,240
-qwen2.5:7b,Baseline,0.0,0.0,15
-gemma2:9b,FSLSM,0.0,0.0,240
-gemma2:9b,Baseline,0.0,0.0,15
-gemma3:12b,FSLSM,0.0,0.0,240
-gemma3:12b,Baseline,0.0,0.0,15
+model,total_usd,mean_per_agent_trial_usd,num_records
+gpt-4.1-mini,2.0890704,0.00870446,240
+gpt-4.1-mini (baseline),0.0644052,0.004293679999999999,15
+claude-sonnet-4-20250514,17.881128,0.07450470000000002,240
+claude-sonnet-4-20250514 (baseline),0.553419,0.03689459999999999,15
+llama3.1:8b,0.0,0.0,240
+llama3.1:8b (baseline),0.0,0.0,15
+qwen2.5:7b,0.0,0.0,240
+qwen2.5:7b (baseline),0.0,0.0,15
+gemma2:9b,0.0,0.0,240
+gemma2:9b (baseline),0.0,0.0,15
+gemma3:12b,0.0,0.0,240
+gemma3:12b (baseline),0.0,0.0,15

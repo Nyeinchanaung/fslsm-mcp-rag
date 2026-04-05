@@ -30,6 +30,10 @@ MODELS = [
     "qwen2.5:7b",
     "gemma2:9b",
     "gemma3:12b",
+    "qwen2.5:3b",
+    "gemma3:4b",
+    "llama3.2:3b",
+    "phi4-mini",
 ]
 
 

@@ -48,6 +48,11 @@ MODEL_REGISTRY: dict[str, str] = {
     "qwen2.5:7b":                   "ollama/qwen2.5:7b",
     "gemma2:9b":                    "ollama/gemma2:9b",
     "gemma3:12b":                   "ollama/gemma3:12b",
+    # Small models (1–5B)
+    "qwen2.5:3b":                   "ollama/qwen2.5:3b",
+    "gemma3:4b":                    "ollama/gemma3:4b",
+    "llama3.2:3b":                  "ollama/llama3.2:3b",
+    "phi4-mini":                    "ollama/phi4-mini",
 }
 
 

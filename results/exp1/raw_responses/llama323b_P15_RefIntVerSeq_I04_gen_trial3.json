@@ -1,0 +1,368 @@
+{
+  "agent_uid": "llama323b_P15_RefIntVerSeq_I04_gen",
+  "knowledge_level": null,
+  "model": "llama3.2:3b",
+  "litellm_model": "ollama/llama3.2:3b",
+  "trial": 3,
+  "dim_scores": {
+    "act_ref": 9,
+    "sen_int": 0,
+    "vis_ver": 6,
+    "seq_glo": -1
+  },
+  "total_cost_usd": 0.0,
+  "raw": [
+    {
+      "q_num": 1,
+      "answer": "b",
+      "raw_text": "(b)",
+      "prompt_tokens": 463,
+      "completion_tokens": 3,
+      "cost_usd": 0.0
+    },
+    {
+      "q_num": 2,
+      "answer": "a",
+      "raw_text": "(a)",
+      "prompt_tokens": 458,
+      "completion_tokens": 3,
+      "cost_usd": 0.0
+    },
+    {
+      "q_num": 3,
+      "answer": "b",
+      "raw_text": "(b)",
+      "prompt_tokens": 469,
+      "completion_tokens": 3,
+      "cost_usd": 0.0
+    },
+    {
+      "q_num": 4,
+      "answer": "a",
+      "raw_text": "(a)",
+      "prompt_tokens": 477,
+      "completion_tokens": 3,
+      "cost_usd": 0.0
+    },
+    {
+      "q_num": 5,
+      "answer": "b",
+      "raw_text": "(b)",
+      "prompt_tokens": 468,
+      "completion_tokens": 3,
+      "cost_usd": 0.0
+    },
+    {
+      "q_num": 6,
+      "answer": "b",
+      "raw_text": "(b)",
+      "prompt_tokens": 476,
+      "completion_tokens": 3,
+      "cost_usd": 0.0
+    },
+    {
+      "q_num": 7,
+      "answer": "b",
+      "raw_text": "(b)",
+      "prompt_tokens": 471,
+      "completion_tokens": 3,
+      "cost_usd": 0.0
+    },
+    {
+      "q_num": 8,
+      "answer": "b",
+      "raw_text": "(b)",
+      "prompt_tokens": 472,
+      "completion_tokens": 3,
+      "cost_usd": 0.0
+    },
+    {
+      "q_num": 9,
+      "answer": "b",
+      "raw_text": "(b)",
+      "prompt_tokens": 474,
+      "completion_tokens": 3,
+      "cost_usd": 0.0
+    },
+    {
+      "q_num": 10,
+      "answer": "b",
+      "raw_text": "(b)",
+      "prompt_tokens": 461,
+      "completion_tokens": 3,
+      "cost_usd": 0.0
+    },
+    {
+      "q_num": 11,
+      "answer": "b",
+      "raw_text": "(b)",
+      "prompt_tokens": 477,
+      "completion_tokens": 3,
+      "cost_usd": 0.0
+    },
+    {
+      "q_num": 12,
+      "answer": "a",
+      "raw_text": "(a)",
+      "prompt_tokens": 489,
+      "completion_tokens": 3,
+      "cost_usd": 0.0
+    },
+    {
+      "q_num": 13,
+      "answer": "b",
+      "raw_text": "(b)",
+      "prompt_tokens": 476,
+      "completion_tokens": 3,
+      "cost_usd": 0.0
+    },
+    {
+      "q_num": 14,
+      "answer": "b",
+      "raw_text": "(b)",
+      "prompt_tokens": 480,
+      "completion_tokens": 3,
+      "cost_usd": 0.0
+    },
+    {
+      "q_num": 15,
+      "answer": "b",
+      "raw_text": "(b)",
+      "prompt_tokens": 470,
+      "completion_tokens": 3,
+      "cost_usd": 0.0
+    },
+    {
+      "q_num": 16,
+      "answer": null,
+      "raw_text": "I need time to work through this. Can you",
+      "prompt_tokens": 501,
+      "completion_tokens": 10,
+      "cost_usd": 0.0
+    },
+    {
+      "q_num": 17,
+      "answer": null,
+      "raw_text": "I need time to work through this.",
+      "prompt_tokens": 476,
+      "completion_tokens": 9,
+      "cost_usd": 0.0
+    },
+    {
+      "q_num": 18,
+      "answer": "b",
+      "raw_text": "(b)",
+      "prompt_tokens": 458,
+      "completion_tokens": 3,
+      "cost_usd": 0.0
+    },
+    {
+      "q_num": 19,
+      "answer": null,
+      "raw_text": "I need time to work through this...",
+      "prompt_tokens": 460,
+      "completion_tokens": 9,
+      "cost_usd": 0.0
+    },
+    {
+      "q_num": 20,
+      "answer": "a",
+      "raw_text": "(a)",
+      "prompt_tokens": 480,
+      "completion_tokens": 3,
+      "cost_usd": 0.0
+    },
+    {
+      "q_num": 21,
+      "answer": null,
+      "raw_text": "I need time to work through this...",
+      "prompt_tokens": 459,
+      "completion_tokens": 9,
+      "cost_usd": 0.0
+    },
+    {
+      "q_num": 22,
+      "answer": "a",
+      "raw_text": "(a)",
+      "prompt_tokens": 472,
+      "completion_tokens": 3,
+      "cost_usd": 0.0
+    },
+    {
+      "q_num": 23,
+      "answer": "b",
+      "raw_text": "(b)",
+      "prompt_tokens": 466,
+      "completion_tokens": 3,
+      "cost_usd": 0.0
+    },
+    {
+      "q_num": 24,
+      "answer": null,
+      "raw_text": "I need time to work through this...",
+      "prompt_tokens": 489,
+      "completion_tokens": 9,
+      "cost_usd": 0.0
+    },
+    {
+      "q_num": 25,
+      "answer": "b",
+      "raw_text": "(b)",
+      "prompt_tokens": 467,
+      "completion_tokens": 3,
+      "cost_usd": 0.0
+    },
+    {
+      "q_num": 26,
+      "answer": "a",
+      "raw_text": "(a)",
+      "prompt_tokens": 474,
+      "completion_tokens": 3,
+      "cost_usd": 0.0
+    },
+    {
+      "q_num": 27,
+      "answer": null,
+      "raw_text": "I need time to work through this... I think",
+      "prompt_tokens": 475,
+      "completion_tokens": 10,
+      "cost_usd": 0.0
+    },
+    {
+      "q_num": 28,
+      "answer": "b",
+      "raw_text": "(b)",
+      "prompt_tokens": 482,
+      "completion_tokens": 3,
+      "cost_usd": 0.0
+    },
+    {
+      "q_num": 29,
+      "answer": "b",
+      "raw_text": "(b)",
+      "prompt_tokens": 466,
+      "completion_tokens": 3,
+      "cost_usd": 0.0
+    },
+    {
+      "q_num": 30,
+      "answer": null,
+      "raw_text": "I need time to work through this...",
+      "prompt_tokens": 476,
+      "completion_tokens": 9,
+      "cost_usd": 0.0
+    },
+    {
+      "q_num": 31,
+      "answer": "b",
+      "raw_text": "(b)",
+      "prompt_tokens": 468,
+      "completion_tokens": 3,
+      "cost_usd": 0.0
+    },
+    {
+      "q_num": 32,
+      "answer": null,
+      "raw_text": "I need time to work through this. Can you",
+      "prompt_tokens": 494,
+      "completion_tokens": 10,
+      "cost_usd": 0.0
+    },
+    {
+      "q_num": 33,
+      "answer": "b",
+      "raw_text": "(b)",
+      "prompt_tokens": 487,
+      "completion_tokens": 3,
+      "cost_usd": 0.0
+    },
+    {
+      "q_num": 34,
+      "answer": "a",
+      "raw_text": "(a)",
+      "prompt_tokens": 461,
+      "completion_tokens": 3,
+      "cost_usd": 0.0
+    },
+    {
+      "q_num": 35,
+      "answer": null,
+      "raw_text": "I need time to work through this...",
+      "prompt_tokens": 474,
+      "completion_tokens": 9,
+      "cost_usd": 0.0
+    },
+    {
+      "q_num": 36,
+      "answer": "b",
+      "raw_text": "(b)",
+      "prompt_tokens": 486,
+      "completion_tokens": 3,
+      "cost_usd": 0.0
+    },
+    {
+      "q_num": 37,
+      "answer": "b",
+      "raw_text": "(b)",
+      "prompt_tokens": 460,
+      "completion_tokens": 3,
+      "cost_usd": 0.0
+    },
+    {
+      "q_num": 38,
+      "answer": "b",
+      "raw_text": "(b)",
+      "prompt_tokens": 469,
+      "completion_tokens": 3,
+      "cost_usd": 0.0
+    },
+    {
+      "q_num": 39,
+      "answer": null,
+      "raw_text": "I need time to work through this...",
+      "prompt_tokens": 462,
+      "completion_tokens": 9,
+      "cost_usd": 0.0
+    },
+    {
+      "q_num": 40,
+      "answer": null,
+      "raw_text": "I need time to work through this...",
+      "prompt_tokens": 476,
+      "completion_tokens": 9,
+      "cost_usd": 0.0
+    },
+    {
+      "q_num": 41,
+      "answer": "b",
+      "raw_text": "(b)",
+      "prompt_tokens": 474,
+      "completion_tokens": 3,
+      "cost_usd": 0.0
+    },
+    {
+      "q_num": 42,
+      "answer": "a",
+      "raw_text": "(a)",
+      "prompt_tokens": 484,
+      "completion_tokens": 3,
+      "cost_usd": 0.0
+    },
+    {
+      "q_num": 43,
+      "answer": null,
+      "raw_text": "I need time to work through this...",
+      "prompt_tokens": 469,
+      "completion_tokens": 9,
+      "cost_usd": 0.0
+    },
+    {
+      "q_num": 44,
+      "answer": "a",
+      "raw_text": "(a)",
+      "prompt_tokens": 477,
+      "completion_tokens": 3,
+      "cost_usd": 0.0
+    }
+  ]
+}

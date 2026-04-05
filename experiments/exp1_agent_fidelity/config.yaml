@@ -28,6 +28,15 @@ models:
     temperature: 0.3
   - name: gemma3:12b
     temperature: 0.3
+  # Small models (1–5B)
+  - name: qwen2.5:3b
+    temperature: 0.3
+  - name: gemma3:4b
+    temperature: 0.3
+  - name: llama3.2:3b
+    temperature: 0.3
+  - name: phi4-mini
+    temperature: 0.3
 
 ils_questionnaire:
   num_questions: 44

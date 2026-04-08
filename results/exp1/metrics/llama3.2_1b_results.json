@@ -1,0 +1,6242 @@
+[
+  {
+    "agent_uid": "llama321b_P02_ActSenVisGlo_I04_gen",
+    "knowledge_level": null,
+    "profile_code": "P02_ActSenVisGlo",
+    "instance_num": 4,
+    "trial": 1,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P02_ActSenVisGlo_I04_gen",
+    "knowledge_level": null,
+    "profile_code": "P02_ActSenVisGlo",
+    "instance_num": 4,
+    "trial": 2,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P02_ActSenVisGlo_I04_gen",
+    "knowledge_level": null,
+    "profile_code": "P02_ActSenVisGlo",
+    "instance_num": 4,
+    "trial": 3,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P02_ActSenVisGlo_I05_gen",
+    "knowledge_level": null,
+    "profile_code": "P02_ActSenVisGlo",
+    "instance_num": 5,
+    "trial": 1,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P02_ActSenVisGlo_I05_gen",
+    "knowledge_level": null,
+    "profile_code": "P02_ActSenVisGlo",
+    "instance_num": 5,
+    "trial": 2,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P02_ActSenVisGlo_I05_gen",
+    "knowledge_level": null,
+    "profile_code": "P02_ActSenVisGlo",
+    "instance_num": 5,
+    "trial": 3,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P01_ActSenVisSeq_I01_beg",
+    "knowledge_level": "beginner",
+    "profile_code": "P01_ActSenVisSeq",
+    "instance_num": 1,
+    "trial": 1,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P01_ActSenVisSeq_I01_beg",
+    "knowledge_level": "beginner",
+    "profile_code": "P01_ActSenVisSeq",
+    "instance_num": 1,
+    "trial": 2,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P01_ActSenVisSeq_I01_beg",
+    "knowledge_level": "beginner",
+    "profile_code": "P01_ActSenVisSeq",
+    "instance_num": 1,
+    "trial": 3,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P01_ActSenVisSeq_I02_int",
+    "knowledge_level": "intermediate",
+    "profile_code": "P01_ActSenVisSeq",
+    "instance_num": 2,
+    "trial": 1,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P01_ActSenVisSeq_I02_int",
+    "knowledge_level": "intermediate",
+    "profile_code": "P01_ActSenVisSeq",
+    "instance_num": 2,
+    "trial": 2,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P01_ActSenVisSeq_I02_int",
+    "knowledge_level": "intermediate",
+    "profile_code": "P01_ActSenVisSeq",
+    "instance_num": 2,
+    "trial": 3,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P01_ActSenVisSeq_I03_adv",
+    "knowledge_level": "advanced",
+    "profile_code": "P01_ActSenVisSeq",
+    "instance_num": 3,
+    "trial": 1,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P01_ActSenVisSeq_I03_adv",
+    "knowledge_level": "advanced",
+    "profile_code": "P01_ActSenVisSeq",
+    "instance_num": 3,
+    "trial": 2,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P01_ActSenVisSeq_I03_adv",
+    "knowledge_level": "advanced",
+    "profile_code": "P01_ActSenVisSeq",
+    "instance_num": 3,
+    "trial": 3,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P01_ActSenVisSeq_I04_gen",
+    "knowledge_level": null,
+    "profile_code": "P01_ActSenVisSeq",
+    "instance_num": 4,
+    "trial": 1,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P01_ActSenVisSeq_I04_gen",
+    "knowledge_level": null,
+    "profile_code": "P01_ActSenVisSeq",
+    "instance_num": 4,
+    "trial": 2,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P01_ActSenVisSeq_I04_gen",
+    "knowledge_level": null,
+    "profile_code": "P01_ActSenVisSeq",
+    "instance_num": 4,
+    "trial": 3,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P01_ActSenVisSeq_I05_gen",
+    "knowledge_level": null,
+    "profile_code": "P01_ActSenVisSeq",
+    "instance_num": 5,
+    "trial": 1,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P01_ActSenVisSeq_I05_gen",
+    "knowledge_level": null,
+    "profile_code": "P01_ActSenVisSeq",
+    "instance_num": 5,
+    "trial": 2,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P01_ActSenVisSeq_I05_gen",
+    "knowledge_level": null,
+    "profile_code": "P01_ActSenVisSeq",
+    "instance_num": 5,
+    "trial": 3,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P02_ActSenVisGlo_I01_beg",
+    "knowledge_level": "beginner",
+    "profile_code": "P02_ActSenVisGlo",
+    "instance_num": 1,
+    "trial": 1,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P02_ActSenVisGlo_I01_beg",
+    "knowledge_level": "beginner",
+    "profile_code": "P02_ActSenVisGlo",
+    "instance_num": 1,
+    "trial": 2,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P02_ActSenVisGlo_I01_beg",
+    "knowledge_level": "beginner",
+    "profile_code": "P02_ActSenVisGlo",
+    "instance_num": 1,
+    "trial": 3,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P02_ActSenVisGlo_I02_int",
+    "knowledge_level": "intermediate",
+    "profile_code": "P02_ActSenVisGlo",
+    "instance_num": 2,
+    "trial": 1,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P02_ActSenVisGlo_I02_int",
+    "knowledge_level": "intermediate",
+    "profile_code": "P02_ActSenVisGlo",
+    "instance_num": 2,
+    "trial": 2,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P02_ActSenVisGlo_I02_int",
+    "knowledge_level": "intermediate",
+    "profile_code": "P02_ActSenVisGlo",
+    "instance_num": 2,
+    "trial": 3,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P02_ActSenVisGlo_I03_adv",
+    "knowledge_level": "advanced",
+    "profile_code": "P02_ActSenVisGlo",
+    "instance_num": 3,
+    "trial": 1,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P02_ActSenVisGlo_I03_adv",
+    "knowledge_level": "advanced",
+    "profile_code": "P02_ActSenVisGlo",
+    "instance_num": 3,
+    "trial": 2,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P02_ActSenVisGlo_I03_adv",
+    "knowledge_level": "advanced",
+    "profile_code": "P02_ActSenVisGlo",
+    "instance_num": 3,
+    "trial": 3,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P03_ActSenVerSeq_I01_beg",
+    "knowledge_level": "beginner",
+    "profile_code": "P03_ActSenVerSeq",
+    "instance_num": 1,
+    "trial": 1,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P03_ActSenVerSeq_I01_beg",
+    "knowledge_level": "beginner",
+    "profile_code": "P03_ActSenVerSeq",
+    "instance_num": 1,
+    "trial": 2,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P03_ActSenVerSeq_I01_beg",
+    "knowledge_level": "beginner",
+    "profile_code": "P03_ActSenVerSeq",
+    "instance_num": 1,
+    "trial": 3,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P03_ActSenVerSeq_I02_int",
+    "knowledge_level": "intermediate",
+    "profile_code": "P03_ActSenVerSeq",
+    "instance_num": 2,
+    "trial": 1,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P03_ActSenVerSeq_I02_int",
+    "knowledge_level": "intermediate",
+    "profile_code": "P03_ActSenVerSeq",
+    "instance_num": 2,
+    "trial": 2,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P03_ActSenVerSeq_I02_int",
+    "knowledge_level": "intermediate",
+    "profile_code": "P03_ActSenVerSeq",
+    "instance_num": 2,
+    "trial": 3,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P03_ActSenVerSeq_I03_adv",
+    "knowledge_level": "advanced",
+    "profile_code": "P03_ActSenVerSeq",
+    "instance_num": 3,
+    "trial": 1,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P03_ActSenVerSeq_I03_adv",
+    "knowledge_level": "advanced",
+    "profile_code": "P03_ActSenVerSeq",
+    "instance_num": 3,
+    "trial": 2,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P03_ActSenVerSeq_I03_adv",
+    "knowledge_level": "advanced",
+    "profile_code": "P03_ActSenVerSeq",
+    "instance_num": 3,
+    "trial": 3,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P03_ActSenVerSeq_I04_gen",
+    "knowledge_level": null,
+    "profile_code": "P03_ActSenVerSeq",
+    "instance_num": 4,
+    "trial": 1,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P03_ActSenVerSeq_I04_gen",
+    "knowledge_level": null,
+    "profile_code": "P03_ActSenVerSeq",
+    "instance_num": 4,
+    "trial": 2,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P03_ActSenVerSeq_I04_gen",
+    "knowledge_level": null,
+    "profile_code": "P03_ActSenVerSeq",
+    "instance_num": 4,
+    "trial": 3,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P03_ActSenVerSeq_I05_gen",
+    "knowledge_level": null,
+    "profile_code": "P03_ActSenVerSeq",
+    "instance_num": 5,
+    "trial": 1,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P03_ActSenVerSeq_I05_gen",
+    "knowledge_level": null,
+    "profile_code": "P03_ActSenVerSeq",
+    "instance_num": 5,
+    "trial": 2,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P03_ActSenVerSeq_I05_gen",
+    "knowledge_level": null,
+    "profile_code": "P03_ActSenVerSeq",
+    "instance_num": 5,
+    "trial": 3,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P04_ActSenVerGlo_I01_beg",
+    "knowledge_level": "beginner",
+    "profile_code": "P04_ActSenVerGlo",
+    "instance_num": 1,
+    "trial": 1,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P04_ActSenVerGlo_I01_beg",
+    "knowledge_level": "beginner",
+    "profile_code": "P04_ActSenVerGlo",
+    "instance_num": 1,
+    "trial": 2,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P04_ActSenVerGlo_I01_beg",
+    "knowledge_level": "beginner",
+    "profile_code": "P04_ActSenVerGlo",
+    "instance_num": 1,
+    "trial": 3,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P04_ActSenVerGlo_I02_int",
+    "knowledge_level": "intermediate",
+    "profile_code": "P04_ActSenVerGlo",
+    "instance_num": 2,
+    "trial": 1,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P04_ActSenVerGlo_I02_int",
+    "knowledge_level": "intermediate",
+    "profile_code": "P04_ActSenVerGlo",
+    "instance_num": 2,
+    "trial": 2,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P04_ActSenVerGlo_I02_int",
+    "knowledge_level": "intermediate",
+    "profile_code": "P04_ActSenVerGlo",
+    "instance_num": 2,
+    "trial": 3,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P04_ActSenVerGlo_I03_adv",
+    "knowledge_level": "advanced",
+    "profile_code": "P04_ActSenVerGlo",
+    "instance_num": 3,
+    "trial": 1,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P04_ActSenVerGlo_I03_adv",
+    "knowledge_level": "advanced",
+    "profile_code": "P04_ActSenVerGlo",
+    "instance_num": 3,
+    "trial": 2,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P04_ActSenVerGlo_I03_adv",
+    "knowledge_level": "advanced",
+    "profile_code": "P04_ActSenVerGlo",
+    "instance_num": 3,
+    "trial": 3,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P05_ActIntVisSeq_I03_adv",
+    "knowledge_level": "advanced",
+    "profile_code": "P05_ActIntVisSeq",
+    "instance_num": 3,
+    "trial": 1,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P05_ActIntVisSeq_I03_adv",
+    "knowledge_level": "advanced",
+    "profile_code": "P05_ActIntVisSeq",
+    "instance_num": 3,
+    "trial": 2,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P05_ActIntVisSeq_I03_adv",
+    "knowledge_level": "advanced",
+    "profile_code": "P05_ActIntVisSeq",
+    "instance_num": 3,
+    "trial": 3,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P04_ActSenVerGlo_I04_gen",
+    "knowledge_level": null,
+    "profile_code": "P04_ActSenVerGlo",
+    "instance_num": 4,
+    "trial": 1,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P04_ActSenVerGlo_I04_gen",
+    "knowledge_level": null,
+    "profile_code": "P04_ActSenVerGlo",
+    "instance_num": 4,
+    "trial": 2,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P04_ActSenVerGlo_I04_gen",
+    "knowledge_level": null,
+    "profile_code": "P04_ActSenVerGlo",
+    "instance_num": 4,
+    "trial": 3,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P04_ActSenVerGlo_I05_gen",
+    "knowledge_level": null,
+    "profile_code": "P04_ActSenVerGlo",
+    "instance_num": 5,
+    "trial": 1,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P04_ActSenVerGlo_I05_gen",
+    "knowledge_level": null,
+    "profile_code": "P04_ActSenVerGlo",
+    "instance_num": 5,
+    "trial": 2,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P04_ActSenVerGlo_I05_gen",
+    "knowledge_level": null,
+    "profile_code": "P04_ActSenVerGlo",
+    "instance_num": 5,
+    "trial": 3,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P05_ActIntVisSeq_I01_beg",
+    "knowledge_level": "beginner",
+    "profile_code": "P05_ActIntVisSeq",
+    "instance_num": 1,
+    "trial": 1,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P05_ActIntVisSeq_I01_beg",
+    "knowledge_level": "beginner",
+    "profile_code": "P05_ActIntVisSeq",
+    "instance_num": 1,
+    "trial": 2,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P05_ActIntVisSeq_I01_beg",
+    "knowledge_level": "beginner",
+    "profile_code": "P05_ActIntVisSeq",
+    "instance_num": 1,
+    "trial": 3,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P05_ActIntVisSeq_I02_int",
+    "knowledge_level": "intermediate",
+    "profile_code": "P05_ActIntVisSeq",
+    "instance_num": 2,
+    "trial": 1,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P05_ActIntVisSeq_I02_int",
+    "knowledge_level": "intermediate",
+    "profile_code": "P05_ActIntVisSeq",
+    "instance_num": 2,
+    "trial": 2,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P05_ActIntVisSeq_I02_int",
+    "knowledge_level": "intermediate",
+    "profile_code": "P05_ActIntVisSeq",
+    "instance_num": 2,
+    "trial": 3,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P05_ActIntVisSeq_I04_gen",
+    "knowledge_level": null,
+    "profile_code": "P05_ActIntVisSeq",
+    "instance_num": 4,
+    "trial": 1,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P05_ActIntVisSeq_I04_gen",
+    "knowledge_level": null,
+    "profile_code": "P05_ActIntVisSeq",
+    "instance_num": 4,
+    "trial": 2,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P05_ActIntVisSeq_I04_gen",
+    "knowledge_level": null,
+    "profile_code": "P05_ActIntVisSeq",
+    "instance_num": 4,
+    "trial": 3,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P05_ActIntVisSeq_I05_gen",
+    "knowledge_level": null,
+    "profile_code": "P05_ActIntVisSeq",
+    "instance_num": 5,
+    "trial": 1,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P05_ActIntVisSeq_I05_gen",
+    "knowledge_level": null,
+    "profile_code": "P05_ActIntVisSeq",
+    "instance_num": 5,
+    "trial": 2,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P05_ActIntVisSeq_I05_gen",
+    "knowledge_level": null,
+    "profile_code": "P05_ActIntVisSeq",
+    "instance_num": 5,
+    "trial": 3,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P06_ActIntVisGlo_I01_beg",
+    "knowledge_level": "beginner",
+    "profile_code": "P06_ActIntVisGlo",
+    "instance_num": 1,
+    "trial": 1,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P06_ActIntVisGlo_I01_beg",
+    "knowledge_level": "beginner",
+    "profile_code": "P06_ActIntVisGlo",
+    "instance_num": 1,
+    "trial": 2,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P06_ActIntVisGlo_I01_beg",
+    "knowledge_level": "beginner",
+    "profile_code": "P06_ActIntVisGlo",
+    "instance_num": 1,
+    "trial": 3,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P06_ActIntVisGlo_I02_int",
+    "knowledge_level": "intermediate",
+    "profile_code": "P06_ActIntVisGlo",
+    "instance_num": 2,
+    "trial": 1,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P06_ActIntVisGlo_I02_int",
+    "knowledge_level": "intermediate",
+    "profile_code": "P06_ActIntVisGlo",
+    "instance_num": 2,
+    "trial": 2,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P06_ActIntVisGlo_I02_int",
+    "knowledge_level": "intermediate",
+    "profile_code": "P06_ActIntVisGlo",
+    "instance_num": 2,
+    "trial": 3,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P06_ActIntVisGlo_I03_adv",
+    "knowledge_level": "advanced",
+    "profile_code": "P06_ActIntVisGlo",
+    "instance_num": 3,
+    "trial": 1,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P06_ActIntVisGlo_I03_adv",
+    "knowledge_level": "advanced",
+    "profile_code": "P06_ActIntVisGlo",
+    "instance_num": 3,
+    "trial": 2,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P06_ActIntVisGlo_I03_adv",
+    "knowledge_level": "advanced",
+    "profile_code": "P06_ActIntVisGlo",
+    "instance_num": 3,
+    "trial": 3,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P06_ActIntVisGlo_I04_gen",
+    "knowledge_level": null,
+    "profile_code": "P06_ActIntVisGlo",
+    "instance_num": 4,
+    "trial": 1,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P06_ActIntVisGlo_I04_gen",
+    "knowledge_level": null,
+    "profile_code": "P06_ActIntVisGlo",
+    "instance_num": 4,
+    "trial": 2,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P06_ActIntVisGlo_I04_gen",
+    "knowledge_level": null,
+    "profile_code": "P06_ActIntVisGlo",
+    "instance_num": 4,
+    "trial": 3,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P06_ActIntVisGlo_I05_gen",
+    "knowledge_level": null,
+    "profile_code": "P06_ActIntVisGlo",
+    "instance_num": 5,
+    "trial": 1,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P06_ActIntVisGlo_I05_gen",
+    "knowledge_level": null,
+    "profile_code": "P06_ActIntVisGlo",
+    "instance_num": 5,
+    "trial": 2,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P06_ActIntVisGlo_I05_gen",
+    "knowledge_level": null,
+    "profile_code": "P06_ActIntVisGlo",
+    "instance_num": 5,
+    "trial": 3,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P07_ActIntVerSeq_I01_beg",
+    "knowledge_level": "beginner",
+    "profile_code": "P07_ActIntVerSeq",
+    "instance_num": 1,
+    "trial": 1,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P07_ActIntVerSeq_I01_beg",
+    "knowledge_level": "beginner",
+    "profile_code": "P07_ActIntVerSeq",
+    "instance_num": 1,
+    "trial": 2,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P07_ActIntVerSeq_I01_beg",
+    "knowledge_level": "beginner",
+    "profile_code": "P07_ActIntVerSeq",
+    "instance_num": 1,
+    "trial": 3,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P07_ActIntVerSeq_I02_int",
+    "knowledge_level": "intermediate",
+    "profile_code": "P07_ActIntVerSeq",
+    "instance_num": 2,
+    "trial": 1,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P07_ActIntVerSeq_I02_int",
+    "knowledge_level": "intermediate",
+    "profile_code": "P07_ActIntVerSeq",
+    "instance_num": 2,
+    "trial": 2,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P07_ActIntVerSeq_I02_int",
+    "knowledge_level": "intermediate",
+    "profile_code": "P07_ActIntVerSeq",
+    "instance_num": 2,
+    "trial": 3,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P07_ActIntVerSeq_I03_adv",
+    "knowledge_level": "advanced",
+    "profile_code": "P07_ActIntVerSeq",
+    "instance_num": 3,
+    "trial": 1,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P07_ActIntVerSeq_I03_adv",
+    "knowledge_level": "advanced",
+    "profile_code": "P07_ActIntVerSeq",
+    "instance_num": 3,
+    "trial": 2,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P07_ActIntVerSeq_I03_adv",
+    "knowledge_level": "advanced",
+    "profile_code": "P07_ActIntVerSeq",
+    "instance_num": 3,
+    "trial": 3,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P07_ActIntVerSeq_I04_gen",
+    "knowledge_level": null,
+    "profile_code": "P07_ActIntVerSeq",
+    "instance_num": 4,
+    "trial": 1,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P07_ActIntVerSeq_I04_gen",
+    "knowledge_level": null,
+    "profile_code": "P07_ActIntVerSeq",
+    "instance_num": 4,
+    "trial": 2,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P07_ActIntVerSeq_I04_gen",
+    "knowledge_level": null,
+    "profile_code": "P07_ActIntVerSeq",
+    "instance_num": 4,
+    "trial": 3,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P07_ActIntVerSeq_I05_gen",
+    "knowledge_level": null,
+    "profile_code": "P07_ActIntVerSeq",
+    "instance_num": 5,
+    "trial": 1,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P07_ActIntVerSeq_I05_gen",
+    "knowledge_level": null,
+    "profile_code": "P07_ActIntVerSeq",
+    "instance_num": 5,
+    "trial": 2,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P07_ActIntVerSeq_I05_gen",
+    "knowledge_level": null,
+    "profile_code": "P07_ActIntVerSeq",
+    "instance_num": 5,
+    "trial": 3,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P08_ActIntVerGlo_I01_beg",
+    "knowledge_level": "beginner",
+    "profile_code": "P08_ActIntVerGlo",
+    "instance_num": 1,
+    "trial": 1,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P08_ActIntVerGlo_I01_beg",
+    "knowledge_level": "beginner",
+    "profile_code": "P08_ActIntVerGlo",
+    "instance_num": 1,
+    "trial": 2,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P08_ActIntVerGlo_I01_beg",
+    "knowledge_level": "beginner",
+    "profile_code": "P08_ActIntVerGlo",
+    "instance_num": 1,
+    "trial": 3,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P08_ActIntVerGlo_I02_int",
+    "knowledge_level": "intermediate",
+    "profile_code": "P08_ActIntVerGlo",
+    "instance_num": 2,
+    "trial": 1,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P08_ActIntVerGlo_I02_int",
+    "knowledge_level": "intermediate",
+    "profile_code": "P08_ActIntVerGlo",
+    "instance_num": 2,
+    "trial": 2,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P08_ActIntVerGlo_I02_int",
+    "knowledge_level": "intermediate",
+    "profile_code": "P08_ActIntVerGlo",
+    "instance_num": 2,
+    "trial": 3,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P08_ActIntVerGlo_I03_adv",
+    "knowledge_level": "advanced",
+    "profile_code": "P08_ActIntVerGlo",
+    "instance_num": 3,
+    "trial": 1,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P08_ActIntVerGlo_I03_adv",
+    "knowledge_level": "advanced",
+    "profile_code": "P08_ActIntVerGlo",
+    "instance_num": 3,
+    "trial": 2,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P08_ActIntVerGlo_I03_adv",
+    "knowledge_level": "advanced",
+    "profile_code": "P08_ActIntVerGlo",
+    "instance_num": 3,
+    "trial": 3,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P08_ActIntVerGlo_I04_gen",
+    "knowledge_level": null,
+    "profile_code": "P08_ActIntVerGlo",
+    "instance_num": 4,
+    "trial": 1,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P08_ActIntVerGlo_I04_gen",
+    "knowledge_level": null,
+    "profile_code": "P08_ActIntVerGlo",
+    "instance_num": 4,
+    "trial": 2,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P08_ActIntVerGlo_I04_gen",
+    "knowledge_level": null,
+    "profile_code": "P08_ActIntVerGlo",
+    "instance_num": 4,
+    "trial": 3,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P08_ActIntVerGlo_I05_gen",
+    "knowledge_level": null,
+    "profile_code": "P08_ActIntVerGlo",
+    "instance_num": 5,
+    "trial": 1,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P08_ActIntVerGlo_I05_gen",
+    "knowledge_level": null,
+    "profile_code": "P08_ActIntVerGlo",
+    "instance_num": 5,
+    "trial": 2,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P08_ActIntVerGlo_I05_gen",
+    "knowledge_level": null,
+    "profile_code": "P08_ActIntVerGlo",
+    "instance_num": 5,
+    "trial": 3,
+    "assigned": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P09_RefSenVisSeq_I01_beg",
+    "knowledge_level": "beginner",
+    "profile_code": "P09_RefSenVisSeq",
+    "instance_num": 1,
+    "trial": 1,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P09_RefSenVisSeq_I01_beg",
+    "knowledge_level": "beginner",
+    "profile_code": "P09_RefSenVisSeq",
+    "instance_num": 1,
+    "trial": 2,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P09_RefSenVisSeq_I01_beg",
+    "knowledge_level": "beginner",
+    "profile_code": "P09_RefSenVisSeq",
+    "instance_num": 1,
+    "trial": 3,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P09_RefSenVisSeq_I02_int",
+    "knowledge_level": "intermediate",
+    "profile_code": "P09_RefSenVisSeq",
+    "instance_num": 2,
+    "trial": 1,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P09_RefSenVisSeq_I02_int",
+    "knowledge_level": "intermediate",
+    "profile_code": "P09_RefSenVisSeq",
+    "instance_num": 2,
+    "trial": 2,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P09_RefSenVisSeq_I02_int",
+    "knowledge_level": "intermediate",
+    "profile_code": "P09_RefSenVisSeq",
+    "instance_num": 2,
+    "trial": 3,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P09_RefSenVisSeq_I03_adv",
+    "knowledge_level": "advanced",
+    "profile_code": "P09_RefSenVisSeq",
+    "instance_num": 3,
+    "trial": 1,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P09_RefSenVisSeq_I03_adv",
+    "knowledge_level": "advanced",
+    "profile_code": "P09_RefSenVisSeq",
+    "instance_num": 3,
+    "trial": 2,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P09_RefSenVisSeq_I03_adv",
+    "knowledge_level": "advanced",
+    "profile_code": "P09_RefSenVisSeq",
+    "instance_num": 3,
+    "trial": 3,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P09_RefSenVisSeq_I04_gen",
+    "knowledge_level": null,
+    "profile_code": "P09_RefSenVisSeq",
+    "instance_num": 4,
+    "trial": 1,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P09_RefSenVisSeq_I04_gen",
+    "knowledge_level": null,
+    "profile_code": "P09_RefSenVisSeq",
+    "instance_num": 4,
+    "trial": 2,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P09_RefSenVisSeq_I04_gen",
+    "knowledge_level": null,
+    "profile_code": "P09_RefSenVisSeq",
+    "instance_num": 4,
+    "trial": 3,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P09_RefSenVisSeq_I05_gen",
+    "knowledge_level": null,
+    "profile_code": "P09_RefSenVisSeq",
+    "instance_num": 5,
+    "trial": 1,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P09_RefSenVisSeq_I05_gen",
+    "knowledge_level": null,
+    "profile_code": "P09_RefSenVisSeq",
+    "instance_num": 5,
+    "trial": 2,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P09_RefSenVisSeq_I05_gen",
+    "knowledge_level": null,
+    "profile_code": "P09_RefSenVisSeq",
+    "instance_num": 5,
+    "trial": 3,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P10_RefSenVisGlo_I01_beg",
+    "knowledge_level": "beginner",
+    "profile_code": "P10_RefSenVisGlo",
+    "instance_num": 1,
+    "trial": 1,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P10_RefSenVisGlo_I01_beg",
+    "knowledge_level": "beginner",
+    "profile_code": "P10_RefSenVisGlo",
+    "instance_num": 1,
+    "trial": 2,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P10_RefSenVisGlo_I01_beg",
+    "knowledge_level": "beginner",
+    "profile_code": "P10_RefSenVisGlo",
+    "instance_num": 1,
+    "trial": 3,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P10_RefSenVisGlo_I02_int",
+    "knowledge_level": "intermediate",
+    "profile_code": "P10_RefSenVisGlo",
+    "instance_num": 2,
+    "trial": 1,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P10_RefSenVisGlo_I02_int",
+    "knowledge_level": "intermediate",
+    "profile_code": "P10_RefSenVisGlo",
+    "instance_num": 2,
+    "trial": 2,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P10_RefSenVisGlo_I02_int",
+    "knowledge_level": "intermediate",
+    "profile_code": "P10_RefSenVisGlo",
+    "instance_num": 2,
+    "trial": 3,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P10_RefSenVisGlo_I03_adv",
+    "knowledge_level": "advanced",
+    "profile_code": "P10_RefSenVisGlo",
+    "instance_num": 3,
+    "trial": 1,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P10_RefSenVisGlo_I03_adv",
+    "knowledge_level": "advanced",
+    "profile_code": "P10_RefSenVisGlo",
+    "instance_num": 3,
+    "trial": 2,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P10_RefSenVisGlo_I03_adv",
+    "knowledge_level": "advanced",
+    "profile_code": "P10_RefSenVisGlo",
+    "instance_num": 3,
+    "trial": 3,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P12_RefSenVerGlo_I02_int",
+    "knowledge_level": "intermediate",
+    "profile_code": "P12_RefSenVerGlo",
+    "instance_num": 2,
+    "trial": 1,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P12_RefSenVerGlo_I02_int",
+    "knowledge_level": "intermediate",
+    "profile_code": "P12_RefSenVerGlo",
+    "instance_num": 2,
+    "trial": 2,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P12_RefSenVerGlo_I02_int",
+    "knowledge_level": "intermediate",
+    "profile_code": "P12_RefSenVerGlo",
+    "instance_num": 2,
+    "trial": 3,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P10_RefSenVisGlo_I04_gen",
+    "knowledge_level": null,
+    "profile_code": "P10_RefSenVisGlo",
+    "instance_num": 4,
+    "trial": 1,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P10_RefSenVisGlo_I04_gen",
+    "knowledge_level": null,
+    "profile_code": "P10_RefSenVisGlo",
+    "instance_num": 4,
+    "trial": 2,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P10_RefSenVisGlo_I04_gen",
+    "knowledge_level": null,
+    "profile_code": "P10_RefSenVisGlo",
+    "instance_num": 4,
+    "trial": 3,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P10_RefSenVisGlo_I05_gen",
+    "knowledge_level": null,
+    "profile_code": "P10_RefSenVisGlo",
+    "instance_num": 5,
+    "trial": 1,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P10_RefSenVisGlo_I05_gen",
+    "knowledge_level": null,
+    "profile_code": "P10_RefSenVisGlo",
+    "instance_num": 5,
+    "trial": 2,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P10_RefSenVisGlo_I05_gen",
+    "knowledge_level": null,
+    "profile_code": "P10_RefSenVisGlo",
+    "instance_num": 5,
+    "trial": 3,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P11_RefSenVerSeq_I01_beg",
+    "knowledge_level": "beginner",
+    "profile_code": "P11_RefSenVerSeq",
+    "instance_num": 1,
+    "trial": 1,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P11_RefSenVerSeq_I01_beg",
+    "knowledge_level": "beginner",
+    "profile_code": "P11_RefSenVerSeq",
+    "instance_num": 1,
+    "trial": 2,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P11_RefSenVerSeq_I01_beg",
+    "knowledge_level": "beginner",
+    "profile_code": "P11_RefSenVerSeq",
+    "instance_num": 1,
+    "trial": 3,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P11_RefSenVerSeq_I02_int",
+    "knowledge_level": "intermediate",
+    "profile_code": "P11_RefSenVerSeq",
+    "instance_num": 2,
+    "trial": 1,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P11_RefSenVerSeq_I02_int",
+    "knowledge_level": "intermediate",
+    "profile_code": "P11_RefSenVerSeq",
+    "instance_num": 2,
+    "trial": 2,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P11_RefSenVerSeq_I02_int",
+    "knowledge_level": "intermediate",
+    "profile_code": "P11_RefSenVerSeq",
+    "instance_num": 2,
+    "trial": 3,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P11_RefSenVerSeq_I03_adv",
+    "knowledge_level": "advanced",
+    "profile_code": "P11_RefSenVerSeq",
+    "instance_num": 3,
+    "trial": 1,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P11_RefSenVerSeq_I03_adv",
+    "knowledge_level": "advanced",
+    "profile_code": "P11_RefSenVerSeq",
+    "instance_num": 3,
+    "trial": 2,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P11_RefSenVerSeq_I03_adv",
+    "knowledge_level": "advanced",
+    "profile_code": "P11_RefSenVerSeq",
+    "instance_num": 3,
+    "trial": 3,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P11_RefSenVerSeq_I04_gen",
+    "knowledge_level": null,
+    "profile_code": "P11_RefSenVerSeq",
+    "instance_num": 4,
+    "trial": 1,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P11_RefSenVerSeq_I04_gen",
+    "knowledge_level": null,
+    "profile_code": "P11_RefSenVerSeq",
+    "instance_num": 4,
+    "trial": 2,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P11_RefSenVerSeq_I04_gen",
+    "knowledge_level": null,
+    "profile_code": "P11_RefSenVerSeq",
+    "instance_num": 4,
+    "trial": 3,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P11_RefSenVerSeq_I05_gen",
+    "knowledge_level": null,
+    "profile_code": "P11_RefSenVerSeq",
+    "instance_num": 5,
+    "trial": 1,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P11_RefSenVerSeq_I05_gen",
+    "knowledge_level": null,
+    "profile_code": "P11_RefSenVerSeq",
+    "instance_num": 5,
+    "trial": 2,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P11_RefSenVerSeq_I05_gen",
+    "knowledge_level": null,
+    "profile_code": "P11_RefSenVerSeq",
+    "instance_num": 5,
+    "trial": 3,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P12_RefSenVerGlo_I01_beg",
+    "knowledge_level": "beginner",
+    "profile_code": "P12_RefSenVerGlo",
+    "instance_num": 1,
+    "trial": 1,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P12_RefSenVerGlo_I01_beg",
+    "knowledge_level": "beginner",
+    "profile_code": "P12_RefSenVerGlo",
+    "instance_num": 1,
+    "trial": 2,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P12_RefSenVerGlo_I01_beg",
+    "knowledge_level": "beginner",
+    "profile_code": "P12_RefSenVerGlo",
+    "instance_num": 1,
+    "trial": 3,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P12_RefSenVerGlo_I03_adv",
+    "knowledge_level": "advanced",
+    "profile_code": "P12_RefSenVerGlo",
+    "instance_num": 3,
+    "trial": 1,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P12_RefSenVerGlo_I03_adv",
+    "knowledge_level": "advanced",
+    "profile_code": "P12_RefSenVerGlo",
+    "instance_num": 3,
+    "trial": 2,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P12_RefSenVerGlo_I03_adv",
+    "knowledge_level": "advanced",
+    "profile_code": "P12_RefSenVerGlo",
+    "instance_num": 3,
+    "trial": 3,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P12_RefSenVerGlo_I04_gen",
+    "knowledge_level": null,
+    "profile_code": "P12_RefSenVerGlo",
+    "instance_num": 4,
+    "trial": 1,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P12_RefSenVerGlo_I04_gen",
+    "knowledge_level": null,
+    "profile_code": "P12_RefSenVerGlo",
+    "instance_num": 4,
+    "trial": 2,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P12_RefSenVerGlo_I04_gen",
+    "knowledge_level": null,
+    "profile_code": "P12_RefSenVerGlo",
+    "instance_num": 4,
+    "trial": 3,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P12_RefSenVerGlo_I05_gen",
+    "knowledge_level": null,
+    "profile_code": "P12_RefSenVerGlo",
+    "instance_num": 5,
+    "trial": 1,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P12_RefSenVerGlo_I05_gen",
+    "knowledge_level": null,
+    "profile_code": "P12_RefSenVerGlo",
+    "instance_num": 5,
+    "trial": 2,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P12_RefSenVerGlo_I05_gen",
+    "knowledge_level": null,
+    "profile_code": "P12_RefSenVerGlo",
+    "instance_num": 5,
+    "trial": 3,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P13_RefIntVisSeq_I01_beg",
+    "knowledge_level": "beginner",
+    "profile_code": "P13_RefIntVisSeq",
+    "instance_num": 1,
+    "trial": 1,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P13_RefIntVisSeq_I01_beg",
+    "knowledge_level": "beginner",
+    "profile_code": "P13_RefIntVisSeq",
+    "instance_num": 1,
+    "trial": 2,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P13_RefIntVisSeq_I01_beg",
+    "knowledge_level": "beginner",
+    "profile_code": "P13_RefIntVisSeq",
+    "instance_num": 1,
+    "trial": 3,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P13_RefIntVisSeq_I02_int",
+    "knowledge_level": "intermediate",
+    "profile_code": "P13_RefIntVisSeq",
+    "instance_num": 2,
+    "trial": 1,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P13_RefIntVisSeq_I02_int",
+    "knowledge_level": "intermediate",
+    "profile_code": "P13_RefIntVisSeq",
+    "instance_num": 2,
+    "trial": 2,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P13_RefIntVisSeq_I02_int",
+    "knowledge_level": "intermediate",
+    "profile_code": "P13_RefIntVisSeq",
+    "instance_num": 2,
+    "trial": 3,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P13_RefIntVisSeq_I03_adv",
+    "knowledge_level": "advanced",
+    "profile_code": "P13_RefIntVisSeq",
+    "instance_num": 3,
+    "trial": 1,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P13_RefIntVisSeq_I03_adv",
+    "knowledge_level": "advanced",
+    "profile_code": "P13_RefIntVisSeq",
+    "instance_num": 3,
+    "trial": 2,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P13_RefIntVisSeq_I03_adv",
+    "knowledge_level": "advanced",
+    "profile_code": "P13_RefIntVisSeq",
+    "instance_num": 3,
+    "trial": 3,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P13_RefIntVisSeq_I04_gen",
+    "knowledge_level": null,
+    "profile_code": "P13_RefIntVisSeq",
+    "instance_num": 4,
+    "trial": 1,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P13_RefIntVisSeq_I04_gen",
+    "knowledge_level": null,
+    "profile_code": "P13_RefIntVisSeq",
+    "instance_num": 4,
+    "trial": 2,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P13_RefIntVisSeq_I04_gen",
+    "knowledge_level": null,
+    "profile_code": "P13_RefIntVisSeq",
+    "instance_num": 4,
+    "trial": 3,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P13_RefIntVisSeq_I05_gen",
+    "knowledge_level": null,
+    "profile_code": "P13_RefIntVisSeq",
+    "instance_num": 5,
+    "trial": 1,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P13_RefIntVisSeq_I05_gen",
+    "knowledge_level": null,
+    "profile_code": "P13_RefIntVisSeq",
+    "instance_num": 5,
+    "trial": 2,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P13_RefIntVisSeq_I05_gen",
+    "knowledge_level": null,
+    "profile_code": "P13_RefIntVisSeq",
+    "instance_num": 5,
+    "trial": 3,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P14_RefIntVisGlo_I01_beg",
+    "knowledge_level": "beginner",
+    "profile_code": "P14_RefIntVisGlo",
+    "instance_num": 1,
+    "trial": 1,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P14_RefIntVisGlo_I01_beg",
+    "knowledge_level": "beginner",
+    "profile_code": "P14_RefIntVisGlo",
+    "instance_num": 1,
+    "trial": 2,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P14_RefIntVisGlo_I01_beg",
+    "knowledge_level": "beginner",
+    "profile_code": "P14_RefIntVisGlo",
+    "instance_num": 1,
+    "trial": 3,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P14_RefIntVisGlo_I02_int",
+    "knowledge_level": "intermediate",
+    "profile_code": "P14_RefIntVisGlo",
+    "instance_num": 2,
+    "trial": 1,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P14_RefIntVisGlo_I02_int",
+    "knowledge_level": "intermediate",
+    "profile_code": "P14_RefIntVisGlo",
+    "instance_num": 2,
+    "trial": 2,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P14_RefIntVisGlo_I02_int",
+    "knowledge_level": "intermediate",
+    "profile_code": "P14_RefIntVisGlo",
+    "instance_num": 2,
+    "trial": 3,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P14_RefIntVisGlo_I03_adv",
+    "knowledge_level": "advanced",
+    "profile_code": "P14_RefIntVisGlo",
+    "instance_num": 3,
+    "trial": 1,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P14_RefIntVisGlo_I03_adv",
+    "knowledge_level": "advanced",
+    "profile_code": "P14_RefIntVisGlo",
+    "instance_num": 3,
+    "trial": 2,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P14_RefIntVisGlo_I03_adv",
+    "knowledge_level": "advanced",
+    "profile_code": "P14_RefIntVisGlo",
+    "instance_num": 3,
+    "trial": 3,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P14_RefIntVisGlo_I04_gen",
+    "knowledge_level": null,
+    "profile_code": "P14_RefIntVisGlo",
+    "instance_num": 4,
+    "trial": 1,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P14_RefIntVisGlo_I04_gen",
+    "knowledge_level": null,
+    "profile_code": "P14_RefIntVisGlo",
+    "instance_num": 4,
+    "trial": 2,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P14_RefIntVisGlo_I04_gen",
+    "knowledge_level": null,
+    "profile_code": "P14_RefIntVisGlo",
+    "instance_num": 4,
+    "trial": 3,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P14_RefIntVisGlo_I05_gen",
+    "knowledge_level": null,
+    "profile_code": "P14_RefIntVisGlo",
+    "instance_num": 5,
+    "trial": 1,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P14_RefIntVisGlo_I05_gen",
+    "knowledge_level": null,
+    "profile_code": "P14_RefIntVisGlo",
+    "instance_num": 5,
+    "trial": 2,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P14_RefIntVisGlo_I05_gen",
+    "knowledge_level": null,
+    "profile_code": "P14_RefIntVisGlo",
+    "instance_num": 5,
+    "trial": 3,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P15_RefIntVerSeq_I01_beg",
+    "knowledge_level": "beginner",
+    "profile_code": "P15_RefIntVerSeq",
+    "instance_num": 1,
+    "trial": 1,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P15_RefIntVerSeq_I01_beg",
+    "knowledge_level": "beginner",
+    "profile_code": "P15_RefIntVerSeq",
+    "instance_num": 1,
+    "trial": 2,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P15_RefIntVerSeq_I01_beg",
+    "knowledge_level": "beginner",
+    "profile_code": "P15_RefIntVerSeq",
+    "instance_num": 1,
+    "trial": 3,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P15_RefIntVerSeq_I02_int",
+    "knowledge_level": "intermediate",
+    "profile_code": "P15_RefIntVerSeq",
+    "instance_num": 2,
+    "trial": 1,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P15_RefIntVerSeq_I02_int",
+    "knowledge_level": "intermediate",
+    "profile_code": "P15_RefIntVerSeq",
+    "instance_num": 2,
+    "trial": 2,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P15_RefIntVerSeq_I02_int",
+    "knowledge_level": "intermediate",
+    "profile_code": "P15_RefIntVerSeq",
+    "instance_num": 2,
+    "trial": 3,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P15_RefIntVerSeq_I03_adv",
+    "knowledge_level": "advanced",
+    "profile_code": "P15_RefIntVerSeq",
+    "instance_num": 3,
+    "trial": 1,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P15_RefIntVerSeq_I03_adv",
+    "knowledge_level": "advanced",
+    "profile_code": "P15_RefIntVerSeq",
+    "instance_num": 3,
+    "trial": 2,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P15_RefIntVerSeq_I03_adv",
+    "knowledge_level": "advanced",
+    "profile_code": "P15_RefIntVerSeq",
+    "instance_num": 3,
+    "trial": 3,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P15_RefIntVerSeq_I04_gen",
+    "knowledge_level": null,
+    "profile_code": "P15_RefIntVerSeq",
+    "instance_num": 4,
+    "trial": 1,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P15_RefIntVerSeq_I04_gen",
+    "knowledge_level": null,
+    "profile_code": "P15_RefIntVerSeq",
+    "instance_num": 4,
+    "trial": 2,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P15_RefIntVerSeq_I04_gen",
+    "knowledge_level": null,
+    "profile_code": "P15_RefIntVerSeq",
+    "instance_num": 4,
+    "trial": 3,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P15_RefIntVerSeq_I05_gen",
+    "knowledge_level": null,
+    "profile_code": "P15_RefIntVerSeq",
+    "instance_num": 5,
+    "trial": 1,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P15_RefIntVerSeq_I05_gen",
+    "knowledge_level": null,
+    "profile_code": "P15_RefIntVerSeq",
+    "instance_num": 5,
+    "trial": 2,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P15_RefIntVerSeq_I05_gen",
+    "knowledge_level": null,
+    "profile_code": "P15_RefIntVerSeq",
+    "instance_num": 5,
+    "trial": 3,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P16_RefIntVerGlo_I01_beg",
+    "knowledge_level": "beginner",
+    "profile_code": "P16_RefIntVerGlo",
+    "instance_num": 1,
+    "trial": 1,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P16_RefIntVerGlo_I01_beg",
+    "knowledge_level": "beginner",
+    "profile_code": "P16_RefIntVerGlo",
+    "instance_num": 1,
+    "trial": 2,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P16_RefIntVerGlo_I01_beg",
+    "knowledge_level": "beginner",
+    "profile_code": "P16_RefIntVerGlo",
+    "instance_num": 1,
+    "trial": 3,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P16_RefIntVerGlo_I02_int",
+    "knowledge_level": "intermediate",
+    "profile_code": "P16_RefIntVerGlo",
+    "instance_num": 2,
+    "trial": 1,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P16_RefIntVerGlo_I02_int",
+    "knowledge_level": "intermediate",
+    "profile_code": "P16_RefIntVerGlo",
+    "instance_num": 2,
+    "trial": 2,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P16_RefIntVerGlo_I02_int",
+    "knowledge_level": "intermediate",
+    "profile_code": "P16_RefIntVerGlo",
+    "instance_num": 2,
+    "trial": 3,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P16_RefIntVerGlo_I03_adv",
+    "knowledge_level": "advanced",
+    "profile_code": "P16_RefIntVerGlo",
+    "instance_num": 3,
+    "trial": 1,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P16_RefIntVerGlo_I03_adv",
+    "knowledge_level": "advanced",
+    "profile_code": "P16_RefIntVerGlo",
+    "instance_num": 3,
+    "trial": 2,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P16_RefIntVerGlo_I03_adv",
+    "knowledge_level": "advanced",
+    "profile_code": "P16_RefIntVerGlo",
+    "instance_num": 3,
+    "trial": 3,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P16_RefIntVerGlo_I04_gen",
+    "knowledge_level": null,
+    "profile_code": "P16_RefIntVerGlo",
+    "instance_num": 4,
+    "trial": 1,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P16_RefIntVerGlo_I04_gen",
+    "knowledge_level": null,
+    "profile_code": "P16_RefIntVerGlo",
+    "instance_num": 4,
+    "trial": 2,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P16_RefIntVerGlo_I04_gen",
+    "knowledge_level": null,
+    "profile_code": "P16_RefIntVerGlo",
+    "instance_num": 4,
+    "trial": 3,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P16_RefIntVerGlo_I05_gen",
+    "knowledge_level": null,
+    "profile_code": "P16_RefIntVerGlo",
+    "instance_num": 5,
+    "trial": 1,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P16_RefIntVerGlo_I05_gen",
+    "knowledge_level": null,
+    "profile_code": "P16_RefIntVerGlo",
+    "instance_num": 5,
+    "trial": 2,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_P16_RefIntVerGlo_I05_gen",
+    "knowledge_level": null,
+    "profile_code": "P16_RefIntVerGlo",
+    "instance_num": 5,
+    "trial": 3,
+    "assigned": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  }
+]

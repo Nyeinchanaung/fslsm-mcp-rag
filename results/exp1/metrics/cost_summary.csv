@@ -19,3 +19,9 @@ llama3.2:3b,0.0,0.0,240
 llama3.2:3b (baseline),0.0,0.0,15
 phi4-mini,0.0,0.0,240
 phi4-mini (baseline),0.0,0.0,15
+llama3.2:1b,0.0,0.0,240
+llama3.2:1b (baseline),0.0,0.0,15
+mistral:7b,0.0,0.0,240
+mistral:7b (baseline),0.0,0.0,15
+qwen2.5:1.5b,0.0,0.0,240
+qwen2.5:1.5b (baseline),0.0,0.0,15

@@ -37,6 +37,13 @@ models:
     temperature: 0.3
   - name: phi4-mini
     temperature: 0.3
+  # Extra models for pattern analysis
+  - name: llama3.2:1b
+    temperature: 0.3
+  - name: mistral:7b
+    temperature: 0.3
+  - name: qwen2.5:1.5b
+    temperature: 0.3
 
 ils_questionnaire:
   num_questions: 44

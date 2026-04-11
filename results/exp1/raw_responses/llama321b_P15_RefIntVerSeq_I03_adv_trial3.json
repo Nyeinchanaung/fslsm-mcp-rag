@@ -55,9 +55,9 @@
     {
       "q_num": 6,
       "answer": "a",
-      "raw_text": "a",
+      "raw_text": "\"a\"",
       "prompt_tokens": 530,
-      "completion_tokens": 2,
+      "completion_tokens": 3,
       "cost_usd": 0.0
     },
     {

@@ -327,9 +327,9 @@
     {
       "q_num": 40,
       "answer": "a",
-      "raw_text": "\"a\"",
+      "raw_text": "a",
       "prompt_tokens": 548,
-      "completion_tokens": 3,
+      "completion_tokens": 2,
       "cost_usd": 0.0
     },
     {

@@ -79,9 +79,9 @@
     {
       "q_num": 9,
       "answer": "a",
-      "raw_text": "\"a\"",
+      "raw_text": "a",
       "prompt_tokens": 626,
-      "completion_tokens": 3,
+      "completion_tokens": 2,
       "cost_usd": 0.0
     },
     {
@@ -119,9 +119,9 @@
     {
       "q_num": 14,
       "answer": "a",
-      "raw_text": "a",
+      "raw_text": "\"a\"",
       "prompt_tokens": 632,
-      "completion_tokens": 2,
+      "completion_tokens": 3,
       "cost_usd": 0.0
     },
     {

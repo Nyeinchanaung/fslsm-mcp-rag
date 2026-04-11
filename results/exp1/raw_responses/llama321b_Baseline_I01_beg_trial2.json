@@ -5,8 +5,8 @@
   "litellm_model": "ollama/llama3.2:1b",
   "trial": 2,
   "dim_scores": {
-    "act_ref": -7,
-    "sen_int": -9,
+    "act_ref": -9,
+    "sen_int": -11,
     "vis_ver": -11,
     "seq_glo": -11
   },
@@ -54,8 +54,8 @@
     },
     {
       "q_num": 6,
-      "answer": "b",
-      "raw_text": "b",
+      "answer": "a",
+      "raw_text": "a",
       "prompt_tokens": 288,
       "completion_tokens": 2,
       "cost_usd": 0.0
@@ -79,9 +79,9 @@
     {
       "q_num": 9,
       "answer": "a",
-      "raw_text": "a",
+      "raw_text": "\"a\"",
       "prompt_tokens": 286,
-      "completion_tokens": 2,
+      "completion_tokens": 3,
       "cost_usd": 0.0
     },
     {
@@ -135,9 +135,9 @@
     {
       "q_num": 16,
       "answer": "a",
-      "raw_text": "\"a\"",
+      "raw_text": "a",
       "prompt_tokens": 313,
-      "completion_tokens": 3,
+      "completion_tokens": 2,
       "cost_usd": 0.0
     },
     {
@@ -167,15 +167,15 @@
     {
       "q_num": 20,
       "answer": "a",
-      "raw_text": "\"a\"",
+      "raw_text": "a",
       "prompt_tokens": 292,
-      "completion_tokens": 3,
+      "completion_tokens": 2,
       "cost_usd": 0.0
     },
     {
       "q_num": 21,
-      "answer": "b",
-      "raw_text": "b",
+      "answer": "a",
+      "raw_text": "a",
       "prompt_tokens": 271,
       "completion_tokens": 2,
       "cost_usd": 0.0
@@ -191,9 +191,9 @@
     {
       "q_num": 23,
       "answer": "a",
-      "raw_text": "\"a\"",
+      "raw_text": "a",
       "prompt_tokens": 278,
-      "completion_tokens": 3,
+      "completion_tokens": 2,
       "cost_usd": 0.0
     },
     {
@@ -279,9 +279,9 @@
     {
       "q_num": 34,
       "answer": "a",
-      "raw_text": "a",
+      "raw_text": "\"a\"",
       "prompt_tokens": 273,
-      "completion_tokens": 2,
+      "completion_tokens": 3,
       "cost_usd": 0.0
     },
     {
@@ -327,9 +327,9 @@
     {
       "q_num": 40,
       "answer": "a",
-      "raw_text": "\"a\"",
+      "raw_text": "a",
       "prompt_tokens": 288,
-      "completion_tokens": 3,
+      "completion_tokens": 2,
       "cost_usd": 0.0
     },
     {
@@ -351,9 +351,9 @@
     {
       "q_num": 43,
       "answer": "a",
-      "raw_text": "\"a\"",
+      "raw_text": "a",
       "prompt_tokens": 281,
-      "completion_tokens": 3,
+      "completion_tokens": 2,
       "cost_usd": 0.0
     },
     {

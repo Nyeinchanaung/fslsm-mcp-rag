@@ -15,9 +15,9 @@
     {
       "q_num": 1,
       "answer": "a",
-      "raw_text": "a",
+      "raw_text": "\"a\"",
       "prompt_tokens": 216,
-      "completion_tokens": 2,
+      "completion_tokens": 3,
       "cost_usd": 0.0
     },
     {
@@ -95,9 +95,9 @@
     {
       "q_num": 11,
       "answer": "a",
-      "raw_text": "a",
+      "raw_text": "\"a\"",
       "prompt_tokens": 230,
-      "completion_tokens": 2,
+      "completion_tokens": 3,
       "cost_usd": 0.0
     },
     {
@@ -215,17 +215,17 @@
     {
       "q_num": 26,
       "answer": "a",
-      "raw_text": "a",
+      "raw_text": "\"a\"",
       "prompt_tokens": 227,
-      "completion_tokens": 2,
+      "completion_tokens": 3,
       "cost_usd": 0.0
     },
     {
       "q_num": 27,
       "answer": "a",
-      "raw_text": "\"a\"",
+      "raw_text": "a",
       "prompt_tokens": 228,
-      "completion_tokens": 3,
+      "completion_tokens": 2,
       "cost_usd": 0.0
     },
     {
@@ -247,9 +247,9 @@
     {
       "q_num": 30,
       "answer": "a",
-      "raw_text": "a",
+      "raw_text": "\"a\"",
       "prompt_tokens": 229,
-      "completion_tokens": 2,
+      "completion_tokens": 3,
       "cost_usd": 0.0
     },
     {
@@ -263,17 +263,17 @@
     {
       "q_num": 32,
       "answer": "a",
-      "raw_text": "\"a\"",
+      "raw_text": "a",
       "prompt_tokens": 247,
-      "completion_tokens": 3,
+      "completion_tokens": 2,
       "cost_usd": 0.0
     },
     {
       "q_num": 33,
       "answer": "a",
-      "raw_text": "'a'",
+      "raw_text": "a",
       "prompt_tokens": 240,
-      "completion_tokens": 3,
+      "completion_tokens": 2,
       "cost_usd": 0.0
     },
     {
@@ -351,9 +351,9 @@
     {
       "q_num": 43,
       "answer": "a",
-      "raw_text": "a",
+      "raw_text": "\"a\"",
       "prompt_tokens": 222,
-      "completion_tokens": 2,
+      "completion_tokens": 3,
       "cost_usd": 0.0
     },
     {

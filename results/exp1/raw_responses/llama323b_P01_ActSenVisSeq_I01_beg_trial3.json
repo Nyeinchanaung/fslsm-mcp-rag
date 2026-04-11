@@ -7,8 +7,8 @@
   "dim_scores": {
     "act_ref": -7,
     "sen_int": -5,
-    "vis_ver": -11,
-    "seq_glo": -1
+    "vis_ver": -9,
+    "seq_glo": -5
   },
   "total_cost_usd": 0.0,
   "raw": [
@@ -70,8 +70,8 @@
     },
     {
       "q_num": 8,
-      "answer": "b",
-      "raw_text": "(b)",
+      "answer": "a",
+      "raw_text": "(a)",
       "prompt_tokens": 624,
       "completion_tokens": 3,
       "cost_usd": 0.0
@@ -126,8 +126,8 @@
     },
     {
       "q_num": 15,
-      "answer": "a",
-      "raw_text": "(a)",
+      "answer": "b",
+      "raw_text": "(b)",
       "prompt_tokens": 622,
       "completion_tokens": 3,
       "cost_usd": 0.0
@@ -230,8 +230,8 @@
     },
     {
       "q_num": 28,
-      "answer": "b",
-      "raw_text": "(b)",
+      "answer": "a",
+      "raw_text": "(a)",
       "prompt_tokens": 634,
       "completion_tokens": 3,
       "cost_usd": 0.0

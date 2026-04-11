@@ -41,22 +41,52 @@ def run_ils_for_agent(
     raw: list[dict] = []
     total_cost = 0.0
 
+    max_retries = 5
+    retry_prompts = [
+        "You must answer with exactly 'a' or 'b'. No other text. Just the letter.",
+        "Reply ONLY with the single letter a or b. Nothing else.",
+        "Answer: a or b?",
+        "Pick one: a or b",
+        "a or b",
+    ]
+
     for q in questions:
+        user_prompt = build_ils_question_prompt(q)
         response = client.chat(
             system=system_prompt,
-            user=build_ils_question_prompt(q),
+            user=user_prompt,
             max_tokens=10,
         )
         total_cost += response.cost
-
         answer = extract_ab_choice(response.content)
+
+        # Retry with stricter prompt if answer could not be parsed
+        retries = 0
+        while answer is None and retries < max_retries:
+            retries += 1
+            logger.info(
+                "Retry %d/%d for agent %s q%d (got: %r)",
+                retries, max_retries, agent_uid, q["q_num"],
+                response.content,
+            )
+            suffix = retry_prompts[retries - 1]
+            retry_response = client.chat(
+                system=system_prompt,
+                user=f"{user_prompt}\n\n{suffix}",
+                max_tokens=5,
+            )
+            total_cost += retry_response.cost
+            answer = extract_ab_choice(retry_response.content)
+            if answer:
+                response = retry_response
+
         if answer:
             pole = q[f"option_{answer}"]["pole"]
             dim_scores[q["dimension"]] += pole
         else:
-            logger.warning(
-                "Could not parse a/b from agent %s q%d: %r",
-                agent_uid, q["q_num"], response.content,
+            logger.error(
+                "Failed to parse a/b after %d retries for agent %s q%d: %r",
+                max_retries, agent_uid, q["q_num"], response.content,
             )
 
         raw.append({

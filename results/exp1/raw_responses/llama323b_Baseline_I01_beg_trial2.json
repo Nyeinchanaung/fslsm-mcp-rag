@@ -5,17 +5,17 @@
   "litellm_model": "ollama/llama3.2:3b",
   "trial": 2,
   "dim_scores": {
-    "act_ref": 1,
-    "sen_int": 3,
-    "vis_ver": -1,
-    "seq_glo": 5
+    "act_ref": -1,
+    "sen_int": -3,
+    "vis_ver": -5,
+    "seq_glo": 1
   },
   "total_cost_usd": 0.0,
   "raw": [
     {
       "q_num": 1,
-      "answer": "b",
-      "raw_text": "(b)",
+      "answer": "a",
+      "raw_text": "(a)",
       "prompt_tokens": 275,
       "completion_tokens": 3,
       "cost_usd": 0.0
@@ -62,10 +62,10 @@
     },
     {
       "q_num": 7,
-      "answer": "b",
-      "raw_text": "(b)",
+      "answer": "a",
+      "raw_text": "a",
       "prompt_tokens": 283,
-      "completion_tokens": 3,
+      "completion_tokens": 2,
       "cost_usd": 0.0
     },
     {
@@ -102,8 +102,8 @@
     },
     {
       "q_num": 12,
-      "answer": "b",
-      "raw_text": "b",
+      "answer": "a",
+      "raw_text": "a",
       "prompt_tokens": 301,
       "completion_tokens": 2,
       "cost_usd": 0.0
@@ -118,10 +118,10 @@
     },
     {
       "q_num": 14,
-      "answer": "b",
-      "raw_text": "(b)",
+      "answer": "a",
+      "raw_text": "a",
       "prompt_tokens": 292,
-      "completion_tokens": 3,
+      "completion_tokens": 2,
       "cost_usd": 0.0
     },
     {
@@ -143,15 +143,15 @@
     {
       "q_num": 17,
       "answer": "b",
-      "raw_text": "b",
+      "raw_text": "(b)",
       "prompt_tokens": 288,
-      "completion_tokens": 2,
+      "completion_tokens": 3,
       "cost_usd": 0.0
     },
     {
       "q_num": 18,
-      "answer": "b",
-      "raw_text": "(b)",
+      "answer": "a",
+      "raw_text": "(a)",
       "prompt_tokens": 270,
       "completion_tokens": 3,
       "cost_usd": 0.0
@@ -175,9 +175,9 @@
     {
       "q_num": 21,
       "answer": "b",
-      "raw_text": "b",
+      "raw_text": "(b)",
       "prompt_tokens": 271,
-      "completion_tokens": 2,
+      "completion_tokens": 3,
       "cost_usd": 0.0
     },
     {
@@ -263,17 +263,17 @@
     {
       "q_num": 32,
       "answer": "a",
-      "raw_text": "a",
+      "raw_text": "(a)",
       "prompt_tokens": 306,
-      "completion_tokens": 2,
+      "completion_tokens": 3,
       "cost_usd": 0.0
     },
     {
       "q_num": 33,
       "answer": "a",
-      "raw_text": "a",
+      "raw_text": "(a)",
       "prompt_tokens": 299,
-      "completion_tokens": 2,
+      "completion_tokens": 3,
       "cost_usd": 0.0
     },
     {
@@ -287,15 +287,15 @@
     {
       "q_num": 35,
       "answer": "a",
-      "raw_text": "a",
+      "raw_text": "(a)",
       "prompt_tokens": 286,
-      "completion_tokens": 2,
+      "completion_tokens": 3,
       "cost_usd": 0.0
     },
     {
       "q_num": 36,
-      "answer": "b",
-      "raw_text": "(b)",
+      "answer": "a",
+      "raw_text": "(a)",
       "prompt_tokens": 298,
       "completion_tokens": 3,
       "cost_usd": 0.0
@@ -310,16 +310,16 @@
     },
     {
       "q_num": 38,
-      "answer": "b",
-      "raw_text": "(b)",
+      "answer": "a",
+      "raw_text": "(a)",
       "prompt_tokens": 281,
       "completion_tokens": 3,
       "cost_usd": 0.0
     },
     {
       "q_num": 39,
-      "answer": "b",
-      "raw_text": "b",
+      "answer": "a",
+      "raw_text": "a",
       "prompt_tokens": 274,
       "completion_tokens": 2,
       "cost_usd": 0.0
@@ -335,9 +335,9 @@
     {
       "q_num": 41,
       "answer": "a",
-      "raw_text": "(a)",
+      "raw_text": "a",
       "prompt_tokens": 286,
-      "completion_tokens": 3,
+      "completion_tokens": 2,
       "cost_usd": 0.0
     },
     {

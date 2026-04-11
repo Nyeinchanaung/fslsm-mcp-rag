@@ -5,10 +5,10 @@
   "litellm_model": "ollama/llama3.2:1b",
   "trial": 1,
   "dim_scores": {
-    "act_ref": -9,
-    "sen_int": -9,
+    "act_ref": -11,
+    "sen_int": -11,
     "vis_ver": -11,
-    "seq_glo": -7
+    "seq_glo": -9
   },
   "total_cost_usd": 0.0,
   "raw": [
@@ -55,9 +55,9 @@
     {
       "q_num": 6,
       "answer": "a",
-      "raw_text": "a",
+      "raw_text": "### a",
       "prompt_tokens": 280,
-      "completion_tokens": 2,
+      "completion_tokens": 3,
       "cost_usd": 0.0
     },
     {
@@ -79,9 +79,9 @@
     {
       "q_num": 9,
       "answer": "a",
-      "raw_text": "a",
+      "raw_text": "\"a\"",
       "prompt_tokens": 278,
-      "completion_tokens": 2,
+      "completion_tokens": 3,
       "cost_usd": 0.0
     },
     {
@@ -110,8 +110,8 @@
     },
     {
       "q_num": 13,
-      "answer": "b",
-      "raw_text": "b",
+      "answer": "a",
+      "raw_text": "a",
       "prompt_tokens": 280,
       "completion_tokens": 2,
       "cost_usd": 0.0
@@ -198,8 +198,8 @@
     },
     {
       "q_num": 24,
-      "answer": "b",
-      "raw_text": "b",
+      "answer": "a",
+      "raw_text": "a",
       "prompt_tokens": 293,
       "completion_tokens": 2,
       "cost_usd": 0.0
@@ -246,10 +246,10 @@
     },
     {
       "q_num": 30,
-      "answer": "b",
-      "raw_text": "### b",
+      "answer": "a",
+      "raw_text": "a",
       "prompt_tokens": 280,
-      "completion_tokens": 3,
+      "completion_tokens": 2,
       "cost_usd": 0.0
     },
     {

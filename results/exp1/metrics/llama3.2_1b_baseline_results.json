@@ -53,7 +53,7 @@
     },
     "raw_scores": {
       "act_ref": -9,
-      "sen_int": -10,
+      "sen_int": -11,
       "vis_ver": -11,
       "seq_glo": -11
     },
@@ -115,7 +115,7 @@
       "act_ref": -9,
       "sen_int": -11,
       "vis_ver": -11,
-      "seq_glo": -9
+      "seq_glo": -11
     },
     "cost_usd": 0.0
   },
@@ -132,29 +132,29 @@
       "seq_glo": -1
     },
     "raw_scores": {
-      "act_ref": -5,
-      "sen_int": -10,
-      "vis_ver": -11,
-      "seq_glo": -9
-    },
-    "cost_usd": 0.0
-  },
-  {
-    "agent_uid": "llama321b_Baseline_I01_beg",
-    "knowledge_level": "beginner",
-    "profile_code": "P00_Baseline",
-    "instance_num": 1,
-    "trial": 2,
-    "detected": {
-      "act_ref": -1,
-      "sen_int": -1,
-      "vis_ver": -1,
-      "seq_glo": -1
-    },
-    "raw_scores": {
-      "act_ref": -7,
+      "act_ref": -9,
       "sen_int": -9,
       "vis_ver": -11,
+      "seq_glo": -9
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_Baseline_I01_beg",
+    "knowledge_level": "beginner",
+    "profile_code": "P00_Baseline",
+    "instance_num": 1,
+    "trial": 2,
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -9,
+      "sen_int": -11,
+      "vis_ver": -11,
       "seq_glo": -11
     },
     "cost_usd": 0.0
@@ -172,99 +172,19 @@
       "seq_glo": -1
     },
     "raw_scores": {
-      "act_ref": -7,
-      "sen_int": -11,
+      "act_ref": -9,
+      "sen_int": -9,
       "vis_ver": -9,
-      "seq_glo": -11
-    },
-    "cost_usd": 0.0
-  },
-  {
-    "agent_uid": "llama321b_Baseline_I02_int",
-    "knowledge_level": "intermediate",
-    "profile_code": "P00_Baseline",
-    "instance_num": 2,
-    "trial": 1,
-    "detected": {
-      "act_ref": -1,
-      "sen_int": -1,
-      "vis_ver": -1,
-      "seq_glo": -1
-    },
-    "raw_scores": {
-      "act_ref": -9,
-      "sen_int": -11,
-      "vis_ver": -11,
-      "seq_glo": -9
-    },
-    "cost_usd": 0.0
-  },
-  {
-    "agent_uid": "llama321b_Baseline_I02_int",
-    "knowledge_level": "intermediate",
-    "profile_code": "P00_Baseline",
-    "instance_num": 2,
-    "trial": 2,
-    "detected": {
-      "act_ref": -1,
-      "sen_int": -1,
-      "vis_ver": -1,
-      "seq_glo": -1
-    },
-    "raw_scores": {
-      "act_ref": -9,
-      "sen_int": -11,
-      "vis_ver": -11,
-      "seq_glo": -9
-    },
-    "cost_usd": 0.0
-  },
-  {
-    "agent_uid": "llama321b_Baseline_I02_int",
-    "knowledge_level": "intermediate",
-    "profile_code": "P00_Baseline",
-    "instance_num": 2,
-    "trial": 3,
-    "detected": {
-      "act_ref": -1,
-      "sen_int": -1,
-      "vis_ver": -1,
-      "seq_glo": -1
-    },
-    "raw_scores": {
-      "act_ref": -9,
-      "sen_int": -11,
-      "vis_ver": -11,
-      "seq_glo": -9
-    },
-    "cost_usd": 0.0
-  },
-  {
-    "agent_uid": "llama321b_Baseline_I03_adv",
-    "knowledge_level": "advanced",
-    "profile_code": "P00_Baseline",
-    "instance_num": 3,
-    "trial": 1,
-    "detected": {
-      "act_ref": -1,
-      "sen_int": -1,
-      "vis_ver": -1,
-      "seq_glo": -1
-    },
-    "raw_scores": {
-      "act_ref": -9,
-      "sen_int": -9,
-      "vis_ver": -11,
       "seq_glo": -7
     },
     "cost_usd": 0.0
   },
   {
-    "agent_uid": "llama321b_Baseline_I03_adv",
-    "knowledge_level": "advanced",
+    "agent_uid": "llama321b_Baseline_I02_int",
+    "knowledge_level": "intermediate",
     "profile_code": "P00_Baseline",
-    "instance_num": 3,
-    "trial": 2,
+    "instance_num": 2,
+    "trial": 1,
     "detected": {
       "act_ref": -1,
       "sen_int": -1,
@@ -275,6 +195,86 @@
       "act_ref": -11,
       "sen_int": -11,
       "vis_ver": -11,
+      "seq_glo": -9
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_Baseline_I02_int",
+    "knowledge_level": "intermediate",
+    "profile_code": "P00_Baseline",
+    "instance_num": 2,
+    "trial": 2,
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -9,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_Baseline_I02_int",
+    "knowledge_level": "intermediate",
+    "profile_code": "P00_Baseline",
+    "instance_num": 2,
+    "trial": 3,
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -9,
+      "sen_int": -9,
+      "vis_ver": -11,
+      "seq_glo": -11
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_Baseline_I03_adv",
+    "knowledge_level": "advanced",
+    "profile_code": "P00_Baseline",
+    "instance_num": 3,
+    "trial": 1,
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -11,
+      "sen_int": -11,
+      "vis_ver": -11,
+      "seq_glo": -9
+    },
+    "cost_usd": 0.0
+  },
+  {
+    "agent_uid": "llama321b_Baseline_I03_adv",
+    "knowledge_level": "advanced",
+    "profile_code": "P00_Baseline",
+    "instance_num": 3,
+    "trial": 2,
+    "detected": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "raw_scores": {
+      "act_ref": -9,
+      "sen_int": -9,
+      "vis_ver": -11,
       "seq_glo": -11
     },
     "cost_usd": 0.0
@@ -292,7 +292,7 @@
       "seq_glo": -1
     },
     "raw_scores": {
-      "act_ref": -9,
+      "act_ref": -11,
       "sen_int": -11,
       "vis_ver": -11,
       "seq_glo": -11

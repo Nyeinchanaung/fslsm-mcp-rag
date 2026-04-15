@@ -25,3 +25,7 @@ mistral:7b,0.0,0.0,240
 mistral:7b (baseline),0.0,0.0,15
 qwen2.5:1.5b,0.0,0.0,240
 qwen2.5:1.5b (baseline),0.0,0.0,15
+gemma2:2b,0.0,0.0,240
+gemma2:2b (baseline),0.0,0.0,15
+gemma3:1b,0.0,0.0,240
+gemma3:1b (baseline),0.0,0.0,15

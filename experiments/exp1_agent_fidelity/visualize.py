@@ -34,6 +34,8 @@ MODELS = [
     "llama3.2:1b",
     "mistral:7b",
     "qwen2.5:1.5b",
+    "gemma2:2b",
+    "gemma3:1b",
 ]
 
 

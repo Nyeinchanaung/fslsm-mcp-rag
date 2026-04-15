@@ -1,0 +1,1042 @@
+[
+  {
+    "agent_uid": "P01_ActSenVisSeq_I01_beg",
+    "profile_code": "P01_ActSenVisSeq",
+    "profile_label": "Active-Sensing-Visual-Sequential",
+    "fslsm_vector": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "instance_num": 1,
+    "knowledge_level": "beginner"
+  },
+  {
+    "agent_uid": "P01_ActSenVisSeq_I02_int",
+    "profile_code": "P01_ActSenVisSeq",
+    "profile_label": "Active-Sensing-Visual-Sequential",
+    "fslsm_vector": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "instance_num": 2,
+    "knowledge_level": "intermediate"
+  },
+  {
+    "agent_uid": "P01_ActSenVisSeq_I03_adv",
+    "profile_code": "P01_ActSenVisSeq",
+    "profile_label": "Active-Sensing-Visual-Sequential",
+    "fslsm_vector": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "instance_num": 3,
+    "knowledge_level": "advanced"
+  },
+  {
+    "agent_uid": "P01_ActSenVisSeq_I04_gen",
+    "profile_code": "P01_ActSenVisSeq",
+    "profile_label": "Active-Sensing-Visual-Sequential",
+    "fslsm_vector": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "instance_num": 4,
+    "knowledge_level": "general"
+  },
+  {
+    "agent_uid": "P01_ActSenVisSeq_I05_gen",
+    "profile_code": "P01_ActSenVisSeq",
+    "profile_label": "Active-Sensing-Visual-Sequential",
+    "fslsm_vector": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "instance_num": 5,
+    "knowledge_level": "general"
+  },
+  {
+    "agent_uid": "P02_ActSenVisGlo_I01_beg",
+    "profile_code": "P02_ActSenVisGlo",
+    "profile_label": "Active-Sensing-Visual-Global",
+    "fslsm_vector": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "instance_num": 1,
+    "knowledge_level": "beginner"
+  },
+  {
+    "agent_uid": "P02_ActSenVisGlo_I02_int",
+    "profile_code": "P02_ActSenVisGlo",
+    "profile_label": "Active-Sensing-Visual-Global",
+    "fslsm_vector": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "instance_num": 2,
+    "knowledge_level": "intermediate"
+  },
+  {
+    "agent_uid": "P02_ActSenVisGlo_I03_adv",
+    "profile_code": "P02_ActSenVisGlo",
+    "profile_label": "Active-Sensing-Visual-Global",
+    "fslsm_vector": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "instance_num": 3,
+    "knowledge_level": "advanced"
+  },
+  {
+    "agent_uid": "P02_ActSenVisGlo_I04_gen",
+    "profile_code": "P02_ActSenVisGlo",
+    "profile_label": "Active-Sensing-Visual-Global",
+    "fslsm_vector": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "instance_num": 4,
+    "knowledge_level": "general"
+  },
+  {
+    "agent_uid": "P02_ActSenVisGlo_I05_gen",
+    "profile_code": "P02_ActSenVisGlo",
+    "profile_label": "Active-Sensing-Visual-Global",
+    "fslsm_vector": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "instance_num": 5,
+    "knowledge_level": "general"
+  },
+  {
+    "agent_uid": "P03_ActSenVerSeq_I01_beg",
+    "profile_code": "P03_ActSenVerSeq",
+    "profile_label": "Active-Sensing-Verbal-Sequential",
+    "fslsm_vector": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "instance_num": 1,
+    "knowledge_level": "beginner"
+  },
+  {
+    "agent_uid": "P03_ActSenVerSeq_I02_int",
+    "profile_code": "P03_ActSenVerSeq",
+    "profile_label": "Active-Sensing-Verbal-Sequential",
+    "fslsm_vector": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "instance_num": 2,
+    "knowledge_level": "intermediate"
+  },
+  {
+    "agent_uid": "P03_ActSenVerSeq_I03_adv",
+    "profile_code": "P03_ActSenVerSeq",
+    "profile_label": "Active-Sensing-Verbal-Sequential",
+    "fslsm_vector": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "instance_num": 3,
+    "knowledge_level": "advanced"
+  },
+  {
+    "agent_uid": "P03_ActSenVerSeq_I04_gen",
+    "profile_code": "P03_ActSenVerSeq",
+    "profile_label": "Active-Sensing-Verbal-Sequential",
+    "fslsm_vector": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "instance_num": 4,
+    "knowledge_level": "general"
+  },
+  {
+    "agent_uid": "P03_ActSenVerSeq_I05_gen",
+    "profile_code": "P03_ActSenVerSeq",
+    "profile_label": "Active-Sensing-Verbal-Sequential",
+    "fslsm_vector": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "instance_num": 5,
+    "knowledge_level": "general"
+  },
+  {
+    "agent_uid": "P04_ActSenVerGlo_I01_beg",
+    "profile_code": "P04_ActSenVerGlo",
+    "profile_label": "Active-Sensing-Verbal-Global",
+    "fslsm_vector": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "instance_num": 1,
+    "knowledge_level": "beginner"
+  },
+  {
+    "agent_uid": "P04_ActSenVerGlo_I02_int",
+    "profile_code": "P04_ActSenVerGlo",
+    "profile_label": "Active-Sensing-Verbal-Global",
+    "fslsm_vector": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "instance_num": 2,
+    "knowledge_level": "intermediate"
+  },
+  {
+    "agent_uid": "P04_ActSenVerGlo_I03_adv",
+    "profile_code": "P04_ActSenVerGlo",
+    "profile_label": "Active-Sensing-Verbal-Global",
+    "fslsm_vector": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "instance_num": 3,
+    "knowledge_level": "advanced"
+  },
+  {
+    "agent_uid": "P04_ActSenVerGlo_I04_gen",
+    "profile_code": "P04_ActSenVerGlo",
+    "profile_label": "Active-Sensing-Verbal-Global",
+    "fslsm_vector": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "instance_num": 4,
+    "knowledge_level": "general"
+  },
+  {
+    "agent_uid": "P04_ActSenVerGlo_I05_gen",
+    "profile_code": "P04_ActSenVerGlo",
+    "profile_label": "Active-Sensing-Verbal-Global",
+    "fslsm_vector": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "instance_num": 5,
+    "knowledge_level": "general"
+  },
+  {
+    "agent_uid": "P05_ActIntVisSeq_I01_beg",
+    "profile_code": "P05_ActIntVisSeq",
+    "profile_label": "Active-Intuitive-Visual-Sequential",
+    "fslsm_vector": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "instance_num": 1,
+    "knowledge_level": "beginner"
+  },
+  {
+    "agent_uid": "P05_ActIntVisSeq_I02_int",
+    "profile_code": "P05_ActIntVisSeq",
+    "profile_label": "Active-Intuitive-Visual-Sequential",
+    "fslsm_vector": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "instance_num": 2,
+    "knowledge_level": "intermediate"
+  },
+  {
+    "agent_uid": "P05_ActIntVisSeq_I03_adv",
+    "profile_code": "P05_ActIntVisSeq",
+    "profile_label": "Active-Intuitive-Visual-Sequential",
+    "fslsm_vector": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "instance_num": 3,
+    "knowledge_level": "advanced"
+  },
+  {
+    "agent_uid": "P05_ActIntVisSeq_I04_gen",
+    "profile_code": "P05_ActIntVisSeq",
+    "profile_label": "Active-Intuitive-Visual-Sequential",
+    "fslsm_vector": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "instance_num": 4,
+    "knowledge_level": "general"
+  },
+  {
+    "agent_uid": "P05_ActIntVisSeq_I05_gen",
+    "profile_code": "P05_ActIntVisSeq",
+    "profile_label": "Active-Intuitive-Visual-Sequential",
+    "fslsm_vector": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "instance_num": 5,
+    "knowledge_level": "general"
+  },
+  {
+    "agent_uid": "P06_ActIntVisGlo_I01_beg",
+    "profile_code": "P06_ActIntVisGlo",
+    "profile_label": "Active-Intuitive-Visual-Global",
+    "fslsm_vector": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "instance_num": 1,
+    "knowledge_level": "beginner"
+  },
+  {
+    "agent_uid": "P06_ActIntVisGlo_I02_int",
+    "profile_code": "P06_ActIntVisGlo",
+    "profile_label": "Active-Intuitive-Visual-Global",
+    "fslsm_vector": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "instance_num": 2,
+    "knowledge_level": "intermediate"
+  },
+  {
+    "agent_uid": "P06_ActIntVisGlo_I03_adv",
+    "profile_code": "P06_ActIntVisGlo",
+    "profile_label": "Active-Intuitive-Visual-Global",
+    "fslsm_vector": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "instance_num": 3,
+    "knowledge_level": "advanced"
+  },
+  {
+    "agent_uid": "P06_ActIntVisGlo_I04_gen",
+    "profile_code": "P06_ActIntVisGlo",
+    "profile_label": "Active-Intuitive-Visual-Global",
+    "fslsm_vector": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "instance_num": 4,
+    "knowledge_level": "general"
+  },
+  {
+    "agent_uid": "P06_ActIntVisGlo_I05_gen",
+    "profile_code": "P06_ActIntVisGlo",
+    "profile_label": "Active-Intuitive-Visual-Global",
+    "fslsm_vector": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "instance_num": 5,
+    "knowledge_level": "general"
+  },
+  {
+    "agent_uid": "P07_ActIntVerSeq_I01_beg",
+    "profile_code": "P07_ActIntVerSeq",
+    "profile_label": "Active-Intuitive-Verbal-Sequential",
+    "fslsm_vector": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "instance_num": 1,
+    "knowledge_level": "beginner"
+  },
+  {
+    "agent_uid": "P07_ActIntVerSeq_I02_int",
+    "profile_code": "P07_ActIntVerSeq",
+    "profile_label": "Active-Intuitive-Verbal-Sequential",
+    "fslsm_vector": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "instance_num": 2,
+    "knowledge_level": "intermediate"
+  },
+  {
+    "agent_uid": "P07_ActIntVerSeq_I03_adv",
+    "profile_code": "P07_ActIntVerSeq",
+    "profile_label": "Active-Intuitive-Verbal-Sequential",
+    "fslsm_vector": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "instance_num": 3,
+    "knowledge_level": "advanced"
+  },
+  {
+    "agent_uid": "P07_ActIntVerSeq_I04_gen",
+    "profile_code": "P07_ActIntVerSeq",
+    "profile_label": "Active-Intuitive-Verbal-Sequential",
+    "fslsm_vector": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "instance_num": 4,
+    "knowledge_level": "general"
+  },
+  {
+    "agent_uid": "P07_ActIntVerSeq_I05_gen",
+    "profile_code": "P07_ActIntVerSeq",
+    "profile_label": "Active-Intuitive-Verbal-Sequential",
+    "fslsm_vector": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "instance_num": 5,
+    "knowledge_level": "general"
+  },
+  {
+    "agent_uid": "P08_ActIntVerGlo_I01_beg",
+    "profile_code": "P08_ActIntVerGlo",
+    "profile_label": "Active-Intuitive-Verbal-Global",
+    "fslsm_vector": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "instance_num": 1,
+    "knowledge_level": "beginner"
+  },
+  {
+    "agent_uid": "P08_ActIntVerGlo_I02_int",
+    "profile_code": "P08_ActIntVerGlo",
+    "profile_label": "Active-Intuitive-Verbal-Global",
+    "fslsm_vector": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "instance_num": 2,
+    "knowledge_level": "intermediate"
+  },
+  {
+    "agent_uid": "P08_ActIntVerGlo_I03_adv",
+    "profile_code": "P08_ActIntVerGlo",
+    "profile_label": "Active-Intuitive-Verbal-Global",
+    "fslsm_vector": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "instance_num": 3,
+    "knowledge_level": "advanced"
+  },
+  {
+    "agent_uid": "P08_ActIntVerGlo_I04_gen",
+    "profile_code": "P08_ActIntVerGlo",
+    "profile_label": "Active-Intuitive-Verbal-Global",
+    "fslsm_vector": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "instance_num": 4,
+    "knowledge_level": "general"
+  },
+  {
+    "agent_uid": "P08_ActIntVerGlo_I05_gen",
+    "profile_code": "P08_ActIntVerGlo",
+    "profile_label": "Active-Intuitive-Verbal-Global",
+    "fslsm_vector": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "instance_num": 5,
+    "knowledge_level": "general"
+  },
+  {
+    "agent_uid": "P09_RefSenVisSeq_I01_beg",
+    "profile_code": "P09_RefSenVisSeq",
+    "profile_label": "Reflective-Sensing-Visual-Sequential",
+    "fslsm_vector": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "instance_num": 1,
+    "knowledge_level": "beginner"
+  },
+  {
+    "agent_uid": "P09_RefSenVisSeq_I02_int",
+    "profile_code": "P09_RefSenVisSeq",
+    "profile_label": "Reflective-Sensing-Visual-Sequential",
+    "fslsm_vector": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "instance_num": 2,
+    "knowledge_level": "intermediate"
+  },
+  {
+    "agent_uid": "P09_RefSenVisSeq_I03_adv",
+    "profile_code": "P09_RefSenVisSeq",
+    "profile_label": "Reflective-Sensing-Visual-Sequential",
+    "fslsm_vector": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "instance_num": 3,
+    "knowledge_level": "advanced"
+  },
+  {
+    "agent_uid": "P09_RefSenVisSeq_I04_gen",
+    "profile_code": "P09_RefSenVisSeq",
+    "profile_label": "Reflective-Sensing-Visual-Sequential",
+    "fslsm_vector": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "instance_num": 4,
+    "knowledge_level": "general"
+  },
+  {
+    "agent_uid": "P09_RefSenVisSeq_I05_gen",
+    "profile_code": "P09_RefSenVisSeq",
+    "profile_label": "Reflective-Sensing-Visual-Sequential",
+    "fslsm_vector": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "instance_num": 5,
+    "knowledge_level": "general"
+  },
+  {
+    "agent_uid": "P10_RefSenVisGlo_I01_beg",
+    "profile_code": "P10_RefSenVisGlo",
+    "profile_label": "Reflective-Sensing-Visual-Global",
+    "fslsm_vector": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "instance_num": 1,
+    "knowledge_level": "beginner"
+  },
+  {
+    "agent_uid": "P10_RefSenVisGlo_I02_int",
+    "profile_code": "P10_RefSenVisGlo",
+    "profile_label": "Reflective-Sensing-Visual-Global",
+    "fslsm_vector": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "instance_num": 2,
+    "knowledge_level": "intermediate"
+  },
+  {
+    "agent_uid": "P10_RefSenVisGlo_I03_adv",
+    "profile_code": "P10_RefSenVisGlo",
+    "profile_label": "Reflective-Sensing-Visual-Global",
+    "fslsm_vector": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "instance_num": 3,
+    "knowledge_level": "advanced"
+  },
+  {
+    "agent_uid": "P10_RefSenVisGlo_I04_gen",
+    "profile_code": "P10_RefSenVisGlo",
+    "profile_label": "Reflective-Sensing-Visual-Global",
+    "fslsm_vector": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "instance_num": 4,
+    "knowledge_level": "general"
+  },
+  {
+    "agent_uid": "P10_RefSenVisGlo_I05_gen",
+    "profile_code": "P10_RefSenVisGlo",
+    "profile_label": "Reflective-Sensing-Visual-Global",
+    "fslsm_vector": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "instance_num": 5,
+    "knowledge_level": "general"
+  },
+  {
+    "agent_uid": "P11_RefSenVerSeq_I01_beg",
+    "profile_code": "P11_RefSenVerSeq",
+    "profile_label": "Reflective-Sensing-Verbal-Sequential",
+    "fslsm_vector": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "instance_num": 1,
+    "knowledge_level": "beginner"
+  },
+  {
+    "agent_uid": "P11_RefSenVerSeq_I02_int",
+    "profile_code": "P11_RefSenVerSeq",
+    "profile_label": "Reflective-Sensing-Verbal-Sequential",
+    "fslsm_vector": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "instance_num": 2,
+    "knowledge_level": "intermediate"
+  },
+  {
+    "agent_uid": "P11_RefSenVerSeq_I03_adv",
+    "profile_code": "P11_RefSenVerSeq",
+    "profile_label": "Reflective-Sensing-Verbal-Sequential",
+    "fslsm_vector": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "instance_num": 3,
+    "knowledge_level": "advanced"
+  },
+  {
+    "agent_uid": "P11_RefSenVerSeq_I04_gen",
+    "profile_code": "P11_RefSenVerSeq",
+    "profile_label": "Reflective-Sensing-Verbal-Sequential",
+    "fslsm_vector": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "instance_num": 4,
+    "knowledge_level": "general"
+  },
+  {
+    "agent_uid": "P11_RefSenVerSeq_I05_gen",
+    "profile_code": "P11_RefSenVerSeq",
+    "profile_label": "Reflective-Sensing-Verbal-Sequential",
+    "fslsm_vector": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "instance_num": 5,
+    "knowledge_level": "general"
+  },
+  {
+    "agent_uid": "P12_RefSenVerGlo_I01_beg",
+    "profile_code": "P12_RefSenVerGlo",
+    "profile_label": "Reflective-Sensing-Verbal-Global",
+    "fslsm_vector": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "instance_num": 1,
+    "knowledge_level": "beginner"
+  },
+  {
+    "agent_uid": "P12_RefSenVerGlo_I02_int",
+    "profile_code": "P12_RefSenVerGlo",
+    "profile_label": "Reflective-Sensing-Verbal-Global",
+    "fslsm_vector": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "instance_num": 2,
+    "knowledge_level": "intermediate"
+  },
+  {
+    "agent_uid": "P12_RefSenVerGlo_I03_adv",
+    "profile_code": "P12_RefSenVerGlo",
+    "profile_label": "Reflective-Sensing-Verbal-Global",
+    "fslsm_vector": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "instance_num": 3,
+    "knowledge_level": "advanced"
+  },
+  {
+    "agent_uid": "P12_RefSenVerGlo_I04_gen",
+    "profile_code": "P12_RefSenVerGlo",
+    "profile_label": "Reflective-Sensing-Verbal-Global",
+    "fslsm_vector": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "instance_num": 4,
+    "knowledge_level": "general"
+  },
+  {
+    "agent_uid": "P12_RefSenVerGlo_I05_gen",
+    "profile_code": "P12_RefSenVerGlo",
+    "profile_label": "Reflective-Sensing-Verbal-Global",
+    "fslsm_vector": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "instance_num": 5,
+    "knowledge_level": "general"
+  },
+  {
+    "agent_uid": "P13_RefIntVisSeq_I01_beg",
+    "profile_code": "P13_RefIntVisSeq",
+    "profile_label": "Reflective-Intuitive-Visual-Sequential",
+    "fslsm_vector": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "instance_num": 1,
+    "knowledge_level": "beginner"
+  },
+  {
+    "agent_uid": "P13_RefIntVisSeq_I02_int",
+    "profile_code": "P13_RefIntVisSeq",
+    "profile_label": "Reflective-Intuitive-Visual-Sequential",
+    "fslsm_vector": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "instance_num": 2,
+    "knowledge_level": "intermediate"
+  },
+  {
+    "agent_uid": "P13_RefIntVisSeq_I03_adv",
+    "profile_code": "P13_RefIntVisSeq",
+    "profile_label": "Reflective-Intuitive-Visual-Sequential",
+    "fslsm_vector": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "instance_num": 3,
+    "knowledge_level": "advanced"
+  },
+  {
+    "agent_uid": "P13_RefIntVisSeq_I04_gen",
+    "profile_code": "P13_RefIntVisSeq",
+    "profile_label": "Reflective-Intuitive-Visual-Sequential",
+    "fslsm_vector": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "instance_num": 4,
+    "knowledge_level": "general"
+  },
+  {
+    "agent_uid": "P13_RefIntVisSeq_I05_gen",
+    "profile_code": "P13_RefIntVisSeq",
+    "profile_label": "Reflective-Intuitive-Visual-Sequential",
+    "fslsm_vector": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "instance_num": 5,
+    "knowledge_level": "general"
+  },
+  {
+    "agent_uid": "P14_RefIntVisGlo_I01_beg",
+    "profile_code": "P14_RefIntVisGlo",
+    "profile_label": "Reflective-Intuitive-Visual-Global",
+    "fslsm_vector": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "instance_num": 1,
+    "knowledge_level": "beginner"
+  },
+  {
+    "agent_uid": "P14_RefIntVisGlo_I02_int",
+    "profile_code": "P14_RefIntVisGlo",
+    "profile_label": "Reflective-Intuitive-Visual-Global",
+    "fslsm_vector": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "instance_num": 2,
+    "knowledge_level": "intermediate"
+  },
+  {
+    "agent_uid": "P14_RefIntVisGlo_I03_adv",
+    "profile_code": "P14_RefIntVisGlo",
+    "profile_label": "Reflective-Intuitive-Visual-Global",
+    "fslsm_vector": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "instance_num": 3,
+    "knowledge_level": "advanced"
+  },
+  {
+    "agent_uid": "P14_RefIntVisGlo_I04_gen",
+    "profile_code": "P14_RefIntVisGlo",
+    "profile_label": "Reflective-Intuitive-Visual-Global",
+    "fslsm_vector": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "instance_num": 4,
+    "knowledge_level": "general"
+  },
+  {
+    "agent_uid": "P14_RefIntVisGlo_I05_gen",
+    "profile_code": "P14_RefIntVisGlo",
+    "profile_label": "Reflective-Intuitive-Visual-Global",
+    "fslsm_vector": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "instance_num": 5,
+    "knowledge_level": "general"
+  },
+  {
+    "agent_uid": "P15_RefIntVerSeq_I01_beg",
+    "profile_code": "P15_RefIntVerSeq",
+    "profile_label": "Reflective-Intuitive-Verbal-Sequential",
+    "fslsm_vector": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "instance_num": 1,
+    "knowledge_level": "beginner"
+  },
+  {
+    "agent_uid": "P15_RefIntVerSeq_I02_int",
+    "profile_code": "P15_RefIntVerSeq",
+    "profile_label": "Reflective-Intuitive-Verbal-Sequential",
+    "fslsm_vector": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "instance_num": 2,
+    "knowledge_level": "intermediate"
+  },
+  {
+    "agent_uid": "P15_RefIntVerSeq_I03_adv",
+    "profile_code": "P15_RefIntVerSeq",
+    "profile_label": "Reflective-Intuitive-Verbal-Sequential",
+    "fslsm_vector": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "instance_num": 3,
+    "knowledge_level": "advanced"
+  },
+  {
+    "agent_uid": "P15_RefIntVerSeq_I04_gen",
+    "profile_code": "P15_RefIntVerSeq",
+    "profile_label": "Reflective-Intuitive-Verbal-Sequential",
+    "fslsm_vector": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "instance_num": 4,
+    "knowledge_level": "general"
+  },
+  {
+    "agent_uid": "P15_RefIntVerSeq_I05_gen",
+    "profile_code": "P15_RefIntVerSeq",
+    "profile_label": "Reflective-Intuitive-Verbal-Sequential",
+    "fslsm_vector": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "instance_num": 5,
+    "knowledge_level": "general"
+  },
+  {
+    "agent_uid": "P16_RefIntVerGlo_I01_beg",
+    "profile_code": "P16_RefIntVerGlo",
+    "profile_label": "Reflective-Intuitive-Verbal-Global",
+    "fslsm_vector": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "instance_num": 1,
+    "knowledge_level": "beginner"
+  },
+  {
+    "agent_uid": "P16_RefIntVerGlo_I02_int",
+    "profile_code": "P16_RefIntVerGlo",
+    "profile_label": "Reflective-Intuitive-Verbal-Global",
+    "fslsm_vector": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "instance_num": 2,
+    "knowledge_level": "intermediate"
+  },
+  {
+    "agent_uid": "P16_RefIntVerGlo_I03_adv",
+    "profile_code": "P16_RefIntVerGlo",
+    "profile_label": "Reflective-Intuitive-Verbal-Global",
+    "fslsm_vector": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "instance_num": 3,
+    "knowledge_level": "advanced"
+  },
+  {
+    "agent_uid": "P16_RefIntVerGlo_I04_gen",
+    "profile_code": "P16_RefIntVerGlo",
+    "profile_label": "Reflective-Intuitive-Verbal-Global",
+    "fslsm_vector": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "instance_num": 4,
+    "knowledge_level": "general"
+  },
+  {
+    "agent_uid": "P16_RefIntVerGlo_I05_gen",
+    "profile_code": "P16_RefIntVerGlo",
+    "profile_label": "Reflective-Intuitive-Verbal-Global",
+    "fslsm_vector": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "instance_num": 5,
+    "knowledge_level": "general"
+  }
+]

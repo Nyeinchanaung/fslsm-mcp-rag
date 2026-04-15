@@ -35,3 +35,37 @@ def seed_profiles(profiles_json: str = "data/fslsm/profiles.json") -> int:
 
     print(f"Seeded {inserted} new profiles ({len(profiles) - inserted} already existed).")
     return inserted
+
+
+def seed_eval_questions(questions_json: str = "data/exp2/sampled_questions.json") -> int:
+    """Insert multi-hop eval questions into DB. Skips existing (idempotent)."""
+    from db.models import EvalQuestion
+
+    path = Path(questions_json)
+    if not path.exists():
+        raise FileNotFoundError(f"Questions JSON not found: {path}")
+
+    questions = json.loads(path.read_text())
+
+    inserted = 0
+    with get_session() as session:
+        existing_ids = {
+            r[0] for r in session.query(EvalQuestion.question_id).all()
+        }
+        for q in questions:
+            if q["question_id"] in existing_ids:
+                continue
+            session.add(EvalQuestion(
+                question_id=q["question_id"],
+                question=q["question"],
+                gold_answer=q["gold_answer"],
+                answer_type=q.get("question_type"),
+                difficulty=q.get("difficulty"),
+                quality_tier=q.get("quality_tier"),
+                gold_chunk_ids=q["gold_chunk_ids"],
+                essential_ids=q.get("essential_chunk_ids"),
+            ))
+            inserted += 1
+
+    print(f"Seeded {inserted} new eval questions ({len(questions) - inserted} already existed).")
+    return inserted

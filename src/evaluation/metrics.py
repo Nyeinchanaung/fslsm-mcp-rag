@@ -1,7 +1,8 @@
-"""Metrics computation for Experiment 1 (agent fidelity)."""
+"""Metrics computation for Experiment 1 (agent fidelity) and Experiment 2 (tutor personalization)."""
 from __future__ import annotations
 
 import json
+import re
 from pathlib import Path
 
 import numpy as np
@@ -334,3 +335,155 @@ def compute_baseline_das(
         })
 
     return das_rows
+
+
+# ============================================================
+# EXPERIMENT 2 — Tutor Personalization Metrics
+# ============================================================
+
+
+def compute_scs(
+    response: str,
+    style_anchor: str,
+    embed_model,
+) -> float:
+    """
+    Style Conformance Score (legacy, whole-response) — cosine similarity
+    between the tutor response embedding and the FSLSM style anchor embedding.
+
+    Args:
+        response: tutor response text
+        style_anchor: composite FSLSM style description
+        embed_model: object with .encode(text) -> np.ndarray
+
+    Returns:
+        cosine similarity in [-1, 1] (higher = better style alignment)
+    """
+    v_r = embed_model.encode(response)
+    v_s = embed_model.encode(style_anchor)
+    # L2 normalize
+    v_r = v_r / (np.linalg.norm(v_r) + 1e-10)
+    v_s = v_s / (np.linalg.norm(v_s) + 1e-10)
+    return float(np.dot(v_r, v_s))
+
+
+def _split_sentences(text: str) -> list[str]:
+    """Split text into sentences, filtering out very short fragments."""
+    raw = re.split(r'(?<=[.!?])\s+', text.strip())
+    return [s.strip() for s in raw if len(s.strip()) >= 15]
+
+
+def compute_scs_perdim(
+    response: str,
+    dimension_anchors: dict[str, str],
+    assigned_poles: dict[str, int],
+    embed_model,
+    top_k: int = 3,
+) -> dict:
+    """
+    Per-Dimension Sentence-Level Style Conformance Score.
+
+    For each FSLSM dimension, selects the assigned pole's anchor text,
+    splits the response into sentences, computes cosine similarity between
+    each sentence and the anchor, and takes the mean of the top-K most
+    aligned sentences. This avoids topic-semantic dilution that occurs when
+    embedding a full 500-word response against a short style description.
+
+    Args:
+        response: tutor response text
+        dimension_anchors: mapping like {"act_ref=-1": "...", "act_ref=+1": "..."}
+        assigned_poles: {dim_name: -1 or +1} e.g. {"act_ref": -1, "sen_int": 1, ...}
+        embed_model: object with .encode(texts) supporting batch encoding
+        top_k: number of top-matching sentences to average (default 3)
+
+    Returns:
+        {"per_dim": {dim: float}, "overall": float}
+    """
+    sentences = _split_sentences(response)
+    if not sentences:
+        return {"per_dim": {d: 0.0 for d in assigned_poles}, "overall": 0.0}
+
+    # Batch-encode all sentences at once
+    sent_embs = embed_model.encode(sentences)
+    sent_norms = np.linalg.norm(sent_embs, axis=1, keepdims=True) + 1e-10
+    sent_embs = sent_embs / sent_norms
+
+    dim_scores = {}
+    for dim, pole in assigned_poles.items():
+        pole_str = f"{dim}={'+1' if pole == 1 else '-1'}"
+        anchor_text = dimension_anchors.get(pole_str)
+        if anchor_text is None:
+            dim_scores[dim] = 0.0
+            continue
+        anchor_emb = embed_model.encode(anchor_text)
+        anchor_emb = anchor_emb / (np.linalg.norm(anchor_emb) + 1e-10)
+
+        # Cosine similarity of each sentence with the anchor
+        sims = sent_embs @ anchor_emb  # shape (n_sentences,)
+        # Take mean of top-K
+        k = min(top_k, len(sims))
+        top_sims = np.sort(sims)[-k:]
+        dim_scores[dim] = float(np.mean(top_sims))
+
+    overall = float(np.mean(list(dim_scores.values()))) if dim_scores else 0.0
+    return {"per_dim": dim_scores, "overall": overall}
+
+
+def compute_rr(
+    response: str,
+    gold_answer: str,
+    judge_client,
+) -> int:
+    """
+    Response Relevance — LLM-as-a-Judge scoring (1-5).
+
+    Args:
+        response: tutor response text
+        gold_answer: ground truth answer
+        judge_client: LLMClient instance (GPT-4o, temperature=0.0)
+
+    Returns:
+        integer score 1-5
+    """
+    from src.tutor.prompts.judge_prompts import RR_JUDGE_PROMPT
+
+    prompt = RR_JUDGE_PROMPT.format(
+        gold_answer=gold_answer,
+        response=response,
+    )
+    result = judge_client.chat(
+        system="You are an expert evaluator. Respond with ONLY a single integer (1-5).",
+        user=prompt,
+    )
+    text = result.content.strip()
+    # Extract first digit 1-5
+    match = re.search(r"[1-5]", text)
+    return int(match.group()) if match else 3
+
+
+def compute_cr5(
+    retrieved_ids: list[str],
+    gold_ids: list[str],
+) -> float:
+    """
+    Chunk Recall@5 — fraction of gold chunks retrieved.
+
+    CR@5 = |retrieved ∩ gold| / |gold|
+    """
+    if not gold_ids:
+        return 0.0
+    return len(set(retrieved_ids) & set(gold_ids)) / len(set(gold_ids))
+
+
+def compute_essential_recall(
+    retrieved_ids: list[str],
+    essential_ids: list[str],
+) -> float:
+    """
+    Essential Recall — fraction of essential (must-have) chunks retrieved.
+
+    ER = |retrieved ∩ essential| / |essential|
+    """
+    if not essential_ids:
+        return 0.0
+    return len(set(retrieved_ids) & set(essential_ids)) / len(set(essential_ids))

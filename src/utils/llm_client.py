@@ -57,6 +57,9 @@ MODEL_REGISTRY: dict[str, str] = {
     "llama3.2:1b":                  "ollama/llama3.2:1b",
     "mistral:7b":                   "ollama/mistral:7b",
     "qwen2.5:1.5b":                 "ollama/qwen2.5:1.5b",
+    # Sub-3B threshold models
+    "gemma2:2b":                    "ollama/gemma2:2b",
+    "gemma3:1b":                    "ollama/gemma3:1b",
 }
 
 

@@ -7,8 +7,10 @@ gemma2:9b,-8.867,-1,Active,-8.333,-1,Sensing,-10.333,-1,Visual,-9.8,-1,Sequentia
 gemma3:12b,-3.0,-1,Active,-9.0,-1,Sensing,-9.4,-1,Visual,-8.6,-1,Sequential,Active-Sensing-Visual-Sequential
 qwen2.5:3b,3.0,1,Reflective,3.0,1,Intuitive,2.067,1,Verbal,2.6,1,Global,Reflective-Intuitive-Verbal-Global
 gemma3:4b,-2.6,-1,Active,-8.2,-1,Sensing,-10.6,-1,Visual,-6.6,-1,Sequential,Active-Sensing-Visual-Sequential
-llama3.2:3b,-2.2,-1,Active,-0.067,-1,Sensing,-5.533,-1,Visual,1.133,1,Global,Active-Sensing-Visual-Global
+llama3.2:3b,-1.667,-1,Active,0.2,1,Intuitive,-4.733,-1,Visual,1.0,1,Global,Active-Intuitive-Visual-Global
 phi4-mini,1.8,1,Reflective,1.933,1,Intuitive,-0.6,-1,Visual,-1.0,-1,Sequential,Reflective-Intuitive-Visual-Sequential
 llama3.2:1b,-9.4,-1,Active,-10.467,-1,Sensing,-10.867,-1,Visual,-10.333,-1,Sequential,Active-Sensing-Visual-Sequential
 mistral:7b,-10.2,-1,Active,-6.6,-1,Sensing,-11.0,-1,Visual,-10.733,-1,Sequential,Active-Sensing-Visual-Sequential
 qwen2.5:1.5b,10.2,1,Reflective,9.667,1,Intuitive,5.0,1,Verbal,9.667,1,Global,Reflective-Intuitive-Verbal-Global
+gemma2:2b,-11.0,-1,Active,-11.0,-1,Sensing,-11.0,-1,Visual,-11.0,-1,Sequential,Active-Sensing-Visual-Sequential
+gemma3:1b,11.0,1,Reflective,11.0,1,Intuitive,11.0,1,Verbal,11.0,1,Global,Reflective-Intuitive-Verbal-Global

@@ -1,0 +1,8 @@
+# Experiment 2 — LLM-as-a-Judge for Response Relevance (RR) scoring
+role: judge
+llm:
+  provider: openai
+  model: "gpt-4o"
+  max_tokens: 200
+  temperature: 0.0  # Deterministic scoring
+  api_key_env: OPENAI_API_KEY

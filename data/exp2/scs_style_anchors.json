@@ -1,0 +1,30 @@
+{
+  "dimension_anchors": {
+    "act_ref=-1": "Engage through interactive exercises, trial-and-error examples, hands-on practice, and collaborative activities.",
+    "act_ref=+1": "Provide time to think. Offer theoretical summaries, reflective case studies, and analytical reasoning.",
+    "sen_int=-1": "Ground in concrete facts, specific examples, practical applications, and real-world data.",
+    "sen_int=+1": "Focus on abstract concepts, theoretical frameworks, general principles, and underlying theories.",
+    "vis_ver=-1": "Use graphs, charts, flow diagrams, visual representations, and spatial layouts to show relationships.",
+    "vis_ver=+1": "Use written explanations, analogies, narrative prose, and verbal descriptions.",
+    "seq_glo=-1": "Step-by-step sequential structure. Present one concept at a time, building linearly with clear ordering.",
+    "seq_glo=+1": "Overview first. Global framing before details. Big-picture conceptual connections and holistic summaries."
+  },
+  "composite_anchors": {
+    "P01_ActSenVisSeq": "Engage through interactive exercises, hands-on practice. Ground in concrete facts, specific examples, practical applications. Use graphs, charts, flow diagrams, visual representations. Step-by-step sequential structure, one concept at a time, building linearly.",
+    "P02_ActSenVisGlo": "Engage through interactive exercises, hands-on practice. Ground in concrete facts, specific examples, practical applications. Use graphs, charts, flow diagrams, visual representations. Overview first, global framing before details, big-picture connections.",
+    "P03_ActSenVerSeq": "Engage through interactive exercises, hands-on practice. Ground in concrete facts, specific examples, practical applications. Use written explanations, analogies, narrative prose. Step-by-step sequential structure, one concept at a time, building linearly.",
+    "P04_ActSenVerGlo": "Engage through interactive exercises, hands-on practice. Ground in concrete facts, specific examples, practical applications. Use written explanations, analogies, narrative prose. Overview first, global framing before details, big-picture connections.",
+    "P05_ActIntVisSeq": "Engage through interactive exercises, hands-on practice. Focus on abstract concepts, theoretical frameworks, general principles. Use graphs, charts, flow diagrams, visual representations. Step-by-step sequential structure, one concept at a time, building linearly.",
+    "P06_ActIntVisGlo": "Engage through interactive exercises, hands-on practice. Focus on abstract concepts, theoretical frameworks, general principles. Use graphs, charts, flow diagrams, visual representations. Overview first, global framing before details, big-picture connections.",
+    "P07_ActIntVerSeq": "Engage through interactive exercises, hands-on practice. Focus on abstract concepts, theoretical frameworks, general principles. Use written explanations, analogies, narrative prose. Step-by-step sequential structure, one concept at a time, building linearly.",
+    "P08_ActIntVerGlo": "Engage through interactive exercises, hands-on practice. Focus on abstract concepts, theoretical frameworks, general principles. Use written explanations, analogies, narrative prose. Overview first, global framing before details, big-picture connections.",
+    "P09_RefSenVisSeq": "Provide time to think, reflective case studies, analytical reasoning. Ground in concrete facts, specific examples, practical applications. Use graphs, charts, flow diagrams, visual representations. Step-by-step sequential structure, one concept at a time, building linearly.",
+    "P10_RefSenVisGlo": "Provide time to think, reflective case studies, analytical reasoning. Ground in concrete facts, specific examples, practical applications. Use graphs, charts, flow diagrams, visual representations. Overview first, global framing before details, big-picture connections.",
+    "P11_RefSenVerSeq": "Provide time to think, reflective case studies, analytical reasoning. Ground in concrete facts, specific examples, practical applications. Use written explanations, analogies, narrative prose. Step-by-step sequential structure, one concept at a time, building linearly.",
+    "P12_RefSenVerGlo": "Provide time to think, reflective case studies, analytical reasoning. Ground in concrete facts, specific examples, practical applications. Use written explanations, analogies, narrative prose. Overview first, global framing before details, big-picture connections.",
+    "P13_RefIntVisSeq": "Provide time to think, reflective case studies, analytical reasoning. Focus on abstract concepts, theoretical frameworks, general principles. Use graphs, charts, flow diagrams, visual representations. Step-by-step sequential structure, one concept at a time, building linearly.",
+    "P14_RefIntVisGlo": "Provide time to think, reflective case studies, analytical reasoning. Focus on abstract concepts, theoretical frameworks, general principles. Use graphs, charts, flow diagrams, visual representations. Overview first, global framing before details, big-picture connections.",
+    "P15_RefIntVerSeq": "Provide time to think, reflective case studies, analytical reasoning. Focus on abstract concepts, theoretical frameworks, general principles. Use written explanations, analogies, narrative prose. Step-by-step sequential structure, one concept at a time, building linearly.",
+    "P16_RefIntVerGlo": "Provide time to think, reflective case studies, analytical reasoning. Focus on abstract concepts, theoretical frameworks, general principles. Use written explanations, analogies, narrative prose. Overview first, global framing before details, big-picture connections."
+  }
+}

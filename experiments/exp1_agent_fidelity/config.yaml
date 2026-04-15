@@ -44,6 +44,11 @@ models:
     temperature: 0.3
   - name: qwen2.5:1.5b
     temperature: 0.3
+  # Sub-3B threshold models
+  - name: gemma2:2b
+    temperature: 0.3
+  - name: gemma3:1b
+    temperature: 0.3
 
 ils_questionnaire:
   num_questions: 44

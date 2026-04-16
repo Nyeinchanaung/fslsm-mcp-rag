@@ -39,20 +39,60 @@ _DIM_RETRIEVAL = {
 
 _DIM_GENERATION = {
     "act_ref": {
-        -1: "Encourage hands-on experimentation and active practice.",
-        1: "Provide time for reflection and analytical thinking.",
+        -1: (
+            "ACTIVE LEARNING STYLE — You MUST:\n"
+            "- Include at least one hands-on exercise or 'Try it yourself' prompt\n"
+            "- Use phrases like 'Let's try...', 'Now experiment with...', 'Your turn:'\n"
+            "- End with a practice challenge the student can attempt"
+        ),
+        1: (
+            "REFLECTIVE LEARNING STYLE — You MUST:\n"
+            "- Pose reflective questions ('Why do you think...?', 'Consider what happens if...')\n"
+            "- Include a 'Think About It' or 'Reflection' section\n"
+            "- Encourage the student to analyze and compare before acting"
+        ),
     },
     "sen_int": {
-        -1: "Ground every concept in concrete, observable facts and real-world examples.",
-        1: "Focus on underlying principles, theoretical abstractions, and generalized frameworks.",
+        -1: (
+            "SENSING LEARNING STYLE — You MUST:\n"
+            "- Include specific numerical examples with concrete values\n"
+            "- Reference real-world applications or practical use cases\n"
+            "- Show actual computations, not just formulas"
+        ),
+        1: (
+            "INTUITIVE LEARNING STYLE — You MUST:\n"
+            "- Lead with the underlying theory or principle before examples\n"
+            "- Explain the 'why' behind each concept\n"
+            "- Connect concepts to broader theoretical frameworks"
+        ),
     },
     "vis_ver": {
-        -1: "Use visual scaffolding: diagrams, LaTeX computation graphs, charts, and spatial layouts.",
-        1: "Use rich verbal explanations, narrative analogies, and written prose.",
+        -1: (
+            "VISUAL LEARNING STYLE — You MUST:\n"
+            "- Include at least one ASCII diagram, table, or structured visual\n"
+            "- Use markdown tables or formatted layouts to show relationships\n"
+            "- Describe spatial relationships and use visual metaphors"
+        ),
+        1: (
+            "VERBAL LEARNING STYLE — You MUST:\n"
+            "- Use rich narrative explanations and analogies\n"
+            "- Explain concepts through storytelling or verbal walkthroughs\n"
+            "- Avoid diagrams; prefer detailed written descriptions"
+        ),
     },
     "seq_glo": {
-        -1: "Build concepts linearly, one step at a time. Do not skip steps.",
-        1: "Begin with the big picture and overall framework before drilling into details.",
+        -1: (
+            "SEQUENTIAL LEARNING STYLE — You MUST:\n"
+            "- Structure your response as numbered steps (Step 1, Step 2, Step 3...)\n"
+            "- Present exactly one concept per step before moving to the next\n"
+            "- Use transitional phrases ('Now that we understand X, let's move to Y')"
+        ),
+        1: (
+            "GLOBAL LEARNING STYLE — You MUST:\n"
+            "- Start with a big-picture overview paragraph before any details\n"
+            "- Use a 'Summary First' structure: conclusion then supporting details\n"
+            "- Connect each concept back to the overall framework"
+        ),
     },
 }
 
@@ -115,7 +155,7 @@ def _build_style_map() -> dict:
                         _DIM_RETRIEVAL[d][vec[d]] for d in ("act_ref", "sen_int", "vis_ver", "seq_glo")
                     ) + "."
 
-                    generation_directive = " ".join(
+                    generation_directive = "\n\n".join(
                         _DIM_GENERATION[d][vec[d]] for d in ("act_ref", "sen_int", "vis_ver", "seq_glo")
                     )
 
@@ -200,8 +240,8 @@ class ProfileAgent:
         """
         Build a tutor system prompt from a reasoning plan.
 
-        Returns a string of >= 3 sentences referencing the learner's
-        FSLSM style and providing generation directives.
+        Uses prescriptive MUST-language with concrete structural requirements
+        so the LLM produces visibly style-conformant responses.
         """
         label = reasoning_plan["style_label"]
         gen_dir = reasoning_plan["generation_directive"]
@@ -209,12 +249,20 @@ class ProfileAgent:
 
         prompt = (
             f"You are an expert AI Tutor for Introductory Machine Learning, "
-            f"using the Dive into Deep Learning (D2L) textbook as your knowledge source. "
-            f"The student is a {label} learner. "
-            f"{gen_dir}"
+            f"using the Dive into Deep Learning (D2L) textbook as your knowledge source.\n\n"
+            f"The student is a {label} learner. You MUST adapt your response to match "
+            f"their learning style. This is NOT optional — your response will be evaluated "
+            f"on how well it conforms to the style requirements below.\n\n"
+            f"## MANDATORY STYLE REQUIREMENTS\n\n"
+            f"{gen_dir}\n"
         )
         if graf:
-            prompt += f" Pedagogical note: {graf}"
+            prompt += f"\n## PEDAGOGICAL GUIDANCE\n{graf}\n"
+        prompt += (
+            f"\nIMPORTANT: A response that answers the question correctly but ignores "
+            f"the style requirements above is a FAILURE. Adapt your structure, formatting, "
+            f"and language to match the {label} style."
+        )
         return prompt
 
     @staticmethod

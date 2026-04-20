@@ -283,7 +283,18 @@ def run_experiment(
     remaining = filter_remaining(all_sessions, completed)
 
     if n_limit is not None:
-        remaining = remaining[:n_limit]
+        # Sample matched pairs: pick ceil(n_limit/2) unique (agent, question)
+        # combos and include both R0 and R1 for each → balanced matched pairs.
+        import itertools
+        pair_keys = list({(s["agent_id"], s["question_id"]) for s in remaining})
+        random.seed(42)
+        random.shuffle(pair_keys)
+        n_pairs = (n_limit + 1) // 2  # ceil division
+        selected_pairs = set(pair_keys[:n_pairs])
+        remaining = [
+            s for s in remaining
+            if (s["agent_id"], s["question_id"]) in selected_pairs
+        ]
 
     if not remaining:
         print("All sessions already completed. Nothing to do.")
@@ -307,7 +318,8 @@ def run_experiment(
     profile_agent = ProfileAgent(
         profiles_path=PROJECT_ROOT / "data" / "fslsm" / "profiles.json"
     )
-    retrieval_agent = RetrievalAgent()
+    decompose_client = LLMClient("gpt-4.1-mini", temperature=0.0)
+    retrieval_agent = RetrievalAgent(decompose_client=decompose_client)
     tutor_client = LLMClient("gpt-4.1-mini", temperature=0.3)
     student_client = LLMClient("gpt-4.1-mini", temperature=0.0)
 

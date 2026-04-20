@@ -31,9 +31,10 @@ logger = logging.getLogger(__name__)
 
 R0_SYSTEM_PROMPT = "You are a helpful tutor."
 
-# Max context tokens for chunk evidence (approximate — character-based heuristic)
-_MAX_CONTEXT_CHARS_R0 = 16_000   # ~4000 tokens
-_MAX_CONTEXT_CHARS_R1 = 8_000    # ~2000 tokens (richer system prompt uses more)
+# Max context chars for chunk evidence (approximate — character-based heuristic).
+# System prompt is passed via the `system` parameter (separate budget),
+# so R0 and R1 evidence budgets should be equal.
+_MAX_CONTEXT_CHARS = 16_000   # ~4000 tokens
 
 
 class TutorAgent:
@@ -114,7 +115,7 @@ class TutorAgent:
         )
 
         # Step 3 — Build LLM context
-        max_chars = _MAX_CONTEXT_CHARS_R1 if mode == "R1" else _MAX_CONTEXT_CHARS_R0
+        max_chars = _MAX_CONTEXT_CHARS
         context_prompt = self._build_context_prompt(
             retrieval_result["retrieved_chunks"], question, max_chars
         )

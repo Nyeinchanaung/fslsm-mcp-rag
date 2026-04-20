@@ -373,21 +373,52 @@ def _split_sentences(text: str) -> list[str]:
     return [s.strip() for s in raw if len(s.strip()) >= 15]
 
 
+# Structural marker patterns per FSLSM dimension pole.
+# Used by compute_scs_perdim to supplement embedding similarity.
+_STYLE_MARKERS: dict[str, dict[int, list[str]]] = {
+    "act_ref": {
+        -1: [r"try\b", r"exercise", r"hands.on", r"your turn", r"practice", r"experiment with", r"implement"],
+        1: [r"think about", r"consider\b", r"reflect", r"why do you", r"analyze", r"compare and contrast"],
+    },
+    "sen_int": {
+        -1: [r"for example", r"for instance", r"specifically", r"in practice", r"\d+\.\d+", r"compute the", r"concrete"],
+        1: [r"principle", r"theor", r"fundamental", r"framework", r"underlying", r"conceptual"],
+    },
+    "vis_ver": {
+        -1: [r"diagram", r"table\b", r"figure", r"visual", r"\|.*\|", r"shown in", r"layout"],
+        1: [r"in other words", r"analogy", r"think of .+ as", r"narrative", r"put it simply", r"walk.*through"],
+    },
+    "seq_glo": {
+        -1: [r"step \d", r"first[,:]", r"next[,:]", r"then[,:]", r"finally[,:]", r"moving to"],
+        1: [r"big picture", r"overview", r"overall", r"before diving", r"key takeaway", r"grand scheme", r"framework"],
+    },
+}
+
+
+def _compute_marker_score(text: str, dim: str, pole: int) -> float:
+    """Count FSLSM style markers in response text. Returns score in [0, 1]."""
+    markers = _STYLE_MARKERS.get(dim, {}).get(pole, [])
+    text_lower = text.lower()
+    hits = sum(1 for m in markers if re.search(m, text_lower))
+    return min(hits / 3.0, 1.0)
+
+
 def compute_scs_perdim(
     response: str,
     dimension_anchors: dict[str, str],
     assigned_poles: dict[str, int],
     embed_model,
     top_k: int = 3,
+    alpha: float = 0.5,
 ) -> dict:
     """
-    Per-Dimension Sentence-Level Style Conformance Score.
+    Hybrid Per-Dimension Style Conformance Score.
 
-    For each FSLSM dimension, selects the assigned pole's anchor text,
-    splits the response into sentences, computes cosine similarity between
-    each sentence and the anchor, and takes the mean of the top-K most
-    aligned sentences. This avoids topic-semantic dilution that occurs when
-    embedding a full 500-word response against a short style description.
+    Combines two signals:
+      1. Embedding similarity: top-K sentence-to-anchor cosine similarity
+      2. Structural markers: regex-based detection of style-specific patterns
+
+    SCS_dim = alpha * embed_sim + (1 - alpha) * marker_score
 
     Args:
         response: tutor response text
@@ -395,6 +426,7 @@ def compute_scs_perdim(
         assigned_poles: {dim_name: -1 or +1} e.g. {"act_ref": -1, "sen_int": 1, ...}
         embed_model: object with .encode(texts) supporting batch encoding
         top_k: number of top-matching sentences to average (default 3)
+        alpha: weight for embedding similarity vs marker score (default 0.5)
 
     Returns:
         {"per_dim": {dim: float}, "overall": float}
@@ -422,8 +454,12 @@ def compute_scs_perdim(
         sims = sent_embs @ anchor_emb  # shape (n_sentences,)
         # Take mean of top-K
         k = min(top_k, len(sims))
-        top_sims = np.sort(sims)[-k:]
-        dim_scores[dim] = float(np.mean(top_sims))
+        embed_score = float(np.mean(np.sort(sims)[-k:]))
+
+        # Structural marker score
+        marker_score = _compute_marker_score(response, dim, pole)
+
+        dim_scores[dim] = alpha * embed_score + (1 - alpha) * marker_score
 
     overall = float(np.mean(list(dim_scores.values()))) if dim_scores else 0.0
     return {"per_dim": dim_scores, "overall": overall}

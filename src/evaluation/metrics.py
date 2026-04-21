@@ -502,13 +502,27 @@ def compute_cr5(
     gold_ids: list[str],
 ) -> float:
     """
-    Chunk Recall@5 — fraction of gold chunks retrieved.
+    Chunk Recall@5 — fraction of gold chunks in top-5 retrieved.
 
-    CR@5 = |retrieved ∩ gold| / |gold|
+    CR@5 = |retrieved[:5] ∩ gold| / |gold|
     """
     if not gold_ids:
         return 0.0
-    return len(set(retrieved_ids) & set(gold_ids)) / len(set(gold_ids))
+    return len(set(retrieved_ids[:5]) & set(gold_ids)) / len(set(gold_ids))
+
+
+def compute_cr10(
+    retrieved_ids: list[str],
+    gold_ids: list[str],
+) -> float:
+    """
+    Chunk Recall@10 — fraction of gold chunks in top-10 retrieved.
+
+    CR@10 = |retrieved[:10] ∩ gold| / |gold|
+    """
+    if not gold_ids:
+        return 0.0
+    return len(set(retrieved_ids[:10]) & set(gold_ids)) / len(set(gold_ids))
 
 
 def compute_essential_recall(

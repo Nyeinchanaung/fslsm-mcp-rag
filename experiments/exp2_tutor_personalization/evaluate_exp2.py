@@ -1,8 +1,8 @@
 """
 Experiment 2 — Phase 5: Evaluation & Results
 ==============================================
-Loads JSONL session logs from Phase 4, computes all 5 metrics
-(SCS, RR, CR@5, ER, Engagement), runs statistical significance tests,
+Loads JSONL session logs from Phase 4, computes all metrics
+(SCS, RR, CR@5, CR@10, ER, Engagement), runs statistical significance tests,
 and writes exp2_results_summary.json.
 
 Usage:
@@ -28,7 +28,7 @@ sys.path.insert(0, str(PROJECT_ROOT))
 
 from tqdm import tqdm
 
-from src.evaluation.metrics import compute_cr5, compute_essential_recall, compute_rr, compute_scs, compute_scs_perdim
+from src.evaluation.metrics import compute_cr5, compute_cr10, compute_essential_recall, compute_rr, compute_scs_perdim
 from src.utils.llm_client import LLMClient
 
 logger = logging.getLogger(__name__)
@@ -176,9 +176,17 @@ def compute_all_rr(
 
 
 def compute_all_cr5(sessions: list[dict]) -> list[float]:
-    """Compute CR@5 for all sessions."""
+    """Compute CR@5 (top-5) for all sessions."""
     return [
         compute_cr5(s["retrieved_chunk_ids"], s["gold_chunk_ids"])
+        for s in sessions
+    ]
+
+
+def compute_all_cr10(sessions: list[dict]) -> list[float]:
+    """Compute CR@10 (top-10) for all sessions."""
+    return [
+        compute_cr10(s["retrieved_chunk_ids"], s["gold_chunk_ids"])
         for s in sessions
     ]
 
@@ -347,10 +355,12 @@ def run_evaluation(skip_rr: bool = False, rr_workers: int = 3):
         rr_r0 = compute_all_rr(sessions_r0, max_workers=rr_workers)
         rr_r1 = compute_all_rr(sessions_r1, max_workers=rr_workers)
 
-    # 3. CR@5
-    print("\n--- Computing CR@5 ---")
+    # 3. CR@5 and CR@10
+    print("\n--- Computing CR@5 and CR@10 ---")
     cr5_r0 = compute_all_cr5(sessions_r0)
     cr5_r1 = compute_all_cr5(sessions_r1)
+    cr10_r0 = compute_all_cr10(sessions_r0)
+    cr10_r1 = compute_all_cr10(sessions_r1)
 
     # 4. ER
     print("\n--- Computing ER ---")
@@ -369,6 +379,8 @@ def run_evaluation(skip_rr: bool = False, rr_workers: int = 3):
     matched_rr_r1 = [rr_r1[r1_map[k]] for k in matched_keys]
     matched_cr5_r0 = [cr5_r0[r0_map[k]] for k in matched_keys]
     matched_cr5_r1 = [cr5_r1[r1_map[k]] for k in matched_keys]
+    matched_cr10_r0 = [cr10_r0[r0_map[k]] for k in matched_keys]
+    matched_cr10_r1 = [cr10_r1[r1_map[k]] for k in matched_keys]
     matched_er_r0 = [er_r0[r0_map[k]] for k in matched_keys]
     matched_er_r1 = [er_r1[r1_map[k]] for k in matched_keys]
     matched_eng_r0 = [eng_r0[r0_map[k]] for k in matched_keys]
@@ -381,6 +393,7 @@ def run_evaluation(skip_rr: bool = False, rr_workers: int = 3):
     if not skip_rr:
         sig_results["RR"] = paired_stats(matched_rr_r0, matched_rr_r1)
     sig_results["CR@5"] = paired_stats(matched_cr5_r0, matched_cr5_r1)
+    sig_results["CR@10"] = paired_stats(matched_cr10_r0, matched_cr10_r1)
     sig_results["ER"] = paired_stats(matched_er_r0, matched_er_r1)
     sig_results["Eng"] = paired_stats(matched_eng_r0, matched_eng_r1)
 
@@ -404,6 +417,8 @@ def run_evaluation(skip_rr: bool = False, rr_workers: int = 3):
                      "R1": {"mean": sig_results["SCS"]["r1_mean"], "std": sig_results["SCS"]["r1_std"]}},
             "CR@5": {"R0": {"mean": sig_results["CR@5"]["r0_mean"], "std": sig_results["CR@5"]["r0_std"]},
                       "R1": {"mean": sig_results["CR@5"]["r1_mean"], "std": sig_results["CR@5"]["r1_std"]}},
+            "CR@10": {"R0": {"mean": sig_results["CR@10"]["r0_mean"], "std": sig_results["CR@10"]["r0_std"]},
+                       "R1": {"mean": sig_results["CR@10"]["r1_mean"], "std": sig_results["CR@10"]["r1_std"]}},
             "ER": {"R0": {"mean": sig_results["ER"]["r0_mean"], "std": sig_results["ER"]["r0_std"]},
                     "R1": {"mean": sig_results["ER"]["r1_mean"], "std": sig_results["ER"]["r1_std"]}},
             "Eng": {"R0": {"mean": sig_results["Eng"]["r0_mean"], "std": sig_results["Eng"]["r0_std"]},
@@ -435,13 +450,13 @@ def run_evaluation(skip_rr: bool = False, rr_workers: int = 3):
         writer = csv.DictWriter(f, fieldnames=[
             "agent_id", "question_id", "mode", "profile_label",
             "act_ref", "sen_int", "vis_ver", "seq_glo",
-            "scs", "rr", "cr5", "er", "engagement",
+            "scs", "rr", "cr5", "cr10", "er", "engagement",
             "latency_ms", "token_count", "tutor_cost",
         ])
         writer.writeheader()
-        for sessions, scs_vals, rr_vals, cr5_vals, er_vals, eng_vals in [
-            (sessions_r0, scs_r0, rr_r0, cr5_r0, er_r0, eng_r0),
-            (sessions_r1, scs_r1, rr_r1, cr5_r1, er_r1, eng_r1),
+        for sessions, scs_vals, rr_vals, cr5_vals, cr10_vals, er_vals, eng_vals in [
+            (sessions_r0, scs_r0, rr_r0, cr5_r0, cr10_r0, er_r0, eng_r0),
+            (sessions_r1, scs_r1, rr_r1, cr5_r1, cr10_r1, er_r1, eng_r1),
         ]:
             for i, s in enumerate(sessions):
                 writer.writerow({
@@ -456,6 +471,7 @@ def run_evaluation(skip_rr: bool = False, rr_workers: int = 3):
                     "scs": round(scs_vals[i], 4),
                     "rr": rr_vals[i],
                     "cr5": round(cr5_vals[i], 4),
+                    "cr10": round(cr10_vals[i], 4),
                     "er": round(er_vals[i], 4),
                     "engagement": eng_vals[i],
                     "latency_ms": s.get("latency_ms", 0),
@@ -468,7 +484,7 @@ def run_evaluation(skip_rr: bool = False, rr_workers: int = 3):
     print("\n" + "=" * 60)
     print("EXPERIMENT 2 — RESULTS SUMMARY")
     print("=" * 60)
-    for metric in ["SCS", "RR", "CR@5", "ER", "Eng"]:
+    for metric in ["SCS", "RR", "CR@5", "CR@10", "ER", "Eng"]:
         if metric not in summary["metrics"]:
             continue
         m = summary["metrics"][metric]

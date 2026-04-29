@@ -2,8 +2,11 @@
 from __future__ import annotations
 
 import json
+import logging
 import re
 from pathlib import Path
+
+logger = logging.getLogger(__name__)
 
 import numpy as np
 
@@ -469,32 +472,63 @@ def compute_rr(
     response: str,
     gold_answer: str,
     judge_client,
+    student_query: str = "",
+    source_chunks: list[dict] | None = None,
 ) -> int:
     """
-    Response Relevance — LLM-as-a-Judge scoring (1-5).
+    Response Relevance — LLM-as-a-Judge scoring (1–5).
 
     Args:
-        response: tutor response text
-        gold_answer: ground truth answer
-        judge_client: LLMClient instance (GPT-4o, temperature=0.0)
+        response:       Tutor response text.
+        gold_answer:    Ground truth answer string.
+        judge_client:   LLMClient instance (GPT-4o, temperature=0.0).
+        student_query:  The original student question (for judge context).
+        source_chunks:  List of retrieved chunk dicts with 'text' keys.
+                        Formatted inline for the judge to assess hallucination.
 
     Returns:
-        integer score 1-5
+        Integer score 1–5. Defaults to 3 on parse failure.
     """
-    from src.tutor.prompts.judge_prompts import RR_JUDGE_PROMPT
+    from src.tutor.prompts.judge_prompts import RR_JUDGE_PROMPT, RR_JUDGE_SYSTEM
+
+    # Format source chunks as a numbered list for the judge
+    if source_chunks:
+        chunks_text = "\n\n".join(
+            f"[Chunk {i+1}]: {c.get('text', '')[:600]}"
+            for i, c in enumerate(source_chunks[:5])
+        )
+    else:
+        chunks_text = "(No source chunks provided)"
 
     prompt = RR_JUDGE_PROMPT.format(
+        student_query=student_query or "(not provided)",
         gold_answer=gold_answer,
+        source_chunks=chunks_text,
         response=response,
     )
     result = judge_client.chat(
-        system="You are an expert evaluator. Respond with ONLY a single integer (1-5).",
+        system=RR_JUDGE_SYSTEM,
         user=prompt,
     )
     text = result.content.strip()
-    # Extract first digit 1-5
-    match = re.search(r"[1-5]", text)
-    return int(match.group()) if match else 3
+
+    # Primary: match "Response Relevance Rating: [[N]]" or "Response Relevance Rating: N"
+    match = re.search(r"Response Relevance Rating:\s*\[?\[?([1-5])\]?\]?", text)
+    if match:
+        return int(match.group(1))
+
+    # Secondary: any "Rating: N" or "rating: N" near the end
+    match = re.search(r"[Rr]ating[:\s]+\[?\[?([1-5])\]?\]?", text)
+    if match:
+        return int(match.group(1))
+
+    # Last resort: last standalone digit 1-5 in the text (avoids numbered-list false positives)
+    all_matches = list(re.finditer(r"\b([1-5])\b", text))
+    if all_matches:
+        return int(all_matches[-1].group(1))
+
+    logger.warning("compute_rr: could not parse score from: %r — defaulting to 3", text[:200])
+    return 3
 
 
 def compute_cr5(

@@ -227,6 +227,12 @@ class RetrievalAgent:
                         seen[cid] = (chunk, score)
                 merged = sorted(seen.values(), key=lambda x: x[1], reverse=True)
 
+        # Apply FSLSM-aware reranking for R1 BEFORE slicing to top-k.
+        # Must happen on the full merged list so displaced-but-style-relevant
+        # chunks can surface into the top-k window.
+        if personalized and reasoning_plan is not None:
+            merged = self.rerank_chunks(merged, reasoning_plan)
+
         chunks_with_scores = merged[:k]
 
         retrieved_chunks = []
@@ -361,31 +367,64 @@ class RetrievalAgent:
         self,
         chunks_with_scores: list[tuple[dict, float]],
         reasoning_plan: dict,
-        boost: float = 0.002,
-        max_adjustment: float = 0.004,
+        alpha: float = 0.75,
     ) -> list[tuple[dict, float]]:
         """
-        FSLSM-aware reranking: boost/demote chunks based on content tags.
+        FSLSM-aware hybrid reranking.
 
-        Uses runtime keyword heuristics to tag chunk content, then adjusts
-        cosine similarity scores by +/- boost per matching tag, capped at
-        ±max_adjustment total so a single chunk can't swing too far.
+        Combines semantic relevance (RRF score) with a style alignment score
+        using a weighted linear combination:
+
+            final_score = alpha * norm_semantic + (1 - alpha) * style_score
+
+        where:
+          - norm_semantic  : RRF score normalised to [0, 1] across the candidate set
+          - style_score    : fraction of matched bias tags minus demoted tags,
+                             clipped to [0, 1]
+          - alpha = 0.75   : semantic signal dominates; style provides a 25% nudge
+
+        This preserves factual retrieval quality (CR@5) while introducing
+        a style-sensitive preference. The additive-boost approach was replaced
+        because RRF scores (~0.015–0.030) are not on a stable absolute scale,
+        making fixed deltas disproportionately large.
+
+        Args:
+            chunks_with_scores: List of (chunk_dict, rrf_score) from _hybrid_search.
+            reasoning_plan: Output of ProfileAgent.generate_reasoning_plan().
+            alpha: Weight for semantic score (default 0.75).
+
+        Returns:
+            Reranked list of (chunk_dict, final_score), sorted descending.
         """
+        if not chunks_with_scores:
+            return chunks_with_scores
+
         bias_tags = set(reasoning_plan.get("reranking_bias", []))
         depri_tags = set(reasoning_plan.get("deprioritize", []))
+        max_tags = max(len(bias_tags), 1)  # avoid div-by-zero
 
-        reranked = []
-        for chunk, score in chunks_with_scores:
+        # --- Normalise semantic scores to [0, 1] ---
+        raw_scores = [s for _, s in chunks_with_scores]
+        s_min, s_max = min(raw_scores), max(raw_scores)
+        score_range = s_max - s_min if s_max > s_min else 1.0
+
+        scored = []
+        for chunk, raw_score in chunks_with_scores:
+            norm_semantic = (raw_score - s_min) / score_range
+
+            # Style score: net tag hits normalised to [0, 1]
             chunk_tags = set(_tag_chunk(chunk.get("text", "")))
-            boost_count = len(chunk_tags & bias_tags)
-            demote_count = len(chunk_tags & depri_tags)
-            raw_adj = (boost_count * boost) - (demote_count * boost)
-            capped_adj = max(-max_adjustment, min(max_adjustment, raw_adj))
-            adjusted = score + capped_adj
-            reranked.append((chunk, adjusted))
+            boost_hits = len(chunk_tags & bias_tags)
+            demote_hits = len(chunk_tags & depri_tags)
+            # Net in [-max_tags, max_tags] → shift and normalise to [0, 1]
+            net = boost_hits - demote_hits
+            style_score = (net + max_tags) / (2 * max_tags)
 
-        reranked.sort(key=lambda x: x[1], reverse=True)
-        return reranked
+            final = alpha * norm_semantic + (1.0 - alpha) * style_score
+            scored.append((chunk, final))
+
+        scored.sort(key=lambda x: x[1], reverse=True)
+        return scored
 
     # -- internal -----------------------------------------------------------
 

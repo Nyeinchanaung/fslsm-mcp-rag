@@ -40,10 +40,12 @@ _DIM_RETRIEVAL = {
 _DIM_GENERATION = {
     "act_ref": {
         -1: (
-            "ACTIVE LEARNING STYLE — You MUST:\n"
-            "- Include at least one hands-on exercise or 'Try it yourself' prompt\n"
-            "- Use phrases like 'Let's try...', 'Now experiment with...', 'Your turn:'\n"
-            "- End with a practice challenge the student can attempt"
+            "ACTIVE LEARNING STYLE:\n"
+            "- Provide the complete factual explanation first.\n"
+            "- At the END of your response, ADDITIONALLY add a short hands-on exercise\n"
+            "  or 'Try it yourself' prompt (2–4 sentences maximum).\n"
+            "- Use phrases like 'Now try...', 'Your turn:', 'Experiment with...'.\n"
+            "- The practice prompt is an appendix to the explanation, not a replacement."
         ),
         1: (
             "REFLECTIVE LEARNING STYLE — You MUST:\n"
@@ -68,10 +70,12 @@ _DIM_GENERATION = {
     },
     "vis_ver": {
         -1: (
-            "VISUAL LEARNING STYLE — You MUST:\n"
-            "- Include at least one ASCII diagram, table, or structured visual\n"
-            "- Use markdown tables or formatted layouts to show relationships\n"
-            "- Describe spatial relationships and use visual metaphors"
+            "VISUAL LEARNING STYLE:\n"
+            "- First provide a complete written explanation covering all key facts.\n"
+            "- Then ADDITIONALLY include at least one ASCII diagram, markdown table,\n"
+            "  or structured visual that illustrates the relationships.\n"
+            "- The diagram supplements the explanation — it does not replace written content.\n"
+            "- Use visual metaphors and spatial language throughout."
         ),
         1: (
             "VERBAL LEARNING STYLE — You MUST:\n"
@@ -82,10 +86,12 @@ _DIM_GENERATION = {
     },
     "seq_glo": {
         -1: (
-            "SEQUENTIAL LEARNING STYLE — You MUST:\n"
-            "- Structure your response as numbered steps (Step 1, Step 2, Step 3...)\n"
-            "- Present exactly one concept per step before moving to the next\n"
-            "- Use transitional phrases ('Now that we understand X, let's move to Y')"
+            "SEQUENTIAL LEARNING STYLE:\n"
+            "- Structure your response as numbered steps (Step 1, Step 2, Step 3...).\n"
+            "- Each step must contain a FULL explanation of that concept — do not\n"
+            "  abbreviate factual content to fit the step structure.\n"
+            "- Use transitional phrases ('Now that we understand X, let's move to Y').\n"
+            "- All key facts from the evidence must appear within the steps."
         ),
         1: (
             "GLOBAL LEARNING STYLE — You MUST:\n"
@@ -115,6 +121,18 @@ _DIM_DEPRIORITIZE = {
 # Built programmatically from per-dimension tables above, then enriched with
 # profile metadata from data/fslsm/profiles.json at load time.
 # ---------------------------------------------------------------------------
+
+# ---------------------------------------------------------------------------
+# Factual anchor injected before style directives in every R1 system prompt.
+# Guarantees the judge finds core claims regardless of structural formatting.
+# ---------------------------------------------------------------------------
+_CONTENT_ANCHOR = (
+    "## STEP 0 — FACTUAL FOUNDATION (always do this first)\n"
+    "Before applying any style formatting, write 2–3 sentences that directly "
+    "answer the question using the key facts from the retrieved evidence. "
+    "This factual core MUST appear at the start of your response. "
+    "Style formatting is built around this foundation, not instead of it.\n"
+)
 
 _LABEL_PARTS = {
     "act_ref": {-1: "Active", 1: "Reflective"},
@@ -250,18 +268,25 @@ class ProfileAgent:
         prompt = (
             f"You are an expert AI Tutor for Introductory Machine Learning, "
             f"using the Dive into Deep Learning (D2L) textbook as your knowledge source.\n\n"
-            f"The student is a {label} learner. You MUST adapt your response to match "
-            f"their learning style. This is NOT optional — your response will be evaluated "
-            f"on how well it conforms to the style requirements below.\n\n"
-            f"## MANDATORY STYLE REQUIREMENTS\n\n"
+            f"The student is a {label} learner. Your response must achieve two goals "
+            f"in strict priority order:\n\n"
+            f"{_CONTENT_ANCHOR}\n"
+            f"## STYLE REQUIREMENTS (applied after Step 0)\n\n"
             f"{gen_dir}\n"
         )
         if graf:
             prompt += f"\n## PEDAGOGICAL GUIDANCE\n{graf}\n"
         prompt += (
-            f"\nIMPORTANT: A response that answers the question correctly but ignores "
-            f"the style requirements above is a FAILURE. Adapt your structure, formatting, "
-            f"and language to match the {label} style."
+            f"\n## PRIORITY ORDER\n"
+            f"1. FACTUAL COMPLETENESS (non-negotiable): Your response MUST accurately "
+            f"cover all key concepts from the retrieved evidence. An incomplete or "
+            f"inaccurate answer is a failure regardless of style.\n"
+            f"2. STYLE ADAPTATION (required, applied on top): Once factual content is "
+            f"secured, adapt the structure, formatting, and language to match the "
+            f"{label} learning style using the requirements above.\n\n"
+            f"A response that is stylistically perfect but factually incomplete "
+            f"is a failure. A response that is factually complete but ignores style "
+            f"is also a failure. You must achieve both."
         )
         return prompt
 

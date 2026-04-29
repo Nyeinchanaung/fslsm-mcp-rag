@@ -29,7 +29,12 @@ from src.utils.llm_client import LLMClient
 
 logger = logging.getLogger(__name__)
 
-R0_SYSTEM_PROMPT = "You are a helpful tutor."
+R0_SYSTEM_PROMPT = (
+    "You are an expert AI Tutor for Introductory Machine Learning, "
+    "using the Dive into Deep Learning (D2L) textbook as your knowledge source. "
+    "Answer the student's question accurately and completely, covering all key "
+    "concepts from the provided evidence. Structure your response clearly."
+)
 
 # Max context chars for chunk evidence (approximate — character-based heuristic).
 # System prompt is passed via the `system` parameter (separate budget),
@@ -82,6 +87,31 @@ class TutorAgent:
             lookup[key] = p
         return lookup
 
+    def _get_max_tokens(self, reasoning_plan: dict | None) -> int:
+        """
+        Scale output token budget to profile structure needs.
+
+        Visual/Sequential/Active profiles require formatting scaffolding
+        (diagrams, numbered steps, practice prompts) AND full factual coverage.
+        A fixed 1,000-token cap forces a tradeoff; this eliminates it.
+
+        R0 (reasoning_plan=None) always uses the base budget so the
+        R0/R1 comparison remains controlled.
+
+        Budget: base 1,000 + 200 per structural dimension active, cap 1,600.
+        Structural dimensions: Visual (vis_ver==-1), Sequential (seq_glo==-1),
+        Active (act_ref==-1).
+        """
+        if reasoning_plan is None:
+            return 1000  # R0 baseline — never change this
+        vector = reasoning_plan.get("fslsm_vector", {})
+        structural_dims = sum([
+            vector.get("vis_ver") == -1,
+            vector.get("seq_glo") == -1,
+            vector.get("act_ref") == -1,
+        ])
+        return min(1000 + structural_dims * 200, 1600)
+
     def run_session(self, session: dict) -> dict:
         """
         Execute a single tutoring session (R0 or R1).
@@ -102,6 +132,7 @@ class TutorAgent:
         # Step 1 — Profile resolution
         if mode == "R1":
             plan = self.profile_agent.generate_reasoning_plan(fslsm_vector)
+            plan["fslsm_vector"] = fslsm_vector  # needed by _get_max_tokens
             system_prompt = self.profile_agent.generate_system_prompt(plan)
         else:
             plan = None
@@ -142,13 +173,13 @@ class TutorAgent:
             "response": tutor_resp.content,
             "system_prompt_used": system_prompt,
             "retrieved_chunk_ids": retrieval_result["chunk_ids"],
+            "retrieved_chunks": retrieval_result["retrieved_chunks"],  # ← ADD THIS
             "reformulated_query": retrieval_result["reformulated_query"],
             "engagement_score": engagement_score,
             "latency_ms": latency_ms,
             "token_count": tutor_resp.total_tokens,
             "tutor_cost": tutor_resp.cost,
         }
-
     # -- internal helpers ---------------------------------------------------
 
     @staticmethod
@@ -183,7 +214,16 @@ class TutorAgent:
         return (
             f"Use the following evidence to answer the student's question.\n\n"
             f"{evidence_text}\n\n"
-            f"Student Question: {question}"
+            f"Student Question: {question}\n\n"
+            f"Instructions:\n"
+            f"1. EVIDENCE-GROUNDED (mandatory): Your entire answer MUST be based solely "
+            f"on the Evidence blocks above. Do NOT introduce any information, examples, "
+            f"or explanations from outside the provided evidence. Every claim must be "
+            f"traceable to a specific Evidence block.\n"
+            f"2. FACTUALLY COMPLETE: Cover all key concepts present in the evidence. "
+            f"Do not omit key concepts in favour of stylistic formatting.\n"
+            f"3. STYLE-ADAPTED (applied on top): Once factual content from the evidence "
+            f"is secured, adapt the presentation to your assigned learning style."
         )
 
     def _get_engagement_score(

@@ -46,7 +46,7 @@ logger = logging.getLogger(__name__)
 
 # Paths
 AGENTS_PATH = PROJECT_ROOT / "data" / "agents" / "validated_agents.json"
-QUESTIONS_PATH = PROJECT_ROOT / "data" / "exp2" / "sampled_questions.json"
+QUESTIONS_PATH = PROJECT_ROOT / "data" / "exp2" / "filtered_questions.json"
 RESULTS_DIR = Path(__file__).resolve().parent / "results"
 R0_OUTPUT = RESULTS_DIR / "raw_sessions_r0.jsonl"
 R1_OUTPUT = RESULTS_DIR / "raw_sessions_r1.jsonl"
@@ -244,10 +244,10 @@ def save_result_to_db(result: dict, run_id: int | None) -> None:
 
 
 def _compute_cr5(retrieved: list, gold: list) -> float:
-    """Chunk Recall@5 — computed inline during collection."""
+    """Chunk Recall@5 — top-5 only, matching metrics.py definition."""
     if not gold:
         return 0.0
-    return len(set(retrieved) & set(gold)) / len(set(gold))
+    return len(set(retrieved[:5]) & set(gold)) / len(set(gold))
 
 
 # -------------------------------------------------------------------

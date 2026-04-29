@@ -1,0 +1,280 @@
+{
+  "summary": {
+    "total_sessions": 5760,
+    "unique_tools_assigned": 12,
+    "total_tools": 15,
+    "unassigned_tools": 3
+  },
+  "tool_distribution": [
+    {
+      "tool_id": 12,
+      "tool_name": "prose_explainer",
+      "fslsm_dims": [
+        "Verbal",
+        "Sequential"
+      ],
+      "count": 1190,
+      "percentage": 20.66
+    },
+    {
+      "tool_id": 3,
+      "tool_name": "stepwise_walkthrough",
+      "fslsm_dims": [
+        "Sequential",
+        "Sensing"
+      ],
+      "count": 735,
+      "percentage": 12.76
+    },
+    {
+      "tool_id": 15,
+      "tool_name": "case_study",
+      "fslsm_dims": [
+        "Sensing",
+        "Global"
+      ],
+      "count": 670,
+      "percentage": 11.63
+    },
+    {
+      "tool_id": 6,
+      "tool_name": "abstract_derivation",
+      "fslsm_dims": [
+        "Intuitive",
+        "Verbal"
+      ],
+      "count": 620,
+      "percentage": 10.76
+    },
+    {
+      "tool_id": 1,
+      "tool_name": "diagram_renderer",
+      "fslsm_dims": [
+        "Visual",
+        "Sequential"
+      ],
+      "count": 580,
+      "percentage": 10.07
+    },
+    {
+      "tool_id": 14,
+      "tool_name": "concept_map",
+      "fslsm_dims": [
+        "Global",
+        "Visual"
+      ],
+      "count": 570,
+      "percentage": 9.9
+    },
+    {
+      "tool_id": 2,
+      "tool_name": "interactive_simulation",
+      "fslsm_dims": [
+        "Visual",
+        "Active"
+      ],
+      "count": 570,
+      "percentage": 9.9
+    },
+    {
+      "tool_id": 9,
+      "tool_name": "practice_exercise",
+      "fslsm_dims": [
+        "Active",
+        "Sensing"
+      ],
+      "count": 465,
+      "percentage": 8.07
+    },
+    {
+      "tool_id": 5,
+      "tool_name": "conceptual_overview",
+      "fslsm_dims": [
+        "Global",
+        "Intuitive"
+      ],
+      "count": 135,
+      "percentage": 2.34
+    },
+    {
+      "tool_id": 11,
+      "tool_name": "summary_outline",
+      "fslsm_dims": [
+        "Reflective",
+        "Sequential"
+      ],
+      "count": 125,
+      "percentage": 2.17
+    },
+    {
+      "tool_id": 8,
+      "tool_name": "socratic_dialogue",
+      "fslsm_dims": [
+        "Active",
+        "Reflective"
+      ],
+      "count": 60,
+      "percentage": 1.04
+    },
+    {
+      "tool_id": 10,
+      "tool_name": "reflection_prompt",
+      "fslsm_dims": [
+        "Reflective",
+        "Verbal"
+      ],
+      "count": 40,
+      "percentage": 0.69
+    }
+  ],
+  "unassigned_tools": [
+    {
+      "tool_id": 4,
+      "tool_name": "worked_example",
+      "fslsm_dims": [
+        "Sensing",
+        "Sequential"
+      ]
+    },
+    {
+      "tool_id": 7,
+      "tool_name": "analogy_explainer",
+      "fslsm_dims": [
+        "Intuitive",
+        "Verbal"
+      ]
+    },
+    {
+      "tool_id": 13,
+      "tool_name": "code_sandbox",
+      "fslsm_dims": [
+        "Active",
+        "Sensing"
+      ]
+    }
+  ],
+  "intent_distribution_sample200": {
+    "explain": 140,
+    "visualize": 5,
+    "implement": 31,
+    "compare": 15,
+    "derive": 2,
+    "discuss": 4,
+    "practice": 3
+  },
+  "intent_keywords": {
+    "visualize": [
+      "diagram",
+      "visualize",
+      "draw",
+      "plot",
+      "chart",
+      "figure",
+      "show me"
+    ],
+    "solve": [
+      "solve",
+      "compute",
+      "calculate",
+      "evaluate",
+      "derive the value"
+    ],
+    "implement": [
+      "implement",
+      "code",
+      "program",
+      "write a function",
+      "write code"
+    ],
+    "practice": [
+      "practice",
+      "exercise",
+      "try",
+      "test yourself"
+    ],
+    "compare": [
+      "compare",
+      "contrast",
+      "difference between",
+      "versus",
+      " vs "
+    ],
+    "summarize": [
+      "summarize",
+      "overview",
+      "outline",
+      "summary",
+      "tl;dr",
+      "in short"
+    ],
+    "derive": [
+      "derive",
+      "prove",
+      "show that",
+      "demonstrate that"
+    ],
+    "discuss": [
+      "discuss",
+      "debate",
+      "argue",
+      "what do you think"
+    ],
+    "explain": [
+      "explain",
+      "describe",
+      "what is",
+      "how does",
+      "how do",
+      "why does",
+      "why is",
+      "elaborate",
+      "tell me about"
+    ]
+  },
+  "intent_category_priority": {
+    "visualize": [
+      "visualization",
+      "explanation",
+      "overview"
+    ],
+    "solve": [
+      "procedural",
+      "exercise",
+      "explanation"
+    ],
+    "implement": [
+      "exercise",
+      "procedural"
+    ],
+    "practice": [
+      "exercise",
+      "dialogic",
+      "procedural"
+    ],
+    "compare": [
+      "overview",
+      "explanation",
+      "theoretical"
+    ],
+    "summarize": [
+      "overview",
+      "explanation"
+    ],
+    "derive": [
+      "theoretical",
+      "procedural",
+      "explanation"
+    ],
+    "discuss": [
+      "dialogic",
+      "theoretical"
+    ],
+    "explain": [
+      "explanation",
+      "procedural",
+      "theoretical",
+      "visualization",
+      "overview"
+    ]
+  }
+}

@@ -41,6 +41,14 @@ ANCHORS_PATH = PROJECT_ROOT / "data" / "exp2" / "scs_style_anchors.json"
 OUTPUT_SUMMARY = RESULTS_DIR / "exp2_results_summary.json"
 OUTPUT_METRICS_CSV = RESULTS_DIR / "exp2_session_metrics.csv"
 FIGURES_DIR = RESULTS_DIR / "figures"
+CORPUS_PATH = PROJECT_ROOT / "d2l" / "output" / "d2l_corpus_chunks.json"
+
+
+def load_corpus_index() -> dict[str, dict]:
+    """Load corpus chunks indexed by chunk_id for fast lookup."""
+    with open(CORPUS_PATH) as f:
+        chunks = json.load(f)
+    return {c["chunk_id"]: c for c in chunks}
 
 
 # -------------------------------------------------------------------
@@ -139,13 +147,24 @@ def compute_all_rr(
 
     logger.info("Computing RR for %d sessions (%d cached)", len(to_compute), len(existing_rr))
 
+    corpus_index = load_corpus_index()
+    logger.info("Loaded corpus index with %d chunks", len(corpus_index))
+
     def _compute_one(args):
         idx, session, key = args
         import time
         max_retries = 4
+        chunk_ids = session.get("retrieved_chunk_ids", [])
+        source_chunks = [corpus_index[cid] for cid in chunk_ids if cid in corpus_index]
         for attempt in range(max_retries):
             try:
-                score = compute_rr(session["response"], session["gold_answer"], judge_client)
+                score = compute_rr(
+                    session["response"],
+                    session["gold_answer"],
+                    judge_client,
+                    student_query=session.get("question", ""),
+                    source_chunks=source_chunks,
+                )
                 return idx, key, score
             except Exception as e:
                 if attempt < max_retries - 1 and "RateLimitError" in str(type(e).__name__) or "Rate limit" in str(e):

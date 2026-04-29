@@ -1,0 +1,13 @@
+{
+  "n_questions": 72,
+  "spearman_engagement": {
+    "rho": NaN,
+    "p_value": NaN
+  },
+  "spearman_scs": {
+    "rho": NaN,
+    "p_value": NaN
+  },
+  "convergent_on_engagement": false,
+  "convergent_on_scs": false
+}

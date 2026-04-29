@@ -1,0 +1,16 @@
+{
+  "n_total": 5760,
+  "n_valid": 5760,
+  "n_r1_win": 5419,
+  "n_r0_win": 341,
+  "n_tie": 0,
+  "n_invalid": 0,
+  "n_decisive": 5760,
+  "win_rate_r1": 0.9408,
+  "win_rate_r1_ci_lo": 0.9344,
+  "win_rate_r1_ci_hi": 0.9466,
+  "binomial_p_value": 0.0,
+  "significant": true,
+  "tie_rate": 0.0,
+  "tie_rate_flag": false
+}

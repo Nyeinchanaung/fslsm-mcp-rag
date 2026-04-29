@@ -1,0 +1,22 @@
+{
+  "n_samples": 30,
+  "prompt_tokens": {
+    "min": 1430,
+    "median": 2120.5,
+    "mean": 2098.6,
+    "p95": 2386,
+    "max": 2389
+  },
+  "completion_tokens": {
+    "min": 79,
+    "median": 90.5,
+    "mean": 91.8,
+    "p95": 105,
+    "max": 124
+  },
+  "cost_per_call_sample": {
+    "min": 0.004545,
+    "mean": 0.006164
+  },
+  "extrapolated_cost_single_order_usd": 35.51
+}

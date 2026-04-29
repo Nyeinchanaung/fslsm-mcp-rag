@@ -2,26 +2,26 @@
 
 | Condition | TSA Mean (%) | TSA SE (%) | PTS Mean (%) | N |
 |---|---|---|---|---|
-| S0 | 9.4 | 0.4 | 0.0 | 5760 |
-| S1a | 6.1 | 0.3 | 93.4 | 5760 |
-| S1b | 27.5 | 0.6 | 93.6 | 5760 |
+| S0 | 9.8 | 0.4 | 0.0 | 5760 |
+| S1a | 11.0 | 0.4 | 93.0 | 5760 |
+| S1b | 26.8 | 0.6 | 93.2 | 5760 |
 
 ### Statistical Comparisons
 
 | Comparison | t-statistic | p-value | Cohen's h |
 |---|---|---|---|
-| S1b_vs_S0 | +25.816 | 0.0000 *** | 0.482 |
-| S1b_vs_S1a | +31.984 | 0.0000 *** | 0.603 |
+| S1b_vs_S0 | +24.196 | 0.0000 *** | 0.452 |
+| S1b_vs_S1a | +22.098 | 0.0000 *** | 0.412 |
 
 ### Per-Dimension TSA (S1b)
 
 | Dimension | TSA (%) |
 |---|---|
-| Verbal | 45.7 |
-| Active | 38.8 |
-| Visual | 35.8 |
-| Sequential | 32.3 |
-| Global | 22.5 |
-| Sensing | 6.7 |
+| Sequential | 61.8 |
+| Visual | 40.6 |
+| Verbal | 27.8 |
+| Global | 14.0 |
+| Sensing | 8.7 |
+| Intuitive | 6.7 |
+| Active | 0.0 |
 | Reflective | 0.0 |
-| Intuitive | 0.0 |

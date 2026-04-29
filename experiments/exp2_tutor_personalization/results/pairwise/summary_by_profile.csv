@@ -1,0 +1,17 @@
+profile_label,n_r1_win,n_r0_win,n_tie,n_decisive,win_rate_r1,ci_lo,ci_hi,p_value,significant_bonferroni
+Active-Intuitive-Verbal-Global,352,8,0,360,0.9778,0.9568,0.9887,0.0,True
+Active-Intuitive-Verbal-Sequential,327,33,0,360,0.9083,0.8741,0.934,0.0,True
+Active-Intuitive-Visual-Global,351,9,0,360,0.975,0.9532,0.9868,0.0,True
+Active-Intuitive-Visual-Sequential,333,27,0,360,0.925,0.8931,0.9479,0.0,True
+Active-Sensing-Verbal-Global,360,0,0,360,1.0,0.9894,1.0,0.0,True
+Active-Sensing-Verbal-Sequential,342,18,0,360,0.95,0.9224,0.9681,0.0,True
+Active-Sensing-Visual-Global,346,14,0,360,0.9611,0.9358,0.9767,0.0,True
+Active-Sensing-Visual-Sequential,339,21,0,360,0.9417,0.9125,0.9615,0.0,True
+Reflective-Intuitive-Verbal-Global,357,3,0,360,0.9917,0.9758,0.9972,0.0,True
+Reflective-Intuitive-Verbal-Sequential,334,26,0,360,0.9278,0.8963,0.9502,0.0,True
+Reflective-Intuitive-Visual-Global,355,5,0,360,0.9861,0.9679,0.9941,0.0,True
+Reflective-Intuitive-Visual-Sequential,294,66,0,360,0.8167,0.7734,0.8532,0.0,True
+Reflective-Sensing-Verbal-Global,359,1,0,360,0.9972,0.9844,0.9995,0.0,True
+Reflective-Sensing-Verbal-Sequential,339,21,0,360,0.9417,0.9125,0.9615,0.0,True
+Reflective-Sensing-Visual-Global,345,15,0,360,0.9583,0.9324,0.9746,0.0,True
+Reflective-Sensing-Visual-Sequential,286,74,0,360,0.7944,0.7497,0.833,0.0,True

@@ -571,3 +571,132 @@ def compute_essential_recall(
     if not essential_ids:
         return 0.0
     return len(set(retrieved_ids) & set(essential_ids)) / len(set(essential_ids))
+
+
+# ---------------------------------------------------------------------------
+# Pairwise pedagogical preference judge (Experiment 2 post-hoc evaluation)
+# ---------------------------------------------------------------------------
+
+# Maps the fslsm_vector dimension values to human-readable descriptions
+_DIM_LABELS = {
+    "act_ref": {-1: "Active", 0: "Balanced (Active/Reflective)", 1: "Reflective"},
+    "sen_int": {-1: "Sensing", 0: "Balanced (Sensing/Intuitive)", 1: "Intuitive"},
+    "vis_ver": {-1: "Visual", 0: "Balanced (Visual/Verbal)", 1: "Verbal"},
+    "seq_glo": {-1: "Sequential", 0: "Balanced (Sequential/Global)", 1: "Global"},
+}
+
+
+def judge_pairwise(
+    session: dict,
+    swap: bool,
+    judge_client,
+    max_tokens: int = 200,
+    response_token_cap: int = 1200,
+) -> dict:
+    """
+    Call GPT-4o to judge one R0 vs R1 pair for pedagogical fit.
+
+    Args:
+        session:            Merged pair dict with keys: session_id, agent_id,
+                            profile_label, fslsm_vector, question_text,
+                            question_type, r0_response, r1_response.
+        swap:               If True, assign A=R1/B=R0 (position debiasing).
+        judge_client:       LLMClient(model="gpt-4o", temperature=0.0).
+        max_tokens:         Max output tokens for the judge (default 200).
+        response_token_cap: Approximate per-response character cap before
+                            symmetrical truncation (~4 chars per token).
+
+    Returns:
+        Dict with: session_id, agent_id, profile_label, question_id,
+        question_type, swap, verdict_raw, verdict_normalized, rationale,
+        prompt_tokens, completion_tokens, cost, truncated.
+        verdict_normalized is one of: R0_WIN, R1_WIN, TIE, PARSE_ERROR, API_ERROR.
+    """
+    from src.tutor.prompts.judge_prompts import (
+        PAIRWISE_JUDGE_PROMPT,
+        PAIRWISE_JUDGE_SYSTEM,
+    )
+
+    char_cap = response_token_cap * 4  # ~4 chars per token
+
+    r0 = session["r0_response"]
+    r1 = session["r1_response"]
+    truncated = False
+
+    if len(r0) > char_cap or len(r1) > char_cap:
+        r0 = r0[:char_cap]
+        r1 = r1[:char_cap]
+        truncated = True
+
+    response_a = r1 if swap else r0
+    response_b = r0 if swap else r1
+
+    # Build dimension description strings from fslsm_vector
+    vec = session.get("fslsm_vector", {})
+    processing_dim = _DIM_LABELS["act_ref"].get(vec.get("act_ref", 0), "Unknown")
+    perception_dim = _DIM_LABELS["sen_int"].get(vec.get("sen_int", 0), "Unknown")
+    input_dim = _DIM_LABELS["vis_ver"].get(vec.get("vis_ver", 0), "Unknown")
+    understanding_dim = _DIM_LABELS["seq_glo"].get(vec.get("seq_glo", 0), "Unknown")
+
+    user_prompt = PAIRWISE_JUDGE_PROMPT.format(
+        profile_label=session.get("profile_label", "Unknown"),
+        processing_dim=processing_dim,
+        perception_dim=perception_dim,
+        input_dim=input_dim,
+        understanding_dim=understanding_dim,
+        question_text=session.get("question_text", ""),
+        response_a=response_a,
+        response_b=response_b,
+    )
+
+    result = judge_client.chat(
+        system=PAIRWISE_JUDGE_SYSTEM,
+        user=user_prompt,
+        max_tokens=max_tokens,
+        temperature=0.0,
+    )
+    text = result.content.strip()
+
+    # Parse verdict: "Verdict: [[A]]" / "Verdict: [[B]]" / "Verdict: [[Tie]]"
+    verdict_raw = ""
+    verdict_normalized = "PARSE_ERROR"
+    match = re.search(r"Verdict:\s*\[\[(A|B|Tie)\]\]", text, re.IGNORECASE)
+    if match:
+        tag = match.group(1).capitalize()
+        verdict_raw = f"[[{tag}]]"
+        if tag == "Tie":
+            verdict_normalized = "TIE"
+        elif tag == "A":
+            verdict_normalized = "R1_WIN" if swap else "R0_WIN"
+        else:  # B
+            verdict_normalized = "R0_WIN" if swap else "R1_WIN"
+    else:
+        logger.warning(
+            "judge_pairwise: could not parse verdict for %s (swap=%s): %r",
+            session.get("session_id", "?"),
+            swap,
+            text[:200],
+        )
+        verdict_raw = text[:200]
+
+    # Extract rationale (everything after "Rationale:")
+    rationale = ""
+    rat_match = re.search(r"Rationale:\s*(.+)", text, re.DOTALL)
+    if rat_match:
+        rationale = rat_match.group(1).strip()
+
+    return {
+        "session_id": session.get("session_id", ""),
+        "agent_id": session.get("agent_id", ""),
+        "profile_label": session.get("profile_label", ""),
+        "question_id": session.get("question_id", ""),
+        "question_type": session.get("question_type", ""),
+        "swap": swap,
+        "verdict_raw": verdict_raw,
+        "verdict_normalized": verdict_normalized,
+        "rationale": rationale,
+        "prompt_tokens": result.prompt_tokens,
+        "completion_tokens": result.completion_tokens,
+        "cost": result.cost,
+        "truncated": truncated,
+    }

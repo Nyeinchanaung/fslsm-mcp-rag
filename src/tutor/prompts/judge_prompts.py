@@ -1,5 +1,6 @@
 """LLM-as-a-Judge prompt templates for Experiment 2 evaluation."""
 
+
 RR_JUDGE_SYSTEM = (
     "You are an impartial educational evaluation judge specialising in factual "
     "accuracy assessment. Your task is to determine whether an AI tutor's response "
@@ -76,3 +77,48 @@ Then output your rating on the final line in this exact format:
 
 Response Relevance Rating: [[score]]
 """
+
+# ---------------------------------------------------------------------------
+# Pairwise pedagogical preference judge (Experiment 2 post-hoc evaluation)
+# ---------------------------------------------------------------------------
+
+PAIRWISE_JUDGE_SYSTEM = (
+    "You are an expert educational evaluator assessing AI tutor responses for "
+    "personalized learning. Your task is to determine which of two tutor responses "
+    "is more pedagogically appropriate for a student with a specific learning style.\n\n"
+    "Evaluation criteria (in priority order):\n"
+    "1. Style alignment — does the response match the student's learning style "
+    "preferences (e.g., visual aids for Visual learners, examples for Sensing "
+    "learners, step-by-step structure for Sequential learners)?\n"
+    "2. Factual accuracy — is the content correct and grounded?\n"
+    "3. Clarity and pedagogical quality — is the explanation well-structured "
+    "and easy to follow for this type of learner?\n\n"
+    "Important rules:\n"
+    "- Base your judgment ONLY on the student's stated learning style profile.\n"
+    "- Do NOT favor longer responses by default.\n"
+    "- Do NOT let response order influence your decision (position bias).\n"
+    "- Output ONLY one of: [[A]], [[B]], or [[Tie]]\n"
+    "- After the verdict, provide a brief rationale (2–3 sentences maximum).\n\n"
+    "Output format:\n"
+    "Verdict: [[A]] | [[B]] | [[Tie]]\n"
+    "Rationale: <2–3 sentence explanation>"
+)
+
+PAIRWISE_JUDGE_PROMPT = """Student Learning Style Profile: {profile_label}
+Profile Details:
+- Processing:    {processing_dim}     (Active = learns by doing; Reflective = learns by thinking)
+- Perception:    {perception_dim}     (Sensing = concrete facts; Intuitive = concepts/theory)
+- Input:         {input_dim}          (Visual = diagrams/charts; Verbal = text/explanation)
+- Understanding: {understanding_dim}  (Sequential = step-by-step; Global = big picture first)
+
+Question: {question_text}
+
+[Response A]
+{response_a}
+[End Response A]
+
+[Response B]
+{response_b}
+[End Response B]
+
+Which response is more pedagogically appropriate for this student's learning style?"""

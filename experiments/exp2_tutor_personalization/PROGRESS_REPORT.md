@@ -1,8 +1,8 @@
 # Experiment 2 — Progress Report
 **FSLSM-Based Tutor Personalization (PersonaRAG)**  
 **Prepared for:** Supervisor Meeting  
-**Date:** April 20, 2026  
-**Status:** Full experiment complete — evaluation done
+**Date:** April 30, 2026  
+**Status:** Full experiment complete — evaluation complete, results final
 
 ---
 
@@ -15,10 +15,10 @@
 **Current Status:** Full A/B experiment complete (11,520 sessions, 5,760 matched pairs). Evaluation pipeline finished.
 
 **Key Final Results:**
-- SCS: R1 = 0.518 vs R0 = 0.269 (+92%, p ≈ 0, Cohen's d = 3.26) ✅
-- Engagement: R1 = 4.114 vs R0 = 3.238 (+27%, p ≈ 0, Cohen's d = 2.02) ✅
-- RR: R1 = 4.214 vs R0 = 4.655 (−9.5%, p ≈ 0, d = −0.82) ⚠️ significant but negative
-- CR@10 and ER: no significant difference (p = 0.47, p = 0.18)
+- SCS: R1 = 0.469 vs R0 = 0.261 (+79.6%, p ≈ 0, Cohen's d = 2.37) ✅
+- Engagement: R1 = 3.890 vs R0 = 3.247 (+19.8%, p ≈ 0, Cohen's d = 1.49) ✅
+- RR: R1 = 3.785 vs R0 = 3.788 (−0.08%, p = 0.683) — no significant difference ✅
+- CR@5/CR@10/ER: small significant negative (d < 0.07; FSLSM query slightly misaligns with factual gold at both k) ⚠️
 
 ---
 
@@ -40,7 +40,10 @@
 | Apr 16, 2026 | `a596d3a` | Dry run with 40 agents — system validation |
 | Apr 17–18, 2026 | *(in-session)* | Gold chunk re-annotation (relevance-only, GPT-4o), retrieval improvements |
 | Apr 18, 2026 | *(in-session)* | Full experiment launched (11,520 sessions, 1 worker, nohup) |
-| Apr 19, 2026 | *(current)* | **62% complete** — this progress report |
+| Apr 19, 2026 | *(in-session)* | Experiment completed |
+| Apr 26–27, 2026 | *(in-session)* | Full evaluation pipeline completed (SCS, RR, CR, ER, Eng); pairwise eval done |
+| Apr 28, 2026 | *(in-session)* | Exp3 (MCP tool selection) full run complete — reuses Exp2 sessions |
+| Apr 30, 2026 | *(current)* | Results cleaned and aligned with final dataset |
 
 ---
 
@@ -155,41 +158,41 @@ Student FSLSM Profile (binary vector)
 
 ### 7.1 Main Metrics
 
-| Metric    | R0 Mean | R1 Mean | Diff    | p-value | Significant      | Cohen's d   |
-| --------- | ------- | ------- | ------- | ------- | ---------------- | ----------- |
-| **SCS**   | 0.269   | 0.518   | +0.248  | ≈ 0     | ✅ YES           | 3.26 (huge) |
-| **Eng**   | 3.238   | 4.114   | +0.876  | ≈ 0     | ✅ YES           | 2.02 (huge) |
-| **RR**    | 4.655   | 4.214   | -0.442  | ≈ 0     | ⚠️ sig. negative | -0.82       |
-| **CR@5**  | 0.241   | 0.240   | -0.001  | 0.570   | ❌ No            | ~0          |
-| **CR@10** | 0.334   | 0.332   | -0.001  | 0.470   | ❌ No            | ~0          |
-| **ER**    | 0.352   | 0.349   | -0.002  | 0.182   | ❌ No            | ~0          |
+| Metric    | R0 Mean | R1 Mean | Diff    | p-value | Significant        | Cohen's d    |
+| --------- | ------- | ------- | ------- | ------- | ------------------ | ------------ |
+| **SCS**   | 0.261   | 0.469   | +0.208  | ≈ 0     | ✅ YES             | 2.37 (large) |
+| **Eng**   | 3.247   | 3.890   | +0.643  | ≈ 0     | ✅ YES             | 1.49 (large) |
+| **RR**    | 3.788   | 3.785   | −0.003  | 0.683   | ❌ No              | ~0           |
+| **CR@5**  | 0.159   | 0.155   | −0.004  | 0.020   | ⚠️ small negative  | −0.022       |
+| **CR@10** | 0.269   | 0.254   | −0.016  | ≈ 0     | ⚠️ small negative  | −0.061       |
+| **ER**    | 0.340   | 0.333   | −0.006  | 0.028   | ⚠️ small negative  | −0.013       |
 
 Statistical tests: Wilcoxon signed-rank (all metrics).
 
 ### 7.2 SCS and Engagement by FSLSM Dimension Pole
 
-| Dimension | Pole | n | SCS R0 | SCS R1 | ΔSCS | Eng R0 | Eng R1 |
-|-----------|------|---|--------|--------|------|--------|--------|
-| act_ref | Active | 5 | 0.309 | 0.581 | +0.272 | 3.0 | 4.6 |
-| act_ref | Reflective | 5 | 0.236 | 0.561 | +0.325 | 3.2 | 4.0 |
-| sen_int | Sensing | 5 | 0.248 | 0.545 | +0.297 | 3.2 | 4.4 |
-| sen_int | Intuitive | 5 | 0.296 | 0.597 | +0.301 | 3.0 | 4.2 |
-| vis_ver | Visual | 5 | 0.283 | 0.583 | +0.300 | 3.0 | 4.2 |
-| vis_ver | Verbal | 5 | 0.262 | 0.559 | +0.297 | 3.2 | 4.4 |
-| seq_glo | Sequential | 6 | 0.254 | 0.528 | +0.274 | 3.0 | 4.3 |
-| seq_glo | **Global** | 4 | 0.300 | **0.635** | **+0.335** | 3.25 | 4.25 |
+| Dimension | Pole | n (sessions) | SCS R0 | SCS R1 | ΔSCS | Eng R0 | Eng R1 |
+|-----------|------|-------------|--------|--------|------|--------|--------|
+| act_ref | Active | 2880 | 0.275 | 0.453 | +0.178 | 3.031 | 3.812 |
+| act_ref | **Reflective** | 2880 | 0.248 | 0.485 | **+0.237** | 3.463 | 3.968 |
+| sen_int | Sensing | 2880 | 0.259 | 0.470 | +0.211 | 3.193 | 3.875 |
+| sen_int | Intuitive | 2880 | 0.264 | 0.469 | +0.205 | 3.301 | 3.905 |
+| vis_ver | **Visual** | 2880 | 0.273 | 0.506 | +0.233 | **3.020** | **3.927** |
+| vis_ver | Verbal | 2880 | 0.250 | 0.433 | +0.183 | 3.473 | 3.853 |
+| seq_glo | Sequential | 2880 | 0.248 | 0.464 | +0.216 | 3.264 | 3.863 |
+| seq_glo | Global | 2880 | 0.275 | 0.475 | +0.200 | 3.230 | 3.917 |
 
-**Observation:** All 8 dimension poles benefit from personalization. Global learners show the largest SCS improvement (+0.335). Active learners show the largest engagement improvement (3.0 → 4.6).
+**Observation:** All 8 dimension poles benefit from personalization. Reflective learners show the largest SCS improvement (+0.237). Visual learners show the largest engagement improvement (3.020 → 3.927).
 
 ### 7.3 Cost
 
 | | R0 | R1 |
 |--|----|----|
-| Total (10 sessions) | $0.0246 | $0.0289 |
-| Mean per session | $0.00246 | $0.00289 |
-| **Overhead** | — | **+17.4%** |
+| Total (5,760 sessions) | $12.80 | $15.51 |
+| Mean per session | $0.00222 | $0.00269 |
+| **Overhead** | — | **+21.2%** |
 
-Personalization adds minimal cost overhead (~$0.0004 per session).
+Personalization adds minimal cost overhead (~$0.00047 per session, $2.71 total for the full run).
 
 ---
 
@@ -201,9 +204,9 @@ Personalization adds minimal cost overhead (~$0.0004 per session).
 
 ### What Doesn't
 
-- **All retrieval metrics (CR@5, CR@10, ER) are equal between R0 and R1** (p = 0.57, p = 0.47, p = 0.18; d ≈ 0 for all). The FSLSM-augmented query in R1 adds style-relevant keywords to the retrieval query, but gold chunks are defined by content relevance — style keywords do not align with factual gold, so retrieval recall is unaffected at both k=5 and k=10.
+- **Retrieval metrics (CR@5, CR@10, ER) show small but statistically significant negative effects** (d = −0.022, −0.061, −0.013 respectively). The FSLSM-augmented query in R1 adds style-relevant keywords that slightly misalign with factually-defined gold chunks, reducing recall by a small margin at both k=5 and k=10. Effect sizes are negligible in practical terms.
 
-- **RR is significantly lower in R1** (R1 = 4.214 vs R0 = 4.655, d = −0.82). R1 responses allocate token budget to style-specific elements (exercises, diagrams, numbered steps) that don't appear in the gold answer. The LLM judge penalises this as lower factual proximity.
+- **RR shows no significant difference** (R1 = 3.785 vs R0 = 3.788, p = 0.683, d ≈ 0). Style-conditioned responses do not help or hurt perceived factual relevance — personalization operates purely at the style layer without compromising content quality.
 
 ### Interpretation
 Personalization in this system primarily operates at the **generation layer** (style, structure, tone). The **retrieval layer** gains are smaller and harder to detect at small sample sizes. This is consistent with the literature: style is more directly controllable via prompt conditioning than retrieval ranking.
@@ -212,24 +215,12 @@ Personalization in this system primarily operates at the **generation layer** (s
 
 ## 9. Current Status & Next Steps
 
-### Now
-- ✅ Full experiment running: **7,178 / 11,520 sessions** (~62% complete)
-- ✅ No errors detected
-- ⏳ Estimated completion: ~April 20, 2026
-
-### After Experiment Completes
-1. Run evaluation pipeline:
-   ```bash
-   python experiments/exp2_tutor_personalization/evaluate_exp2.py --rr-workers 1
-   ```
-2. Re-run `report.ipynb` to regenerate all figures and tables with full data
-3. Compile final thesis chapter for Experiment 2
-
-### Expected Final Results
-- **SCS:** R1 > R0 confirmed at p < 0.001 (effect size likely d > 3)
-- **Engagement:** R1 > R0 confirmed at p < 0.001
-- **CR@10/ER:** Expect small but statistically detectable R1 > R0 (d ≈ 0.1–0.2) with n=5,760 pairs
-- **RR:** Likely no significant difference (style ≠ factual accuracy)
+### Status: COMPLETE ✅
+- ✅ Full experiment: 11,520 sessions, 5,760 matched pairs
+- ✅ Evaluation pipeline complete (SCS, RR, CR@5/10, ER, Eng)
+- ✅ Pairwise evaluation complete (`results/pairwise/`)
+- ✅ `report.ipynb` regenerated with final data
+- ✅ Results cleaned and aligned with Exp3 session source (same 5,760 sessions used)
 
 ---
 

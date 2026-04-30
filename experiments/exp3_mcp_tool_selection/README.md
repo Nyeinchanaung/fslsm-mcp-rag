@@ -100,6 +100,55 @@ Selected tool → injected into prompt
 
 ---
 
+## MCP Tool Registry
+
+The registry contains **15 pedagogical tools**, each tagged with the FSLSM poles it primarily serves. Every pole is covered by 2–4 tools; several tools serve two poles.
+
+### Full Tool List
+
+| ID | Tool | Category | FSLSM Poles | Description |
+|----|------|----------|-------------|-------------|
+| 1 | `diagram_renderer` | visualization | Visual · Sequential | Generate a labelled diagram, flowchart, or schematic figure that visually illustrates a concept, architecture, or network structure. Best for learners who prefer pictures and graphical representations laid out step by step. |
+| 2 | `interactive_simulation` | visualization | Visual · Active | Launch an interactive simulation with sliders and manipulable parameters that the learner can experiment with hands-on. Updates plots in real time. Best for learners who learn by doing and experimenting. |
+| 3 | `stepwise_walkthrough` | procedural | Sequential · Sensing | Decompose an algorithm or training procedure into an explicit numbered walkthrough — each step shows one transformation or computation with a concrete intermediate result. Best for learners who need an ordered concrete progression. |
+| 4 | `worked_example` | procedural | Sensing · Sequential | Present a fully solved example problem with every intermediate computation shown explicitly — concrete numerical inputs, standard methods, and annotated calculation steps. Best for learners who prefer concrete facts and detail-rich worked solutions. |
+| 5 | `conceptual_overview` | overview | Global · Intuitive | Provide a high-level overview that frames the topic in its broader context — motivates why it matters, maps connections to neighbouring ideas, and explains the big picture before details. Best for learners who need holistic framing first. |
+| 6 | `abstract_derivation` | theoretical | Intuitive · Verbal | Derive a result from first principles using formal notation and mathematical reasoning — loss function derivation, gradient computation, proof of convergence, or symbolic manipulation. Best for learners who prefer abstract theory and formal derivations. |
+| 7 | `analogy_explainer` | theoretical | Intuitive · Verbal | Explain a concept by mapping it to a familiar analogy or metaphor, drawing conceptual parallels in written prose to convey underlying meaning. Best for learners who grasp abstractions through verbal metaphors. |
+| 8 | `socratic_dialogue` | dialogic | Active · Reflective | Engage the learner with a sequence of pointed Socratic questions that probe understanding, surface misconceptions, and require active discussion. Alternates between active answering and reflective pauses. Best for learners who learn by discussing and questioning. |
+| 9 | `practice_exercise` | exercise | Active · Sensing | Generate a hands-on practice problem set with concrete numerical inputs, standard procedures to apply, and immediate feedback on each attempt. Best for learners who learn by doing concrete practical exercises. |
+| 10 | `reflection_prompt` | dialogic | Reflective · Verbal | Issue a guided reflection prompt asking the learner to think quietly and write out their reasoning in their own words. Best for learners who process by thinking alone and writing prose. |
+| 11 | `summary_outline` | overview | Reflective · Sequential | Produce a structured outline organised into ordered sections, sub-sections, and bullet points for review. Linear, ordered, bullet-point format. Best for learners who consolidate by reading ordered structured outlines. |
+| 12 | `prose_explainer` | explanation | Verbal · Sequential | Explain a concept in flowing connected written prose, building the explanation sentence by sentence in a clear linear order. Heavy on written words, light on figures. Best for learners who prefer reading ordered written narrative explanations. |
+| 13 | `code_sandbox` | exercise | Active · Sensing | Open a runnable code sandbox where the learner can edit, execute, and inspect outputs of working code that demonstrates the concept. Best for learners who prefer doing and trying concrete code over reading theory. |
+| 14 | `concept_map` | visualization | Global · Visual | Build a graphical concept map that visually shows how the topic connects to surrounding ideas as a network of nodes and labelled edges. Holistic big-picture diagram. Best for learners who need to see overall connections in a chart-like layout. |
+| 15 | `case_study` | overview | Sensing · Global | Present an extended real-world case study that anchors the topic in a concrete practical application within its wider context. Best for learners who learn through concrete real applications placed in holistic context. |
+
+### Coverage by FSLSM Pole
+
+| Pole | Tools |
+|------|-------|
+| **Visual** | diagram_renderer (1), interactive_simulation (2), concept_map (14) |
+| **Sequential** | diagram_renderer (1), stepwise_walkthrough (3), worked_example (4), summary_outline (11), prose_explainer (12) |
+| **Sensing** | stepwise_walkthrough (3), worked_example (4), practice_exercise (9), code_sandbox (13), case_study (15) |
+| **Global** | conceptual_overview (5), concept_map (14), case_study (15) |
+| **Intuitive** | conceptual_overview (5), abstract_derivation (6), analogy_explainer (7) |
+| **Verbal** | abstract_derivation (6), analogy_explainer (7), reflection_prompt (10), prose_explainer (12) |
+| **Active** | interactive_simulation (2), socratic_dialogue (8), practice_exercise (9), code_sandbox (13) |
+| **Reflective** | socratic_dialogue (8), reflection_prompt (10), summary_outline (11) |
+
+### Tool Selection Logic
+
+The expert-optimal tool for each session is determined by `get_optimal_tool_id(query, profile)` in `tool_registry.py`:
+
+1. **Intent classification** — the query is matched against 9 intent keyword lists (`explain`, `visualize`, `implement`, `practice`, `solve`, `derive`, `compare`, `summarize`, `discuss`)
+2. **Strong intent overrides** (≈30% of queries) — `implement` → `code_sandbox`/`worked_example`, `practice` → `practice_exercise`/`summary_outline`, `visualize` → `diagram_renderer`/`concept_map` (profile-aware)
+3. **Default "explain" path** (≈70% of queries) — profile alone determines the tool via `PROFILE_TOOL_MAP`, a lookup table of all 16 profiles to their optimal tool ID
+
+This design makes Exp3 a clean test of FSLSM conditioning: for the majority "explain" intent, the profile is the only signal that distinguishes the correct tool.
+
+---
+
 ## How to Reproduce
 
 ```bash

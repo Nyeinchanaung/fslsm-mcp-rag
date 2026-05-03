@@ -1,0 +1,62 @@
+[
+  {
+    "tool_id": 1,
+    "name": "Concept Explainer"
+  },
+  {
+    "tool_id": 2,
+    "name": "Step-by-Step Derivator"
+  },
+  {
+    "tool_id": 3,
+    "name": "Worked Example Generator"
+  },
+  {
+    "tool_id": 4,
+    "name": "Diagrammatic-Text Explainer"
+  },
+  {
+    "tool_id": 5,
+    "name": "Analogical Reasoner"
+  },
+  {
+    "tool_id": 6,
+    "name": "Comparative Explainer"
+  },
+  {
+    "tool_id": 7,
+    "name": "Concept Map Generator"
+  },
+  {
+    "tool_id": 8,
+    "name": "PersonaRAG Adapter"
+  },
+  {
+    "tool_id": 9,
+    "name": "FSLSM Styler"
+  },
+  {
+    "tool_id": 10,
+    "name": "Think-Pair-Share Generator"
+  },
+  {
+    "tool_id": 11,
+    "name": "Interactive Exercise Generator"
+  },
+  {
+    "tool_id": 12,
+    "name": "Quiz Generator"
+  },
+  {
+    "tool_id": 13,
+    "name": "Summarizer"
+  },
+  {
+    "tool_id": 14,
+    "name": "Content Retriever"
+  },
+  {
+    "tool_id": 15,
+    "name": "Web Search Tool"
+  }
+]

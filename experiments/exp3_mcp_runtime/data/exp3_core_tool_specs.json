@@ -1,0 +1,252 @@
+[
+  {
+    "tool_id": 1,
+    "tool_name": "Concept Explainer",
+    "grounding_mode": "d2l",
+    "target_behavior": "Clear factual explanation in connected prose.",
+    "expected_question_patterns": [
+      "what is",
+      "explain",
+      "describe",
+      "how does"
+    ],
+    "disallowed_confounders": [
+      "explicit comparison requests",
+      "diagram requests",
+      "quiz framing"
+    ],
+    "n_questions": 4
+  },
+  {
+    "tool_id": 2,
+    "tool_name": "Step-by-Step Derivator",
+    "grounding_mode": "d2l",
+    "target_behavior": "Ordered derivation or algorithm walkthrough.",
+    "expected_question_patterns": [
+      "step by step",
+      "derive",
+      "walk through",
+      "trace"
+    ],
+    "disallowed_confounders": [
+      "pure summary requests",
+      "open web requests"
+    ],
+    "n_questions": 4
+  },
+  {
+    "tool_id": 3,
+    "tool_name": "Worked Example Generator",
+    "grounding_mode": "d2l",
+    "target_behavior": "Concrete solved example with intermediate calculations.",
+    "expected_question_patterns": [
+      "show me an example",
+      "solve",
+      "calculate",
+      "worked example"
+    ],
+    "disallowed_confounders": [
+      "open-ended reflection",
+      "chapter summary"
+    ],
+    "n_questions": 4
+  },
+  {
+    "tool_id": 4,
+    "tool_name": "Diagrammatic-Text Explainer",
+    "grounding_mode": "d2l",
+    "target_behavior": "Visual or spatial textual explanation using diagram-like layout.",
+    "expected_question_patterns": [
+      "visualize",
+      "draw",
+      "diagram",
+      "illustrate"
+    ],
+    "disallowed_confounders": [
+      "quiz or assessment framing",
+      "recent developments"
+    ],
+    "n_questions": 4
+  },
+  {
+    "tool_id": 5,
+    "tool_name": "Analogical Reasoner",
+    "grounding_mode": "d2l",
+    "target_behavior": "Big-picture intuitive explanation through analogy.",
+    "expected_question_patterns": [
+      "intuition",
+      "why does this matter",
+      "analogy",
+      "relate this"
+    ],
+    "disallowed_confounders": [
+      "explicit step derivation",
+      "table comparison"
+    ],
+    "n_questions": 4
+  },
+  {
+    "tool_id": 6,
+    "tool_name": "Comparative Explainer",
+    "grounding_mode": "d2l",
+    "target_behavior": "Systematic comparison across explicit axes.",
+    "expected_question_patterns": [
+      "compare",
+      "contrast",
+      "difference between",
+      "versus"
+    ],
+    "disallowed_confounders": [
+      "single-concept explanation",
+      "open web updates"
+    ],
+    "n_questions": 4
+  },
+  {
+    "tool_id": 7,
+    "tool_name": "Concept Map Generator",
+    "grounding_mode": "d2l",
+    "target_behavior": "Hierarchical or networked map of connected ideas.",
+    "expected_question_patterns": [
+      "overview",
+      "map the relationships",
+      "big picture",
+      "how do these connect"
+    ],
+    "disallowed_confounders": [
+      "recent web updates",
+      "single numeric example"
+    ],
+    "n_questions": 4
+  },
+  {
+    "tool_id": 8,
+    "tool_name": "PersonaRAG Adapter",
+    "grounding_mode": "style_fixture",
+    "target_behavior": "Adapt retrieved content into the student's learning style.",
+    "expected_question_patterns": [
+      "adapt this to my style",
+      "re-explain this for me",
+      "rewrite this chunk"
+    ],
+    "disallowed_confounders": [
+      "new retrieval requests",
+      "open web questions"
+    ],
+    "n_questions": 4
+  },
+  {
+    "tool_id": 9,
+    "tool_name": "FSLSM Styler",
+    "grounding_mode": "style_fixture",
+    "target_behavior": "Transform existing content from one style to another on demand.",
+    "expected_question_patterns": [
+      "explain this differently",
+      "make this more visual",
+      "convert this explanation"
+    ],
+    "disallowed_confounders": [
+      "brand-new retrieval task",
+      "chapter summarization"
+    ],
+    "n_questions": 4
+  },
+  {
+    "tool_id": 10,
+    "tool_name": "Think-Pair-Share Generator",
+    "grounding_mode": "style_fixture",
+    "target_behavior": "Generate reflective think-pair-share prompts.",
+    "expected_question_patterns": [
+      "reflect on",
+      "think-pair-share",
+      "pause and discuss"
+    ],
+    "disallowed_confounders": [
+      "coding exercise request",
+      "quiz with fixed answers"
+    ],
+    "n_questions": 4
+  },
+  {
+    "tool_id": 11,
+    "tool_name": "Interactive Exercise Generator",
+    "grounding_mode": "style_fixture",
+    "target_behavior": "Create a hands-on exercise with instructions and hints.",
+    "expected_question_patterns": [
+      "give me an exercise",
+      "hands-on practice",
+      "let me implement"
+    ],
+    "disallowed_confounders": [
+      "reflection-only framing",
+      "recent web topic"
+    ],
+    "n_questions": 4
+  },
+  {
+    "tool_id": 12,
+    "tool_name": "Quiz Generator",
+    "grounding_mode": "style_fixture",
+    "target_behavior": "Generate assessment questions with feedback.",
+    "expected_question_patterns": [
+      "quiz me",
+      "test my understanding",
+      "check what I know"
+    ],
+    "disallowed_confounders": [
+      "open-ended reflection",
+      "coding implementation task"
+    ],
+    "n_questions": 4
+  },
+  {
+    "tool_id": 13,
+    "tool_name": "Summarizer",
+    "grounding_mode": "style_fixture",
+    "target_behavior": "Concise synthesis of existing content.",
+    "expected_question_patterns": [
+      "summarize",
+      "overview",
+      "key points",
+      "tl;dr"
+    ],
+    "disallowed_confounders": [
+      "request for latest external info",
+      "stepwise derivation"
+    ],
+    "n_questions": 4
+  },
+  {
+    "tool_id": 14,
+    "tool_name": "Content Retriever",
+    "grounding_mode": "d2l",
+    "target_behavior": "Return the most relevant D2L passages without style transformation.",
+    "expected_question_patterns": [
+      "find the relevant section",
+      "retrieve the passage",
+      "what does D2L say"
+    ],
+    "disallowed_confounders": [
+      "asks for explanation instead of retrieval",
+      "requests latest information"
+    ],
+    "n_questions": 4
+  },
+  {
+    "tool_id": 15,
+    "tool_name": "Web Search Tool",
+    "grounding_mode": "search",
+    "target_behavior": "Find recent or beyond-D2L information from the web.",
+    "expected_question_patterns": [
+      "latest",
+      "recent developments",
+      "industry use",
+      "beyond D2L"
+    ],
+    "disallowed_confounders": [
+      "purely textbook retrieval",
+      "single-concept definition request"
+    ],
+    "n_questions": 4
+  }
+]

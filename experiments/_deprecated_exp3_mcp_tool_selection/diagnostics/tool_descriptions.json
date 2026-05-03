@@ -1,0 +1,189 @@
+{
+  "tools": [
+    {
+      "tool_id": 1,
+      "name": "diagram_renderer",
+      "category": "visualization",
+      "fslsm_dims": [
+        "Visual",
+        "Sequential"
+      ],
+      "description": "Generate a labeled diagram, flowchart, or schematic figure that visually illustrates a concept, architecture, or computation graph. Output is a rendered image with annotations linking visual elements to terminology. Best for learners who prefer pictures, charts, and visual representations of information laid out in a clear ordered structure.",
+      "description_word_count": 48,
+      "token_cost": 106
+    },
+    {
+      "tool_id": 2,
+      "name": "interactive_simulation",
+      "category": "visualization",
+      "fslsm_dims": [
+        "Visual",
+        "Active"
+      ],
+      "description": "Launch an interactive visual simulation with sliders, buttons, and manipulable parameters that the learner can experiment with hands-on. Updates plots in real time as the learner changes inputs and tries things out. Best for active learners who learn by doing and experimenting with visual demonstrations.",
+      "description_word_count": 45,
+      "token_cost": 92
+    },
+    {
+      "tool_id": 3,
+      "name": "stepwise_walkthrough",
+      "category": "procedural",
+      "fslsm_dims": [
+        "Sequential",
+        "Sensing"
+      ],
+      "description": "Break a procedure or algorithm into an ordered sequence of small concrete steps, each with a specific action and observable intermediate result. Linear, methodical, detail-rich; advances one step at a time with concrete facts and standard procedures. Best for sequential thinkers who want a clear ordered procedure with practical details.",
+      "description_word_count": 50,
+      "token_cost": 105
+    },
+    {
+      "tool_id": 4,
+      "name": "worked_example",
+      "category": "procedural",
+      "fslsm_dims": [
+        "Sensing",
+        "Sequential"
+      ],
+      "description": "Present a fully solved example problem with every intermediate computation shown explicitly, using concrete numbers and standard methods rather than abstract formulas. Each line is a calculation step annotated with its rule. Best for sensing learners who prefer concrete facts, established procedures, and detail-rich worked solutions.",
+      "description_word_count": 46,
+      "token_cost": 93
+    },
+    {
+      "tool_id": 5,
+      "name": "conceptual_overview",
+      "category": "overview",
+      "fslsm_dims": [
+        "Global",
+        "Intuitive"
+      ],
+      "description": "Provide a high-level conceptual overview that frames the topic in its broader context, motivates why it matters, and maps how it connects to neighbouring ideas before zooming in. Holistic big-picture framing of abstract theory. Best for global thinkers who need to see the whole abstract picture and underlying meaning before details.",
+      "description_word_count": 51,
+      "token_cost": 93
+    },
+    {
+      "tool_id": 6,
+      "name": "abstract_derivation",
+      "category": "theoretical",
+      "fslsm_dims": [
+        "Intuitive",
+        "Verbal"
+      ],
+      "description": "Derive a result formally from first principles using abstract symbolic notation, mathematical theory, and theoretical reasoning. Emphasises underlying meaning and innovation in symbolic words rather than concrete examples or pictures. Best for intuitive learners who enjoy abstractions, theory, and verbal mathematical reasoning.",
+      "description_word_count": 42,
+      "token_cost": 92
+    },
+    {
+      "tool_id": 7,
+      "name": "analogy_explainer",
+      "category": "theoretical",
+      "fslsm_dims": [
+        "Intuitive",
+        "Verbal"
+      ],
+      "description": "Explain a concept by mapping it to a familiar analogy or metaphor, drawing abstract conceptual parallels in written prose to convey underlying meaning. Innovative metaphorical reasoning expressed verbally. Best for intuitive learners who grasp abstractions through verbal metaphors and inventive theoretical comparisons.",
+      "description_word_count": 42,
+      "token_cost": 96
+    },
+    {
+      "tool_id": 8,
+      "name": "socratic_dialogue",
+      "category": "dialogic",
+      "fslsm_dims": [
+        "Active",
+        "Reflective"
+      ],
+      "description": "Engage the learner with a sequence of pointed Socratic questions that probe understanding, surface misconceptions, and require active discussion. Alternates between active answering and reflective pauses for thinking through ideas. Best for learners who learn by discussing, thinking through, and actively engaging with quizzing dialogue.",
+      "description_word_count": 45,
+      "token_cost": 103
+    },
+    {
+      "tool_id": 9,
+      "name": "practice_exercise",
+      "category": "exercise",
+      "fslsm_dims": [
+        "Active",
+        "Sensing"
+      ],
+      "description": "Generate a hands-on practice problem set with concrete numerical inputs, standard procedures to apply, and immediate feedback on each attempt. Learner does the work directly and tries problems with concrete factual details. Best for active sensing learners who learn by doing concrete practical exercises.",
+      "description_word_count": 44,
+      "token_cost": 94
+    },
+    {
+      "tool_id": 10,
+      "name": "reflection_prompt",
+      "category": "dialogic",
+      "fslsm_dims": [
+        "Reflective",
+        "Verbal"
+      ],
+      "description": "Issue a guided reflection prompt asking the learner to think quietly, write out their reasoning in their own words, and articulate what they now understand versus what is still unclear. Pauses for thinking and verbal self-explanation. Best for reflective verbal learners who process by thinking and writing alone.",
+      "description_word_count": 48,
+      "token_cost": 87
+    },
+    {
+      "tool_id": 11,
+      "name": "summary_outline",
+      "category": "overview",
+      "fslsm_dims": [
+        "Reflective",
+        "Sequential"
+      ],
+      "description": "Produce a structured outline that organises the topic into ordered sections, sub-sections, and bullet points for review. Linear, ordered, scannable list format suitable for thinking through content alone after a lesson. Best for reflective learners who consolidate by reading ordered structured outlines quietly.",
+      "description_word_count": 43,
+      "token_cost": 91
+    },
+    {
+      "tool_id": 12,
+      "name": "prose_explainer",
+      "category": "explanation",
+      "fslsm_dims": [
+        "Verbal",
+        "Sequential"
+      ],
+      "description": "Explain a concept in flowing connected written prose, building the explanation sentence by sentence in a clear linear order. Heavy on written words, light on figures or diagrams. Step-by-step verbal narrative. Best for verbal sequential learners who prefer reading ordered written explanations and spoken-style words.",
+      "description_word_count": 45,
+      "token_cost": 88
+    },
+    {
+      "tool_id": 13,
+      "name": "code_sandbox",
+      "category": "exercise",
+      "fslsm_dims": [
+        "Active",
+        "Sensing"
+      ],
+      "description": "Open a runnable code sandbox where the learner can edit, execute, and inspect outputs of working code that demonstrates the concept. Hands-on experimentation with concrete implementation details and standard library functions. Best for active sensing learners who prefer doing and trying concrete code over reading theory.",
+      "description_word_count": 46,
+      "token_cost": 96
+    },
+    {
+      "tool_id": 14,
+      "name": "concept_map",
+      "category": "visualization",
+      "fslsm_dims": [
+        "Global",
+        "Visual"
+      ],
+      "description": "Build a graphical concept map that visually shows how the topic connects to surrounding ideas as a network of nodes and labelled edges. Holistic big-picture diagram of relationships across the whole subject. Best for global visual learners who need to see overall picture connections in a chart-like layout.",
+      "description_word_count": 48,
+      "token_cost": 87
+    },
+    {
+      "tool_id": 15,
+      "name": "case_study",
+      "category": "overview",
+      "fslsm_dims": [
+        "Sensing",
+        "Global"
+      ],
+      "description": "Present an extended real-world case study that anchors the topic in a concrete practical application, then shows how the broader picture and related ideas come together within that single facts-rich scenario. Best for sensing global learners who learn through concrete real applications placed in a holistic context.",
+      "description_word_count": 47,
+      "token_cost": 87
+    }
+  ],
+  "analysis": {
+    "total_tools": 15,
+    "avg_description_length": 46.0,
+    "high_overlap_pairs": {}
+  }
+}

@@ -1,0 +1,1452 @@
+[
+  {
+    "session_id": "P01_ActSenVisSeq_I03_adv__MH_073",
+    "query": "How do the weight initialization methods differ between LSTM and the Compare class in terms of hyperparameters?",
+    "student_profile": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "selected_tool": {
+      "id": 2,
+      "name": "interactive_simulation",
+      "fslsm_dims": [
+        "Visual",
+        "Active"
+      ]
+    },
+    "optimal_tool": {
+      "id": 11,
+      "name": "summary_outline",
+      "fslsm_dims": [
+        "Reflective",
+        "Sequential"
+      ],
+      "description": "Produce a structured outline that organises the topic into ordered sections, sub-sections, and bullet points for review. Linear, ordered, scannable list format suitable for thinking through content alone after a lesson. Best for reflective learners who consolidate by reading ordered structured outlines quietly."
+    },
+    "tsa_hit": false,
+    "input_tokens": 92
+  },
+  {
+    "session_id": "P14_RefIntVisGlo_I03_adv__MH_074",
+    "query": "How do vanishing gradients affect the performance of optimization algorithms like SGD and accelerated methods?",
+    "student_profile": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "selected_tool": {
+      "id": 2,
+      "name": "interactive_simulation",
+      "fslsm_dims": [
+        "Visual",
+        "Active"
+      ]
+    },
+    "optimal_tool": {
+      "id": 14,
+      "name": "concept_map",
+      "fslsm_dims": [
+        "Global",
+        "Visual"
+      ],
+      "description": "Build a graphical concept map that visually shows how the topic connects to surrounding ideas as a network of nodes and labelled edges. Holistic big-picture diagram of relationships across the whole subject. Best for global visual learners who need to see overall picture connections in a chart-like layout."
+    },
+    "tsa_hit": false,
+    "input_tokens": 92
+  },
+  {
+    "session_id": "P06_ActIntVisGlo_I03_adv__MH_035",
+    "query": "In the context of neural network training and evaluation, how do data preparation and model architecture choices influence the handling of optimization challenges and the final model submission process?",
+    "student_profile": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "selected_tool": {
+      "id": 2,
+      "name": "interactive_simulation",
+      "fslsm_dims": [
+        "Visual",
+        "Active"
+      ]
+    },
+    "optimal_tool": {
+      "id": 2,
+      "name": "interactive_simulation",
+      "fslsm_dims": [
+        "Visual",
+        "Active"
+      ],
+      "description": "Launch an interactive visual simulation with sliders, buttons, and manipulable parameters that the learner can experiment with hands-on. Updates plots in real time as the learner changes inputs and tries things out. Best for active learners who learn by doing and experimenting with visual demonstrations."
+    },
+    "tsa_hit": true,
+    "input_tokens": 92
+  },
+  {
+    "session_id": "P11_RefSenVerSeq_I01_beg__MH_050",
+    "query": "How do matrix factorization techniques integrate with modern machine learning methods to enhance recommendation systems?",
+    "student_profile": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "selected_tool": {
+      "id": 7,
+      "name": "analogy_explainer",
+      "fslsm_dims": [
+        "Intuitive",
+        "Verbal"
+      ]
+    },
+    "optimal_tool": {
+      "id": 12,
+      "name": "prose_explainer",
+      "fslsm_dims": [
+        "Verbal",
+        "Sequential"
+      ],
+      "description": "Explain a concept in flowing connected written prose, building the explanation sentence by sentence in a clear linear order. Heavy on written words, light on figures or diagrams. Step-by-step verbal narrative. Best for verbal sequential learners who prefer reading ordered written explanations and spoken-style words."
+    },
+    "tsa_hit": false,
+    "input_tokens": 96
+  },
+  {
+    "session_id": "P16_RefIntVerGlo_I01_beg__MH_065",
+    "query": "How do different training functions handle loss calculation and optimization across various deep learning tasks, and what are the similarities and differences in their approaches?",
+    "student_profile": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "selected_tool": {
+      "id": 7,
+      "name": "analogy_explainer",
+      "fslsm_dims": [
+        "Intuitive",
+        "Verbal"
+      ]
+    },
+    "optimal_tool": {
+      "id": 6,
+      "name": "abstract_derivation",
+      "fslsm_dims": [
+        "Intuitive",
+        "Verbal"
+      ],
+      "description": "Derive a result formally from first principles using abstract symbolic notation, mathematical theory, and theoretical reasoning. Emphasises underlying meaning and innovation in symbolic words rather than concrete examples or pictures. Best for intuitive learners who enjoy abstractions, theory, and verbal mathematical reasoning."
+    },
+    "tsa_hit": false,
+    "input_tokens": 96
+  },
+  {
+    "session_id": "P11_RefSenVerSeq_I01_beg__MH_101",
+    "query": "How do the encoder and decoder components differ in their roles within the encoder-decoder architecture?",
+    "student_profile": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "selected_tool": {
+      "id": 12,
+      "name": "prose_explainer",
+      "fslsm_dims": [
+        "Verbal",
+        "Sequential"
+      ]
+    },
+    "optimal_tool": {
+      "id": 3,
+      "name": "stepwise_walkthrough",
+      "fslsm_dims": [
+        "Sequential",
+        "Sensing"
+      ],
+      "description": "Break a procedure or algorithm into an ordered sequence of small concrete steps, each with a specific action and observable intermediate result. Linear, methodical, detail-rich; advances one step at a time with concrete facts and standard procedures. Best for sequential thinkers who want a clear ordered procedure with practical details."
+    },
+    "tsa_hit": false,
+    "input_tokens": 88
+  },
+  {
+    "session_id": "P02_ActSenVisGlo_I05_gen__MH_021",
+    "query": "What are the best practices for managing computational resources and improving model performance when using cloud-based deep learning solutions?",
+    "student_profile": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "selected_tool": {
+      "id": 9,
+      "name": "practice_exercise",
+      "fslsm_dims": [
+        "Active",
+        "Sensing"
+      ]
+    },
+    "optimal_tool": {
+      "id": 9,
+      "name": "practice_exercise",
+      "fslsm_dims": [
+        "Active",
+        "Sensing"
+      ],
+      "description": "Generate a hands-on practice problem set with concrete numerical inputs, standard procedures to apply, and immediate feedback on each attempt. Learner does the work directly and tries problems with concrete factual details. Best for active sensing learners who learn by doing concrete practical exercises."
+    },
+    "tsa_hit": true,
+    "input_tokens": 94
+  },
+  {
+    "session_id": "P03_ActSenVerSeq_I03_adv__MH_069",
+    "query": "How do the model complexity control methods differ in ViT, RNN, and GRU architectures?",
+    "student_profile": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "selected_tool": {
+      "id": 12,
+      "name": "prose_explainer",
+      "fslsm_dims": [
+        "Verbal",
+        "Sequential"
+      ]
+    },
+    "optimal_tool": {
+      "id": 12,
+      "name": "prose_explainer",
+      "fslsm_dims": [
+        "Verbal",
+        "Sequential"
+      ],
+      "description": "Explain a concept in flowing connected written prose, building the explanation sentence by sentence in a clear linear order. Heavy on written words, light on figures or diagrams. Step-by-step verbal narrative. Best for verbal sequential learners who prefer reading ordered written explanations and spoken-style words."
+    },
+    "tsa_hit": true,
+    "input_tokens": 88
+  },
+  {
+    "session_id": "P15_RefIntVerSeq_I03_adv__MH_097",
+    "query": "How do model parameter saving methods differ across frameworks like MXNet, PyTorch, and TensorFlow?",
+    "student_profile": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "selected_tool": {
+      "id": 12,
+      "name": "prose_explainer",
+      "fslsm_dims": [
+        "Verbal",
+        "Sequential"
+      ]
+    },
+    "optimal_tool": {
+      "id": 12,
+      "name": "prose_explainer",
+      "fslsm_dims": [
+        "Verbal",
+        "Sequential"
+      ],
+      "description": "Explain a concept in flowing connected written prose, building the explanation sentence by sentence in a clear linear order. Heavy on written words, light on figures or diagrams. Step-by-step verbal narrative. Best for verbal sequential learners who prefer reading ordered written explanations and spoken-style words."
+    },
+    "tsa_hit": true,
+    "input_tokens": 88
+  },
+  {
+    "session_id": "P14_RefIntVisGlo_I02_int__MH_039",
+    "query": "How do context-sensitive word representations and multihead attention mechanisms address the limitations of context-independent representations and computational inefficiencies in deep learning models?",
+    "student_profile": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "selected_tool": {
+      "id": 14,
+      "name": "concept_map",
+      "fslsm_dims": [
+        "Global",
+        "Visual"
+      ]
+    },
+    "optimal_tool": {
+      "id": 14,
+      "name": "concept_map",
+      "fslsm_dims": [
+        "Global",
+        "Visual"
+      ],
+      "description": "Build a graphical concept map that visually shows how the topic connects to surrounding ideas as a network of nodes and labelled edges. Holistic big-picture diagram of relationships across the whole subject. Best for global visual learners who need to see overall picture connections in a chart-like layout."
+    },
+    "tsa_hit": true,
+    "input_tokens": 87
+  },
+  {
+    "session_id": "P11_RefSenVerSeq_I04_gen__MH_050",
+    "query": "How do matrix factorization techniques integrate with modern machine learning methods to enhance recommendation systems?",
+    "student_profile": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "selected_tool": {
+      "id": 7,
+      "name": "analogy_explainer",
+      "fslsm_dims": [
+        "Intuitive",
+        "Verbal"
+      ]
+    },
+    "optimal_tool": {
+      "id": 12,
+      "name": "prose_explainer",
+      "fslsm_dims": [
+        "Verbal",
+        "Sequential"
+      ],
+      "description": "Explain a concept in flowing connected written prose, building the explanation sentence by sentence in a clear linear order. Heavy on written words, light on figures or diagrams. Step-by-step verbal narrative. Best for verbal sequential learners who prefer reading ordered written explanations and spoken-style words."
+    },
+    "tsa_hit": false,
+    "input_tokens": 96
+  },
+  {
+    "session_id": "P08_ActIntVerGlo_I02_int__MH_037",
+    "query": "Trace the evolution of neural network architectures from simple linear models to complex structures like VGG, considering the role of custom layers and normalization techniques.",
+    "student_profile": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "selected_tool": {
+      "id": 12,
+      "name": "prose_explainer",
+      "fslsm_dims": [
+        "Verbal",
+        "Sequential"
+      ]
+    },
+    "optimal_tool": {
+      "id": 6,
+      "name": "abstract_derivation",
+      "fslsm_dims": [
+        "Intuitive",
+        "Verbal"
+      ],
+      "description": "Derive a result formally from first principles using abstract symbolic notation, mathematical theory, and theoretical reasoning. Emphasises underlying meaning and innovation in symbolic words rather than concrete examples or pictures. Best for intuitive learners who enjoy abstractions, theory, and verbal mathematical reasoning."
+    },
+    "tsa_hit": false,
+    "input_tokens": 88
+  },
+  {
+    "session_id": "P05_ActIntVisSeq_I03_adv__MH_099",
+    "query": "How do one-hot vectors relate to the limitations of context-independent word representations in word2vec and GloVe?",
+    "student_profile": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "selected_tool": {
+      "id": 14,
+      "name": "concept_map",
+      "fslsm_dims": [
+        "Global",
+        "Visual"
+      ]
+    },
+    "optimal_tool": {
+      "id": 1,
+      "name": "diagram_renderer",
+      "fslsm_dims": [
+        "Visual",
+        "Sequential"
+      ],
+      "description": "Generate a labeled diagram, flowchart, or schematic figure that visually illustrates a concept, architecture, or computation graph. Output is a rendered image with annotations linking visual elements to terminology. Best for learners who prefer pictures, charts, and visual representations of information laid out in a clear ordered structure."
+    },
+    "tsa_hit": false,
+    "input_tokens": 87
+  },
+  {
+    "session_id": "P06_ActIntVisGlo_I05_gen__MH_045",
+    "query": "How do different representations of bounding boxes and the use of anchor boxes in multiscale object detection contribute to the functionality of a single shot multibox detection (SSD) model?",
+    "student_profile": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "selected_tool": {
+      "id": 14,
+      "name": "concept_map",
+      "fslsm_dims": [
+        "Global",
+        "Visual"
+      ]
+    },
+    "optimal_tool": {
+      "id": 2,
+      "name": "interactive_simulation",
+      "fslsm_dims": [
+        "Visual",
+        "Active"
+      ],
+      "description": "Launch an interactive visual simulation with sliders, buttons, and manipulable parameters that the learner can experiment with hands-on. Updates plots in real time as the learner changes inputs and tries things out. Best for active learners who learn by doing and experimenting with visual demonstrations."
+    },
+    "tsa_hit": false,
+    "input_tokens": 87
+  },
+  {
+    "session_id": "P11_RefSenVerSeq_I03_adv__MH_102",
+    "query": "How do the anchor boxes evolve from their initial labeling to the final predicted bounding boxes with confidence scores?",
+    "student_profile": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "selected_tool": {
+      "id": 12,
+      "name": "prose_explainer",
+      "fslsm_dims": [
+        "Verbal",
+        "Sequential"
+      ]
+    },
+    "optimal_tool": {
+      "id": 12,
+      "name": "prose_explainer",
+      "fslsm_dims": [
+        "Verbal",
+        "Sequential"
+      ],
+      "description": "Explain a concept in flowing connected written prose, building the explanation sentence by sentence in a clear linear order. Heavy on written words, light on figures or diagrams. Step-by-step verbal narrative. Best for verbal sequential learners who prefer reading ordered written explanations and spoken-style words."
+    },
+    "tsa_hit": true,
+    "input_tokens": 88
+  },
+  {
+    "session_id": "P03_ActSenVerSeq_I03_adv__MH_053",
+    "query": "How do different neural network architectures and training techniques contribute to minimizing loss and improving model performance, particularly in the context of sequence-to-sequence models and continuous bag of words models?",
+    "student_profile": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "selected_tool": {
+      "id": 12,
+      "name": "prose_explainer",
+      "fslsm_dims": [
+        "Verbal",
+        "Sequential"
+      ]
+    },
+    "optimal_tool": {
+      "id": 12,
+      "name": "prose_explainer",
+      "fslsm_dims": [
+        "Verbal",
+        "Sequential"
+      ],
+      "description": "Explain a concept in flowing connected written prose, building the explanation sentence by sentence in a clear linear order. Heavy on written words, light on figures or diagrams. Step-by-step verbal narrative. Best for verbal sequential learners who prefer reading ordered written explanations and spoken-style words."
+    },
+    "tsa_hit": true,
+    "input_tokens": 88
+  },
+  {
+    "session_id": "P04_ActSenVerGlo_I02_int__MH_015",
+    "query": "In what ways do linear regression, multi-head self-attention, and GANs illustrate the evolution of model complexity in machine learning, particularly in terms of how they process inputs and optimize parameters?",
+    "student_profile": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "selected_tool": {
+      "id": 12,
+      "name": "prose_explainer",
+      "fslsm_dims": [
+        "Verbal",
+        "Sequential"
+      ]
+    },
+    "optimal_tool": {
+      "id": 15,
+      "name": "case_study",
+      "fslsm_dims": [
+        "Sensing",
+        "Global"
+      ],
+      "description": "Present an extended real-world case study that anchors the topic in a concrete practical application, then shows how the broader picture and related ideas come together within that single facts-rich scenario. Best for sensing global learners who learn through concrete real applications placed in a holistic context."
+    },
+    "tsa_hit": false,
+    "input_tokens": 88
+  },
+  {
+    "session_id": "P03_ActSenVerSeq_I03_adv__MH_086",
+    "query": "How has the evolution of recommendation systems like MovieLens influenced the development of deep learning techniques for prediction accuracy?",
+    "student_profile": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "selected_tool": {
+      "id": 2,
+      "name": "interactive_simulation",
+      "fslsm_dims": [
+        "Visual",
+        "Active"
+      ]
+    },
+    "optimal_tool": {
+      "id": 12,
+      "name": "prose_explainer",
+      "fslsm_dims": [
+        "Verbal",
+        "Sequential"
+      ],
+      "description": "Explain a concept in flowing connected written prose, building the explanation sentence by sentence in a clear linear order. Heavy on written words, light on figures or diagrams. Step-by-step verbal narrative. Best for verbal sequential learners who prefer reading ordered written explanations and spoken-style words."
+    },
+    "tsa_hit": false,
+    "input_tokens": 92
+  },
+  {
+    "session_id": "P02_ActSenVisGlo_I02_int__MH_096",
+    "query": "How can a custom layer be implemented to enhance seq2seq models in PyTorch while considering asynchronous computation?",
+    "student_profile": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "selected_tool": {
+      "id": 2,
+      "name": "interactive_simulation",
+      "fslsm_dims": [
+        "Visual",
+        "Active"
+      ]
+    },
+    "optimal_tool": {
+      "id": 9,
+      "name": "practice_exercise",
+      "fslsm_dims": [
+        "Active",
+        "Sensing"
+      ],
+      "description": "Generate a hands-on practice problem set with concrete numerical inputs, standard procedures to apply, and immediate feedback on each attempt. Learner does the work directly and tries problems with concrete factual details. Best for active sensing learners who learn by doing concrete practical exercises."
+    },
+    "tsa_hit": false,
+    "input_tokens": 92
+  },
+  {
+    "session_id": "P12_RefSenVerGlo_I05_gen__MH_091",
+    "query": "How do the concepts of model initialization, forward propagation, and learning rate scheduling interrelate in deep learning frameworks?",
+    "student_profile": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "selected_tool": {
+      "id": 12,
+      "name": "prose_explainer",
+      "fslsm_dims": [
+        "Verbal",
+        "Sequential"
+      ]
+    },
+    "optimal_tool": {
+      "id": 15,
+      "name": "case_study",
+      "fslsm_dims": [
+        "Sensing",
+        "Global"
+      ],
+      "description": "Present an extended real-world case study that anchors the topic in a concrete practical application, then shows how the broader picture and related ideas come together within that single facts-rich scenario. Best for sensing global learners who learn through concrete real applications placed in a holistic context."
+    },
+    "tsa_hit": false,
+    "input_tokens": 88
+  },
+  {
+    "session_id": "P03_ActSenVerSeq_I02_int__MH_089",
+    "query": "How do the architectural features of ResNeXt, LeNet, and GoogLeNet compare in terms of layer types and initialization methods?",
+    "student_profile": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "selected_tool": {
+      "id": 12,
+      "name": "prose_explainer",
+      "fslsm_dims": [
+        "Verbal",
+        "Sequential"
+      ]
+    },
+    "optimal_tool": {
+      "id": 12,
+      "name": "prose_explainer",
+      "fslsm_dims": [
+        "Verbal",
+        "Sequential"
+      ],
+      "description": "Explain a concept in flowing connected written prose, building the explanation sentence by sentence in a clear linear order. Heavy on written words, light on figures or diagrams. Step-by-step verbal narrative. Best for verbal sequential learners who prefer reading ordered written explanations and spoken-style words."
+    },
+    "tsa_hit": true,
+    "input_tokens": 88
+  },
+  {
+    "session_id": "P13_RefIntVisSeq_I01_beg__MH_105",
+    "query": "How do model parameter initialization methods differ across frameworks?",
+    "student_profile": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "selected_tool": {
+      "id": 2,
+      "name": "interactive_simulation",
+      "fslsm_dims": [
+        "Visual",
+        "Active"
+      ]
+    },
+    "optimal_tool": {
+      "id": 1,
+      "name": "diagram_renderer",
+      "fslsm_dims": [
+        "Visual",
+        "Sequential"
+      ],
+      "description": "Generate a labeled diagram, flowchart, or schematic figure that visually illustrates a concept, architecture, or computation graph. Output is a rendered image with annotations linking visual elements to terminology. Best for learners who prefer pictures, charts, and visual representations of information laid out in a clear ordered structure."
+    },
+    "tsa_hit": false,
+    "input_tokens": 92
+  },
+  {
+    "session_id": "P02_ActSenVisGlo_I05_gen__MH_084",
+    "query": "How does the vocabulary construction process impact the BERT fine-tuning on the SNLI dataset and the masked language modeling task?",
+    "student_profile": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "selected_tool": {
+      "id": 14,
+      "name": "concept_map",
+      "fslsm_dims": [
+        "Global",
+        "Visual"
+      ]
+    },
+    "optimal_tool": {
+      "id": 2,
+      "name": "interactive_simulation",
+      "fslsm_dims": [
+        "Visual",
+        "Active"
+      ],
+      "description": "Launch an interactive visual simulation with sliders, buttons, and manipulable parameters that the learner can experiment with hands-on. Updates plots in real time as the learner changes inputs and tries things out. Best for active learners who learn by doing and experimenting with visual demonstrations."
+    },
+    "tsa_hit": false,
+    "input_tokens": 87
+  },
+  {
+    "session_id": "P16_RefIntVerGlo_I04_gen__MH_045",
+    "query": "How do different representations of bounding boxes and the use of anchor boxes in multiscale object detection contribute to the functionality of a single shot multibox detection (SSD) model?",
+    "student_profile": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "selected_tool": {
+      "id": 8,
+      "name": "socratic_dialogue",
+      "fslsm_dims": [
+        "Active",
+        "Reflective"
+      ]
+    },
+    "optimal_tool": {
+      "id": 6,
+      "name": "abstract_derivation",
+      "fslsm_dims": [
+        "Intuitive",
+        "Verbal"
+      ],
+      "description": "Derive a result formally from first principles using abstract symbolic notation, mathematical theory, and theoretical reasoning. Emphasises underlying meaning and innovation in symbolic words rather than concrete examples or pictures. Best for intuitive learners who enjoy abstractions, theory, and verbal mathematical reasoning."
+    },
+    "tsa_hit": false,
+    "input_tokens": 103
+  },
+  {
+    "session_id": "P04_ActSenVerGlo_I05_gen__MH_041",
+    "query": "How do the concepts of linear transformations, softmax function, batch normalization, GRU update mechanisms, and BERT architecture contribute to understanding complex neural network operations?",
+    "student_profile": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "selected_tool": {
+      "id": 12,
+      "name": "prose_explainer",
+      "fslsm_dims": [
+        "Verbal",
+        "Sequential"
+      ]
+    },
+    "optimal_tool": {
+      "id": 15,
+      "name": "case_study",
+      "fslsm_dims": [
+        "Sensing",
+        "Global"
+      ],
+      "description": "Present an extended real-world case study that anchors the topic in a concrete practical application, then shows how the broader picture and related ideas come together within that single facts-rich scenario. Best for sensing global learners who learn through concrete real applications placed in a holistic context."
+    },
+    "tsa_hit": false,
+    "input_tokens": 88
+  },
+  {
+    "session_id": "P15_RefIntVerSeq_I04_gen__MH_074",
+    "query": "How do vanishing gradients affect the performance of optimization algorithms like SGD and accelerated methods?",
+    "student_profile": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "selected_tool": {
+      "id": 12,
+      "name": "prose_explainer",
+      "fslsm_dims": [
+        "Verbal",
+        "Sequential"
+      ]
+    },
+    "optimal_tool": {
+      "id": 12,
+      "name": "prose_explainer",
+      "fslsm_dims": [
+        "Verbal",
+        "Sequential"
+      ],
+      "description": "Explain a concept in flowing connected written prose, building the explanation sentence by sentence in a clear linear order. Heavy on written words, light on figures or diagrams. Step-by-step verbal narrative. Best for verbal sequential learners who prefer reading ordered written explanations and spoken-style words."
+    },
+    "tsa_hit": true,
+    "input_tokens": 88
+  },
+  {
+    "session_id": "P13_RefIntVisSeq_I02_int__MH_101",
+    "query": "How do the encoder and decoder components differ in their roles within the encoder-decoder architecture?",
+    "student_profile": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "selected_tool": {
+      "id": 12,
+      "name": "prose_explainer",
+      "fslsm_dims": [
+        "Verbal",
+        "Sequential"
+      ]
+    },
+    "optimal_tool": {
+      "id": 3,
+      "name": "stepwise_walkthrough",
+      "fslsm_dims": [
+        "Sequential",
+        "Sensing"
+      ],
+      "description": "Break a procedure or algorithm into an ordered sequence of small concrete steps, each with a specific action and observable intermediate result. Linear, methodical, detail-rich; advances one step at a time with concrete facts and standard procedures. Best for sequential thinkers who want a clear ordered procedure with practical details."
+    },
+    "tsa_hit": false,
+    "input_tokens": 88
+  },
+  {
+    "session_id": "P02_ActSenVisGlo_I01_beg__MH_085",
+    "query": "How do the training epochs and learning rates differ across models in the provided training methods?",
+    "student_profile": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "selected_tool": {
+      "id": 2,
+      "name": "interactive_simulation",
+      "fslsm_dims": [
+        "Visual",
+        "Active"
+      ]
+    },
+    "optimal_tool": {
+      "id": 2,
+      "name": "interactive_simulation",
+      "fslsm_dims": [
+        "Visual",
+        "Active"
+      ],
+      "description": "Launch an interactive visual simulation with sliders, buttons, and manipulable parameters that the learner can experiment with hands-on. Updates plots in real time as the learner changes inputs and tries things out. Best for active learners who learn by doing and experimenting with visual demonstrations."
+    },
+    "tsa_hit": true,
+    "input_tokens": 92
+  },
+  {
+    "session_id": "P07_ActIntVerSeq_I01_beg__MH_028",
+    "query": "How do different neural network architectures utilize predefined layers and fine-tuning techniques to improve model performance across various input types?",
+    "student_profile": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "selected_tool": {
+      "id": 12,
+      "name": "prose_explainer",
+      "fslsm_dims": [
+        "Verbal",
+        "Sequential"
+      ]
+    },
+    "optimal_tool": {
+      "id": 6,
+      "name": "abstract_derivation",
+      "fslsm_dims": [
+        "Intuitive",
+        "Verbal"
+      ],
+      "description": "Derive a result formally from first principles using abstract symbolic notation, mathematical theory, and theoretical reasoning. Emphasises underlying meaning and innovation in symbolic words rather than concrete examples or pictures. Best for intuitive learners who enjoy abstractions, theory, and verbal mathematical reasoning."
+    },
+    "tsa_hit": false,
+    "input_tokens": 88
+  },
+  {
+    "session_id": "P13_RefIntVisSeq_I02_int__MH_049",
+    "query": "How can BERT be fine-tuned for sentiment analysis, and how does this process compare to using bidirectional RNNs with pretrained word vectors for the same task?",
+    "student_profile": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "selected_tool": {
+      "id": 12,
+      "name": "prose_explainer",
+      "fslsm_dims": [
+        "Verbal",
+        "Sequential"
+      ]
+    },
+    "optimal_tool": {
+      "id": 11,
+      "name": "summary_outline",
+      "fslsm_dims": [
+        "Reflective",
+        "Sequential"
+      ],
+      "description": "Produce a structured outline that organises the topic into ordered sections, sub-sections, and bullet points for review. Linear, ordered, scannable list format suitable for thinking through content alone after a lesson. Best for reflective learners who consolidate by reading ordered structured outlines quietly."
+    },
+    "tsa_hit": false,
+    "input_tokens": 88
+  },
+  {
+    "session_id": "P10_RefSenVisGlo_I04_gen__MH_079",
+    "query": "How does masked softmax relate to GPU storage and tensor conversion in D2L?",
+    "student_profile": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "selected_tool": {
+      "id": 1,
+      "name": "diagram_renderer",
+      "fslsm_dims": [
+        "Visual",
+        "Sequential"
+      ]
+    },
+    "optimal_tool": {
+      "id": 14,
+      "name": "concept_map",
+      "fslsm_dims": [
+        "Global",
+        "Visual"
+      ],
+      "description": "Build a graphical concept map that visually shows how the topic connects to surrounding ideas as a network of nodes and labelled edges. Holistic big-picture diagram of relationships across the whole subject. Best for global visual learners who need to see overall picture connections in a chart-like layout."
+    },
+    "tsa_hit": false,
+    "input_tokens": 106
+  },
+  {
+    "session_id": "P11_RefSenVerSeq_I02_int__MH_102",
+    "query": "How do the anchor boxes evolve from their initial labeling to the final predicted bounding boxes with confidence scores?",
+    "student_profile": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "selected_tool": {
+      "id": 12,
+      "name": "prose_explainer",
+      "fslsm_dims": [
+        "Verbal",
+        "Sequential"
+      ]
+    },
+    "optimal_tool": {
+      "id": 12,
+      "name": "prose_explainer",
+      "fslsm_dims": [
+        "Verbal",
+        "Sequential"
+      ],
+      "description": "Explain a concept in flowing connected written prose, building the explanation sentence by sentence in a clear linear order. Heavy on written words, light on figures or diagrams. Step-by-step verbal narrative. Best for verbal sequential learners who prefer reading ordered written explanations and spoken-style words."
+    },
+    "tsa_hit": true,
+    "input_tokens": 88
+  },
+  {
+    "session_id": "P14_RefIntVisGlo_I04_gen__MH_082",
+    "query": "How does the choice of optimization algorithm affect the trajectory of function minimization in deep learning?",
+    "student_profile": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "selected_tool": {
+      "id": 2,
+      "name": "interactive_simulation",
+      "fslsm_dims": [
+        "Visual",
+        "Active"
+      ]
+    },
+    "optimal_tool": {
+      "id": 14,
+      "name": "concept_map",
+      "fslsm_dims": [
+        "Global",
+        "Visual"
+      ],
+      "description": "Build a graphical concept map that visually shows how the topic connects to surrounding ideas as a network of nodes and labelled edges. Holistic big-picture diagram of relationships across the whole subject. Best for global visual learners who need to see overall picture connections in a chart-like layout."
+    },
+    "tsa_hit": false,
+    "input_tokens": 92
+  },
+  {
+    "session_id": "P03_ActSenVerSeq_I02_int__MH_003",
+    "query": "How do the concepts of matrix multiplication, parameter initialization, and tokenization contribute to the development and training of deep learning models?",
+    "student_profile": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "selected_tool": {
+      "id": 9,
+      "name": "practice_exercise",
+      "fslsm_dims": [
+        "Active",
+        "Sensing"
+      ]
+    },
+    "optimal_tool": {
+      "id": 12,
+      "name": "prose_explainer",
+      "fslsm_dims": [
+        "Verbal",
+        "Sequential"
+      ],
+      "description": "Explain a concept in flowing connected written prose, building the explanation sentence by sentence in a clear linear order. Heavy on written words, light on figures or diagrams. Step-by-step verbal narrative. Best for verbal sequential learners who prefer reading ordered written explanations and spoken-style words."
+    },
+    "tsa_hit": false,
+    "input_tokens": 94
+  },
+  {
+    "session_id": "P06_ActIntVisGlo_I04_gen__MH_037",
+    "query": "Trace the evolution of neural network architectures from simple linear models to complex structures like VGG, considering the role of custom layers and normalization techniques.",
+    "student_profile": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "selected_tool": {
+      "id": 14,
+      "name": "concept_map",
+      "fslsm_dims": [
+        "Global",
+        "Visual"
+      ]
+    },
+    "optimal_tool": {
+      "id": 2,
+      "name": "interactive_simulation",
+      "fslsm_dims": [
+        "Visual",
+        "Active"
+      ],
+      "description": "Launch an interactive visual simulation with sliders, buttons, and manipulable parameters that the learner can experiment with hands-on. Updates plots in real time as the learner changes inputs and tries things out. Best for active learners who learn by doing and experimenting with visual demonstrations."
+    },
+    "tsa_hit": false,
+    "input_tokens": 87
+  },
+  {
+    "session_id": "P03_ActSenVerSeq_I01_beg__MH_023",
+    "query": "How do tokenization and text representation techniques affect fine-tuning strategies and model efficiency in NLP applications?",
+    "student_profile": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "selected_tool": {
+      "id": 12,
+      "name": "prose_explainer",
+      "fslsm_dims": [
+        "Verbal",
+        "Sequential"
+      ]
+    },
+    "optimal_tool": {
+      "id": 12,
+      "name": "prose_explainer",
+      "fslsm_dims": [
+        "Verbal",
+        "Sequential"
+      ],
+      "description": "Explain a concept in flowing connected written prose, building the explanation sentence by sentence in a clear linear order. Heavy on written words, light on figures or diagrams. Step-by-step verbal narrative. Best for verbal sequential learners who prefer reading ordered written explanations and spoken-style words."
+    },
+    "tsa_hit": true,
+    "input_tokens": 88
+  },
+  {
+    "session_id": "P09_RefSenVisSeq_I01_beg__MH_095",
+    "query": "How do Taylor series, autoregressive models, and convenience functions relate in machine learning?",
+    "student_profile": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "selected_tool": {
+      "id": 2,
+      "name": "interactive_simulation",
+      "fslsm_dims": [
+        "Visual",
+        "Active"
+      ]
+    },
+    "optimal_tool": {
+      "id": 3,
+      "name": "stepwise_walkthrough",
+      "fslsm_dims": [
+        "Sequential",
+        "Sensing"
+      ],
+      "description": "Break a procedure or algorithm into an ordered sequence of small concrete steps, each with a specific action and observable intermediate result. Linear, methodical, detail-rich; advances one step at a time with concrete facts and standard procedures. Best for sequential thinkers who want a clear ordered procedure with practical details."
+    },
+    "tsa_hit": false,
+    "input_tokens": 92
+  },
+  {
+    "session_id": "P15_RefIntVerSeq_I04_gen__MH_106",
+    "query": "How do transposed convolutional layers relate to feature maps and dropout in model training?",
+    "student_profile": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "selected_tool": {
+      "id": 12,
+      "name": "prose_explainer",
+      "fslsm_dims": [
+        "Verbal",
+        "Sequential"
+      ]
+    },
+    "optimal_tool": {
+      "id": 12,
+      "name": "prose_explainer",
+      "fslsm_dims": [
+        "Verbal",
+        "Sequential"
+      ],
+      "description": "Explain a concept in flowing connected written prose, building the explanation sentence by sentence in a clear linear order. Heavy on written words, light on figures or diagrams. Step-by-step verbal narrative. Best for verbal sequential learners who prefer reading ordered written explanations and spoken-style words."
+    },
+    "tsa_hit": true,
+    "input_tokens": 88
+  },
+  {
+    "session_id": "P12_RefSenVerGlo_I03_adv__MH_075",
+    "query": "How do character-level tokenization and language modeling relate to masked language modeling and next sentence prediction tasks?",
+    "student_profile": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "selected_tool": {
+      "id": 12,
+      "name": "prose_explainer",
+      "fslsm_dims": [
+        "Verbal",
+        "Sequential"
+      ]
+    },
+    "optimal_tool": {
+      "id": 15,
+      "name": "case_study",
+      "fslsm_dims": [
+        "Sensing",
+        "Global"
+      ],
+      "description": "Present an extended real-world case study that anchors the topic in a concrete practical application, then shows how the broader picture and related ideas come together within that single facts-rich scenario. Best for sensing global learners who learn through concrete real applications placed in a holistic context."
+    },
+    "tsa_hit": false,
+    "input_tokens": 88
+  },
+  {
+    "session_id": "P10_RefSenVisGlo_I05_gen__MH_079",
+    "query": "How does masked softmax relate to GPU storage and tensor conversion in D2L?",
+    "student_profile": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "selected_tool": {
+      "id": 1,
+      "name": "diagram_renderer",
+      "fslsm_dims": [
+        "Visual",
+        "Sequential"
+      ]
+    },
+    "optimal_tool": {
+      "id": 14,
+      "name": "concept_map",
+      "fslsm_dims": [
+        "Global",
+        "Visual"
+      ],
+      "description": "Build a graphical concept map that visually shows how the topic connects to surrounding ideas as a network of nodes and labelled edges. Holistic big-picture diagram of relationships across the whole subject. Best for global visual learners who need to see overall picture connections in a chart-like layout."
+    },
+    "tsa_hit": false,
+    "input_tokens": 106
+  },
+  {
+    "session_id": "P07_ActIntVerSeq_I04_gen__MH_074",
+    "query": "How do vanishing gradients affect the performance of optimization algorithms like SGD and accelerated methods?",
+    "student_profile": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "selected_tool": {
+      "id": 12,
+      "name": "prose_explainer",
+      "fslsm_dims": [
+        "Verbal",
+        "Sequential"
+      ]
+    },
+    "optimal_tool": {
+      "id": 12,
+      "name": "prose_explainer",
+      "fslsm_dims": [
+        "Verbal",
+        "Sequential"
+      ],
+      "description": "Explain a concept in flowing connected written prose, building the explanation sentence by sentence in a clear linear order. Heavy on written words, light on figures or diagrams. Step-by-step verbal narrative. Best for verbal sequential learners who prefer reading ordered written explanations and spoken-style words."
+    },
+    "tsa_hit": true,
+    "input_tokens": 88
+  },
+  {
+    "session_id": "P04_ActSenVerGlo_I05_gen__MH_080",
+    "query": "How does batch normalization in LeNet influence the architecture of ResNet when using convolutions and padding?",
+    "student_profile": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "selected_tool": {
+      "id": 12,
+      "name": "prose_explainer",
+      "fslsm_dims": [
+        "Verbal",
+        "Sequential"
+      ]
+    },
+    "optimal_tool": {
+      "id": 15,
+      "name": "case_study",
+      "fslsm_dims": [
+        "Sensing",
+        "Global"
+      ],
+      "description": "Present an extended real-world case study that anchors the topic in a concrete practical application, then shows how the broader picture and related ideas come together within that single facts-rich scenario. Best for sensing global learners who learn through concrete real applications placed in a holistic context."
+    },
+    "tsa_hit": false,
+    "input_tokens": 88
+  },
+  {
+    "session_id": "P15_RefIntVerSeq_I05_gen__MH_094",
+    "query": "How do initializing model parameters, changing colors, and using tensors impact the design of neural networks?",
+    "student_profile": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "selected_tool": {
+      "id": 12,
+      "name": "prose_explainer",
+      "fslsm_dims": [
+        "Verbal",
+        "Sequential"
+      ]
+    },
+    "optimal_tool": {
+      "id": 12,
+      "name": "prose_explainer",
+      "fslsm_dims": [
+        "Verbal",
+        "Sequential"
+      ],
+      "description": "Explain a concept in flowing connected written prose, building the explanation sentence by sentence in a clear linear order. Heavy on written words, light on figures or diagrams. Step-by-step verbal narrative. Best for verbal sequential learners who prefer reading ordered written explanations and spoken-style words."
+    },
+    "tsa_hit": true,
+    "input_tokens": 88
+  },
+  {
+    "session_id": "P11_RefSenVerSeq_I04_gen__MH_032",
+    "query": "How do pooling layers and gated recurrent units (GRUs) address challenges in optimization and uncertainty in deep learning models?",
+    "student_profile": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    },
+    "selected_tool": {
+      "id": 12,
+      "name": "prose_explainer",
+      "fslsm_dims": [
+        "Verbal",
+        "Sequential"
+      ]
+    },
+    "optimal_tool": {
+      "id": 12,
+      "name": "prose_explainer",
+      "fslsm_dims": [
+        "Verbal",
+        "Sequential"
+      ],
+      "description": "Explain a concept in flowing connected written prose, building the explanation sentence by sentence in a clear linear order. Heavy on written words, light on figures or diagrams. Step-by-step verbal narrative. Best for verbal sequential learners who prefer reading ordered written explanations and spoken-style words."
+    },
+    "tsa_hit": true,
+    "input_tokens": 88
+  },
+  {
+    "session_id": "P13_RefIntVisSeq_I05_gen__MH_053",
+    "query": "How do different neural network architectures and training techniques contribute to minimizing loss and improving model performance, particularly in the context of sequence-to-sequence models and continuous bag of words models?",
+    "student_profile": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "selected_tool": {
+      "id": 12,
+      "name": "prose_explainer",
+      "fslsm_dims": [
+        "Verbal",
+        "Sequential"
+      ]
+    },
+    "optimal_tool": {
+      "id": 1,
+      "name": "diagram_renderer",
+      "fslsm_dims": [
+        "Visual",
+        "Sequential"
+      ],
+      "description": "Generate a labeled diagram, flowchart, or schematic figure that visually illustrates a concept, architecture, or computation graph. Output is a rendered image with annotations linking visual elements to terminology. Best for learners who prefer pictures, charts, and visual representations of information laid out in a clear ordered structure."
+    },
+    "tsa_hit": false,
+    "input_tokens": 88
+  },
+  {
+    "session_id": "P06_ActIntVisGlo_I04_gen__MH_046",
+    "query": "Explain the relationship between bounding box transformations and the multiscale anchor box generation in the context of a single shot multibox detection (SSD) model.",
+    "student_profile": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    },
+    "selected_tool": {
+      "id": 2,
+      "name": "interactive_simulation",
+      "fslsm_dims": [
+        "Visual",
+        "Active"
+      ]
+    },
+    "optimal_tool": {
+      "id": 2,
+      "name": "interactive_simulation",
+      "fslsm_dims": [
+        "Visual",
+        "Active"
+      ],
+      "description": "Launch an interactive visual simulation with sliders, buttons, and manipulable parameters that the learner can experiment with hands-on. Updates plots in real time as the learner changes inputs and tries things out. Best for active learners who learn by doing and experimenting with visual demonstrations."
+    },
+    "tsa_hit": true,
+    "input_tokens": 92
+  },
+  {
+    "session_id": "P05_ActIntVisSeq_I05_gen__MH_045",
+    "query": "How do different representations of bounding boxes and the use of anchor boxes in multiscale object detection contribute to the functionality of a single shot multibox detection (SSD) model?",
+    "student_profile": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "selected_tool": {
+      "id": 2,
+      "name": "interactive_simulation",
+      "fslsm_dims": [
+        "Visual",
+        "Active"
+      ]
+    },
+    "optimal_tool": {
+      "id": 1,
+      "name": "diagram_renderer",
+      "fslsm_dims": [
+        "Visual",
+        "Sequential"
+      ],
+      "description": "Generate a labeled diagram, flowchart, or schematic figure that visually illustrates a concept, architecture, or computation graph. Output is a rendered image with annotations linking visual elements to terminology. Best for learners who prefer pictures, charts, and visual representations of information laid out in a clear ordered structure."
+    },
+    "tsa_hit": false,
+    "input_tokens": 92
+  },
+  {
+    "session_id": "P12_RefSenVerGlo_I04_gen__MH_001",
+    "query": "In what ways do the principles of minibatch stochastic gradient descent and batch normalization contribute to optimizing the GloVe model's loss function, considering function class constraints and evaluation metrics?",
+    "student_profile": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    },
+    "selected_tool": {
+      "id": 9,
+      "name": "practice_exercise",
+      "fslsm_dims": [
+        "Active",
+        "Sensing"
+      ]
+    },
+    "optimal_tool": {
+      "id": 15,
+      "name": "case_study",
+      "fslsm_dims": [
+        "Sensing",
+        "Global"
+      ],
+      "description": "Present an extended real-world case study that anchors the topic in a concrete practical application, then shows how the broader picture and related ideas come together within that single facts-rich scenario. Best for sensing global learners who learn through concrete real applications placed in a holistic context."
+    },
+    "tsa_hit": false,
+    "input_tokens": 94
+  },
+  {
+    "session_id": "P01_ActSenVisSeq_I02_int__MH_065",
+    "query": "How do different training functions handle loss calculation and optimization across various deep learning tasks, and what are the similarities and differences in their approaches?",
+    "student_profile": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "selected_tool": {
+      "id": 9,
+      "name": "practice_exercise",
+      "fslsm_dims": [
+        "Active",
+        "Sensing"
+      ]
+    },
+    "optimal_tool": {
+      "id": 3,
+      "name": "stepwise_walkthrough",
+      "fslsm_dims": [
+        "Sequential",
+        "Sensing"
+      ],
+      "description": "Break a procedure or algorithm into an ordered sequence of small concrete steps, each with a specific action and observable intermediate result. Linear, methodical, detail-rich; advances one step at a time with concrete facts and standard procedures. Best for sequential thinkers who want a clear ordered procedure with practical details."
+    },
+    "tsa_hit": false,
+    "input_tokens": 94
+  },
+  {
+    "session_id": "P09_RefSenVisSeq_I03_adv__MH_003",
+    "query": "How do the concepts of matrix multiplication, parameter initialization, and tokenization contribute to the development and training of deep learning models?",
+    "student_profile": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    },
+    "selected_tool": {
+      "id": 7,
+      "name": "analogy_explainer",
+      "fslsm_dims": [
+        "Intuitive",
+        "Verbal"
+      ]
+    },
+    "optimal_tool": {
+      "id": 3,
+      "name": "stepwise_walkthrough",
+      "fslsm_dims": [
+        "Sequential",
+        "Sensing"
+      ],
+      "description": "Break a procedure or algorithm into an ordered sequence of small concrete steps, each with a specific action and observable intermediate result. Linear, methodical, detail-rich; advances one step at a time with concrete facts and standard procedures. Best for sequential thinkers who want a clear ordered procedure with practical details."
+    },
+    "tsa_hit": false,
+    "input_tokens": 96
+  }
+]

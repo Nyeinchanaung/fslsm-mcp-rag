@@ -1,0 +1,1262 @@
+[
+  {
+    "question_id": "EXP3C_001",
+    "question": "Explain what gradient descent is and why the learning rate matters during training.",
+    "question_family": "concept_explain",
+    "question_type": "concept_explain",
+    "grounding_mode": "d2l",
+    "gold_answer_brief": "Define gradient descent and connect the learning rate to step size, convergence, and instability.",
+    "essential_chunk_ids": [
+      "4143b20e39da_0",
+      "d00c330c4c90_0"
+    ],
+    "support_chunk_ids": [
+      "c63e76c88dcc_0",
+      "d7108bba2f17_1",
+      "8ebb8203e7f5_0"
+    ],
+    "source_text": "",
+    "target_evidence_criteria": [],
+    "manual_review_status": "reviewed",
+    "manual_review_notes": "",
+    "needs_corpus": true,
+    "retrieval_query": "gradient descent learning rate training",
+    "tool_uniqueness_notes": "Designed to primarily activate Concept Explainer."
+  },
+  {
+    "question_id": "EXP3C_002",
+    "question": "What does batch normalization do during neural network training?",
+    "question_family": "concept_explain",
+    "question_type": "concept_explain",
+    "grounding_mode": "d2l",
+    "gold_answer_brief": "Explain normalization of minibatch activations and its effect on optimization stability.",
+    "essential_chunk_ids": [
+      "6742285200cf_1",
+      "01f4e33118cb_1"
+    ],
+    "support_chunk_ids": [
+      "01f4e33118cb_0",
+      "4143b20e39da_0",
+      "ef5cf6106afd_0"
+    ],
+    "source_text": "",
+    "target_evidence_criteria": [],
+    "manual_review_status": "reviewed",
+    "manual_review_notes": "",
+    "needs_corpus": true,
+    "retrieval_query": "batch normalization training neural network",
+    "tool_uniqueness_notes": "Designed to primarily activate Concept Explainer."
+  },
+  {
+    "question_id": "EXP3C_003",
+    "question": "Describe what word embeddings are and why they are useful in NLP models.",
+    "question_family": "concept_explain",
+    "question_type": "concept_explain",
+    "grounding_mode": "d2l",
+    "gold_answer_brief": "Explain dense vector representations and how they capture semantic relationships.",
+    "essential_chunk_ids": [
+      "216dffebbfa5_0",
+      "216dffebbfa5_1"
+    ],
+    "support_chunk_ids": [
+      "c83b24ff3972_0",
+      "5349fb46e47d_0",
+      "01f4e33118cb_0"
+    ],
+    "source_text": "",
+    "target_evidence_criteria": [],
+    "manual_review_status": "reviewed",
+    "manual_review_notes": "",
+    "needs_corpus": true,
+    "retrieval_query": "word embeddings NLP dense vector representations",
+    "tool_uniqueness_notes": "Designed to primarily activate Concept Explainer."
+  },
+  {
+    "question_id": "EXP3C_004",
+    "question": "How does dropout help reduce overfitting in deep learning?",
+    "question_family": "concept_explain",
+    "question_type": "concept_explain",
+    "grounding_mode": "d2l",
+    "gold_answer_brief": "Explain random unit dropping during training and the regularization effect.",
+    "essential_chunk_ids": [
+      "d0ce88619467_0",
+      "d00c330c4c90_0"
+    ],
+    "support_chunk_ids": [
+      "e181765b4e60_1",
+      "01f4e33118cb_0",
+      "01f4e33118cb_0"
+    ],
+    "source_text": "",
+    "target_evidence_criteria": [],
+    "manual_review_status": "reviewed",
+    "manual_review_notes": "",
+    "needs_corpus": true,
+    "retrieval_query": "dropout overfitting regularization deep learning",
+    "tool_uniqueness_notes": "Designed to primarily activate Concept Explainer."
+  },
+  {
+    "question_id": "EXP3C_005",
+    "question": "Walk through backpropagation for a single linear neuron step by step.",
+    "question_family": "derive_steps",
+    "question_type": "derive_steps",
+    "grounding_mode": "d2l",
+    "gold_answer_brief": "Show forward pass, loss gradient, parameter gradients, and the update sequence.",
+    "essential_chunk_ids": [
+      "39b80cc8244b_0",
+      "4059856c7cb9_2"
+    ],
+    "support_chunk_ids": [
+      "130d95af1971_0",
+      "77c21b6a13ce_0",
+      "1c2b13544c2f_2"
+    ],
+    "source_text": "",
+    "target_evidence_criteria": [],
+    "manual_review_status": "reviewed",
+    "manual_review_notes": "",
+    "needs_corpus": true,
+    "retrieval_query": "backpropagation linear neuron step by step",
+    "tool_uniqueness_notes": "Designed to primarily activate Step-by-Step Derivator."
+  },
+  {
+    "question_id": "EXP3C_006",
+    "question": "Derive the output shape of a convolution layer step by step.",
+    "question_family": "derive_steps",
+    "question_type": "derive_steps",
+    "grounding_mode": "d2l",
+    "gold_answer_brief": "Show how kernel size, padding, and stride determine the final shape.",
+    "essential_chunk_ids": [
+      "901fc562e6da_0",
+      "152fc413808e_1"
+    ],
+    "support_chunk_ids": [
+      "0a7e64d207f4_0",
+      "b51afe9881e2_2",
+      "6da3dc2b5d3f_0"
+    ],
+    "source_text": "",
+    "target_evidence_criteria": [],
+    "manual_review_status": "reviewed",
+    "manual_review_notes": "",
+    "needs_corpus": true,
+    "retrieval_query": "convolution output shape stride padding kernel",
+    "tool_uniqueness_notes": "Designed to primarily activate Step-by-Step Derivator."
+  },
+  {
+    "question_id": "EXP3C_007",
+    "question": "Trace one minibatch SGD update from loss to parameter update.",
+    "question_family": "derive_steps",
+    "question_type": "derive_steps",
+    "grounding_mode": "d2l",
+    "gold_answer_brief": "Show gradient computation and the final parameter update in sequence.",
+    "essential_chunk_ids": [
+      "4143b20e39da_0",
+      "4d04406b1a23_1"
+    ],
+    "support_chunk_ids": [
+      "d7108bba2f17_1",
+      "03a419588488_0",
+      "1bdb3ec914c4_0"
+    ],
+    "source_text": "",
+    "target_evidence_criteria": [],
+    "manual_review_status": "reviewed",
+    "manual_review_notes": "",
+    "needs_corpus": true,
+    "retrieval_query": "minibatch stochastic gradient descent parameter update",
+    "tool_uniqueness_notes": "Designed to primarily activate Step-by-Step Derivator."
+  },
+  {
+    "question_id": "EXP3C_008",
+    "question": "Step through how scaled dot-product attention computes attention weights.",
+    "question_family": "derive_steps",
+    "question_type": "derive_steps",
+    "grounding_mode": "d2l",
+    "gold_answer_brief": "Show query-key scores, scaling, softmax, and weighted sum output.",
+    "essential_chunk_ids": [
+      "41c00ad4c0ac_0",
+      "fe3ce5590af4_0"
+    ],
+    "support_chunk_ids": [
+      "fe3ce5590af4_1",
+      "fe3ce5590af4_2",
+      "56d1f16a9c51_0"
+    ],
+    "source_text": "",
+    "target_evidence_criteria": [],
+    "manual_review_status": "reviewed",
+    "manual_review_notes": "",
+    "needs_corpus": true,
+    "retrieval_query": "scaled dot product attention softmax weighted sum",
+    "tool_uniqueness_notes": "Designed to primarily activate Step-by-Step Derivator."
+  },
+  {
+    "question_id": "EXP3C_009",
+    "question": "Give a worked example of computing cross-entropy loss from logits and a gold label.",
+    "question_family": "worked_example",
+    "question_type": "worked_example",
+    "grounding_mode": "d2l",
+    "gold_answer_brief": "Present logits, probabilities, and the loss value with every intermediate step.",
+    "essential_chunk_ids": [
+      "487e41b27c20_2",
+      "ec19fa7f3dfe_4"
+    ],
+    "support_chunk_ids": [
+      "dee1ad915133_1",
+      "a4300978219a_0",
+      "4d6dc88ca88b_0"
+    ],
+    "source_text": "",
+    "target_evidence_criteria": [],
+    "manual_review_status": "reviewed",
+    "manual_review_notes": "",
+    "needs_corpus": true,
+    "retrieval_query": "cross entropy loss logits probabilities example",
+    "tool_uniqueness_notes": "Designed to primarily activate Worked Example Generator."
+  },
+  {
+    "question_id": "EXP3C_010",
+    "question": "Show a worked example of one gradient descent weight update for linear regression.",
+    "question_family": "worked_example",
+    "question_type": "worked_example",
+    "grounding_mode": "d2l",
+    "gold_answer_brief": "Use concrete numbers to compute prediction error, gradient, and updated weight.",
+    "essential_chunk_ids": [
+      "c73dac8fcfe5_2",
+      "c73dac8fcfe5_0"
+    ],
+    "support_chunk_ids": [
+      "4d04406b1a23_0",
+      "c73dac8fcfe5_1",
+      "953cdde550b0_0"
+    ],
+    "source_text": "",
+    "target_evidence_criteria": [],
+    "manual_review_status": "reviewed",
+    "manual_review_notes": "",
+    "needs_corpus": true,
+    "retrieval_query": "linear regression gradient descent weight update example",
+    "tool_uniqueness_notes": "Designed to primarily activate Worked Example Generator."
+  },
+  {
+    "question_id": "EXP3C_011",
+    "question": "Provide a solved example of matrix multiplication in a neural network forward pass.",
+    "question_family": "worked_example",
+    "question_type": "worked_example",
+    "grounding_mode": "d2l",
+    "gold_answer_brief": "Use explicit matrices and show the resulting activations.",
+    "essential_chunk_ids": [
+      "576383f7b1df_0",
+      "441ec45c18a0_0"
+    ],
+    "support_chunk_ids": [
+      "dbe1d7d081e2_0",
+      "1bdb3ec914c4_0",
+      "130d95af1971_1"
+    ],
+    "source_text": "",
+    "target_evidence_criteria": [],
+    "manual_review_status": "reviewed",
+    "manual_review_notes": "",
+    "needs_corpus": true,
+    "retrieval_query": "matrix multiplication neural network forward pass example",
+    "tool_uniqueness_notes": "Designed to primarily activate Worked Example Generator."
+  },
+  {
+    "question_id": "EXP3C_012",
+    "question": "Work through a concrete example of computing the output size of a CNN feature map.",
+    "question_family": "worked_example",
+    "question_type": "worked_example",
+    "grounding_mode": "d2l",
+    "gold_answer_brief": "Use specific input size, padding, stride, and kernel values.",
+    "essential_chunk_ids": [
+      "ebc2c7e0d62a_0",
+      "4355c0a3a333_0"
+    ],
+    "support_chunk_ids": [
+      "750834b26fb0_0",
+      "8fe5921da867_0",
+      "93094712a04f_0"
+    ],
+    "source_text": "",
+    "target_evidence_criteria": [],
+    "manual_review_status": "reviewed",
+    "manual_review_notes": "",
+    "needs_corpus": true,
+    "retrieval_query": "cnn feature map output size example",
+    "tool_uniqueness_notes": "Designed to primarily activate Worked Example Generator."
+  },
+  {
+    "question_id": "EXP3C_013",
+    "question": "Draw a text-based diagram of a transformer encoder block with attention, residuals, and feed-forward layers.",
+    "question_family": "diagram",
+    "question_type": "diagram",
+    "grounding_mode": "d2l",
+    "gold_answer_brief": "Show the encoder flow with labeled components and data movement.",
+    "essential_chunk_ids": [
+      "aa17246ce936_1",
+      "c7bb0b2a248b_0"
+    ],
+    "support_chunk_ids": [
+      "6e4a9170dbf2_0",
+      "aa17246ce936_0",
+      "77e85db5405b_0"
+    ],
+    "source_text": "",
+    "target_evidence_criteria": [],
+    "manual_review_status": "reviewed",
+    "manual_review_notes": "",
+    "needs_corpus": true,
+    "retrieval_query": "transformer encoder block attention residual feed forward",
+    "tool_uniqueness_notes": "Designed to primarily activate Diagrammatic-Text Explainer."
+  },
+  {
+    "question_id": "EXP3C_014",
+    "question": "Illustrate a CNN pipeline from input image to feature maps to classifier using an ASCII-style layout.",
+    "question_family": "diagram",
+    "question_type": "diagram",
+    "grounding_mode": "d2l",
+    "gold_answer_brief": "Show the major stages and how spatial dimensions evolve.",
+    "essential_chunk_ids": [
+      "152fc413808e_0",
+      "2e544fc8196d_0"
+    ],
+    "support_chunk_ids": [
+      "a7b40bf5af6b_0",
+      "1864574fce1d_0",
+      "bde87893051b_0"
+    ],
+    "source_text": "",
+    "target_evidence_criteria": [],
+    "manual_review_status": "reviewed",
+    "manual_review_notes": "",
+    "needs_corpus": true,
+    "retrieval_query": "cnn feature maps pooling classifier pipeline",
+    "tool_uniqueness_notes": "Designed to primarily activate Diagrammatic-Text Explainer."
+  },
+  {
+    "question_id": "EXP3C_015",
+    "question": "Create a diagrammatic explanation of the backpropagation computation graph for a small network.",
+    "question_family": "diagram",
+    "question_type": "diagram",
+    "grounding_mode": "d2l",
+    "gold_answer_brief": "Show nodes for activations, loss, and gradient flow.",
+    "essential_chunk_ids": [
+      "ff55455e18ff_3",
+      "d8c94ac29ede_0"
+    ],
+    "support_chunk_ids": [
+      "f4e4d4ed5178_2",
+      "441ec45c18a0_0",
+      "4af2b1ae1ba6_0"
+    ],
+    "source_text": "",
+    "target_evidence_criteria": [],
+    "manual_review_status": "reviewed",
+    "manual_review_notes": "",
+    "needs_corpus": true,
+    "retrieval_query": "backpropagation computation graph neural network",
+    "tool_uniqueness_notes": "Designed to primarily activate Diagrammatic-Text Explainer."
+  },
+  {
+    "question_id": "EXP3C_016",
+    "question": "Visualize sequence-to-sequence attention with encoder states, attention weights, and decoder outputs.",
+    "question_family": "diagram",
+    "question_type": "diagram",
+    "grounding_mode": "d2l",
+    "gold_answer_brief": "Depict the interaction between encoder outputs and decoder steps.",
+    "essential_chunk_ids": [
+      "cd327ed47fcc_14",
+      "cd327ed47fcc_15"
+    ],
+    "support_chunk_ids": [
+      "cd327ed47fcc_16",
+      "442815afdd0d_0",
+      "a9cb295476ad_0"
+    ],
+    "source_text": "",
+    "target_evidence_criteria": [],
+    "manual_review_status": "reviewed",
+    "manual_review_notes": "",
+    "needs_corpus": true,
+    "retrieval_query": "sequence to sequence attention encoder decoder",
+    "tool_uniqueness_notes": "Designed to primarily activate Diagrammatic-Text Explainer."
+  },
+  {
+    "question_id": "EXP3C_017",
+    "question": "Give an intuitive analogy for how self-attention decides what information to focus on.",
+    "question_family": "analogy",
+    "question_type": "analogy",
+    "grounding_mode": "d2l",
+    "gold_answer_brief": "Map attention to a familiar selection process while preserving the key computational intuition.",
+    "essential_chunk_ids": [
+      "7996f287da2e_0",
+      "2336a06f37e0_0"
+    ],
+    "support_chunk_ids": [
+      "01f4e33118cb_1",
+      "01f4e33118cb_2",
+      "eaecdeb57541_0"
+    ],
+    "source_text": "",
+    "target_evidence_criteria": [],
+    "manual_review_status": "reviewed",
+    "manual_review_notes": "",
+    "needs_corpus": true,
+    "retrieval_query": "self attention intuition mechanism",
+    "tool_uniqueness_notes": "Designed to primarily activate Analogical Reasoner."
+  },
+  {
+    "question_id": "EXP3C_018",
+    "question": "Explain regularization with an analogy that makes overfitting easier to understand.",
+    "question_family": "analogy",
+    "question_type": "analogy",
+    "grounding_mode": "d2l",
+    "gold_answer_brief": "Use a familiar scenario to explain constraint, simplicity, and generalization.",
+    "essential_chunk_ids": [
+      "199e8a055b0c_1",
+      "e181765b4e60_1"
+    ],
+    "support_chunk_ids": [
+      "7996f287da2e_0",
+      "d0ce88619467_0",
+      "cbd982759a07_1"
+    ],
+    "source_text": "",
+    "target_evidence_criteria": [],
+    "manual_review_status": "reviewed",
+    "manual_review_notes": "",
+    "needs_corpus": true,
+    "retrieval_query": "regularization overfitting intuition",
+    "tool_uniqueness_notes": "Designed to primarily activate Analogical Reasoner."
+  },
+  {
+    "question_id": "EXP3C_019",
+    "question": "Use an analogy to explain why residual connections help deep networks train.",
+    "question_family": "analogy",
+    "question_type": "analogy",
+    "grounding_mode": "d2l",
+    "gold_answer_brief": "Connect skip connections to preserving useful signal through many layers.",
+    "essential_chunk_ids": [
+      "01f4e33118cb_1",
+      "b329a8543001_0"
+    ],
+    "support_chunk_ids": [
+      "77e85db5405b_0",
+      "ef5cf6106afd_0",
+      "aed904e436da_1"
+    ],
+    "source_text": "",
+    "target_evidence_criteria": [],
+    "manual_review_status": "reviewed",
+    "manual_review_notes": "",
+    "needs_corpus": true,
+    "retrieval_query": "residual connections deep networks training",
+    "tool_uniqueness_notes": "Designed to primarily activate Analogical Reasoner."
+  },
+  {
+    "question_id": "EXP3C_020",
+    "question": "Relate word embeddings to a real-world spatial analogy.",
+    "question_family": "analogy",
+    "question_type": "analogy",
+    "grounding_mode": "d2l",
+    "gold_answer_brief": "Explain how semantic proximity is represented in vector space.",
+    "essential_chunk_ids": [
+      "c83b24ff3972_0",
+      "5349fb46e47d_0"
+    ],
+    "support_chunk_ids": [
+      "33133fee2326_0",
+      "01f4e33118cb_2",
+      "b05ecf85e58c_1"
+    ],
+    "source_text": "",
+    "target_evidence_criteria": [],
+    "manual_review_status": "reviewed",
+    "manual_review_notes": "",
+    "needs_corpus": true,
+    "retrieval_query": "word embeddings vector space semantics intuition",
+    "tool_uniqueness_notes": "Designed to primarily activate Analogical Reasoner."
+  },
+  {
+    "question_id": "EXP3C_021",
+    "question": "Compare CNNs and RNNs for sequence modeling, including their strengths and limits.",
+    "question_family": "compare",
+    "question_type": "compare",
+    "grounding_mode": "d2l",
+    "gold_answer_brief": "Contrast inductive bias, memory behavior, and typical use cases.",
+    "essential_chunk_ids": [
+      "01f4e33118cb_2",
+      "632dd012cbbc_0"
+    ],
+    "support_chunk_ids": [
+      "e3088f338128_0",
+      "ccdbd66cc89f_0",
+      "8be27c1f70d7_0"
+    ],
+    "source_text": "",
+    "target_evidence_criteria": [],
+    "manual_review_status": "reviewed",
+    "manual_review_notes": "",
+    "needs_corpus": true,
+    "retrieval_query": "CNNs vs RNNs sequence modeling",
+    "tool_uniqueness_notes": "Designed to primarily activate Comparative Explainer."
+  },
+  {
+    "question_id": "EXP3C_022",
+    "question": "What are the main differences between Adam and SGD as optimizers?",
+    "question_family": "compare",
+    "question_type": "compare",
+    "grounding_mode": "d2l",
+    "gold_answer_brief": "Compare update behavior, adaptivity, and practical tradeoffs.",
+    "essential_chunk_ids": [
+      "cd327ed47fcc_7",
+      "cd327ed47fcc_8"
+    ],
+    "support_chunk_ids": [
+      "cd327ed47fcc_9",
+      "cd327ed47fcc_14",
+      "cd327ed47fcc_15"
+    ],
+    "source_text": "",
+    "target_evidence_criteria": [],
+    "manual_review_status": "reviewed",
+    "manual_review_notes": "",
+    "needs_corpus": true,
+    "retrieval_query": "Adam optimizer vs SGD",
+    "tool_uniqueness_notes": "Designed to primarily activate Comparative Explainer."
+  },
+  {
+    "question_id": "EXP3C_023",
+    "question": "Compare ResNet and VGG architectures on depth, parameter efficiency, and training behavior.",
+    "question_family": "compare",
+    "question_type": "compare",
+    "grounding_mode": "d2l",
+    "gold_answer_brief": "Highlight residual connections, network depth, and optimization implications.",
+    "essential_chunk_ids": [
+      "01f4e33118cb_1",
+      "6e4a9170dbf2_0"
+    ],
+    "support_chunk_ids": [
+      "b51afe9881e2_0",
+      "b329a8543001_0",
+      "77e85db5405b_0"
+    ],
+    "source_text": "",
+    "target_evidence_criteria": [],
+    "manual_review_status": "reviewed",
+    "manual_review_notes": "",
+    "needs_corpus": true,
+    "retrieval_query": "ResNet vs VGG architecture residual connections",
+    "tool_uniqueness_notes": "Designed to primarily activate Comparative Explainer."
+  },
+  {
+    "question_id": "EXP3C_024",
+    "question": "Contrast batch normalization and layer normalization.",
+    "question_family": "compare",
+    "question_type": "compare",
+    "grounding_mode": "d2l",
+    "gold_answer_brief": "Explain where normalization is applied and when each variant is useful.",
+    "essential_chunk_ids": [
+      "41c00ad4c0ac_0",
+      "4293e5587ab5_0"
+    ],
+    "support_chunk_ids": [
+      "2bc9fdbd9482_0",
+      "2bc9fdbd9482_1",
+      "cbd982759a07_0"
+    ],
+    "source_text": "",
+    "target_evidence_criteria": [],
+    "manual_review_status": "reviewed",
+    "manual_review_notes": "",
+    "needs_corpus": true,
+    "retrieval_query": "batch normalization vs layer normalization",
+    "tool_uniqueness_notes": "Designed to primarily activate Comparative Explainer."
+  },
+  {
+    "question_id": "EXP3C_025",
+    "question": "Create a concept map that connects optimization ideas such as loss, gradients, learning rate, and regularization.",
+    "question_family": "concept_map",
+    "question_type": "concept_map",
+    "grounding_mode": "d2l",
+    "gold_answer_brief": "Show how training objectives, gradients, and optimization controls relate.",
+    "essential_chunk_ids": [
+      "d00c330c4c90_0",
+      "4143b20e39da_0"
+    ],
+    "support_chunk_ids": [
+      "89d648d2981c_0",
+      "492e8b2ce6b3_4",
+      "e55321bbff2e_3"
+    ],
+    "source_text": "",
+    "target_evidence_criteria": [],
+    "manual_review_status": "reviewed",
+    "manual_review_notes": "",
+    "needs_corpus": true,
+    "retrieval_query": "optimization loss gradients learning rate regularization",
+    "tool_uniqueness_notes": "Designed to primarily activate Concept Map Generator."
+  },
+  {
+    "question_id": "EXP3C_026",
+    "question": "Map the relationship between tokenization, embeddings, attention, and sequence modeling.",
+    "question_family": "concept_map",
+    "question_type": "concept_map",
+    "grounding_mode": "d2l",
+    "gold_answer_brief": "Connect representation learning and sequence-processing components.",
+    "essential_chunk_ids": [
+      "142c364c6560_0",
+      "9418ac38872a_0"
+    ],
+    "support_chunk_ids": [
+      "518ccef6f71b_0",
+      "06c56fb709b2_0",
+      "6e4a9170dbf2_0"
+    ],
+    "source_text": "",
+    "target_evidence_criteria": [],
+    "manual_review_status": "reviewed",
+    "manual_review_notes": "",
+    "needs_corpus": true,
+    "retrieval_query": "tokenization embeddings attention sequence modeling",
+    "tool_uniqueness_notes": "Designed to primarily activate Concept Map Generator."
+  },
+  {
+    "question_id": "EXP3C_027",
+    "question": "Build a concept map for the main parts of a computer vision training pipeline.",
+    "question_family": "concept_map",
+    "question_type": "concept_map",
+    "grounding_mode": "d2l",
+    "gold_answer_brief": "Show data, convolutional representation, classification, and evaluation links.",
+    "essential_chunk_ids": [
+      "2c805b2b23aa_0",
+      "053f8a07f7be_0"
+    ],
+    "support_chunk_ids": [
+      "4355c0a3a333_1",
+      "14d5de11a3a6_1",
+      "2bfa0c2713ca_0"
+    ],
+    "source_text": "",
+    "target_evidence_criteria": [],
+    "manual_review_status": "reviewed",
+    "manual_review_notes": "",
+    "needs_corpus": true,
+    "retrieval_query": "computer vision training pipeline convolution classification evaluation",
+    "tool_uniqueness_notes": "Designed to primarily activate Concept Map Generator."
+  },
+  {
+    "question_id": "EXP3C_028",
+    "question": "Show the big-picture connections among training, validation, testing, and evaluation metrics.",
+    "question_family": "concept_map",
+    "question_type": "concept_map",
+    "grounding_mode": "d2l",
+    "gold_answer_brief": "Organize the stages of model development and how metrics relate to them.",
+    "essential_chunk_ids": [
+      "db453cb0af13_0",
+      "d37c69ab4a25_0"
+    ],
+    "support_chunk_ids": [
+      "d37c69ab4a25_1",
+      "d37c69ab4a25_2",
+      "31a1a3e3fc94_1"
+    ],
+    "source_text": "",
+    "target_evidence_criteria": [],
+    "manual_review_status": "reviewed",
+    "manual_review_notes": "",
+    "needs_corpus": true,
+    "retrieval_query": "training validation testing evaluation metrics",
+    "tool_uniqueness_notes": "Designed to primarily activate Concept Map Generator."
+  },
+  {
+    "question_id": "EXP3C_029",
+    "question": "Rewrite this retrieved explanation of gradient descent in the student's learning style.",
+    "question_family": "adapt_retrieved_text",
+    "question_type": "adapt_retrieved_text",
+    "grounding_mode": "style_fixture",
+    "gold_answer_brief": "Preserve the factual meaning while restyling the passage to match the student's preferences.",
+    "essential_chunk_ids": [],
+    "support_chunk_ids": [],
+    "source_text": "Gradient descent updates model parameters by moving them in the direction that reduces loss. The learning rate controls how large each update is, and choosing it well affects both stability and speed of convergence.",
+    "target_evidence_criteria": [],
+    "manual_review_status": "reviewed",
+    "manual_review_notes": "",
+    "needs_corpus": false,
+    "retrieval_query": "",
+    "tool_uniqueness_notes": "Designed to primarily activate PersonaRAG Adapter."
+  },
+  {
+    "question_id": "EXP3C_030",
+    "question": "Adapt this D2L-style passage about batch normalization to fit the student's preferred way of learning.",
+    "question_family": "adapt_retrieved_text",
+    "question_type": "adapt_retrieved_text",
+    "grounding_mode": "style_fixture",
+    "gold_answer_brief": "Keep the same content but convert the presentation style to match the learner profile.",
+    "essential_chunk_ids": [],
+    "support_chunk_ids": [],
+    "source_text": "Batch normalization normalizes intermediate activations within a minibatch. This can stabilize training, permit larger learning rates, and reduce sensitivity to initialization.",
+    "target_evidence_criteria": [],
+    "manual_review_status": "reviewed",
+    "manual_review_notes": "",
+    "needs_corpus": false,
+    "retrieval_query": "",
+    "tool_uniqueness_notes": "Designed to primarily activate PersonaRAG Adapter."
+  },
+  {
+    "question_id": "EXP3C_031",
+    "question": "Restyle this explanation of self-attention for the current student profile.",
+    "question_family": "adapt_retrieved_text",
+    "question_type": "adapt_retrieved_text",
+    "grounding_mode": "style_fixture",
+    "gold_answer_brief": "Transform the wording and structure while preserving the core explanation of attention.",
+    "essential_chunk_ids": [],
+    "support_chunk_ids": [],
+    "source_text": "Self-attention computes how strongly each token should attend to other tokens in the same sequence. It uses query, key, and value projections to build context-aware representations.",
+    "target_evidence_criteria": [],
+    "manual_review_status": "reviewed",
+    "manual_review_notes": "",
+    "needs_corpus": false,
+    "retrieval_query": "",
+    "tool_uniqueness_notes": "Designed to primarily activate PersonaRAG Adapter."
+  },
+  {
+    "question_id": "EXP3C_032",
+    "question": "Take this short textbook explanation of overfitting and rewrite it in the learner's style.",
+    "question_family": "adapt_retrieved_text",
+    "question_type": "adapt_retrieved_text",
+    "grounding_mode": "style_fixture",
+    "gold_answer_brief": "Retain the original claim while converting the form of presentation.",
+    "essential_chunk_ids": [],
+    "support_chunk_ids": [],
+    "source_text": "Overfitting occurs when a model learns patterns that are too specific to the training data. Regularization techniques help control model complexity and improve generalization.",
+    "target_evidence_criteria": [],
+    "manual_review_status": "reviewed",
+    "manual_review_notes": "",
+    "needs_corpus": false,
+    "retrieval_query": "",
+    "tool_uniqueness_notes": "Designed to primarily activate PersonaRAG Adapter."
+  },
+  {
+    "question_id": "EXP3C_033",
+    "question": "Transform this explanation of embeddings into a more visual and intuitive teaching style.",
+    "question_family": "style_transfer",
+    "question_type": "style_transfer",
+    "grounding_mode": "style_fixture",
+    "gold_answer_brief": "Convert the same explanation into a different FSLSM presentation style.",
+    "essential_chunk_ids": [],
+    "support_chunk_ids": [],
+    "source_text": "Embeddings represent discrete tokens as dense vectors so that similar tokens occupy nearby positions in vector space. These learned representations support downstream prediction tasks.",
+    "target_evidence_criteria": [],
+    "manual_review_status": "reviewed",
+    "manual_review_notes": "",
+    "needs_corpus": false,
+    "retrieval_query": "",
+    "tool_uniqueness_notes": "Designed to primarily activate FSLSM Styler."
+  },
+  {
+    "question_id": "EXP3C_034",
+    "question": "Convert this sequential derivation of convolution output shape into a more global summary style.",
+    "question_family": "style_transfer",
+    "question_type": "style_transfer",
+    "grounding_mode": "style_fixture",
+    "gold_answer_brief": "Preserve the meaning but change the pedagogical presentation.",
+    "essential_chunk_ids": [],
+    "support_chunk_ids": [],
+    "source_text": "To compute the output shape of a convolution, start with the input height and width, account for padding, subtract the kernel size, divide by the stride, and then add one.",
+    "target_evidence_criteria": [],
+    "manual_review_status": "reviewed",
+    "manual_review_notes": "",
+    "needs_corpus": false,
+    "retrieval_query": "",
+    "tool_uniqueness_notes": "Designed to primarily activate FSLSM Styler."
+  },
+  {
+    "question_id": "EXP3C_035",
+    "question": "Rewrite this abstract explanation of regularization into a more concrete, sensing-oriented style.",
+    "question_family": "style_transfer",
+    "question_type": "style_transfer",
+    "grounding_mode": "style_fixture",
+    "gold_answer_brief": "Retain the content while shifting from abstract to concrete presentation.",
+    "essential_chunk_ids": [],
+    "support_chunk_ids": [],
+    "source_text": "Regularization constrains model flexibility so that training minimizes not only empirical loss but also excessive complexity that harms generalization.",
+    "target_evidence_criteria": [],
+    "manual_review_status": "reviewed",
+    "manual_review_notes": "",
+    "needs_corpus": false,
+    "retrieval_query": "",
+    "tool_uniqueness_notes": "Designed to primarily activate FSLSM Styler."
+  },
+  {
+    "question_id": "EXP3C_036",
+    "question": "Take this prose explanation of attention and make it more structured and stepwise.",
+    "question_family": "style_transfer",
+    "question_type": "style_transfer",
+    "grounding_mode": "style_fixture",
+    "gold_answer_brief": "Change the delivery format without changing the substance.",
+    "essential_chunk_ids": [],
+    "support_chunk_ids": [],
+    "source_text": "Attention allows a model to weigh different parts of the input differently when producing each output representation.",
+    "target_evidence_criteria": [],
+    "manual_review_status": "reviewed",
+    "manual_review_notes": "",
+    "needs_corpus": false,
+    "retrieval_query": "",
+    "tool_uniqueness_notes": "Designed to primarily activate FSLSM Styler."
+  },
+  {
+    "question_id": "EXP3C_037",
+    "question": "Create a think-pair-share activity about vanishing gradients in deep networks.",
+    "question_family": "reflective_discussion",
+    "question_type": "reflective_discussion",
+    "grounding_mode": "style_fixture",
+    "gold_answer_brief": "Produce a three-phase reflective activity about diagnosing and reasoning through vanishing gradients.",
+    "essential_chunk_ids": [],
+    "support_chunk_ids": [],
+    "source_text": "Deep neural networks can become hard to optimize when gradients shrink as they pass backward through many layers.",
+    "target_evidence_criteria": [],
+    "manual_review_status": "reviewed",
+    "manual_review_notes": "",
+    "needs_corpus": false,
+    "retrieval_query": "",
+    "tool_uniqueness_notes": "Designed to primarily activate Think-Pair-Share Generator."
+  },
+  {
+    "question_id": "EXP3C_038",
+    "question": "Generate a think-pair-share prompt sequence on choosing between CNNs and transformers for a vision task.",
+    "question_family": "reflective_discussion",
+    "question_type": "reflective_discussion",
+    "grounding_mode": "style_fixture",
+    "gold_answer_brief": "Encourage reflection, peer comparison, and synthesis about architecture choice.",
+    "essential_chunk_ids": [],
+    "support_chunk_ids": [],
+    "source_text": "Different model architectures trade off inductive bias, data efficiency, and computational cost.",
+    "target_evidence_criteria": [],
+    "manual_review_status": "reviewed",
+    "manual_review_notes": "",
+    "needs_corpus": false,
+    "retrieval_query": "",
+    "tool_uniqueness_notes": "Designed to primarily activate Think-Pair-Share Generator."
+  },
+  {
+    "question_id": "EXP3C_039",
+    "question": "Design a reflective think-pair-share activity around optimizer selection in deep learning.",
+    "question_family": "reflective_discussion",
+    "question_type": "reflective_discussion",
+    "grounding_mode": "style_fixture",
+    "gold_answer_brief": "Invite the learner to reason about optimizer tradeoffs before discussion.",
+    "essential_chunk_ids": [],
+    "support_chunk_ids": [],
+    "source_text": "Optimizers such as SGD and Adam differ in adaptivity, stability, and hyperparameter sensitivity.",
+    "target_evidence_criteria": [],
+    "manual_review_status": "reviewed",
+    "manual_review_notes": "",
+    "needs_corpus": false,
+    "retrieval_query": "",
+    "tool_uniqueness_notes": "Designed to primarily activate Think-Pair-Share Generator."
+  },
+  {
+    "question_id": "EXP3C_040",
+    "question": "Make a think-pair-share sequence for interpreting what attention weights might reveal in a model.",
+    "question_family": "reflective_discussion",
+    "question_type": "reflective_discussion",
+    "grounding_mode": "style_fixture",
+    "gold_answer_brief": "Prompt internal reflection and discussion about what attention can and cannot tell us.",
+    "essential_chunk_ids": [],
+    "support_chunk_ids": [],
+    "source_text": "Attention weights are sometimes used as interpretability signals, but they do not always map directly to causal importance.",
+    "target_evidence_criteria": [],
+    "manual_review_status": "reviewed",
+    "manual_review_notes": "",
+    "needs_corpus": false,
+    "retrieval_query": "",
+    "tool_uniqueness_notes": "Designed to primarily activate Think-Pair-Share Generator."
+  },
+  {
+    "question_id": "EXP3C_041",
+    "question": "Create a hands-on PyTorch exercise for implementing linear regression from scratch.",
+    "question_family": "hands_on_exercise",
+    "question_type": "hands_on_exercise",
+    "grounding_mode": "style_fixture",
+    "gold_answer_brief": "Provide setup, task steps, expected outputs, and hints for an implementation task.",
+    "essential_chunk_ids": [],
+    "support_chunk_ids": [],
+    "source_text": "The learner should practice model definition, loss computation, and gradient-based parameter updates.",
+    "target_evidence_criteria": [],
+    "manual_review_status": "reviewed",
+    "manual_review_notes": "",
+    "needs_corpus": false,
+    "retrieval_query": "",
+    "tool_uniqueness_notes": "Designed to primarily activate Interactive Exercise Generator."
+  },
+  {
+    "question_id": "EXP3C_042",
+    "question": "Design an interactive exercise where the student computes attention weights for a tiny example.",
+    "question_family": "hands_on_exercise",
+    "question_type": "hands_on_exercise",
+    "grounding_mode": "style_fixture",
+    "gold_answer_brief": "Require the learner to do a concrete calculation rather than just read an explanation.",
+    "essential_chunk_ids": [],
+    "support_chunk_ids": [],
+    "source_text": "Use a toy query-key-value example so the learner can compute similarity scores and normalized weights.",
+    "target_evidence_criteria": [],
+    "manual_review_status": "reviewed",
+    "manual_review_notes": "",
+    "needs_corpus": false,
+    "retrieval_query": "",
+    "tool_uniqueness_notes": "Designed to primarily activate Interactive Exercise Generator."
+  },
+  {
+    "question_id": "EXP3C_043",
+    "question": "Give me a practice task for exploring how stride and padding change CNN output shapes.",
+    "question_family": "hands_on_exercise",
+    "question_type": "hands_on_exercise",
+    "grounding_mode": "style_fixture",
+    "gold_answer_brief": "Provide an exercise with multiple parameter settings and expected checks.",
+    "essential_chunk_ids": [],
+    "support_chunk_ids": [],
+    "source_text": "The student should vary input size, stride, and padding and reason about the resulting feature map sizes.",
+    "target_evidence_criteria": [],
+    "manual_review_status": "reviewed",
+    "manual_review_notes": "",
+    "needs_corpus": false,
+    "retrieval_query": "",
+    "tool_uniqueness_notes": "Designed to primarily activate Interactive Exercise Generator."
+  },
+  {
+    "question_id": "EXP3C_044",
+    "question": "Create a coding exercise for checking gradients numerically against backpropagation.",
+    "question_family": "hands_on_exercise",
+    "question_type": "hands_on_exercise",
+    "grounding_mode": "style_fixture",
+    "gold_answer_brief": "Ask the learner to implement finite-difference checking and compare results.",
+    "essential_chunk_ids": [],
+    "support_chunk_ids": [],
+    "source_text": "Gradient checking compares analytical gradients from backpropagation with numerical approximations.",
+    "target_evidence_criteria": [],
+    "manual_review_status": "reviewed",
+    "manual_review_notes": "",
+    "needs_corpus": false,
+    "retrieval_query": "",
+    "tool_uniqueness_notes": "Designed to primarily activate Interactive Exercise Generator."
+  },
+  {
+    "question_id": "EXP3C_045",
+    "question": "Quiz me on activation functions and when they are used.",
+    "question_family": "quiz",
+    "question_type": "quiz",
+    "grounding_mode": "style_fixture",
+    "gold_answer_brief": "Generate concrete assessment items with brief explanations for the answers.",
+    "essential_chunk_ids": [],
+    "support_chunk_ids": [],
+    "source_text": "Focus on ReLU, sigmoid, tanh, and softmax in common deep learning settings.",
+    "target_evidence_criteria": [],
+    "manual_review_status": "reviewed",
+    "manual_review_notes": "",
+    "needs_corpus": false,
+    "retrieval_query": "",
+    "tool_uniqueness_notes": "Designed to primarily activate Quiz Generator."
+  },
+  {
+    "question_id": "EXP3C_046",
+    "question": "Create a short quiz on embeddings and token representations.",
+    "question_family": "quiz",
+    "question_type": "quiz",
+    "grounding_mode": "style_fixture",
+    "gold_answer_brief": "Assess factual knowledge of what embeddings encode and why they are useful.",
+    "essential_chunk_ids": [],
+    "support_chunk_ids": [],
+    "source_text": "Cover discrete tokens, dense vectors, semantic proximity, and downstream modeling.",
+    "target_evidence_criteria": [],
+    "manual_review_status": "reviewed",
+    "manual_review_notes": "",
+    "needs_corpus": false,
+    "retrieval_query": "",
+    "tool_uniqueness_notes": "Designed to primarily activate Quiz Generator."
+  },
+  {
+    "question_id": "EXP3C_047",
+    "question": "Test my understanding of common optimizers in deep learning.",
+    "question_family": "quiz",
+    "question_type": "quiz",
+    "grounding_mode": "style_fixture",
+    "gold_answer_brief": "Generate short factual checks on SGD, momentum, and Adam.",
+    "essential_chunk_ids": [],
+    "support_chunk_ids": [],
+    "source_text": "Use a mix of conceptual and concrete optimizer questions.",
+    "target_evidence_criteria": [],
+    "manual_review_status": "reviewed",
+    "manual_review_notes": "",
+    "needs_corpus": false,
+    "retrieval_query": "",
+    "tool_uniqueness_notes": "Designed to primarily activate Quiz Generator."
+  },
+  {
+    "question_id": "EXP3C_048",
+    "question": "Make a quiz that checks whether I understand RNNs, LSTMs, and GRUs.",
+    "question_family": "quiz",
+    "question_type": "quiz",
+    "grounding_mode": "style_fixture",
+    "gold_answer_brief": "Probe architectural differences and use cases with direct feedback.",
+    "essential_chunk_ids": [],
+    "support_chunk_ids": [],
+    "source_text": "Focus on sequence modeling, gating, and long-range dependency handling.",
+    "target_evidence_criteria": [],
+    "manual_review_status": "reviewed",
+    "manual_review_notes": "",
+    "needs_corpus": false,
+    "retrieval_query": "",
+    "tool_uniqueness_notes": "Designed to primarily activate Quiz Generator."
+  },
+  {
+    "question_id": "EXP3C_049",
+    "question": "Summarize this short passage on regularization and model generalization.",
+    "question_family": "summarize",
+    "question_type": "summarize",
+    "grounding_mode": "style_fixture",
+    "gold_answer_brief": "Condense the main takeaways and key terms into a compact synthesis.",
+    "essential_chunk_ids": [],
+    "support_chunk_ids": [],
+    "source_text": "Regularization techniques such as weight decay and dropout help reduce overfitting by constraining model complexity. They aim to improve generalization so that the model performs well not only on training data but also on unseen examples.",
+    "target_evidence_criteria": [],
+    "manual_review_status": "reviewed",
+    "manual_review_notes": "",
+    "needs_corpus": false,
+    "retrieval_query": "",
+    "tool_uniqueness_notes": "Designed to primarily activate Summarizer."
+  },
+  {
+    "question_id": "EXP3C_050",
+    "question": "Give me a concise summary of this overview of CNN architectures.",
+    "question_family": "summarize",
+    "question_type": "summarize",
+    "grounding_mode": "style_fixture",
+    "gold_answer_brief": "Extract the central ideas and organize them into a short synthesis.",
+    "essential_chunk_ids": [],
+    "support_chunk_ids": [],
+    "source_text": "Convolutional neural networks process images using learned filters, hierarchical feature extraction, pooling, and a classification head. Architectural innovations such as residual connections help deeper networks train effectively.",
+    "target_evidence_criteria": [],
+    "manual_review_status": "reviewed",
+    "manual_review_notes": "",
+    "needs_corpus": false,
+    "retrieval_query": "",
+    "tool_uniqueness_notes": "Designed to primarily activate Summarizer."
+  },
+  {
+    "question_id": "EXP3C_051",
+    "question": "Summarize this discussion of transformers versus recurrent models.",
+    "question_family": "summarize",
+    "question_type": "summarize",
+    "grounding_mode": "style_fixture",
+    "gold_answer_brief": "Produce a short synthesis of the main differences and implications.",
+    "essential_chunk_ids": [],
+    "support_chunk_ids": [],
+    "source_text": "Transformers rely on attention to model token interactions in parallel, while recurrent networks process sequences step by step. This changes training efficiency, scaling behavior, and the kinds of dependencies the models handle well.",
+    "target_evidence_criteria": [],
+    "manual_review_status": "reviewed",
+    "manual_review_notes": "",
+    "needs_corpus": false,
+    "retrieval_query": "",
+    "tool_uniqueness_notes": "Designed to primarily activate Summarizer."
+  },
+  {
+    "question_id": "EXP3C_052",
+    "question": "Provide a concise summary of this explanation of the model training loop.",
+    "question_family": "summarize",
+    "question_type": "summarize",
+    "grounding_mode": "style_fixture",
+    "gold_answer_brief": "Highlight the essential training stages and terminology.",
+    "essential_chunk_ids": [],
+    "support_chunk_ids": [],
+    "source_text": "A typical training loop repeatedly computes predictions, evaluates loss, performs backpropagation, updates parameters, and tracks validation metrics to monitor generalization.",
+    "target_evidence_criteria": [],
+    "manual_review_status": "reviewed",
+    "manual_review_notes": "",
+    "needs_corpus": false,
+    "retrieval_query": "",
+    "tool_uniqueness_notes": "Designed to primarily activate Summarizer."
+  },
+  {
+    "question_id": "EXP3C_053",
+    "question": "Find the most relevant D2L passage about BLEU score and machine translation evaluation.",
+    "question_family": "locate_d2l_content",
+    "question_type": "locate_d2l_content",
+    "grounding_mode": "d2l",
+    "gold_answer_brief": "Return the textbook section most directly tied to BLEU and MT evaluation.",
+    "essential_chunk_ids": [
+      "ed2cfe17fb72_0",
+      "2fa39665a063_0"
+    ],
+    "support_chunk_ids": [
+      "0e66174db4e0_1",
+      "cd327ed47fcc_13",
+      "8e5093a3b3c9_0"
+    ],
+    "source_text": "",
+    "target_evidence_criteria": [],
+    "manual_review_status": "reviewed",
+    "manual_review_notes": "",
+    "needs_corpus": true,
+    "retrieval_query": "BLEU score machine translation evaluation",
+    "tool_uniqueness_notes": "Designed to primarily activate Content Retriever."
+  },
+  {
+    "question_id": "EXP3C_054",
+    "question": "Retrieve the D2L section that explains Xavier initialization.",
+    "question_family": "locate_d2l_content",
+    "question_type": "locate_d2l_content",
+    "grounding_mode": "d2l",
+    "gold_answer_brief": "Locate the chunk that defines or motivates Xavier initialization.",
+    "essential_chunk_ids": [
+      "0ceb1b509b1b_0",
+      "9418ac38872a_0"
+    ],
+    "support_chunk_ids": [
+      "01f4e33118cb_0",
+      "4285443ecdfa_0",
+      "c13e74929ea9_0"
+    ],
+    "source_text": "",
+    "target_evidence_criteria": [],
+    "manual_review_status": "reviewed",
+    "manual_review_notes": "",
+    "needs_corpus": true,
+    "retrieval_query": "Xavier initialization parameter initialization",
+    "tool_uniqueness_notes": "Designed to primarily activate Content Retriever."
+  },
+  {
+    "question_id": "EXP3C_055",
+    "question": "Find the D2L explanation of anchor boxes in object detection.",
+    "question_family": "locate_d2l_content",
+    "question_type": "locate_d2l_content",
+    "grounding_mode": "d2l",
+    "gold_answer_brief": "Return the most relevant object-detection passage about anchor boxes.",
+    "essential_chunk_ids": [
+      "afeb4513714e_0",
+      "b2da30141dc0_0"
+    ],
+    "support_chunk_ids": [
+      "1fc381c3db92_0",
+      "c271f70fac5f_0",
+      "12ff717fd78c_0"
+    ],
+    "source_text": "",
+    "target_evidence_criteria": [],
+    "manual_review_status": "reviewed",
+    "manual_review_notes": "",
+    "needs_corpus": true,
+    "retrieval_query": "anchor boxes object detection",
+    "tool_uniqueness_notes": "Designed to primarily activate Content Retriever."
+  },
+  {
+    "question_id": "EXP3C_056",
+    "question": "Locate the D2L content that introduces Nadaraya-Watson attention pooling.",
+    "question_family": "locate_d2l_content",
+    "question_type": "locate_d2l_content",
+    "grounding_mode": "d2l",
+    "gold_answer_brief": "Retrieve the section that explains the attention pooling method.",
+    "essential_chunk_ids": [
+      "27c30c9df920_0",
+      "b6be0ef66e8b_0"
+    ],
+    "support_chunk_ids": [
+      "b6be0ef66e8b_1",
+      "42c389c385b3_0",
+      "7996f287da2e_0"
+    ],
+    "source_text": "",
+    "target_evidence_criteria": [],
+    "manual_review_status": "reviewed",
+    "manual_review_notes": "",
+    "needs_corpus": true,
+    "retrieval_query": "Nadaraya-Watson attention pooling",
+    "tool_uniqueness_notes": "Designed to primarily activate Content Retriever."
+  },
+  {
+    "question_id": "EXP3C_057",
+    "question": "What are the latest transformer architecture developments beyond the material covered in D2L?",
+    "question_family": "external_search",
+    "question_type": "external_search",
+    "grounding_mode": "search",
+    "gold_answer_brief": "Find recent advances or trends in transformer design that are newer than the textbook content.",
+    "essential_chunk_ids": [],
+    "support_chunk_ids": [],
+    "source_text": "",
+    "target_evidence_criteria": [
+      "recent transformer architectures",
+      "beyond textbook coverage",
+      "named external sources"
+    ],
+    "manual_review_status": "reviewed",
+    "manual_review_notes": "",
+    "needs_corpus": false,
+    "retrieval_query": "",
+    "tool_uniqueness_notes": "Designed to primarily activate Web Search Tool."
+  },
+  {
+    "question_id": "EXP3C_058",
+    "question": "How are diffusion models being used in current real-world applications?",
+    "question_family": "external_search",
+    "question_type": "external_search",
+    "grounding_mode": "search",
+    "gold_answer_brief": "Retrieve recent external examples or summaries of diffusion model use beyond course material.",
+    "essential_chunk_ids": [],
+    "support_chunk_ids": [],
+    "source_text": "",
+    "target_evidence_criteria": [
+      "recent application examples",
+      "external sources",
+      "non-D2L grounding"
+    ],
+    "manual_review_status": "reviewed",
+    "manual_review_notes": "",
+    "needs_corpus": false,
+    "retrieval_query": "",
+    "tool_uniqueness_notes": "Designed to primarily activate Web Search Tool."
+  },
+  {
+    "question_id": "EXP3C_059",
+    "question": "What are some recent industry practices for fine-tuning large language models?",
+    "question_family": "external_search",
+    "question_type": "external_search",
+    "grounding_mode": "search",
+    "gold_answer_brief": "Search for current external guidance or examples of LLM fine-tuning approaches.",
+    "essential_chunk_ids": [],
+    "support_chunk_ids": [],
+    "source_text": "",
+    "target_evidence_criteria": [
+      "recent fine-tuning practices",
+      "industry or research sources",
+      "post-D2L context"
+    ],
+    "manual_review_status": "reviewed",
+    "manual_review_notes": "",
+    "needs_corpus": false,
+    "retrieval_query": "",
+    "tool_uniqueness_notes": "Designed to primarily activate Web Search Tool."
+  },
+  {
+    "question_id": "EXP3C_060",
+    "question": "What are the latest benchmark trends for graph neural networks outside the D2L textbook?",
+    "question_family": "external_search",
+    "question_type": "external_search",
+    "grounding_mode": "search",
+    "gold_answer_brief": "Find recent benchmark or survey information about GNN performance and evaluation.",
+    "essential_chunk_ids": [],
+    "support_chunk_ids": [],
+    "source_text": "",
+    "target_evidence_criteria": [
+      "recent GNN benchmarks",
+      "external sources",
+      "beyond D2L"
+    ],
+    "manual_review_status": "reviewed",
+    "manual_review_notes": "",
+    "needs_corpus": false,
+    "retrieval_query": "",
+    "tool_uniqueness_notes": "Designed to primarily activate Web Search Tool."
+  }
+]

@@ -1,0 +1,1602 @@
+{
+  "summary": {
+    "total_queries": 30,
+    "optimal_in_rank1": 5,
+    "optimal_in_top5": 14,
+    "optimal_not_in_top5": 16,
+    "rank1_accuracy_pct": 16.7,
+    "top5_recall_pct": 46.7
+  },
+  "queries": [
+    {
+      "query": "What are the advantages and challenges of using factorization-based models in recommendation systems?",
+      "optimal_tool": {
+        "id": 12,
+        "name": "prose_explainer",
+        "rank_in_faiss": null
+      },
+      "s1a_selected": {
+        "id": 15,
+        "name": "case_study"
+      },
+      "faiss_top5": [
+        {
+          "rank": 1,
+          "tool_id": 2,
+          "tool_name": "interactive_simulation",
+          "cosine_score": 0.1999,
+          "is_optimal": false
+        },
+        {
+          "rank": 2,
+          "tool_id": 15,
+          "tool_name": "case_study",
+          "cosine_score": 0.1907,
+          "is_optimal": false
+        },
+        {
+          "rank": 3,
+          "tool_id": 10,
+          "tool_name": "reflection_prompt",
+          "cosine_score": 0.1818,
+          "is_optimal": false
+        },
+        {
+          "rank": 4,
+          "tool_id": 4,
+          "tool_name": "worked_example",
+          "cosine_score": 0.1769,
+          "is_optimal": false
+        },
+        {
+          "rank": 5,
+          "tool_id": 6,
+          "tool_name": "abstract_derivation",
+          "cosine_score": 0.17,
+          "is_optimal": false
+        }
+      ],
+      "diagnosis": {
+        "optimal_in_top5": false,
+        "score_spread": 0.0299
+      }
+    },
+    {
+      "query": "How do different representations of bounding boxes and the use of anchor boxes in multiscale object detection contribute to the functionality of a single shot multibox detection (SSD) model?",
+      "optimal_tool": {
+        "id": 3,
+        "name": "stepwise_walkthrough",
+        "rank_in_faiss": 5
+      },
+      "s1a_selected": {
+        "id": 5,
+        "name": "conceptual_overview"
+      },
+      "faiss_top5": [
+        {
+          "rank": 1,
+          "tool_id": 5,
+          "tool_name": "conceptual_overview",
+          "cosine_score": 0.2244,
+          "is_optimal": false
+        },
+        {
+          "rank": 2,
+          "tool_id": 2,
+          "tool_name": "interactive_simulation",
+          "cosine_score": 0.2113,
+          "is_optimal": false
+        },
+        {
+          "rank": 3,
+          "tool_id": 14,
+          "tool_name": "concept_map",
+          "cosine_score": 0.202,
+          "is_optimal": false
+        },
+        {
+          "rank": 4,
+          "tool_id": 15,
+          "tool_name": "case_study",
+          "cosine_score": 0.1952,
+          "is_optimal": false
+        },
+        {
+          "rank": 5,
+          "tool_id": 3,
+          "tool_name": "stepwise_walkthrough",
+          "cosine_score": 0.1813,
+          "is_optimal": true
+        }
+      ],
+      "diagnosis": {
+        "optimal_in_top5": true,
+        "score_spread": 0.0431
+      }
+    },
+    {
+      "query": "Trace the evolution of data processing techniques from linear transformations to advanced models like BERT, considering intermediate steps like batch normalization and GRUs.",
+      "optimal_tool": {
+        "id": 15,
+        "name": "case_study",
+        "rank_in_faiss": 3
+      },
+      "s1a_selected": {
+        "id": 3,
+        "name": "stepwise_walkthrough"
+      },
+      "faiss_top5": [
+        {
+          "rank": 1,
+          "tool_id": 3,
+          "tool_name": "stepwise_walkthrough",
+          "cosine_score": 0.4053,
+          "is_optimal": false
+        },
+        {
+          "rank": 2,
+          "tool_id": 6,
+          "tool_name": "abstract_derivation",
+          "cosine_score": 0.31,
+          "is_optimal": false
+        },
+        {
+          "rank": 3,
+          "tool_id": 15,
+          "tool_name": "case_study",
+          "cosine_score": 0.3031,
+          "is_optimal": true
+        },
+        {
+          "rank": 4,
+          "tool_id": 2,
+          "tool_name": "interactive_simulation",
+          "cosine_score": 0.2958,
+          "is_optimal": false
+        },
+        {
+          "rank": 5,
+          "tool_id": 4,
+          "tool_name": "worked_example",
+          "cosine_score": 0.2576,
+          "is_optimal": false
+        }
+      ],
+      "diagnosis": {
+        "optimal_in_top5": true,
+        "score_spread": 0.1477
+      }
+    },
+    {
+      "query": "How do the $1 \\times 1$ convolution, dropout, and downsampling block contribute to the performance of deep learning models?",
+      "optimal_tool": {
+        "id": 6,
+        "name": "abstract_derivation",
+        "rank_in_faiss": 1
+      },
+      "s1a_selected": {
+        "id": 5,
+        "name": "conceptual_overview"
+      },
+      "faiss_top5": [
+        {
+          "rank": 1,
+          "tool_id": 6,
+          "tool_name": "abstract_derivation",
+          "cosine_score": 0.2797,
+          "is_optimal": true
+        },
+        {
+          "rank": 2,
+          "tool_id": 3,
+          "tool_name": "stepwise_walkthrough",
+          "cosine_score": 0.256,
+          "is_optimal": false
+        },
+        {
+          "rank": 3,
+          "tool_id": 2,
+          "tool_name": "interactive_simulation",
+          "cosine_score": 0.2323,
+          "is_optimal": false
+        },
+        {
+          "rank": 4,
+          "tool_id": 5,
+          "tool_name": "conceptual_overview",
+          "cosine_score": 0.2038,
+          "is_optimal": false
+        },
+        {
+          "rank": 5,
+          "tool_id": 1,
+          "tool_name": "diagram_renderer",
+          "cosine_score": 0.1797,
+          "is_optimal": false
+        }
+      ],
+      "diagnosis": {
+        "optimal_in_top5": true,
+        "score_spread": 0.1
+      }
+    },
+    {
+      "query": "How do the $1 \\times 1$ convolution, dropout, and downsampling block contribute to the performance of deep learning models?",
+      "optimal_tool": {
+        "id": 1,
+        "name": "diagram_renderer",
+        "rank_in_faiss": 5
+      },
+      "s1a_selected": {
+        "id": 5,
+        "name": "conceptual_overview"
+      },
+      "faiss_top5": [
+        {
+          "rank": 1,
+          "tool_id": 6,
+          "tool_name": "abstract_derivation",
+          "cosine_score": 0.2797,
+          "is_optimal": false
+        },
+        {
+          "rank": 2,
+          "tool_id": 3,
+          "tool_name": "stepwise_walkthrough",
+          "cosine_score": 0.256,
+          "is_optimal": false
+        },
+        {
+          "rank": 3,
+          "tool_id": 2,
+          "tool_name": "interactive_simulation",
+          "cosine_score": 0.2323,
+          "is_optimal": false
+        },
+        {
+          "rank": 4,
+          "tool_id": 5,
+          "tool_name": "conceptual_overview",
+          "cosine_score": 0.2038,
+          "is_optimal": false
+        },
+        {
+          "rank": 5,
+          "tool_id": 1,
+          "tool_name": "diagram_renderer",
+          "cosine_score": 0.1797,
+          "is_optimal": true
+        }
+      ],
+      "diagnosis": {
+        "optimal_in_top5": true,
+        "score_spread": 0.1
+      }
+    },
+    {
+      "query": "How do the concepts of network design and optimization in convolutional neural networks relate to object detection and dataset preparation?",
+      "optimal_tool": {
+        "id": 1,
+        "name": "diagram_renderer",
+        "rank_in_faiss": 5
+      },
+      "s1a_selected": {
+        "id": 14,
+        "name": "concept_map"
+      },
+      "faiss_top5": [
+        {
+          "rank": 1,
+          "tool_id": 14,
+          "tool_name": "concept_map",
+          "cosine_score": 0.3226,
+          "is_optimal": false
+        },
+        {
+          "rank": 2,
+          "tool_id": 5,
+          "tool_name": "conceptual_overview",
+          "cosine_score": 0.2598,
+          "is_optimal": false
+        },
+        {
+          "rank": 3,
+          "tool_id": 6,
+          "tool_name": "abstract_derivation",
+          "cosine_score": 0.2363,
+          "is_optimal": false
+        },
+        {
+          "rank": 4,
+          "tool_id": 9,
+          "tool_name": "practice_exercise",
+          "cosine_score": 0.2199,
+          "is_optimal": false
+        },
+        {
+          "rank": 5,
+          "tool_id": 1,
+          "tool_name": "diagram_renderer",
+          "cosine_score": 0.2124,
+          "is_optimal": true
+        }
+      ],
+      "diagnosis": {
+        "optimal_in_top5": true,
+        "score_spread": 0.1102
+      }
+    },
+    {
+      "query": "How does the chain rule facilitate the computation of gradients in deep learning models, and what challenges arise when applying it to recurrent neural networks?",
+      "optimal_tool": {
+        "id": 12,
+        "name": "prose_explainer",
+        "rank_in_faiss": 4
+      },
+      "s1a_selected": {
+        "id": 4,
+        "name": "worked_example"
+      },
+      "faiss_top5": [
+        {
+          "rank": 1,
+          "tool_id": 6,
+          "tool_name": "abstract_derivation",
+          "cosine_score": 0.3853,
+          "is_optimal": false
+        },
+        {
+          "rank": 2,
+          "tool_id": 3,
+          "tool_name": "stepwise_walkthrough",
+          "cosine_score": 0.2534,
+          "is_optimal": false
+        },
+        {
+          "rank": 3,
+          "tool_id": 4,
+          "tool_name": "worked_example",
+          "cosine_score": 0.2201,
+          "is_optimal": false
+        },
+        {
+          "rank": 4,
+          "tool_id": 12,
+          "tool_name": "prose_explainer",
+          "cosine_score": 0.1991,
+          "is_optimal": true
+        },
+        {
+          "rank": 5,
+          "tool_id": 2,
+          "tool_name": "interactive_simulation",
+          "cosine_score": 0.1862,
+          "is_optimal": false
+        }
+      ],
+      "diagnosis": {
+        "optimal_in_top5": true,
+        "score_spread": 0.1991
+      }
+    },
+    {
+      "query": "What are the best practices for managing computational resources and improving model performance when using cloud-based deep learning solutions?",
+      "optimal_tool": {
+        "id": 8,
+        "name": "socratic_dialogue",
+        "rank_in_faiss": null
+      },
+      "s1a_selected": {
+        "id": 9,
+        "name": "practice_exercise"
+      },
+      "faiss_top5": [
+        {
+          "rank": 1,
+          "tool_id": 9,
+          "tool_name": "practice_exercise",
+          "cosine_score": 0.2843,
+          "is_optimal": false
+        },
+        {
+          "rank": 2,
+          "tool_id": 2,
+          "tool_name": "interactive_simulation",
+          "cosine_score": 0.2658,
+          "is_optimal": false
+        },
+        {
+          "rank": 3,
+          "tool_id": 6,
+          "tool_name": "abstract_derivation",
+          "cosine_score": 0.2366,
+          "is_optimal": false
+        },
+        {
+          "rank": 4,
+          "tool_id": 5,
+          "tool_name": "conceptual_overview",
+          "cosine_score": 0.2209,
+          "is_optimal": false
+        },
+        {
+          "rank": 5,
+          "tool_id": 4,
+          "tool_name": "worked_example",
+          "cosine_score": 0.2177,
+          "is_optimal": false
+        }
+      ],
+      "diagnosis": {
+        "optimal_in_top5": false,
+        "score_spread": 0.0665
+      }
+    },
+    {
+      "query": "In what ways do techniques from different neural network models contribute to efficient training and inference, and how can understanding of probability enhance these processes?",
+      "optimal_tool": {
+        "id": 12,
+        "name": "prose_explainer",
+        "rank_in_faiss": null
+      },
+      "s1a_selected": {
+        "id": 9,
+        "name": "practice_exercise"
+      },
+      "faiss_top5": [
+        {
+          "rank": 1,
+          "tool_id": 6,
+          "tool_name": "abstract_derivation",
+          "cosine_score": 0.3206,
+          "is_optimal": false
+        },
+        {
+          "rank": 2,
+          "tool_id": 2,
+          "tool_name": "interactive_simulation",
+          "cosine_score": 0.3107,
+          "is_optimal": false
+        },
+        {
+          "rank": 3,
+          "tool_id": 7,
+          "tool_name": "analogy_explainer",
+          "cosine_score": 0.276,
+          "is_optimal": false
+        },
+        {
+          "rank": 4,
+          "tool_id": 9,
+          "tool_name": "practice_exercise",
+          "cosine_score": 0.2602,
+          "is_optimal": false
+        },
+        {
+          "rank": 5,
+          "tool_id": 14,
+          "tool_name": "concept_map",
+          "cosine_score": 0.2562,
+          "is_optimal": false
+        }
+      ],
+      "diagnosis": {
+        "optimal_in_top5": false,
+        "score_spread": 0.0644
+      }
+    },
+    {
+      "query": "How do the concepts of negative sampling, weight decay, and model serialization interrelate in deep learning?",
+      "optimal_tool": {
+        "id": 12,
+        "name": "prose_explainer",
+        "rank_in_faiss": null
+      },
+      "s1a_selected": {
+        "id": 4,
+        "name": "worked_example"
+      },
+      "faiss_top5": [
+        {
+          "rank": 1,
+          "tool_id": 6,
+          "tool_name": "abstract_derivation",
+          "cosine_score": 0.3095,
+          "is_optimal": false
+        },
+        {
+          "rank": 2,
+          "tool_id": 3,
+          "tool_name": "stepwise_walkthrough",
+          "cosine_score": 0.3054,
+          "is_optimal": false
+        },
+        {
+          "rank": 3,
+          "tool_id": 2,
+          "tool_name": "interactive_simulation",
+          "cosine_score": 0.2676,
+          "is_optimal": false
+        },
+        {
+          "rank": 4,
+          "tool_id": 4,
+          "tool_name": "worked_example",
+          "cosine_score": 0.2512,
+          "is_optimal": false
+        },
+        {
+          "rank": 5,
+          "tool_id": 5,
+          "tool_name": "conceptual_overview",
+          "cosine_score": 0.2452,
+          "is_optimal": false
+        }
+      ],
+      "diagnosis": {
+        "optimal_in_top5": false,
+        "score_spread": 0.0643
+      }
+    },
+    {
+      "query": "How do the model complexity control methods differ in ViT, RNN, and GRU architectures?",
+      "optimal_tool": {
+        "id": 6,
+        "name": "abstract_derivation",
+        "rank_in_faiss": null
+      },
+      "s1a_selected": {
+        "id": 2,
+        "name": "interactive_simulation"
+      },
+      "faiss_top5": [
+        {
+          "rank": 1,
+          "tool_id": 2,
+          "tool_name": "interactive_simulation",
+          "cosine_score": 0.2744,
+          "is_optimal": false
+        },
+        {
+          "rank": 2,
+          "tool_id": 3,
+          "tool_name": "stepwise_walkthrough",
+          "cosine_score": 0.2733,
+          "is_optimal": false
+        },
+        {
+          "rank": 3,
+          "tool_id": 5,
+          "tool_name": "conceptual_overview",
+          "cosine_score": 0.2383,
+          "is_optimal": false
+        },
+        {
+          "rank": 4,
+          "tool_id": 14,
+          "tool_name": "concept_map",
+          "cosine_score": 0.214,
+          "is_optimal": false
+        },
+        {
+          "rank": 5,
+          "tool_id": 12,
+          "tool_name": "prose_explainer",
+          "cosine_score": 0.2093,
+          "is_optimal": false
+        }
+      ],
+      "diagnosis": {
+        "optimal_in_top5": false,
+        "score_spread": 0.0651
+      }
+    },
+    {
+      "query": "How has the evolution of machine learning and deep learning frameworks impacted the optimization of models, particularly in terms of execution speed and convergence?",
+      "optimal_tool": {
+        "id": 2,
+        "name": "interactive_simulation",
+        "rank_in_faiss": 1
+      },
+      "s1a_selected": {
+        "id": 2,
+        "name": "interactive_simulation"
+      },
+      "faiss_top5": [
+        {
+          "rank": 1,
+          "tool_id": 2,
+          "tool_name": "interactive_simulation",
+          "cosine_score": 0.3201,
+          "is_optimal": true
+        },
+        {
+          "rank": 2,
+          "tool_id": 6,
+          "tool_name": "abstract_derivation",
+          "cosine_score": 0.3015,
+          "is_optimal": false
+        },
+        {
+          "rank": 3,
+          "tool_id": 3,
+          "tool_name": "stepwise_walkthrough",
+          "cosine_score": 0.2667,
+          "is_optimal": false
+        },
+        {
+          "rank": 4,
+          "tool_id": 5,
+          "tool_name": "conceptual_overview",
+          "cosine_score": 0.2406,
+          "is_optimal": false
+        },
+        {
+          "rank": 5,
+          "tool_id": 13,
+          "tool_name": "code_sandbox",
+          "cosine_score": 0.2175,
+          "is_optimal": false
+        }
+      ],
+      "diagnosis": {
+        "optimal_in_top5": true,
+        "score_spread": 0.1026
+      }
+    },
+    {
+      "query": "How does batch normalization in deep networks relate to variance estimation in test sets and multiple integrals?",
+      "optimal_tool": {
+        "id": 12,
+        "name": "prose_explainer",
+        "rank_in_faiss": null
+      },
+      "s1a_selected": {
+        "id": 4,
+        "name": "worked_example"
+      },
+      "faiss_top5": [
+        {
+          "rank": 1,
+          "tool_id": 6,
+          "tool_name": "abstract_derivation",
+          "cosine_score": 0.2459,
+          "is_optimal": false
+        },
+        {
+          "rank": 2,
+          "tool_id": 4,
+          "tool_name": "worked_example",
+          "cosine_score": 0.2028,
+          "is_optimal": false
+        },
+        {
+          "rank": 3,
+          "tool_id": 2,
+          "tool_name": "interactive_simulation",
+          "cosine_score": 0.1851,
+          "is_optimal": false
+        },
+        {
+          "rank": 4,
+          "tool_id": 9,
+          "tool_name": "practice_exercise",
+          "cosine_score": 0.1632,
+          "is_optimal": false
+        },
+        {
+          "rank": 5,
+          "tool_id": 3,
+          "tool_name": "stepwise_walkthrough",
+          "cosine_score": 0.1596,
+          "is_optimal": false
+        }
+      ],
+      "diagnosis": {
+        "optimal_in_top5": false,
+        "score_spread": 0.0863
+      }
+    },
+    {
+      "query": "How can a custom layer be implemented to enhance seq2seq models in PyTorch while considering asynchronous computation?",
+      "optimal_tool": {
+        "id": 9,
+        "name": "practice_exercise",
+        "rank_in_faiss": null
+      },
+      "s1a_selected": {
+        "id": 8,
+        "name": "socratic_dialogue"
+      },
+      "faiss_top5": [
+        {
+          "rank": 1,
+          "tool_id": 3,
+          "tool_name": "stepwise_walkthrough",
+          "cosine_score": 0.2441,
+          "is_optimal": false
+        },
+        {
+          "rank": 2,
+          "tool_id": 2,
+          "tool_name": "interactive_simulation",
+          "cosine_score": 0.2203,
+          "is_optimal": false
+        },
+        {
+          "rank": 3,
+          "tool_id": 8,
+          "tool_name": "socratic_dialogue",
+          "cosine_score": 0.2108,
+          "is_optimal": false
+        },
+        {
+          "rank": 4,
+          "tool_id": 6,
+          "tool_name": "abstract_derivation",
+          "cosine_score": 0.1816,
+          "is_optimal": false
+        },
+        {
+          "rank": 5,
+          "tool_id": 4,
+          "tool_name": "worked_example",
+          "cosine_score": 0.1693,
+          "is_optimal": false
+        }
+      ],
+      "diagnosis": {
+        "optimal_in_top5": false,
+        "score_spread": 0.0748
+      }
+    },
+    {
+      "query": "How do pooling layers and gated recurrent units (GRUs) address challenges in optimization and uncertainty in deep learning models?",
+      "optimal_tool": {
+        "id": 12,
+        "name": "prose_explainer",
+        "rank_in_faiss": null
+      },
+      "s1a_selected": {
+        "id": 2,
+        "name": "interactive_simulation"
+      },
+      "faiss_top5": [
+        {
+          "rank": 1,
+          "tool_id": 6,
+          "tool_name": "abstract_derivation",
+          "cosine_score": 0.2935,
+          "is_optimal": false
+        },
+        {
+          "rank": 2,
+          "tool_id": 2,
+          "tool_name": "interactive_simulation",
+          "cosine_score": 0.2691,
+          "is_optimal": false
+        },
+        {
+          "rank": 3,
+          "tool_id": 3,
+          "tool_name": "stepwise_walkthrough",
+          "cosine_score": 0.2278,
+          "is_optimal": false
+        },
+        {
+          "rank": 4,
+          "tool_id": 5,
+          "tool_name": "conceptual_overview",
+          "cosine_score": 0.2223,
+          "is_optimal": false
+        },
+        {
+          "rank": 5,
+          "tool_id": 4,
+          "tool_name": "worked_example",
+          "cosine_score": 0.216,
+          "is_optimal": false
+        }
+      ],
+      "diagnosis": {
+        "optimal_in_top5": false,
+        "score_spread": 0.0775
+      }
+    },
+    {
+      "query": "How do matrix factorization techniques integrate with modern machine learning methods to enhance recommendation systems?",
+      "optimal_tool": {
+        "id": 12,
+        "name": "prose_explainer",
+        "rank_in_faiss": null
+      },
+      "s1a_selected": {
+        "id": 15,
+        "name": "case_study"
+      },
+      "faiss_top5": [
+        {
+          "rank": 1,
+          "tool_id": 2,
+          "tool_name": "interactive_simulation",
+          "cosine_score": 0.2278,
+          "is_optimal": false
+        },
+        {
+          "rank": 2,
+          "tool_id": 15,
+          "tool_name": "case_study",
+          "cosine_score": 0.2249,
+          "is_optimal": false
+        },
+        {
+          "rank": 3,
+          "tool_id": 6,
+          "tool_name": "abstract_derivation",
+          "cosine_score": 0.1925,
+          "is_optimal": false
+        },
+        {
+          "rank": 4,
+          "tool_id": 14,
+          "tool_name": "concept_map",
+          "cosine_score": 0.1901,
+          "is_optimal": false
+        },
+        {
+          "rank": 5,
+          "tool_id": 5,
+          "tool_name": "conceptual_overview",
+          "cosine_score": 0.1779,
+          "is_optimal": false
+        }
+      ],
+      "diagnosis": {
+        "optimal_in_top5": false,
+        "score_spread": 0.0499
+      }
+    },
+    {
+      "query": "How do the convergence behaviors of Adagrad, Yogi, and Gaussian distributions compare?",
+      "optimal_tool": {
+        "id": 15,
+        "name": "case_study",
+        "rank_in_faiss": null
+      },
+      "s1a_selected": {
+        "id": 2,
+        "name": "interactive_simulation"
+      },
+      "faiss_top5": [
+        {
+          "rank": 1,
+          "tool_id": 2,
+          "tool_name": "interactive_simulation",
+          "cosine_score": 0.2479,
+          "is_optimal": false
+        },
+        {
+          "rank": 2,
+          "tool_id": 6,
+          "tool_name": "abstract_derivation",
+          "cosine_score": 0.2309,
+          "is_optimal": false
+        },
+        {
+          "rank": 3,
+          "tool_id": 4,
+          "tool_name": "worked_example",
+          "cosine_score": 0.2024,
+          "is_optimal": false
+        },
+        {
+          "rank": 4,
+          "tool_id": 14,
+          "tool_name": "concept_map",
+          "cosine_score": 0.2012,
+          "is_optimal": false
+        },
+        {
+          "rank": 5,
+          "tool_id": 7,
+          "tool_name": "analogy_explainer",
+          "cosine_score": 0.1815,
+          "is_optimal": false
+        }
+      ],
+      "diagnosis": {
+        "optimal_in_top5": false,
+        "score_spread": 0.0664
+      }
+    },
+    {
+      "query": "How do the concepts of linear regression, self-attention, and matrix factorization illustrate different approaches to handling data complexity and noise in machine learning models?",
+      "optimal_tool": {
+        "id": 14,
+        "name": "concept_map",
+        "rank_in_faiss": 2
+      },
+      "s1a_selected": {
+        "id": 5,
+        "name": "conceptual_overview"
+      },
+      "faiss_top5": [
+        {
+          "rank": 1,
+          "tool_id": 5,
+          "tool_name": "conceptual_overview",
+          "cosine_score": 0.2584,
+          "is_optimal": false
+        },
+        {
+          "rank": 2,
+          "tool_id": 14,
+          "tool_name": "concept_map",
+          "cosine_score": 0.2579,
+          "is_optimal": true
+        },
+        {
+          "rank": 3,
+          "tool_id": 2,
+          "tool_name": "interactive_simulation",
+          "cosine_score": 0.2544,
+          "is_optimal": false
+        },
+        {
+          "rank": 4,
+          "tool_id": 15,
+          "tool_name": "case_study",
+          "cosine_score": 0.2532,
+          "is_optimal": false
+        },
+        {
+          "rank": 5,
+          "tool_id": 7,
+          "tool_name": "analogy_explainer",
+          "cosine_score": 0.2446,
+          "is_optimal": false
+        }
+      ],
+      "diagnosis": {
+        "optimal_in_top5": true,
+        "score_spread": 0.0138
+      }
+    },
+    {
+      "query": "Trace the evolution of word representation techniques from token indices in 'The Time Machine' to subword embeddings, and explain how these techniques interact with the skip-gram model and entropy concepts.",
+      "optimal_tool": {
+        "id": 3,
+        "name": "stepwise_walkthrough",
+        "rank_in_faiss": 1
+      },
+      "s1a_selected": {
+        "id": 7,
+        "name": "analogy_explainer"
+      },
+      "faiss_top5": [
+        {
+          "rank": 1,
+          "tool_id": 3,
+          "tool_name": "stepwise_walkthrough",
+          "cosine_score": 0.3478,
+          "is_optimal": true
+        },
+        {
+          "rank": 2,
+          "tool_id": 7,
+          "tool_name": "analogy_explainer",
+          "cosine_score": 0.3021,
+          "is_optimal": false
+        },
+        {
+          "rank": 3,
+          "tool_id": 12,
+          "tool_name": "prose_explainer",
+          "cosine_score": 0.2895,
+          "is_optimal": false
+        },
+        {
+          "rank": 4,
+          "tool_id": 14,
+          "tool_name": "concept_map",
+          "cosine_score": 0.2889,
+          "is_optimal": false
+        },
+        {
+          "rank": 5,
+          "tool_id": 15,
+          "tool_name": "case_study",
+          "cosine_score": 0.2762,
+          "is_optimal": false
+        }
+      ],
+      "diagnosis": {
+        "optimal_in_top5": true,
+        "score_spread": 0.0716
+      }
+    },
+    {
+      "query": "How does masked softmax relate to GPU storage and tensor conversion in D2L?",
+      "optimal_tool": {
+        "id": 6,
+        "name": "abstract_derivation",
+        "rank_in_faiss": 1
+      },
+      "s1a_selected": {
+        "id": 13,
+        "name": "code_sandbox"
+      },
+      "faiss_top5": [
+        {
+          "rank": 1,
+          "tool_id": 6,
+          "tool_name": "abstract_derivation",
+          "cosine_score": 0.2852,
+          "is_optimal": true
+        },
+        {
+          "rank": 2,
+          "tool_id": 2,
+          "tool_name": "interactive_simulation",
+          "cosine_score": 0.2004,
+          "is_optimal": false
+        },
+        {
+          "rank": 3,
+          "tool_id": 4,
+          "tool_name": "worked_example",
+          "cosine_score": 0.186,
+          "is_optimal": false
+        },
+        {
+          "rank": 4,
+          "tool_id": 5,
+          "tool_name": "conceptual_overview",
+          "cosine_score": 0.1822,
+          "is_optimal": false
+        },
+        {
+          "rank": 5,
+          "tool_id": 1,
+          "tool_name": "diagram_renderer",
+          "cosine_score": 0.1746,
+          "is_optimal": false
+        }
+      ],
+      "diagnosis": {
+        "optimal_in_top5": true,
+        "score_spread": 0.1106
+      }
+    },
+    {
+      "query": "In the context of neural network training and evaluation, how do data preparation and model architecture choices influence the handling of optimization challenges and the final model submission process?",
+      "optimal_tool": {
+        "id": 2,
+        "name": "interactive_simulation",
+        "rank_in_faiss": 2
+      },
+      "s1a_selected": {
+        "id": 9,
+        "name": "practice_exercise"
+      },
+      "faiss_top5": [
+        {
+          "rank": 1,
+          "tool_id": 5,
+          "tool_name": "conceptual_overview",
+          "cosine_score": 0.3185,
+          "is_optimal": false
+        },
+        {
+          "rank": 2,
+          "tool_id": 2,
+          "tool_name": "interactive_simulation",
+          "cosine_score": 0.3015,
+          "is_optimal": true
+        },
+        {
+          "rank": 3,
+          "tool_id": 6,
+          "tool_name": "abstract_derivation",
+          "cosine_score": 0.2738,
+          "is_optimal": false
+        },
+        {
+          "rank": 4,
+          "tool_id": 9,
+          "tool_name": "practice_exercise",
+          "cosine_score": 0.259,
+          "is_optimal": false
+        },
+        {
+          "rank": 5,
+          "tool_id": 3,
+          "tool_name": "stepwise_walkthrough",
+          "cosine_score": 0.2525,
+          "is_optimal": false
+        }
+      ],
+      "diagnosis": {
+        "optimal_in_top5": true,
+        "score_spread": 0.066
+      }
+    },
+    {
+      "query": "How has the evolution of deep learning frameworks influenced the design of neural networks for regression tasks?",
+      "optimal_tool": {
+        "id": 6,
+        "name": "abstract_derivation",
+        "rank_in_faiss": 1
+      },
+      "s1a_selected": {
+        "id": 5,
+        "name": "conceptual_overview"
+      },
+      "faiss_top5": [
+        {
+          "rank": 1,
+          "tool_id": 6,
+          "tool_name": "abstract_derivation",
+          "cosine_score": 0.2748,
+          "is_optimal": true
+        },
+        {
+          "rank": 2,
+          "tool_id": 2,
+          "tool_name": "interactive_simulation",
+          "cosine_score": 0.2338,
+          "is_optimal": false
+        },
+        {
+          "rank": 3,
+          "tool_id": 5,
+          "tool_name": "conceptual_overview",
+          "cosine_score": 0.2236,
+          "is_optimal": false
+        },
+        {
+          "rank": 4,
+          "tool_id": 3,
+          "tool_name": "stepwise_walkthrough",
+          "cosine_score": 0.2028,
+          "is_optimal": false
+        },
+        {
+          "rank": 5,
+          "tool_id": 15,
+          "tool_name": "case_study",
+          "cosine_score": 0.1833,
+          "is_optimal": false
+        }
+      ],
+      "diagnosis": {
+        "optimal_in_top5": true,
+        "score_spread": 0.0915
+      }
+    },
+    {
+      "query": "How do the $1 \\times 1$ convolution, dropout, and downsampling block contribute to the performance of deep learning models?",
+      "optimal_tool": {
+        "id": 14,
+        "name": "concept_map",
+        "rank_in_faiss": null
+      },
+      "s1a_selected": {
+        "id": 5,
+        "name": "conceptual_overview"
+      },
+      "faiss_top5": [
+        {
+          "rank": 1,
+          "tool_id": 6,
+          "tool_name": "abstract_derivation",
+          "cosine_score": 0.2797,
+          "is_optimal": false
+        },
+        {
+          "rank": 2,
+          "tool_id": 3,
+          "tool_name": "stepwise_walkthrough",
+          "cosine_score": 0.256,
+          "is_optimal": false
+        },
+        {
+          "rank": 3,
+          "tool_id": 2,
+          "tool_name": "interactive_simulation",
+          "cosine_score": 0.2323,
+          "is_optimal": false
+        },
+        {
+          "rank": 4,
+          "tool_id": 5,
+          "tool_name": "conceptual_overview",
+          "cosine_score": 0.2038,
+          "is_optimal": false
+        },
+        {
+          "rank": 5,
+          "tool_id": 1,
+          "tool_name": "diagram_renderer",
+          "cosine_score": 0.1797,
+          "is_optimal": false
+        }
+      ],
+      "diagnosis": {
+        "optimal_in_top5": false,
+        "score_spread": 0.1
+      }
+    },
+    {
+      "query": "In what ways do the principles of minibatch stochastic gradient descent and batch normalization contribute to optimizing the GloVe model's loss function, considering function class constraints and evaluation metrics?",
+      "optimal_tool": {
+        "id": 12,
+        "name": "prose_explainer",
+        "rank_in_faiss": null
+      },
+      "s1a_selected": {
+        "id": 9,
+        "name": "practice_exercise"
+      },
+      "faiss_top5": [
+        {
+          "rank": 1,
+          "tool_id": 6,
+          "tool_name": "abstract_derivation",
+          "cosine_score": 0.3011,
+          "is_optimal": false
+        },
+        {
+          "rank": 2,
+          "tool_id": 2,
+          "tool_name": "interactive_simulation",
+          "cosine_score": 0.1946,
+          "is_optimal": false
+        },
+        {
+          "rank": 3,
+          "tool_id": 9,
+          "tool_name": "practice_exercise",
+          "cosine_score": 0.1859,
+          "is_optimal": false
+        },
+        {
+          "rank": 4,
+          "tool_id": 3,
+          "tool_name": "stepwise_walkthrough",
+          "cosine_score": 0.1816,
+          "is_optimal": false
+        },
+        {
+          "rank": 5,
+          "tool_id": 4,
+          "tool_name": "worked_example",
+          "cosine_score": 0.1613,
+          "is_optimal": false
+        }
+      ],
+      "diagnosis": {
+        "optimal_in_top5": false,
+        "score_spread": 0.1398
+      }
+    },
+    {
+      "query": "How do model parameter initialization methods differ across frameworks?",
+      "optimal_tool": {
+        "id": 1,
+        "name": "diagram_renderer",
+        "rank_in_faiss": null
+      },
+      "s1a_selected": {
+        "id": 2,
+        "name": "interactive_simulation"
+      },
+      "faiss_top5": [
+        {
+          "rank": 1,
+          "tool_id": 2,
+          "tool_name": "interactive_simulation",
+          "cosine_score": 0.2919,
+          "is_optimal": false
+        },
+        {
+          "rank": 2,
+          "tool_id": 5,
+          "tool_name": "conceptual_overview",
+          "cosine_score": 0.2589,
+          "is_optimal": false
+        },
+        {
+          "rank": 3,
+          "tool_id": 6,
+          "tool_name": "abstract_derivation",
+          "cosine_score": 0.1987,
+          "is_optimal": false
+        },
+        {
+          "rank": 4,
+          "tool_id": 3,
+          "tool_name": "stepwise_walkthrough",
+          "cosine_score": 0.1828,
+          "is_optimal": false
+        },
+        {
+          "rank": 5,
+          "tool_id": 15,
+          "tool_name": "case_study",
+          "cosine_score": 0.1805,
+          "is_optimal": false
+        }
+      ],
+      "diagnosis": {
+        "optimal_in_top5": false,
+        "score_spread": 0.1114
+      }
+    },
+    {
+      "query": "How has the evolution of hardware and synchronization methods influenced the implementation of data-parallel training in deep learning?",
+      "optimal_tool": {
+        "id": 9,
+        "name": "practice_exercise",
+        "rank_in_faiss": 5
+      },
+      "s1a_selected": {
+        "id": 9,
+        "name": "practice_exercise"
+      },
+      "faiss_top5": [
+        {
+          "rank": 1,
+          "tool_id": 3,
+          "tool_name": "stepwise_walkthrough",
+          "cosine_score": 0.2777,
+          "is_optimal": false
+        },
+        {
+          "rank": 2,
+          "tool_id": 2,
+          "tool_name": "interactive_simulation",
+          "cosine_score": 0.2519,
+          "is_optimal": false
+        },
+        {
+          "rank": 3,
+          "tool_id": 6,
+          "tool_name": "abstract_derivation",
+          "cosine_score": 0.2258,
+          "is_optimal": false
+        },
+        {
+          "rank": 4,
+          "tool_id": 4,
+          "tool_name": "worked_example",
+          "cosine_score": 0.206,
+          "is_optimal": false
+        },
+        {
+          "rank": 5,
+          "tool_id": 9,
+          "tool_name": "practice_exercise",
+          "cosine_score": 0.2034,
+          "is_optimal": true
+        }
+      ],
+      "diagnosis": {
+        "optimal_in_top5": true,
+        "score_spread": 0.0743
+      }
+    },
+    {
+      "query": "What are the steps involved in training an efficient object detection model, and how do they incorporate principles from network design and dataset handling?",
+      "optimal_tool": {
+        "id": 12,
+        "name": "prose_explainer",
+        "rank_in_faiss": null
+      },
+      "s1a_selected": {
+        "id": 9,
+        "name": "practice_exercise"
+      },
+      "faiss_top5": [
+        {
+          "rank": 1,
+          "tool_id": 3,
+          "tool_name": "stepwise_walkthrough",
+          "cosine_score": 0.2847,
+          "is_optimal": false
+        },
+        {
+          "rank": 2,
+          "tool_id": 1,
+          "tool_name": "diagram_renderer",
+          "cosine_score": 0.2488,
+          "is_optimal": false
+        },
+        {
+          "rank": 3,
+          "tool_id": 2,
+          "tool_name": "interactive_simulation",
+          "cosine_score": 0.2471,
+          "is_optimal": false
+        },
+        {
+          "rank": 4,
+          "tool_id": 14,
+          "tool_name": "concept_map",
+          "cosine_score": 0.2369,
+          "is_optimal": false
+        },
+        {
+          "rank": 5,
+          "tool_id": 9,
+          "tool_name": "practice_exercise",
+          "cosine_score": 0.2327,
+          "is_optimal": false
+        }
+      ],
+      "diagnosis": {
+        "optimal_in_top5": false,
+        "score_spread": 0.052
+      }
+    },
+    {
+      "query": "How do tokenization and text representation techniques affect fine-tuning strategies and model efficiency in NLP applications?",
+      "optimal_tool": {
+        "id": 6,
+        "name": "abstract_derivation",
+        "rank_in_faiss": null
+      },
+      "s1a_selected": {
+        "id": 5,
+        "name": "conceptual_overview"
+      },
+      "faiss_top5": [
+        {
+          "rank": 1,
+          "tool_id": 15,
+          "tool_name": "case_study",
+          "cosine_score": 0.195,
+          "is_optimal": false
+        },
+        {
+          "rank": 2,
+          "tool_id": 2,
+          "tool_name": "interactive_simulation",
+          "cosine_score": 0.1856,
+          "is_optimal": false
+        },
+        {
+          "rank": 3,
+          "tool_id": 3,
+          "tool_name": "stepwise_walkthrough",
+          "cosine_score": 0.1803,
+          "is_optimal": false
+        },
+        {
+          "rank": 4,
+          "tool_id": 5,
+          "tool_name": "conceptual_overview",
+          "cosine_score": 0.1671,
+          "is_optimal": false
+        },
+        {
+          "rank": 5,
+          "tool_id": 9,
+          "tool_name": "practice_exercise",
+          "cosine_score": 0.1666,
+          "is_optimal": false
+        }
+      ],
+      "diagnosis": {
+        "optimal_in_top5": false,
+        "score_spread": 0.0283
+      }
+    },
+    {
+      "query": "What steps should you follow to edit markdown files in Jupyter while ensuring you have the latest version of the D2L notebooks?",
+      "optimal_tool": {
+        "id": 2,
+        "name": "interactive_simulation",
+        "rank_in_faiss": 3
+      },
+      "s1a_selected": {
+        "id": 13,
+        "name": "code_sandbox"
+      },
+      "faiss_top5": [
+        {
+          "rank": 1,
+          "tool_id": 13,
+          "tool_name": "code_sandbox",
+          "cosine_score": 0.2561,
+          "is_optimal": false
+        },
+        {
+          "rank": 2,
+          "tool_id": 8,
+          "tool_name": "socratic_dialogue",
+          "cosine_score": 0.2323,
+          "is_optimal": false
+        },
+        {
+          "rank": 3,
+          "tool_id": 2,
+          "tool_name": "interactive_simulation",
+          "cosine_score": 0.2237,
+          "is_optimal": true
+        },
+        {
+          "rank": 4,
+          "tool_id": 3,
+          "tool_name": "stepwise_walkthrough",
+          "cosine_score": 0.2098,
+          "is_optimal": false
+        },
+        {
+          "rank": 5,
+          "tool_id": 11,
+          "tool_name": "summary_outline",
+          "cosine_score": 0.2078,
+          "is_optimal": false
+        }
+      ],
+      "diagnosis": {
+        "optimal_in_top5": true,
+        "score_spread": 0.0483
+      }
+    },
+    {
+      "query": "How does the concept of cross-entropy relate to prediction accuracy and validation in classifiers?",
+      "optimal_tool": {
+        "id": 12,
+        "name": "prose_explainer",
+        "rank_in_faiss": null
+      },
+      "s1a_selected": {
+        "id": 2,
+        "name": "interactive_simulation"
+      },
+      "faiss_top5": [
+        {
+          "rank": 1,
+          "tool_id": 6,
+          "tool_name": "abstract_derivation",
+          "cosine_score": 0.2217,
+          "is_optimal": false
+        },
+        {
+          "rank": 2,
+          "tool_id": 2,
+          "tool_name": "interactive_simulation",
+          "cosine_score": 0.1901,
+          "is_optimal": false
+        },
+        {
+          "rank": 3,
+          "tool_id": 14,
+          "tool_name": "concept_map",
+          "cosine_score": 0.1476,
+          "is_optimal": false
+        },
+        {
+          "rank": 4,
+          "tool_id": 4,
+          "tool_name": "worked_example",
+          "cosine_score": 0.14,
+          "is_optimal": false
+        },
+        {
+          "rank": 5,
+          "tool_id": 9,
+          "tool_name": "practice_exercise",
+          "cosine_score": 0.1278,
+          "is_optimal": false
+        }
+      ],
+      "diagnosis": {
+        "optimal_in_top5": false,
+        "score_spread": 0.0939
+      }
+    }
+  ]
+}

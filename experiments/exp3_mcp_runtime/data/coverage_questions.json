@@ -1,0 +1,216 @@
+[
+  {
+    "question_id": "COV_001",
+    "question": "Can you provide a step-by-step coding exercise to implement a simple linear regression model from scratch using PyTorch?",
+    "question_type": "practice",
+    "target_tools": [
+      11,
+      12
+    ],
+    "gold_chunk_ids": [],
+    "essential_chunk_ids": [],
+    "strategy": "coverage",
+    "quality_tier": "coverage",
+    "needs_review": false
+  },
+  {
+    "question_id": "COV_002",
+    "question": "Can you give me a self-assessment quiz on activation functions to test my understanding?",
+    "question_type": "practice",
+    "target_tools": [
+      11,
+      12
+    ],
+    "gold_chunk_ids": [],
+    "essential_chunk_ids": [],
+    "strategy": "coverage",
+    "quality_tier": "coverage",
+    "needs_review": false
+  },
+  {
+    "question_id": "COV_003",
+    "question": "After working through the chapter on convolutional neural networks, can you design a small CNN to classify handwritten digits and explain why you chose your specific architecture and hyperparameters?",
+    "question_type": "practice",
+    "target_tools": [
+      10,
+      11
+    ],
+    "gold_chunk_ids": [],
+    "essential_chunk_ids": [],
+    "strategy": "coverage",
+    "quality_tier": "coverage",
+    "needs_review": false
+  },
+  {
+    "question_id": "COV_004",
+    "question": "Can you give me practice problems comparing SGD, Adam, and RMSProp so I can test myself?",
+    "question_type": "practice",
+    "target_tools": [
+      10,
+      12
+    ],
+    "gold_chunk_ids": [],
+    "essential_chunk_ids": [],
+    "strategy": "coverage",
+    "quality_tier": "coverage",
+    "needs_review": false
+  },
+  {
+    "question_id": "COV_005",
+    "question": "I've already read about backpropagation \u2014 can you re-explain it adapted to my learning style?",
+    "question_type": "style_adapt",
+    "target_tools": [
+      8
+    ],
+    "gold_chunk_ids": [],
+    "essential_chunk_ids": [],
+    "strategy": "coverage",
+    "quality_tier": "coverage",
+    "needs_review": false
+  },
+  {
+    "question_id": "COV_006",
+    "question": "I learn best through visuals\u2014can you explain how backpropagation works using diagrams or animations instead of just equations?",
+    "question_type": "style_adapt",
+    "target_tools": [
+      8
+    ],
+    "gold_chunk_ids": [],
+    "essential_chunk_ids": [],
+    "strategy": "coverage",
+    "quality_tier": "coverage",
+    "needs_review": false
+  },
+  {
+    "question_id": "COV_007",
+    "question": "Can you help me create a diagram or flowchart that visually explains how backpropagation works in a neural network?",
+    "question_type": "style_adapt",
+    "target_tools": [
+      9
+    ],
+    "gold_chunk_ids": [],
+    "essential_chunk_ids": [],
+    "strategy": "coverage",
+    "quality_tier": "coverage",
+    "needs_review": false
+  },
+  {
+    "question_id": "COV_008",
+    "question": "Can you help me understand the overall intuition behind the backpropagation algorithm without going through all the detailed math steps?",
+    "question_type": "style_adapt",
+    "target_tools": [
+      9
+    ],
+    "gold_chunk_ids": [],
+    "essential_chunk_ids": [],
+    "strategy": "coverage",
+    "quality_tier": "coverage",
+    "needs_review": false
+  },
+  {
+    "question_id": "COV_009",
+    "question": "What are some recent advancements in optimization algorithms for deep learning that have emerged since the latest edition of D2L?",
+    "question_type": "search",
+    "target_tools": [
+      15
+    ],
+    "gold_chunk_ids": [],
+    "essential_chunk_ids": [],
+    "strategy": "coverage",
+    "quality_tier": "coverage",
+    "needs_review": false
+  },
+  {
+    "question_id": "COV_010",
+    "question": "How can the attention mechanism used in transformers for natural language processing be applied to tasks in computer vision or speech recognition?",
+    "question_type": "search",
+    "target_tools": [
+      15
+    ],
+    "gold_chunk_ids": [],
+    "essential_chunk_ids": [],
+    "strategy": "coverage",
+    "quality_tier": "coverage",
+    "needs_review": false
+  },
+  {
+    "question_id": "COV_011",
+    "question": "Can you explain how the Adam optimizer works in deep learning and provide some recent improvements or alternatives from other sources?",
+    "question_type": "search",
+    "target_tools": [
+      14,
+      15
+    ],
+    "gold_chunk_ids": [],
+    "essential_chunk_ids": [],
+    "strategy": "coverage",
+    "quality_tier": "coverage",
+    "needs_review": false
+  },
+  {
+    "question_id": "COV_012",
+    "question": "Where in the D2L textbook can I find a detailed explanation of how backpropagation works in neural networks?",
+    "question_type": "search",
+    "target_tools": [
+      14
+    ],
+    "gold_chunk_ids": [],
+    "essential_chunk_ids": [],
+    "strategy": "coverage",
+    "quality_tier": "coverage",
+    "needs_review": false
+  },
+  {
+    "question_id": "COV_013",
+    "question": "Can you summarize the main differences and connections between linear regression, logistic regression, and neural networks as discussed in the textbook?",
+    "question_type": "summarize",
+    "target_tools": [
+      13
+    ],
+    "gold_chunk_ids": [],
+    "essential_chunk_ids": [],
+    "strategy": "coverage",
+    "quality_tier": "coverage",
+    "needs_review": false
+  },
+  {
+    "question_id": "COV_014",
+    "question": "Can you summarize how the chapters on convolutional neural networks in D2L build on each other to help us understand their architecture and applications?",
+    "question_type": "summarize",
+    "target_tools": [
+      13
+    ],
+    "gold_chunk_ids": [],
+    "essential_chunk_ids": [],
+    "strategy": "coverage",
+    "quality_tier": "coverage",
+    "needs_review": false
+  },
+  {
+    "question_id": "COV_015",
+    "question": "Can you summarize the main training strategies used in deep learning and explain how they help improve model performance?",
+    "question_type": "summarize",
+    "target_tools": [
+      7,
+      13
+    ],
+    "gold_chunk_ids": [],
+    "essential_chunk_ids": [],
+    "strategy": "coverage",
+    "quality_tier": "coverage",
+    "needs_review": false
+  },
+  {
+    "question_id": "COV_016",
+    "question": "Can you summarize the main challenges and strategies involved in optimizing deep learning models during training?",
+    "question_type": "summarize",
+    "target_tools": [
+      7
+    ],
+    "gold_chunk_ids": [],
+    "essential_chunk_ids": [],
+    "strategy": "coverage",
+    "quality_tier": "coverage",
+    "needs_review": false
+  }
+]

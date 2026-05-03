@@ -13,7 +13,7 @@ Compares two RAG-based tutoring conditions for a D2L machine-learning corpus:
 - **R0 (Baseline):** Generic RAG — retrieves top-5 chunks and generates a response with no learning-style conditioning
 - **R1 (Personalized):** FSLSM-conditioned RAG — query is augmented with FSLSM style directives before retrieval; system prompt encodes the student's learning profile
 
-Each of the 16 FSLSM learning profiles is represented by 4 virtual student agents across 3 knowledge levels (beginner, intermediate, advanced, general), answering 90 questions drawn from the D2L corpus.
+Each of the 16 FSLSM learning profiles is represented by 5 virtual student agents across 4 knowledge types (beginner, intermediate, advanced, general ×2), answering 72 questions drawn from the D2L corpus.
 
 ---
 
@@ -23,8 +23,8 @@ Each of the 16 FSLSM learning profiles is represented by 4 virtual student agent
 |--------|--------|
 | Conditions | R0 (baseline) vs R1 (personalized) |
 | FSLSM profiles | 16 (4 binary dimensions) |
-| Agents per profile | 4 (3 knowledge levels + general) |
-| Questions | 90 per agent |
+| Agents per profile | 5 (beginner, intermediate, advanced, general ×2) |
+| Questions | 72 per agent |
 | Total session pairs | 5,760 matched R0/R1 pairs |
 | Tutor model | claude-sonnet-4 |
 | Judge model (Track B) | GPT-4o (position-randomised) |
@@ -59,6 +59,7 @@ Each of the 16 FSLSM learning profiles is represented by 4 virtual student agent
 | **Engagement** | 3.247 | 3.890 | **+0.643** | 1.49 | < 0.0001 | *** |
 | **RR** | 3.788 | 3.785 | −0.003 | ~0 | 0.683 | n.s. |
 | **CR@5** | 0.159 | 0.155 | −0.004 | −0.022 | 0.020 | * |
+| **CR@10** | 0.269 | 0.254 | −0.016 | −0.061 | < 0.0001 | *** |
 | **ER** | 0.340 | 0.333 | −0.006 | −0.013 | 0.028 | * |
 
 ### Track B — Pairwise Judgement (n = 5,760 pairs)

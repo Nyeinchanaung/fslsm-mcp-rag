@@ -1,0 +1,1402 @@
+[
+  {
+    "run": "r1",
+    "agent_id": "P03_ActSenVerSeq_I01_beg",
+    "question_id": "MH_089",
+    "query": "How do the architectural features of ResNeXt, LeNet, and GoogLeNet compare in terms of layer types and initialization methods?",
+    "mode": "R1",
+    "profile_label": "Active-Sensing-Verbal-Sequential",
+    "fslsm_vector": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    }
+  },
+  {
+    "run": "r0",
+    "agent_id": "P12_RefSenVerGlo_I04_gen",
+    "question_id": "MH_068",
+    "query": "How does the concept of tensors and their order relate to the implementation of advanced neural network architectures like Faster R-CNN and RNNs, and how does this impact operations such as batch matrix multiplication and style transfer training?",
+    "mode": "R0",
+    "profile_label": "Reflective-Sensing-Verbal-Global",
+    "fslsm_vector": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    }
+  },
+  {
+    "run": "r0",
+    "agent_id": "P13_RefIntVisSeq_I04_gen",
+    "question_id": "MH_036",
+    "query": "How do the concepts of fully connected layers in neural networks, as seen in linear regression and VGG networks, relate to the implementation of layers with parameters and the role of normalization techniques?",
+    "mode": "R0",
+    "profile_label": "Reflective-Intuitive-Visual-Sequential",
+    "fslsm_vector": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    }
+  },
+  {
+    "run": "r0",
+    "agent_id": "P07_ActIntVerSeq_I01_beg",
+    "question_id": "MH_030",
+    "query": "What are the steps involved in training an efficient object detection model, and how do they incorporate principles from network design and dataset handling?",
+    "mode": "R0",
+    "profile_label": "Active-Intuitive-Verbal-Sequential",
+    "fslsm_vector": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    }
+  },
+  {
+    "run": "r0",
+    "agent_id": "P07_ActIntVerSeq_I01_beg",
+    "question_id": "MH_045",
+    "query": "How do different representations of bounding boxes and the use of anchor boxes in multiscale object detection contribute to the functionality of a single shot multibox detection (SSD) model?",
+    "mode": "R0",
+    "profile_label": "Active-Intuitive-Verbal-Sequential",
+    "fslsm_vector": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    }
+  },
+  {
+    "run": "r0",
+    "agent_id": "P14_RefIntVisGlo_I04_gen",
+    "question_id": "MH_093",
+    "query": "How do the convergence behaviors of Adagrad, Yogi, and Gaussian distributions compare?",
+    "mode": "R0",
+    "profile_label": "Reflective-Intuitive-Visual-Global",
+    "fslsm_vector": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    }
+  },
+  {
+    "run": "r1",
+    "agent_id": "P03_ActSenVerSeq_I02_int",
+    "question_id": "MH_100",
+    "query": "How can the implementation of the Adam optimizer be visualized alongside value function updates and image augmentation effects?",
+    "mode": "R1",
+    "profile_label": "Active-Sensing-Verbal-Sequential",
+    "fslsm_vector": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    }
+  },
+  {
+    "run": "r0",
+    "agent_id": "P16_RefIntVerGlo_I04_gen",
+    "question_id": "MH_069",
+    "query": "How do the model complexity control methods differ in ViT, RNN, and GRU architectures?",
+    "mode": "R0",
+    "profile_label": "Reflective-Intuitive-Verbal-Global",
+    "fslsm_vector": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    }
+  },
+  {
+    "run": "r0",
+    "agent_id": "P15_RefIntVerSeq_I01_beg",
+    "question_id": "MH_027",
+    "query": "In what ways do techniques from different neural network models contribute to efficient training and inference, and how can understanding of probability enhance these processes?",
+    "mode": "R0",
+    "profile_label": "Reflective-Intuitive-Verbal-Sequential",
+    "fslsm_vector": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    }
+  },
+  {
+    "run": "r0",
+    "agent_id": "P02_ActSenVisGlo_I03_adv",
+    "question_id": "MH_087",
+    "query": "How do the concepts of negative sampling, weight decay, and model serialization interrelate in deep learning?",
+    "mode": "R0",
+    "profile_label": "Active-Sensing-Visual-Global",
+    "fslsm_vector": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    }
+  },
+  {
+    "run": "r0",
+    "agent_id": "P10_RefSenVisGlo_I02_int",
+    "question_id": "MH_094",
+    "query": "How do initializing model parameters, changing colors, and using tensors impact the design of neural networks?",
+    "mode": "R0",
+    "profile_label": "Reflective-Sensing-Visual-Global",
+    "fslsm_vector": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    }
+  },
+  {
+    "run": "r1",
+    "agent_id": "P08_ActIntVerGlo_I05_gen",
+    "question_id": "MH_075",
+    "query": "How do character-level tokenization and language modeling relate to masked language modeling and next sentence prediction tasks?",
+    "mode": "R1",
+    "profile_label": "Active-Intuitive-Verbal-Global",
+    "fslsm_vector": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    }
+  },
+  {
+    "run": "r0",
+    "agent_id": "P05_ActIntVisSeq_I02_int",
+    "question_id": "MH_086",
+    "query": "How has the evolution of recommendation systems like MovieLens influenced the development of deep learning techniques for prediction accuracy?",
+    "mode": "R0",
+    "profile_label": "Active-Intuitive-Visual-Sequential",
+    "fslsm_vector": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    }
+  },
+  {
+    "run": "r0",
+    "agent_id": "P15_RefIntVerSeq_I04_gen",
+    "question_id": "MH_070",
+    "query": "How has the evolution of deep learning frameworks influenced the design of neural networks for regression tasks?",
+    "mode": "R0",
+    "profile_label": "Reflective-Intuitive-Verbal-Sequential",
+    "fslsm_vector": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    }
+  },
+  {
+    "run": "r1",
+    "agent_id": "P06_ActIntVisGlo_I01_beg",
+    "question_id": "MH_036",
+    "query": "How do the concepts of fully connected layers in neural networks, as seen in linear regression and VGG networks, relate to the implementation of layers with parameters and the role of normalization techniques?",
+    "mode": "R1",
+    "profile_label": "Active-Intuitive-Visual-Global",
+    "fslsm_vector": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    }
+  },
+  {
+    "run": "r1",
+    "agent_id": "P11_RefSenVerSeq_I05_gen",
+    "question_id": "MH_050",
+    "query": "How do matrix factorization techniques integrate with modern machine learning methods to enhance recommendation systems?",
+    "mode": "R1",
+    "profile_label": "Reflective-Sensing-Verbal-Sequential",
+    "fslsm_vector": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    }
+  },
+  {
+    "run": "r1",
+    "agent_id": "P07_ActIntVerSeq_I03_adv",
+    "question_id": "MH_074",
+    "query": "How do vanishing gradients affect the performance of optimization algorithms like SGD and accelerated methods?",
+    "mode": "R1",
+    "profile_label": "Active-Intuitive-Verbal-Sequential",
+    "fslsm_vector": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    }
+  },
+  {
+    "run": "r0",
+    "agent_id": "P01_ActSenVisSeq_I04_gen",
+    "question_id": "MH_021",
+    "query": "What are the best practices for managing computational resources and improving model performance when using cloud-based deep learning solutions?",
+    "mode": "R0",
+    "profile_label": "Active-Sensing-Visual-Sequential",
+    "fslsm_vector": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    }
+  },
+  {
+    "run": "r1",
+    "agent_id": "P08_ActIntVerGlo_I01_beg",
+    "question_id": "MH_036",
+    "query": "How do the concepts of fully connected layers in neural networks, as seen in linear regression and VGG networks, relate to the implementation of layers with parameters and the role of normalization techniques?",
+    "mode": "R1",
+    "profile_label": "Active-Intuitive-Verbal-Global",
+    "fslsm_vector": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    }
+  },
+  {
+    "run": "r0",
+    "agent_id": "P10_RefSenVisGlo_I04_gen",
+    "question_id": "MH_077",
+    "query": "How do the $1 \\times 1$ convolution, dropout, and downsampling block contribute to the performance of deep learning models?",
+    "mode": "R0",
+    "profile_label": "Reflective-Sensing-Visual-Global",
+    "fslsm_vector": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    }
+  },
+  {
+    "run": "r0",
+    "agent_id": "P03_ActSenVerSeq_I02_int",
+    "question_id": "MH_056",
+    "query": "How does the chain rule facilitate the computation of gradients in deep learning models, and what challenges arise when applying it to recurrent neural networks?",
+    "mode": "R0",
+    "profile_label": "Active-Sensing-Verbal-Sequential",
+    "fslsm_vector": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    }
+  },
+  {
+    "run": "r1",
+    "agent_id": "P04_ActSenVerGlo_I03_adv",
+    "question_id": "MH_101",
+    "query": "How do the encoder and decoder components differ in their roles within the encoder-decoder architecture?",
+    "mode": "R1",
+    "profile_label": "Active-Sensing-Verbal-Global",
+    "fslsm_vector": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    }
+  },
+  {
+    "run": "r1",
+    "agent_id": "P06_ActIntVisGlo_I03_adv",
+    "question_id": "MH_074",
+    "query": "How do vanishing gradients affect the performance of optimization algorithms like SGD and accelerated methods?",
+    "mode": "R1",
+    "profile_label": "Active-Intuitive-Visual-Global",
+    "fslsm_vector": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    }
+  },
+  {
+    "run": "r0",
+    "agent_id": "P15_RefIntVerSeq_I02_int",
+    "question_id": "MH_077",
+    "query": "How do the $1 \\times 1$ convolution, dropout, and downsampling block contribute to the performance of deep learning models?",
+    "mode": "R0",
+    "profile_label": "Reflective-Intuitive-Verbal-Sequential",
+    "fslsm_vector": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    }
+  },
+  {
+    "run": "r1",
+    "agent_id": "P13_RefIntVisSeq_I01_beg",
+    "question_id": "MH_097",
+    "query": "How do model parameter saving methods differ across frameworks like MXNet, PyTorch, and TensorFlow?",
+    "mode": "R1",
+    "profile_label": "Reflective-Intuitive-Visual-Sequential",
+    "fslsm_vector": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    }
+  },
+  {
+    "run": "r0",
+    "agent_id": "P10_RefSenVisGlo_I05_gen",
+    "question_id": "MH_097",
+    "query": "How do model parameter saving methods differ across frameworks like MXNet, PyTorch, and TensorFlow?",
+    "mode": "R0",
+    "profile_label": "Reflective-Sensing-Visual-Global",
+    "fslsm_vector": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    }
+  },
+  {
+    "run": "r1",
+    "agent_id": "P11_RefSenVerSeq_I03_adv",
+    "question_id": "MH_014",
+    "query": "How do the concepts of linear regression, self-attention, and matrix factorization illustrate different approaches to handling data complexity and noise in machine learning models?",
+    "mode": "R1",
+    "profile_label": "Reflective-Sensing-Verbal-Sequential",
+    "fslsm_vector": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    }
+  },
+  {
+    "run": "r0",
+    "agent_id": "P06_ActIntVisGlo_I05_gen",
+    "question_id": "MH_091",
+    "query": "How do the concepts of model initialization, forward propagation, and learning rate scheduling interrelate in deep learning frameworks?",
+    "mode": "R0",
+    "profile_label": "Active-Intuitive-Visual-Global",
+    "fslsm_vector": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    }
+  },
+  {
+    "run": "r0",
+    "agent_id": "P04_ActSenVerGlo_I02_int",
+    "question_id": "MH_085",
+    "query": "How do the training epochs and learning rates differ across models in the provided training methods?",
+    "mode": "R0",
+    "profile_label": "Active-Sensing-Verbal-Global",
+    "fslsm_vector": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    }
+  },
+  {
+    "run": "r0",
+    "agent_id": "P05_ActIntVisSeq_I04_gen",
+    "question_id": "MH_098",
+    "query": "How has the evolution of hardware and synchronization methods influenced the implementation of data-parallel training in deep learning?",
+    "mode": "R0",
+    "profile_label": "Active-Intuitive-Visual-Sequential",
+    "fslsm_vector": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    }
+  },
+  {
+    "run": "r1",
+    "agent_id": "P04_ActSenVerGlo_I04_gen",
+    "question_id": "MH_104",
+    "query": "How can a large company effectively utilize NVIDIA GPUs for deep learning tasks while ensuring efficient parallelization?",
+    "mode": "R1",
+    "profile_label": "Active-Sensing-Verbal-Global",
+    "fslsm_vector": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    }
+  },
+  {
+    "run": "r1",
+    "agent_id": "P14_RefIntVisGlo_I04_gen",
+    "question_id": "MH_039",
+    "query": "How do context-sensitive word representations and multihead attention mechanisms address the limitations of context-independent representations and computational inefficiencies in deep learning models?",
+    "mode": "R1",
+    "profile_label": "Reflective-Intuitive-Visual-Global",
+    "fslsm_vector": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    }
+  },
+  {
+    "run": "r0",
+    "agent_id": "P16_RefIntVerGlo_I04_gen",
+    "question_id": "MH_070",
+    "query": "How has the evolution of deep learning frameworks influenced the design of neural networks for regression tasks?",
+    "mode": "R0",
+    "profile_label": "Reflective-Intuitive-Verbal-Global",
+    "fslsm_vector": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    }
+  },
+  {
+    "run": "r0",
+    "agent_id": "P05_ActIntVisSeq_I03_adv",
+    "question_id": "MH_103",
+    "query": "How does the code of conduct relate to the installation of Miniconda and the use of Jupyter notebooks?",
+    "mode": "R0",
+    "profile_label": "Active-Intuitive-Visual-Sequential",
+    "fslsm_vector": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    }
+  },
+  {
+    "run": "r1",
+    "agent_id": "P06_ActIntVisGlo_I04_gen",
+    "question_id": "MH_041",
+    "query": "How do the concepts of linear transformations, softmax function, batch normalization, GRU update mechanisms, and BERT architecture contribute to understanding complex neural network operations?",
+    "mode": "R1",
+    "profile_label": "Active-Intuitive-Visual-Global",
+    "fslsm_vector": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    }
+  },
+  {
+    "run": "r1",
+    "agent_id": "P05_ActIntVisSeq_I01_beg",
+    "question_id": "MH_081",
+    "query": "How do the tensor reshaping methods differ across frameworks, and what are their implications in model initialization and evaluation?",
+    "mode": "R1",
+    "profile_label": "Active-Intuitive-Visual-Sequential",
+    "fslsm_vector": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    }
+  },
+  {
+    "run": "r0",
+    "agent_id": "P02_ActSenVisGlo_I05_gen",
+    "question_id": "MH_092",
+    "query": "How do you prepare the SNLI dataset for training and testing using the defined functions while ensuring the correct split mode?",
+    "mode": "R0",
+    "profile_label": "Active-Sensing-Visual-Global",
+    "fslsm_vector": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    }
+  },
+  {
+    "run": "r0",
+    "agent_id": "P14_RefIntVisGlo_I04_gen",
+    "question_id": "MH_073",
+    "query": "How do the weight initialization methods differ between LSTM and the Compare class in terms of hyperparameters?",
+    "mode": "R0",
+    "profile_label": "Reflective-Intuitive-Visual-Global",
+    "fslsm_vector": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    }
+  },
+  {
+    "run": "r1",
+    "agent_id": "P12_RefSenVerGlo_I01_beg",
+    "question_id": "MH_095",
+    "query": "How do Taylor series, autoregressive models, and convenience functions relate in machine learning?",
+    "mode": "R1",
+    "profile_label": "Reflective-Sensing-Verbal-Global",
+    "fslsm_vector": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    }
+  },
+  {
+    "run": "r0",
+    "agent_id": "P15_RefIntVerSeq_I04_gen",
+    "question_id": "MH_031",
+    "query": "How do embedding techniques and initialization strategies compare in different NLP models such as sentiment analysis RNNs and natural language inference with attention?",
+    "mode": "R0",
+    "profile_label": "Reflective-Intuitive-Verbal-Sequential",
+    "fslsm_vector": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    }
+  },
+  {
+    "run": "r1",
+    "agent_id": "P05_ActIntVisSeq_I03_adv",
+    "question_id": "MH_015",
+    "query": "In what ways do linear regression, multi-head self-attention, and GANs illustrate the evolution of model complexity in machine learning, particularly in terms of how they process inputs and optimize parameters?",
+    "mode": "R1",
+    "profile_label": "Active-Intuitive-Visual-Sequential",
+    "fslsm_vector": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    }
+  },
+  {
+    "run": "r0",
+    "agent_id": "P02_ActSenVisGlo_I01_beg",
+    "question_id": "MH_099",
+    "query": "How do one-hot vectors relate to the limitations of context-independent word representations in word2vec and GloVe?",
+    "mode": "R0",
+    "profile_label": "Active-Sensing-Visual-Global",
+    "fslsm_vector": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    }
+  },
+  {
+    "run": "r1",
+    "agent_id": "P03_ActSenVerSeq_I05_gen",
+    "question_id": "MH_074",
+    "query": "How do vanishing gradients affect the performance of optimization algorithms like SGD and accelerated methods?",
+    "mode": "R1",
+    "profile_label": "Active-Sensing-Verbal-Sequential",
+    "fslsm_vector": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    }
+  },
+  {
+    "run": "r0",
+    "agent_id": "P16_RefIntVerGlo_I05_gen",
+    "question_id": "MH_003",
+    "query": "How do the concepts of matrix multiplication, parameter initialization, and tokenization contribute to the development and training of deep learning models?",
+    "mode": "R0",
+    "profile_label": "Reflective-Intuitive-Verbal-Global",
+    "fslsm_vector": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    }
+  },
+  {
+    "run": "r0",
+    "agent_id": "P06_ActIntVisGlo_I03_adv",
+    "question_id": "MH_094",
+    "query": "How do initializing model parameters, changing colors, and using tensors impact the design of neural networks?",
+    "mode": "R0",
+    "profile_label": "Active-Intuitive-Visual-Global",
+    "fslsm_vector": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    }
+  },
+  {
+    "run": "r1",
+    "agent_id": "P07_ActIntVerSeq_I05_gen",
+    "question_id": "MH_078",
+    "query": "How does the concept of cross-entropy relate to prediction accuracy and validation in classifiers?",
+    "mode": "R1",
+    "profile_label": "Active-Intuitive-Verbal-Sequential",
+    "fslsm_vector": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    }
+  },
+  {
+    "run": "r0",
+    "agent_id": "P07_ActIntVerSeq_I04_gen",
+    "question_id": "MH_108",
+    "query": "How does the decoder in a sequence-to-sequence model utilize attention weights during prediction?",
+    "mode": "R0",
+    "profile_label": "Active-Intuitive-Verbal-Sequential",
+    "fslsm_vector": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    }
+  },
+  {
+    "run": "r0",
+    "agent_id": "P07_ActIntVerSeq_I04_gen",
+    "question_id": "MH_065",
+    "query": "How do different training functions handle loss calculation and optimization across various deep learning tasks, and what are the similarities and differences in their approaches?",
+    "mode": "R0",
+    "profile_label": "Active-Intuitive-Verbal-Sequential",
+    "fslsm_vector": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    }
+  },
+  {
+    "run": "r0",
+    "agent_id": "P09_RefSenVisSeq_I02_int",
+    "question_id": "MH_100",
+    "query": "How can the implementation of the Adam optimizer be visualized alongside value function updates and image augmentation effects?",
+    "mode": "R0",
+    "profile_label": "Reflective-Sensing-Visual-Sequential",
+    "fslsm_vector": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    }
+  },
+  {
+    "run": "r1",
+    "agent_id": "P15_RefIntVerSeq_I02_int",
+    "question_id": "MH_049",
+    "query": "How can BERT be fine-tuned for sentiment analysis, and how does this process compare to using bidirectional RNNs with pretrained word vectors for the same task?",
+    "mode": "R1",
+    "profile_label": "Reflective-Intuitive-Verbal-Sequential",
+    "fslsm_vector": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    }
+  },
+  {
+    "run": "r0",
+    "agent_id": "P13_RefIntVisSeq_I04_gen",
+    "question_id": "MH_053",
+    "query": "How do different neural network architectures and training techniques contribute to minimizing loss and improving model performance, particularly in the context of sequence-to-sequence models and continuous bag of words models?",
+    "mode": "R0",
+    "profile_label": "Reflective-Intuitive-Visual-Sequential",
+    "fslsm_vector": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    }
+  },
+  {
+    "run": "r1",
+    "agent_id": "P02_ActSenVisGlo_I02_int",
+    "question_id": "MH_098",
+    "query": "How has the evolution of hardware and synchronization methods influenced the implementation of data-parallel training in deep learning?",
+    "mode": "R1",
+    "profile_label": "Active-Sensing-Visual-Global",
+    "fslsm_vector": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    }
+  },
+  {
+    "run": "r1",
+    "agent_id": "P01_ActSenVisSeq_I05_gen",
+    "question_id": "MH_009",
+    "query": "How does the initialization and execution of neural networks differ across JAX, PyTorch, MXNet, and TensorFlow, and what implications does this have for hybridization and lazy initialization techniques?",
+    "mode": "R1",
+    "profile_label": "Active-Sensing-Visual-Sequential",
+    "fslsm_vector": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    }
+  },
+  {
+    "run": "r1",
+    "agent_id": "P07_ActIntVerSeq_I01_beg",
+    "question_id": "MH_042",
+    "query": "Trace the evolution of data processing techniques from linear transformations to advanced models like BERT, considering intermediate steps like batch normalization and GRUs.",
+    "mode": "R1",
+    "profile_label": "Active-Intuitive-Verbal-Sequential",
+    "fslsm_vector": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    }
+  },
+  {
+    "run": "r1",
+    "agent_id": "P15_RefIntVerSeq_I01_beg",
+    "question_id": "MH_001",
+    "query": "In what ways do the principles of minibatch stochastic gradient descent and batch normalization contribute to optimizing the GloVe model's loss function, considering function class constraints and evaluation metrics?",
+    "mode": "R1",
+    "profile_label": "Reflective-Intuitive-Verbal-Sequential",
+    "fslsm_vector": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    }
+  },
+  {
+    "run": "r1",
+    "agent_id": "P03_ActSenVerSeq_I02_int",
+    "question_id": "MH_029",
+    "query": "How do the concepts of network design and optimization in convolutional neural networks relate to object detection and dataset preparation?",
+    "mode": "R1",
+    "profile_label": "Active-Sensing-Verbal-Sequential",
+    "fslsm_vector": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    }
+  },
+  {
+    "run": "r1",
+    "agent_id": "P11_RefSenVerSeq_I03_adv",
+    "question_id": "MH_074",
+    "query": "How do vanishing gradients affect the performance of optimization algorithms like SGD and accelerated methods?",
+    "mode": "R1",
+    "profile_label": "Reflective-Sensing-Verbal-Sequential",
+    "fslsm_vector": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    }
+  },
+  {
+    "run": "r1",
+    "agent_id": "P10_RefSenVisGlo_I01_beg",
+    "question_id": "MH_100",
+    "query": "How can the implementation of the Adam optimizer be visualized alongside value function updates and image augmentation effects?",
+    "mode": "R1",
+    "profile_label": "Reflective-Sensing-Visual-Global",
+    "fslsm_vector": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    }
+  },
+  {
+    "run": "r1",
+    "agent_id": "P07_ActIntVerSeq_I04_gen",
+    "question_id": "MH_092",
+    "query": "How do you prepare the SNLI dataset for training and testing using the defined functions while ensuring the correct split mode?",
+    "mode": "R1",
+    "profile_label": "Active-Intuitive-Verbal-Sequential",
+    "fslsm_vector": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    }
+  },
+  {
+    "run": "r0",
+    "agent_id": "P02_ActSenVisGlo_I02_int",
+    "question_id": "MH_104",
+    "query": "How can a large company effectively utilize NVIDIA GPUs for deep learning tasks while ensuring efficient parallelization?",
+    "mode": "R0",
+    "profile_label": "Active-Sensing-Visual-Global",
+    "fslsm_vector": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    }
+  },
+  {
+    "run": "r1",
+    "agent_id": "P16_RefIntVerGlo_I01_beg",
+    "question_id": "MH_088",
+    "query": "How does batch normalization in deep networks relate to variance estimation in test sets and multiple integrals?",
+    "mode": "R1",
+    "profile_label": "Reflective-Intuitive-Verbal-Global",
+    "fslsm_vector": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    }
+  },
+  {
+    "run": "r0",
+    "agent_id": "P15_RefIntVerSeq_I04_gen",
+    "question_id": "MH_049",
+    "query": "How can BERT be fine-tuned for sentiment analysis, and how does this process compare to using bidirectional RNNs with pretrained word vectors for the same task?",
+    "mode": "R0",
+    "profile_label": "Reflective-Intuitive-Verbal-Sequential",
+    "fslsm_vector": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    }
+  },
+  {
+    "run": "r1",
+    "agent_id": "P04_ActSenVerGlo_I01_beg",
+    "question_id": "MH_065",
+    "query": "How do different training functions handle loss calculation and optimization across various deep learning tasks, and what are the similarities and differences in their approaches?",
+    "mode": "R1",
+    "profile_label": "Active-Sensing-Verbal-Global",
+    "fslsm_vector": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    }
+  },
+  {
+    "run": "r1",
+    "agent_id": "P12_RefSenVerGlo_I02_int",
+    "question_id": "MH_035",
+    "query": "In the context of neural network training and evaluation, how do data preparation and model architecture choices influence the handling of optimization challenges and the final model submission process?",
+    "mode": "R1",
+    "profile_label": "Reflective-Sensing-Verbal-Global",
+    "fslsm_vector": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    }
+  },
+  {
+    "run": "r0",
+    "agent_id": "P13_RefIntVisSeq_I03_adv",
+    "question_id": "MH_036",
+    "query": "How do the concepts of fully connected layers in neural networks, as seen in linear regression and VGG networks, relate to the implementation of layers with parameters and the role of normalization techniques?",
+    "mode": "R0",
+    "profile_label": "Reflective-Intuitive-Visual-Sequential",
+    "fslsm_vector": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    }
+  },
+  {
+    "run": "r1",
+    "agent_id": "P12_RefSenVerGlo_I05_gen",
+    "question_id": "MH_037",
+    "query": "Trace the evolution of neural network architectures from simple linear models to complex structures like VGG, considering the role of custom layers and normalization techniques.",
+    "mode": "R1",
+    "profile_label": "Reflective-Sensing-Verbal-Global",
+    "fslsm_vector": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    }
+  },
+  {
+    "run": "r0",
+    "agent_id": "P05_ActIntVisSeq_I02_int",
+    "question_id": "MH_082",
+    "query": "How does the choice of optimization algorithm affect the trajectory of function minimization in deep learning?",
+    "mode": "R0",
+    "profile_label": "Active-Intuitive-Visual-Sequential",
+    "fslsm_vector": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    }
+  },
+  {
+    "run": "r1",
+    "agent_id": "P03_ActSenVerSeq_I04_gen",
+    "question_id": "MH_079",
+    "query": "How does masked softmax relate to GPU storage and tensor conversion in D2L?",
+    "mode": "R1",
+    "profile_label": "Active-Sensing-Verbal-Sequential",
+    "fslsm_vector": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    }
+  },
+  {
+    "run": "r1",
+    "agent_id": "P09_RefSenVisSeq_I04_gen",
+    "question_id": "MH_078",
+    "query": "How does the concept of cross-entropy relate to prediction accuracy and validation in classifiers?",
+    "mode": "R1",
+    "profile_label": "Reflective-Sensing-Visual-Sequential",
+    "fslsm_vector": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    }
+  },
+  {
+    "run": "r0",
+    "agent_id": "P10_RefSenVisGlo_I04_gen",
+    "question_id": "MH_041",
+    "query": "How do the concepts of linear transformations, softmax function, batch normalization, GRU update mechanisms, and BERT architecture contribute to understanding complex neural network operations?",
+    "mode": "R0",
+    "profile_label": "Reflective-Sensing-Visual-Global",
+    "fslsm_vector": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    }
+  },
+  {
+    "run": "r1",
+    "agent_id": "P02_ActSenVisGlo_I04_gen",
+    "question_id": "MH_045",
+    "query": "How do different representations of bounding boxes and the use of anchor boxes in multiscale object detection contribute to the functionality of a single shot multibox detection (SSD) model?",
+    "mode": "R1",
+    "profile_label": "Active-Sensing-Visual-Global",
+    "fslsm_vector": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    }
+  },
+  {
+    "run": "r0",
+    "agent_id": "P16_RefIntVerGlo_I03_adv",
+    "question_id": "MH_094",
+    "query": "How do initializing model parameters, changing colors, and using tensors impact the design of neural networks?",
+    "mode": "R0",
+    "profile_label": "Reflective-Intuitive-Verbal-Global",
+    "fslsm_vector": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    }
+  },
+  {
+    "run": "r1",
+    "agent_id": "P02_ActSenVisGlo_I04_gen",
+    "question_id": "MH_098",
+    "query": "How has the evolution of hardware and synchronization methods influenced the implementation of data-parallel training in deep learning?",
+    "mode": "R1",
+    "profile_label": "Active-Sensing-Visual-Global",
+    "fslsm_vector": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    }
+  },
+  {
+    "run": "r0",
+    "agent_id": "P04_ActSenVerGlo_I02_int",
+    "question_id": "MH_027",
+    "query": "In what ways do techniques from different neural network models contribute to efficient training and inference, and how can understanding of probability enhance these processes?",
+    "mode": "R0",
+    "profile_label": "Active-Sensing-Verbal-Global",
+    "fslsm_vector": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    }
+  },
+  {
+    "run": "r1",
+    "agent_id": "P10_RefSenVisGlo_I03_adv",
+    "question_id": "MH_032",
+    "query": "How do pooling layers and gated recurrent units (GRUs) address challenges in optimization and uncertainty in deep learning models?",
+    "mode": "R1",
+    "profile_label": "Reflective-Sensing-Visual-Global",
+    "fslsm_vector": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    }
+  },
+  {
+    "run": "r1",
+    "agent_id": "P15_RefIntVerSeq_I03_adv",
+    "question_id": "MH_060",
+    "query": "How has the evolution of machine learning and deep learning frameworks impacted the optimization of models, particularly in terms of execution speed and convergence?",
+    "mode": "R1",
+    "profile_label": "Reflective-Intuitive-Verbal-Sequential",
+    "fslsm_vector": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    }
+  },
+  {
+    "run": "r0",
+    "agent_id": "P09_RefSenVisSeq_I02_int",
+    "question_id": "MH_078",
+    "query": "How does the concept of cross-entropy relate to prediction accuracy and validation in classifiers?",
+    "mode": "R0",
+    "profile_label": "Reflective-Sensing-Visual-Sequential",
+    "fslsm_vector": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    }
+  },
+  {
+    "run": "r0",
+    "agent_id": "P16_RefIntVerGlo_I04_gen",
+    "question_id": "MH_100",
+    "query": "How can the implementation of the Adam optimizer be visualized alongside value function updates and image augmentation effects?",
+    "mode": "R0",
+    "profile_label": "Reflective-Intuitive-Verbal-Global",
+    "fslsm_vector": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    }
+  },
+  {
+    "run": "r1",
+    "agent_id": "P13_RefIntVisSeq_I04_gen",
+    "question_id": "MH_070",
+    "query": "How has the evolution of deep learning frameworks influenced the design of neural networks for regression tasks?",
+    "mode": "R1",
+    "profile_label": "Reflective-Intuitive-Visual-Sequential",
+    "fslsm_vector": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    }
+  },
+  {
+    "run": "r0",
+    "agent_id": "P14_RefIntVisGlo_I04_gen",
+    "question_id": "MH_096",
+    "query": "How can a custom layer be implemented to enhance seq2seq models in PyTorch while considering asynchronous computation?",
+    "mode": "R0",
+    "profile_label": "Reflective-Intuitive-Visual-Global",
+    "fslsm_vector": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    }
+  },
+  {
+    "run": "r0",
+    "agent_id": "P05_ActIntVisSeq_I04_gen",
+    "question_id": "MH_009",
+    "query": "How does the initialization and execution of neural networks differ across JAX, PyTorch, MXNet, and TensorFlow, and what implications does this have for hybridization and lazy initialization techniques?",
+    "mode": "R0",
+    "profile_label": "Active-Intuitive-Visual-Sequential",
+    "fslsm_vector": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    }
+  },
+  {
+    "run": "r1",
+    "agent_id": "P05_ActIntVisSeq_I02_int",
+    "question_id": "MH_106",
+    "query": "How do transposed convolutional layers relate to feature maps and dropout in model training?",
+    "mode": "R1",
+    "profile_label": "Active-Intuitive-Visual-Sequential",
+    "fslsm_vector": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    }
+  },
+  {
+    "run": "r1",
+    "agent_id": "P16_RefIntVerGlo_I03_adv",
+    "question_id": "MH_077",
+    "query": "How do the $1 \\times 1$ convolution, dropout, and downsampling block contribute to the performance of deep learning models?",
+    "mode": "R1",
+    "profile_label": "Reflective-Intuitive-Verbal-Global",
+    "fslsm_vector": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    }
+  },
+  {
+    "run": "r0",
+    "agent_id": "P04_ActSenVerGlo_I04_gen",
+    "question_id": "MH_095",
+    "query": "How do Taylor series, autoregressive models, and convenience functions relate in machine learning?",
+    "mode": "R0",
+    "profile_label": "Active-Sensing-Verbal-Global",
+    "fslsm_vector": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    }
+  },
+  {
+    "run": "r0",
+    "agent_id": "P01_ActSenVisSeq_I05_gen",
+    "question_id": "MH_046",
+    "query": "Explain the relationship between bounding box transformations and the multiscale anchor box generation in the context of a single shot multibox detection (SSD) model.",
+    "mode": "R0",
+    "profile_label": "Active-Sensing-Visual-Sequential",
+    "fslsm_vector": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    }
+  },
+  {
+    "run": "r0",
+    "agent_id": "P07_ActIntVerSeq_I02_int",
+    "question_id": "MH_014",
+    "query": "How do the concepts of linear regression, self-attention, and matrix factorization illustrate different approaches to handling data complexity and noise in machine learning models?",
+    "mode": "R0",
+    "profile_label": "Active-Intuitive-Verbal-Sequential",
+    "fslsm_vector": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    }
+  },
+  {
+    "run": "r0",
+    "agent_id": "P12_RefSenVerGlo_I04_gen",
+    "question_id": "MH_101",
+    "query": "How do the encoder and decoder components differ in their roles within the encoder-decoder architecture?",
+    "mode": "R0",
+    "profile_label": "Reflective-Sensing-Verbal-Global",
+    "fslsm_vector": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    }
+  },
+  {
+    "run": "r0",
+    "agent_id": "P08_ActIntVerGlo_I01_beg",
+    "question_id": "MH_087",
+    "query": "How do the concepts of negative sampling, weight decay, and model serialization interrelate in deep learning?",
+    "mode": "R0",
+    "profile_label": "Active-Intuitive-Verbal-Global",
+    "fslsm_vector": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    }
+  },
+  {
+    "run": "r1",
+    "agent_id": "P14_RefIntVisGlo_I03_adv",
+    "question_id": "MH_041",
+    "query": "How do the concepts of linear transformations, softmax function, batch normalization, GRU update mechanisms, and BERT architecture contribute to understanding complex neural network operations?",
+    "mode": "R1",
+    "profile_label": "Reflective-Intuitive-Visual-Global",
+    "fslsm_vector": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    }
+  },
+  {
+    "run": "r1",
+    "agent_id": "P10_RefSenVisGlo_I03_adv",
+    "question_id": "MH_093",
+    "query": "How do the convergence behaviors of Adagrad, Yogi, and Gaussian distributions compare?",
+    "mode": "R1",
+    "profile_label": "Reflective-Sensing-Visual-Global",
+    "fslsm_vector": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    }
+  },
+  {
+    "run": "r1",
+    "agent_id": "P04_ActSenVerGlo_I04_gen",
+    "question_id": "MH_096",
+    "query": "How can a custom layer be implemented to enhance seq2seq models in PyTorch while considering asynchronous computation?",
+    "mode": "R1",
+    "profile_label": "Active-Sensing-Verbal-Global",
+    "fslsm_vector": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    }
+  },
+  {
+    "run": "r0",
+    "agent_id": "P01_ActSenVisSeq_I05_gen",
+    "question_id": "MH_105",
+    "query": "How do model parameter initialization methods differ across frameworks?",
+    "mode": "R0",
+    "profile_label": "Active-Sensing-Visual-Sequential",
+    "fslsm_vector": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    }
+  },
+  {
+    "run": "r0",
+    "agent_id": "P10_RefSenVisGlo_I03_adv",
+    "question_id": "MH_050",
+    "query": "How do matrix factorization techniques integrate with modern machine learning methods to enhance recommendation systems?",
+    "mode": "R0",
+    "profile_label": "Reflective-Sensing-Visual-Global",
+    "fslsm_vector": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    }
+  },
+  {
+    "run": "r1",
+    "agent_id": "P06_ActIntVisGlo_I05_gen",
+    "question_id": "MH_027",
+    "query": "In what ways do techniques from different neural network models contribute to efficient training and inference, and how can understanding of probability enhance these processes?",
+    "mode": "R1",
+    "profile_label": "Active-Intuitive-Visual-Global",
+    "fslsm_vector": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    }
+  },
+  {
+    "run": "r1",
+    "agent_id": "P01_ActSenVisSeq_I04_gen",
+    "question_id": "MH_087",
+    "query": "How do the concepts of negative sampling, weight decay, and model serialization interrelate in deep learning?",
+    "mode": "R1",
+    "profile_label": "Active-Sensing-Visual-Sequential",
+    "fslsm_vector": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    }
+  },
+  {
+    "run": "r1",
+    "agent_id": "P06_ActIntVisGlo_I03_adv",
+    "question_id": "MH_027",
+    "query": "In what ways do techniques from different neural network models contribute to efficient training and inference, and how can understanding of probability enhance these processes?",
+    "mode": "R1",
+    "profile_label": "Active-Intuitive-Visual-Global",
+    "fslsm_vector": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    }
+  },
+  {
+    "run": "r0",
+    "agent_id": "P04_ActSenVerGlo_I01_beg",
+    "question_id": "MH_068",
+    "query": "How does the concept of tensors and their order relate to the implementation of advanced neural network architectures like Faster R-CNN and RNNs, and how does this impact operations such as batch matrix multiplication and style transfer training?",
+    "mode": "R0",
+    "profile_label": "Active-Sensing-Verbal-Global",
+    "fslsm_vector": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    }
+  },
+  {
+    "run": "r0",
+    "agent_id": "P04_ActSenVerGlo_I02_int",
+    "question_id": "MH_073",
+    "query": "How do the weight initialization methods differ between LSTM and the Compare class in terms of hyperparameters?",
+    "mode": "R0",
+    "profile_label": "Active-Sensing-Verbal-Global",
+    "fslsm_vector": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    }
+  },
+  {
+    "run": "r1",
+    "agent_id": "P11_RefSenVerSeq_I03_adv",
+    "question_id": "MH_089",
+    "query": "How do the architectural features of ResNeXt, LeNet, and GoogLeNet compare in terms of layer types and initialization methods?",
+    "mode": "R1",
+    "profile_label": "Reflective-Sensing-Verbal-Sequential",
+    "fslsm_vector": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    }
+  },
+  {
+    "run": "r1",
+    "agent_id": "P14_RefIntVisGlo_I02_int",
+    "question_id": "MH_072",
+    "query": "How can stochastic gradient descent be applied to train a softmax regression model using a word embedding dataset?",
+    "mode": "R1",
+    "profile_label": "Reflective-Intuitive-Visual-Global",
+    "fslsm_vector": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    }
+  }
+]

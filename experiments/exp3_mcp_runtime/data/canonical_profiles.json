@@ -1,0 +1,162 @@
+[
+  {
+    "profile_label": "Active-Intuitive-Verbal-Global",
+    "profile_code": "P08_ActIntVerGlo",
+    "fslsm_vector": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    }
+  },
+  {
+    "profile_label": "Active-Intuitive-Verbal-Sequential",
+    "profile_code": "P07_ActIntVerSeq",
+    "fslsm_vector": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    }
+  },
+  {
+    "profile_label": "Active-Intuitive-Visual-Global",
+    "profile_code": "P06_ActIntVisGlo",
+    "fslsm_vector": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    }
+  },
+  {
+    "profile_label": "Active-Intuitive-Visual-Sequential",
+    "profile_code": "P05_ActIntVisSeq",
+    "fslsm_vector": {
+      "act_ref": -1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    }
+  },
+  {
+    "profile_label": "Active-Sensing-Verbal-Global",
+    "profile_code": "P04_ActSenVerGlo",
+    "fslsm_vector": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    }
+  },
+  {
+    "profile_label": "Active-Sensing-Verbal-Sequential",
+    "profile_code": "P03_ActSenVerSeq",
+    "fslsm_vector": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    }
+  },
+  {
+    "profile_label": "Active-Sensing-Visual-Global",
+    "profile_code": "P02_ActSenVisGlo",
+    "fslsm_vector": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    }
+  },
+  {
+    "profile_label": "Active-Sensing-Visual-Sequential",
+    "profile_code": "P01_ActSenVisSeq",
+    "fslsm_vector": {
+      "act_ref": -1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    }
+  },
+  {
+    "profile_label": "Reflective-Intuitive-Verbal-Global",
+    "profile_code": "P16_RefIntVerGlo",
+    "fslsm_vector": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    }
+  },
+  {
+    "profile_label": "Reflective-Intuitive-Verbal-Sequential",
+    "profile_code": "P15_RefIntVerSeq",
+    "fslsm_vector": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    }
+  },
+  {
+    "profile_label": "Reflective-Intuitive-Visual-Global",
+    "profile_code": "P14_RefIntVisGlo",
+    "fslsm_vector": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    }
+  },
+  {
+    "profile_label": "Reflective-Intuitive-Visual-Sequential",
+    "profile_code": "P13_RefIntVisSeq",
+    "fslsm_vector": {
+      "act_ref": 1,
+      "sen_int": 1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    }
+  },
+  {
+    "profile_label": "Reflective-Sensing-Verbal-Global",
+    "profile_code": "P12_RefSenVerGlo",
+    "fslsm_vector": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": 1
+    }
+  },
+  {
+    "profile_label": "Reflective-Sensing-Verbal-Sequential",
+    "profile_code": "P11_RefSenVerSeq",
+    "fslsm_vector": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": 1,
+      "seq_glo": -1
+    }
+  },
+  {
+    "profile_label": "Reflective-Sensing-Visual-Global",
+    "profile_code": "P10_RefSenVisGlo",
+    "fslsm_vector": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": 1
+    }
+  },
+  {
+    "profile_label": "Reflective-Sensing-Visual-Sequential",
+    "profile_code": "P09_RefSenVisSeq",
+    "fslsm_vector": {
+      "act_ref": 1,
+      "sen_int": -1,
+      "vis_ver": -1,
+      "seq_glo": -1
+    }
+  }
+]

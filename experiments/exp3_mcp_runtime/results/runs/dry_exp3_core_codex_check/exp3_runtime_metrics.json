@@ -1,0 +1,86 @@
+{
+  "source_db": "/Users/nyeinchanaung/Documents/GitHub/mcp-rag/experiments/exp3_mcp_runtime/results/runs/dry_exp3_core_codex_check/exp3_runtime_results.db",
+  "benchmarks": {
+    "exp3_core": {
+      "conditions": {
+        "S0": {
+          "n": 12,
+          "task_tsa": 0.9166666666666666,
+          "tsa": 0.9166666666666666,
+          "pts": 0.0,
+          "execution_success_rate": 1.0,
+          "latency_ms": 0.00982999881671276,
+          "grounded_tool_output_rate": 1.0,
+          "profile_tsa_all": 0.5833333333333334,
+          "profile_tsa_eligible": 0.0,
+          "profile_eligible_n": 4
+        },
+        "S1a": {
+          "n": 12,
+          "task_tsa": 0.6666666666666666,
+          "tsa": 0.6666666666666666,
+          "pts": 93.50424486148347,
+          "execution_success_rate": 0.9166666666666666,
+          "latency_ms": 4.592537999997148,
+          "grounded_tool_output_rate": 1.0,
+          "profile_tsa_all": 0.5833333333333334,
+          "profile_tsa_eligible": 0.0,
+          "profile_eligible_n": 4
+        },
+        "S1b": {
+          "n": 12,
+          "task_tsa": 0.5833333333333334,
+          "tsa": 0.5833333333333334,
+          "pts": 93.49307417336907,
+          "execution_success_rate": 0.9166666666666666,
+          "latency_ms": 4.402302166151155,
+          "grounded_tool_output_rate": 1.0,
+          "profile_tsa_all": 0.5833333333333334,
+          "profile_tsa_eligible": 0.0,
+          "profile_eligible_n": 4
+        }
+      },
+      "paired": {
+        "S1b_minus_S1a": {
+          "task_tsa_delta": -0.08333333333333333,
+          "tsa_delta": -0.08333333333333333,
+          "profile_tsa_all_delta": 0.0,
+          "profile_tsa_eligible_delta": 0.0,
+          "pts_delta": -0.011170688114387891,
+          "latency_ms_delta": -0.19023583384599382,
+          "n_pairs": 12,
+          "profile_all_n_pairs": 12,
+          "profile_eligible_n_pairs": 4,
+          "pts_n_pairs": 12,
+          "latency_n_pairs": 12
+        },
+        "S1b_minus_S0": {
+          "task_tsa_delta": -0.3333333333333333,
+          "tsa_delta": -0.3333333333333333,
+          "profile_tsa_all_delta": 0.0,
+          "profile_tsa_eligible_delta": 0.0,
+          "pts_delta": 93.49307417336907,
+          "latency_ms_delta": 4.392472167334442,
+          "n_pairs": 12,
+          "profile_all_n_pairs": 12,
+          "profile_eligible_n_pairs": 4,
+          "pts_n_pairs": 12,
+          "latency_n_pairs": 12
+        },
+        "S1a_minus_S0": {
+          "task_tsa_delta": -0.25,
+          "tsa_delta": -0.25,
+          "profile_tsa_all_delta": 0.0,
+          "profile_tsa_eligible_delta": 0.0,
+          "pts_delta": 93.50424486148347,
+          "latency_ms_delta": 4.5827080011804355,
+          "n_pairs": 12,
+          "profile_all_n_pairs": 12,
+          "profile_eligible_n_pairs": 4,
+          "pts_n_pairs": 12,
+          "latency_n_pairs": 12
+        }
+      }
+    }
+  }
+}

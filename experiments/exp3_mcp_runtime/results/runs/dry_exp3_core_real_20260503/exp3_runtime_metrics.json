@@ -1,0 +1,86 @@
+{
+  "source_db": "/Users/nyeinchanaung/Documents/GitHub/mcp-rag/experiments/exp3_mcp_runtime/results/runs/dry_exp3_core_real_20260503/exp3_runtime_results.db",
+  "benchmarks": {
+    "exp3_core": {
+      "conditions": {
+        "S0": {
+          "n": 21,
+          "task_tsa": 0.9523809523809523,
+          "tsa": 0.9523809523809523,
+          "pts": 0.0,
+          "execution_success_rate": 1.0,
+          "latency_ms": 3208.7334702844687,
+          "grounded_tool_output_rate": 1.0,
+          "profile_tsa_all": 0.5714285714285714,
+          "profile_tsa_eligible": 0.0,
+          "profile_eligible_n": 8
+        },
+        "S1a": {
+          "n": 20,
+          "task_tsa": 0.65,
+          "tsa": 0.65,
+          "pts": 93.50871313672923,
+          "execution_success_rate": 0.95,
+          "latency_ms": 2491.523002100439,
+          "grounded_tool_output_rate": 1.0,
+          "profile_tsa_all": 0.55,
+          "profile_tsa_eligible": 0.0,
+          "profile_eligible_n": 8
+        },
+        "S1b": {
+          "n": 20,
+          "task_tsa": 0.55,
+          "tsa": 0.55,
+          "pts": 93.49530831099196,
+          "execution_success_rate": 0.95,
+          "latency_ms": 2372.4497353992774,
+          "grounded_tool_output_rate": 1.0,
+          "profile_tsa_all": 0.55,
+          "profile_tsa_eligible": 0.0,
+          "profile_eligible_n": 8
+        }
+      },
+      "paired": {
+        "S1b_minus_S1a": {
+          "task_tsa_delta": -0.08333333333333333,
+          "tsa_delta": -0.08333333333333333,
+          "profile_tsa_all_delta": 0.0,
+          "profile_tsa_eligible_delta": 0.0,
+          "pts_delta": -0.011170688114387891,
+          "latency_ms_delta": -0.18189941874879878,
+          "n_pairs": 12,
+          "profile_all_n_pairs": 12,
+          "profile_eligible_n_pairs": 4,
+          "pts_n_pairs": 12,
+          "latency_n_pairs": 12
+        },
+        "S1b_minus_S0": {
+          "task_tsa_delta": -0.3333333333333333,
+          "tsa_delta": -0.3333333333333333,
+          "profile_tsa_all_delta": 0.0,
+          "profile_tsa_eligible_delta": 0.0,
+          "pts_delta": 93.49307417336907,
+          "latency_ms_delta": -109.0985902507479,
+          "n_pairs": 12,
+          "profile_all_n_pairs": 12,
+          "profile_eligible_n_pairs": 4,
+          "pts_n_pairs": 12,
+          "latency_n_pairs": 12
+        },
+        "S1a_minus_S0": {
+          "task_tsa_delta": -0.25,
+          "tsa_delta": -0.25,
+          "profile_tsa_all_delta": 0.0,
+          "profile_tsa_eligible_delta": 0.0,
+          "pts_delta": 93.50424486148347,
+          "latency_ms_delta": -108.9166908319991,
+          "n_pairs": 12,
+          "profile_all_n_pairs": 12,
+          "profile_eligible_n_pairs": 4,
+          "pts_n_pairs": 12,
+          "latency_n_pairs": 12
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,412 @@
+
+
+\appendix
+\renewcommand{\appendixname}{APPENDIX}
+\captionsetup[table]{labelfont=bf,name=Table\space,labelsep=space}
+\captionsetup[figure]{labelfont=bf,name=Figure\space,labelsep=space}
+\renewcommand\thefigure{\thechapter\arabic{figure}} 
+\newcommand{\stoptocwriting}{%
+  \addtocontents{toc}{\protect\setcounter{tocdepth}{-5}}}
+\newcommand{\resumetocwriting}{%
+  \addtocontents{toc}{\protect\setcounter{tocdepth}{\arabic{tocdepth}}}}
+
+\captionsetup{
+  singlelinecheck=false,
+  textfont=bf
+}
+
+\newpage
+\phantomsection
+\addcontentsline{toc}{chapter}{\bf APPENDICES}
+\begin{center}
+    \vspace*{\fill}
+    \large{\bf APPENDICES}
+    \vspace*{\fill}
+\end{center}
+\newpage
+
+\phantomsection
+% \addcontentsline{toc}{section}{\bf \uppercase{APPENDIX A: PROMPTS}}
+\stoptocwriting
+
+\chapter{\uppercase{Prompts}}
+
+\section{Tutor Prompts}
+\subsection{Experiment 2 Baseline Tutor Prompt (R0)}
+The generic tutor condition uses D2L-grounded retrieval and generation without FSLSM conditioning. The system prompt is passed separately from the evidence context so that both R0 and R1 use the same retrieved-context budget.
+\begin{shadedquotation}
+    \textit{[SYSTEM]} \\
+    You are an expert AI Tutor for Introductory Machine Learning, using the Dive into Deep Learning (D2L) textbook as your knowledge source. Answer the student's question accurately and completely, covering all key concepts from the provided evidence. Structure your response clearly.
+
+    \vspace{0.5em}
+    \textit{[USER]} \\
+    Use the following evidence to answer the student's question.
+
+    \{evidence\_blocks\}
+
+    Student Question: \{student\_question\}
+
+    Instructions:
+    \begin{enumerate}
+        \item EVIDENCE-GROUNDED (mandatory): Your entire answer MUST be based solely on the Evidence blocks above. Do NOT introduce any information, examples, or explanations from outside the provided evidence. Every claim must be traceable to a specific Evidence block.
+        \item FACTUALLY COMPLETE: Cover all key concepts present in the evidence. Do not omit key concepts in favour of stylistic formatting.
+        \item STYLE-ADAPTED (applied on top): Once factual content from the evidence is secured, adapt the presentation to your assigned learning style.
+    \end{enumerate}
+\end{shadedquotation}
+
+\subsection{Experiment 2 Personalized Tutor Prompt (R1)}
+The personalized condition uses a Profile Agent to translate the student's binary FSLSM vector into a retrieval directive and a generation directive. The tutor prompt preserves a strict factual-first priority order so that stylistic adaptation is applied after core factual coverage.
+\begin{shadedquotation}
+    \textit{[SYSTEM]} \\
+    You are an expert AI Tutor for Introductory Machine Learning, using the Dive into Deep Learning (D2L) textbook as your knowledge source.
+
+    The student is a \{style\_label\} learner. Your response must achieve two goals in strict priority order:
+
+    \textbf{STEP 0 -- FACTUAL FOUNDATION (always do this first)} \\
+    Before applying any style formatting, write 2--3 sentences that directly answer the question using the key facts from the retrieved evidence. This factual core MUST appear at the start of your response. Style formatting is built around this foundation, not instead of it.
+
+    \textbf{STYLE REQUIREMENTS (applied after Step 0)} \\
+    \{generation\_directive\}
+
+    \textbf{PEDAGOGICAL GUIDANCE} \\
+    \{style\_descriptor\_graf\}
+
+    \textbf{PRIORITY ORDER}
+    \begin{enumerate}
+        \item FACTUAL COMPLETENESS (non-negotiable): Your response MUST accurately cover all key concepts from the retrieved evidence. An incomplete or inaccurate answer is a failure regardless of style.
+        \item STYLE ADAPTATION (required, applied on top): Once factual content is secured, adapt the structure, formatting, and language to match the \{style\_label\} learning style using the requirements above.
+    \end{enumerate}
+
+    A response that is stylistically perfect but factually incomplete is a failure. A response that is factually complete but ignores style is also a failure. You must achieve both.
+\end{shadedquotation}
+
+\subsection{FSLSM Profile Agent Directives}
+For R1, the Profile Agent maps each FSLSM dimension to retrieval and generation instructions. The four dimension-specific generation directives are concatenated to build the R1 system prompt.
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|p{3cm}|p{5cm}|p{6cm}|}
+        \hline
+        \textbf{Dimension} & \textbf{Retrieval Directive} & \textbf{Generation Directive} \\
+        \hline
+        Active & interactive exercises, hands-on worked examples, collaborative activities & Provide the factual explanation first, then add a short hands-on exercise or ``Try it yourself'' prompt. \\
+        \hline
+        Reflective & analytical summaries, reflective case studies, observation-based explanations & Pose reflective questions and include a ``Think About It'' or reflection section. \\
+        \hline
+        Sensing & concrete facts, numerical examples, established procedures & Include specific numerical examples, practical use cases, and actual computations. \\
+        \hline
+        Intuitive & abstract concepts, theoretical frameworks, general principles & Lead with theory, explain why the concept matters, and connect to broader frameworks. \\
+        \hline
+        Visual & diagrams, charts, flow diagrams, spatial representations & Add an ASCII diagram, markdown table, or structured visual after the complete written explanation. \\
+        \hline
+        Verbal & written explanations, narrative prose, verbal definitions, textual analogies & Use detailed written explanation, analogies, and verbal walkthroughs. Avoid diagrams. \\
+        \hline
+        Sequential & step-by-step procedures, linear walkthroughs, sequential content & Use numbered steps and make each step contain a full factual explanation. \\
+        \hline
+        Global & conceptual overviews, big-picture summaries, holistic introductions & Start with a big-picture overview and connect each concept to the overall framework. \\
+        \hline
+    \end{tabular}
+    \caption{FSLSM profile directives used by the Experiment 2 Profile Agent}
+    \label{tab:fslsm-profile-directives}
+\end{table}
+
+\section{Student Agent Prompts}
+\subsection{Virtual Student Agent System Prompt}
+Each of the 80 virtual student agents (16 FSLSM profiles multiplied by 5 instances) is initialized with a profile-conditioned student persona. The prompt below is the generic template; profile labels and behavioral instructions are injected dynamically.
+\begin{shadedquotation}
+    \textit{[SYSTEM]} \\
+    You are a virtual undergraduate student studying Introductory Machine Learning. You have a specific learning style based on the Felder-Silverman Learning Style Model (FSLSM). You must consistently behave according to your assigned profile in ALL interactions.
+
+    FSLSM Vector:
+    \begin{itemize}
+        \item Processing: \{act\_ref\} (\{act\_ref\_label\})
+        \item Perception: \{sen\_int\} (\{sen\_int\_label\})
+        \item Input: \{vis\_ver\} (\{vis\_ver\_label\})
+        \item Understanding: \{seq\_glo\} (\{seq\_glo\_label\})
+    \end{itemize}
+
+    \textbf{Behavioral Instructions:} \\
+    \{processing\_behavior\} \\
+    \{perception\_behavior\} \\
+    \{input\_behavior\} \\
+    \{understanding\_behavior\}
+
+    \textbf{Interaction Rules:}
+    \begin{enumerate}
+        \item Always respond as the student, not as a tutor or assistant.
+        \item Ask questions, express confusion, and request clarification in ways consistent with your learning style.
+        \item If the tutor response matches your style, express engagement. If it mismatches your style, request adaptation or clarification.
+        \item Do not explicitly state your FSLSM scores or label yourself. Express preferences through natural behavior.
+        \item Maintain consistency across all turns in the conversation.
+    \end{enumerate}
+\end{shadedquotation}
+
+\subsection{ILS Questionnaire Answering Prompt}
+Experiment 1 uses this prompt to evaluate whether each virtual student agent recovers its assigned FSLSM profile when answering the 44-item Index of Learning Styles questionnaire.
+\begin{shadedquotation}
+    \textit{[SYSTEM]} \\
+    You are answering the Index of Learning Styles (ILS) questionnaire as the virtual student persona described below. Answer EACH question by selecting ONLY option (a) or (b). Base your answer strictly on your assigned learning style. Do not reference your FSLSM scores directly; instead, choose the option that your persona would naturally prefer.
+
+    \textbf{Your Persona:} \\
+    \{full\_persona\_description\}
+
+    \textbf{Instructions:}
+    \begin{itemize}
+        \item Respond with ONLY the letter (a) or (b) for each question.
+        \item Do not explain your reasoning.
+        \item Be consistent with your assigned learning-style profile.
+    \end{itemize}
+
+    \textbf{Question \{q\_number\}:} \\
+    \{question\_text\}
+    \begin{enumerate}
+        \item[a)] \{option\_a\}
+        \item[b)] \{option\_b\}
+    \end{enumerate}
+    Your answer:
+\end{shadedquotation}
+
+\subsection{Engagement Rating Prompt}
+Experiment 2 uses the validated virtual student agent to score how well a tutor response fits the assigned learning style.
+\begin{shadedquotation}
+    \textit{[SYSTEM]} \\
+    You are a student with the following learning style: \{profile\_label\}. \{behavioral\_instructions\}
+
+    \vspace{0.5em}
+    \textit{[USER]} \\
+    A tutor gave you this response:
+
+    \{tutor\_response\}
+
+    Rate how engaging and well-suited this response is for your learning style on a scale of 1--5.
+    \begin{itemize}
+        \item 1 = completely mismatched with your learning preferences
+        \item 2 = mostly mismatched
+        \item 3 = neutral / partially suited
+        \item 4 = well suited to your learning style
+        \item 5 = perfectly aligned with your learning preferences
+    \end{itemize}
+    Respond with ONLY a single integer (1--5).
+\end{shadedquotation}
+
+\section{Judgement Prompts (LLM-as-a-Judge)}
+\subsection{Response Relevance Judge (RR)}
+The RR judge is explicitly instructed to evaluate factual coverage rather than style. This avoids penalizing R1 responses for diagrams, steps, analogies, or other profile-conditioned formatting.
+\begin{shadedquotation}
+    \textit{[SYSTEM]} \\
+    You are an impartial educational evaluation judge specialising in factual accuracy assessment. Your task is to determine whether an AI tutor's response covers the key factual content required to correctly answer a student's question about Introductory Machine Learning. You evaluate CONTENT COVERAGE, not writing style or presentation format.
+
+    \vspace{0.5em}
+    \textit{[USER]} \\
+    Determine whether the tutor's response covers the factual content in the ground truth. The tutor may have adapted the presentation style for a specific learner profile; this is intentional and must NOT affect your score.
+
+    \textbf{Student Query:} \{student\_query\}
+
+    \textbf{Ground Truth Reference Answer:} \{gold\_answer\}
+
+    \textbf{Retrieved Source Chunks:} \{source\_chunks\}
+
+    \textbf{Tutor Response Under Evaluation:} \{response\}
+
+    Follow these steps:
+    \begin{enumerate}
+        \item Extract the key factual claims from the ground-truth reference answer.
+        \item Check whether each claim is present in the tutor response, even if phrased or formatted differently.
+        \item Identify any key claims that are absent or inaccurate.
+        \item Assign a score from 1 to 5 based on factual coverage completeness.
+    \end{enumerate}
+
+    Output the final line exactly as:
+
+    Response Relevance Rating: [[score]]
+\end{shadedquotation}
+
+\subsection{Pairwise Pedagogical Preference Judge}
+The pairwise judge compares R0 and R1 responses for the same student-question pair and chooses the response that is more pedagogically appropriate for the student's FSLSM profile.
+\begin{shadedquotation}
+    \textit{[SYSTEM]} \\
+    You are an expert educational evaluator assessing AI tutor responses for personalized learning. Your task is to determine which of two tutor responses is more pedagogically appropriate for a student with a specific learning style.
+
+    Evaluation criteria, in priority order:
+    \begin{enumerate}
+        \item Style alignment: does the response match the student's learning-style preferences?
+        \item Factual accuracy: is the content correct and grounded?
+        \item Clarity and pedagogical quality: is the explanation well structured and easy to follow for this learner?
+    \end{enumerate}
+
+    Important rules: base your judgement only on the student's stated learning-style profile; do not favor longer responses by default; do not let response order influence the decision.
+
+    Output format:
+
+    Verdict: [[A]] \textbar{} [[B]] \textbar{} [[Tie]]
+
+    Rationale: \{2--3 sentence explanation\}
+
+    \vspace{0.5em}
+    \textit{[USER]} \\
+    Student Learning Style Profile: \{profile\_label\}
+
+    Profile Details:
+    \begin{itemize}
+        \item Processing: \{processing\_dim\}
+        \item Perception: \{perception\_dim\}
+        \item Input: \{input\_dim\}
+        \item Understanding: \{understanding\_dim\}
+    \end{itemize}
+
+    Question: \{question\_text\}
+
+    [Response A] \{response\_a\} [End Response A]
+
+    [Response B] \{response\_b\} [End Response B]
+
+    Which response is more pedagogically appropriate for this student's learning style?
+\end{shadedquotation}
+
+\chapter{\uppercase{MCP Tools}}
+
+\section{Final FastMCP Tool Registry}
+
+\noindent Experiment 3 uses a real FastMCP runtime. The 15 instructional tools below are exposed through the MCP server and invoked through the MCP client boundary. Tool identifiers 1--15 are the stable thesis identifiers; the internal MCP names are protocol-safe lowercase identifiers. The Evaluation Logger is a system utility and is not included in the 15-tool selection competition.
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|p{0.5cm}|p{4.5cm}|p{3cm}|p{3.6cm}|p{3.2cm}|}
+        \hline
+        \textbf{\#} &
+        \textbf{Tool Name} &
+        \textbf{MCP Name} &
+        \textbf{Category} &
+        \textbf{FSLSM Mapping} \\
+        \hline
+        1 & Concept Explainer & concept\_explainer & Content Delivery & Sensing / Verbal \\
+        \hline
+        2 & Step-by-Step Derivator & step-by-step\_derivator & Content Delivery & Sequential / Active \\
+        \hline
+        3 & Worked Example Generator & worked\_example\_generator & Content Delivery & Sensing / Sequential \\
+        \hline
+        4 & Diagrammatic-Text Explainer & diagrammatic-text\_explainer & Content Delivery & Visual \\
+        \hline
+        5 & Analogical Reasoner & analogical\_reasoner & Content Delivery & Intuitive / Global \\
+        \hline
+        6 & Comparative Explainer & comparative\_explainer & Content Delivery & Sensing / Sequential \\
+        \hline
+        7 & Concept Map Generator & concept\_map\_generator & Content Delivery & Global \\
+        \hline
+        8 & PersonaRAG Adapter & personarag\_adapter & Personalisation & All dimensions \\
+        \hline
+        9 & FSLSM Styler & fslsm\_styler & Personalisation & All dimensions \\
+        \hline
+        10 & Think-Pair-Share Generator & think-pair-share\_generator & Personalisation & Reflective \\
+        \hline
+        11 & Interactive Exercise Generator & interactive\_exercise\_generator & Personalisation & Active \\
+        \hline
+        12 & Quiz Generator & quiz\_generator & Assessment & Active / Sensing \\
+        \hline
+        13 & Summarizer & summarizer & Assessment & Global / Reflective \\
+        \hline
+        14 & Content Retriever & content\_retriever & Retrieval & All dimensions \\
+        \hline
+        15 & Web Search Tool & web\_search\_tool & Retrieval & Intuitive \\
+        \hline
+    \end{tabular}
+    \caption{Final FastMCP instructional tool registry used in Experiment 3}
+    \label{tab:tool-registry}
+\end{table}
+
+\section{Structured MCP Tool Result Schema}
+Every MCP tool call returns a structured result object. This schema was used in Exp3 session logging and in the Streamlit replay/demo interface.
+\begin{shadedquotation}
+\{
+    "tool\_id": \{tool\_id\}, \\
+    "tool\_name": "\{tool\_name\}", \\
+    "tool\_output": "\{generated\_or\_retrieved\_content\}", \\
+    "evidence": [\{evidence\_objects\}], \\
+    "sources": [\{source\_ids\_or\_urls\}], \\
+    "latency\_ms": \{latency\_milliseconds\}, \\
+    "token\_cost\_estimate": \{estimated\_tokens\}, \\
+    "execution\_success": true
+\}
+\end{shadedquotation}
+
+\section{Exp3 Condition Semantics}
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|p{2cm}|p{4.2cm}|p{8cm}|}
+        \hline
+        \textbf{Condition} & \textbf{Label} & \textbf{Operational Definition} \\
+        \hline
+        S0 & MCP-baseline & The selector sees all 15 tool schemas at once. No FSLSM profile signal is provided during selection. The selected tool is then executed through the MCP client/server boundary. \\
+        \hline
+        S1a & RAG-MCP unconditioned & The selector retrieves top candidate tools from the raw student question and applies task-intent reranking. Only the selected MCP tool is exposed/executed. \\
+        \hline
+        S1b & RAG-MCP + FSLSM & The selector uses the same task-preserving reranking as S1a plus a small FSLSM profile signal. Explicit user task intent takes priority over profile preference. \\
+        \hline
+    \end{tabular}
+    \caption{Final Experiment 3 condition definitions}
+    \label{tab:exp3-conditions}
+\end{table}
+
+\chapter{\uppercase{Dataset}}
+\section{Experiment 2 D2L-Grounded Question Dataset}
+Experiment 2 uses a D2L-grounded tutoring dataset derived from the Dive into Deep Learning textbook \citep{zhang2021dive}. Each question includes gold evidence metadata used for retrieval evaluation. The 5-chunk rule applies to this Exp2-style multi-hop dataset, where gold evidence includes both essential and supporting chunks.
+
+\subsection{Experiment 2 Example Record}
+\begin{shadedquotation}
+\{
+    "question\_id": "MH\_001", \\
+    "question": "How do RNNs, attention mechanisms, and scoring functions work together in natural language processing tasks?", \\
+    "gold\_answer": "\{reference answer synthesized from D2L chunks\}", \\
+    "answer\_type": "synthesize\_workflow", \\
+    "difficulty": "hard", \\
+    "gold\_chunk\_ids": ["\{chunk\_1\}", "\{chunk\_2\}", "\{chunk\_3\}", "\{chunk\_4\}", "\{chunk\_5\}"], \\
+    "essential\_chunk\_ids": ["\{chunk\_1\}", "\{chunk\_2\}", "\{chunk\_3\}"], \\
+    "supporting\_chunk\_ids": ["\{chunk\_4\}", "\{chunk\_5\}"]
+\}
+\end{shadedquotation}
+
+\section{Experiment 3 Core Tool-Selection Dataset}
+Experiment 3 uses a separate Exp3-Core benchmark designed specifically for MCP tool-selection evaluation. It is not inherited from the Exp2 question distribution. The benchmark contains 60 questions, with 15 tools multiplied by 4 questions per tool, and is evaluated across 16 canonical FSLSM profiles and 3 conditions for 2,880 full-run sessions.
+
+Exp3-Core separates public question data from hidden answer-key labels:
+\begin{itemize}
+    \item \texttt{exp3\_core\_questions.json}: question text, family, grounding mode, source text, fixtures, and manual review status.
+    \item \texttt{exp3\_core\_answer\_key.json}: \texttt{target\_tool\_id}, \texttt{profile\_target\_tool\_ids}, and \texttt{profile\_eval\_eligible}.
+\end{itemize}
+
+\subsection{Exp3-Core Public Question Example}
+\begin{shadedquotation}
+\{
+    "question\_id": "EXP3C\_057", \\
+    "question": "What are the latest transformer architecture developments beyond the material covered in D2L?", \\
+    "question\_family": "external\_search", \\
+    "grounding\_mode": "search", \\
+    "gold\_answer\_brief": "Use web search to identify recent transformer architecture developments outside the D2L textbook.", \\
+    "essential\_chunk\_ids": [], \\
+    "support\_chunk\_ids": [], \\
+    "source\_text": "", \\
+    "manual\_review\_status": "reviewed"
+\}
+\end{shadedquotation}
+
+\subsection{Exp3-Core Answer-Key Example}
+\begin{shadedquotation}
+\{
+    "question\_id": "EXP3C\_057", \\
+    "target\_tool\_id": 15, \\
+    "profile\_eval\_eligible": false, \\
+    "profile\_target\_tool\_ids": \{ \\
+        "P01": 15, \\
+        "P02": 15, \\
+        "...": 15, \\
+        "P16": 15 \\
+    \}
+\}
+\end{shadedquotation}
+
+\resumetocwriting
+
+% \begin{figure}[h]
+% \caption{Doge.}
+% \centerline{\includegraphics[width=3in]{figures/doge.jpeg}}
+% \label{fig:doge2}
+% \small{\textit{Note.} Notice the different styling of figures in the appendix...}
+% \end{figure}

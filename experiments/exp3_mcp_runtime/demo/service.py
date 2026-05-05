@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import json
 import os
+import time
 from functools import lru_cache
 from pathlib import Path
 from typing import Any
@@ -23,6 +24,7 @@ from experiments.exp3_mcp_runtime.config import (
     TOOL_INDEX_PATH,
     TOOL_META_PATH,
 )
+from experiments.exp3_mcp_runtime.core.profile_decoder import profile_to_label
 from experiments.exp3_mcp_runtime.core.profile_sets import load_canonical_profiles
 from experiments.exp3_mcp_runtime.core.session_runner import Exp3SessionRunner
 from experiments.exp3_mcp_runtime.server.app import create_mcp_server
@@ -33,12 +35,63 @@ from experiments.exp3_mcp_runtime.runtime_types import Condition
 FINAL_EXP3_RUN_ID = "exp3_core_real_20260503_1"
 FINAL_EXP3_RUN_DIR = RUNS_DIR / FINAL_EXP3_RUN_ID
 FINAL_EXP3_METRICS_PATH = FINAL_EXP3_RUN_DIR / METRICS_JSON_FILENAME
+FINAL_EXP3_REPLAY_PATH = FINAL_EXP3_RUN_DIR / "exp2_r2_passive_log.jsonl"
 
 EXP1_METRICS_DIR = REPO_ROOT / "results" / "exp1" / "metrics"
 EXP1_FIGURES_DIR = REPO_ROOT / "experiments" / "exp1_agent_fidelity" / "results" / "exp1" / "final_defense_figures"
 EXP2_RESULTS_DIR = REPO_ROOT / "experiments" / "exp2_tutor_personalization" / "results"
 EXP2_FIGURES_DIR = EXP2_RESULTS_DIR / "final_defense_figures"
 EXP3_FIGURES_DIR = FINAL_EXP3_RUN_DIR / "final_defense_figures"
+REPLAY_PATHS = (FINAL_EXP3_REPLAY_PATH, DEMO_REPLAY_PATH, LEGACY_REPLAY_PATH)
+
+CHITCHAT_PATTERNS = {
+    "hi",
+    "hello",
+    "hey",
+    "good morning",
+    "good afternoon",
+    "good evening",
+    "thanks",
+    "thank you",
+    "who are you",
+}
+
+COURSE_SCOPE_KEYWORDS = {
+    "activation",
+    "adam",
+    "attention",
+    "backprop",
+    "batch normalization",
+    "classification",
+    "cnn",
+    "convolution",
+    "d2l",
+    "deep learning",
+    "dropout",
+    "embedding",
+    "gradient",
+    "gru",
+    "learning rate",
+    "linear regression",
+    "logistic regression",
+    "loss",
+    "machine learning",
+    "ml",
+    "model",
+    "mxnet",
+    "neural",
+    "optimizer",
+    "overfitting",
+    "pytorch",
+    "regularization",
+    "resnet",
+    "rnn",
+    "self-attention",
+    "softmax",
+    "tensorflow",
+    "transformer",
+    "vgg",
+}
 
 
 @lru_cache(maxsize=1)
@@ -93,13 +146,83 @@ def infer_question_type(question: str) -> str:
     return "explain_relationship"
 
 
+def _normalize_question(question: str) -> str:
+    return " ".join(question.lower().strip().split())
+
+
+def is_chitchat_question(question: str) -> bool:
+    normalized = _normalize_question(question).strip("?!.,")
+    return normalized in CHITCHAT_PATTERNS or len(normalized.split()) <= 2 and normalized in CHITCHAT_PATTERNS
+
+
+def should_use_corpus_for_custom_question(question: str) -> bool:
+    normalized = _normalize_question(question)
+    if is_chitchat_question(question):
+        return False
+    if "latest" in normalized or "recent" in normalized or "current" in normalized:
+        return False
+    return any(keyword in normalized for keyword in COURSE_SCOPE_KEYWORDS)
+
+
+def build_out_of_scope_demo_response(
+    question: str,
+    profile: dict[str, Any],
+    condition: str,
+    reason: str,
+) -> dict[str, Any]:
+    started_at = time.perf_counter()
+    profile_label = profile_to_label(profile)
+    message = (
+        "This demo is scoped to D2L machine-learning tutoring and Exp3 tool selection. "
+        "I skipped corpus retrieval because the custom question does not appear to need "
+        "D2L evidence. Ask a machine-learning or D2L-related question to run the MCP "
+        "tool pipeline."
+    )
+    tool_result = {
+        "tool_id": 0,
+        "tool_name": "Demo Scope Guard",
+        "tool_output": message,
+        "evidence": [],
+        "sources": [],
+        "latency_ms": (time.perf_counter() - started_at) * 1000,
+        "token_cost_estimate": 0,
+        "execution_success": True,
+        "metadata": {"reason": reason, "profile_used_post_selection": False},
+    }
+    return {
+        "session_id": f"demo_live:out_of_scope:{profile_label}",
+        "benchmark": "demo_live",
+        "condition": condition,
+        "question_id": "demo_live",
+        "question_type": "out_of_scope",
+        "query": question,
+        "profile": profile,
+        "profile_label": profile_label,
+        "selected_tool_id": 0,
+        "selected_tool_name": "Demo Scope Guard",
+        "task_optimal_tool_id": 0,
+        "task_tsa_hit": False,
+        "profile_optimal_tool_id": 0,
+        "profile_tsa_hit": False,
+        "profile_eval_eligible": False,
+        "optimal_tool_id": 0,
+        "tsa_hit": False,
+        "pts_delta": 0.0,
+        "input_tokens": 0,
+        "latency_ms": tool_result["latency_ms"],
+        "execution_success": True,
+        "retrieved_evidence": [],
+        "final_response": message,
+        "tool_result": tool_result,
+    }
+
+
 def run_demo_session(
     question: str,
     profile: dict[str, Any],
     condition: str,
     question_record: dict[str, Any] | None = None,
 ) -> dict[str, Any]:
-    runner = get_runtime()
     if question_record:
         question_id = question_record["question_id"]
         question_type = question_record["question_family"]
@@ -110,9 +233,17 @@ def run_demo_session(
         question_id = "demo_live"
         question_type = infer_question_type(question)
         query = question
-        corpus_backed = True
+        corpus_backed = should_use_corpus_for_custom_question(question)
         benchmark = "demo_live"
+        if not corpus_backed and question_type != "search":
+            return build_out_of_scope_demo_response(
+                question=query,
+                profile=profile,
+                condition=condition,
+                reason="custom_question_outside_course_scope",
+            )
 
+    runner = get_runtime()
     record = runner.run_session(
         question_id=question_id,
         question_type=question_type,
@@ -128,7 +259,7 @@ def run_demo_session(
 
 
 def load_replays(limit: int = 25) -> list[dict[str, Any]]:
-    for path in (DEMO_REPLAY_PATH, LEGACY_REPLAY_PATH):
+    for path in REPLAY_PATHS:
         path = Path(path)
         if path.exists():
             rows = []
@@ -284,7 +415,7 @@ def get_demo_status() -> dict[str, Any]:
     except Exception as exc:
         status["status_errors"].append(f"profiles: {exc}")
 
-    status["replay_count"] = _count_jsonl_rows(DEMO_REPLAY_PATH, limit=5000)
+    status["replay_count"] = sum(_count_jsonl_rows(path, limit=5000) for path in REPLAY_PATHS[:-1])
     status["legacy_replay_count"] = _count_jsonl_rows(LEGACY_REPLAY_PATH, limit=5000)
 
     try:

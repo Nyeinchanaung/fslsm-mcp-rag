@@ -50,7 +50,7 @@ The generic tutor condition uses D2L-grounded retrieval and generation without F
     \begin{enumerate}
         \item EVIDENCE-GROUNDED (mandatory): Your entire answer MUST be based solely on the Evidence blocks above. Do NOT introduce any information, examples, or explanations from outside the provided evidence. Every claim must be traceable to a specific Evidence block.
         \item FACTUALLY COMPLETE: Cover all key concepts present in the evidence. Do not omit key concepts in favour of stylistic formatting.
-        \item STYLE-ADAPTED (applied on top): Once factual content from the evidence is secured, adapt the presentation to your assigned learning style.
+        \item CLEAR PRESENTATION: Structure the answer clearly and coherently, but do not apply any learner-specific style adaptation.
     \end{enumerate}
 \end{shadedquotation}
 
@@ -108,6 +108,30 @@ For R1, the Profile Agent maps each FSLSM dimension to retrieval and generation 
     \caption{FSLSM profile directives used by the Experiment 2 Profile Agent}
     \label{tab:fslsm-profile-directives}
 \end{table}
+
+\subsection{Experiment 2 Hybrid Reranker Formula}
+The Experiment 2 retrieval pipeline uses a hybrid reranking step only in the personalized R1 condition. After hybrid BM25+FAISS retrieval and reciprocal rank fusion (RRF), each candidate chunk $c_i$ receives a reranking score:
+
+\begin{equation}
+\rho_i = \alpha \cdot \hat{s}_{\mathrm{sem}}(c_i) + (1 - \alpha) \cdot s_{\mathrm{style}}(c_i)
+\label{eq:exp2-hybrid-reranker}
+\end{equation}
+
+where $\alpha = 0.75$, so semantic relevance remains the dominant signal. The semantic term $\hat{s}_{\mathrm{sem}}(c_i)$ is not a fresh cosine similarity computed against the original query. Instead, it is the candidate's fused RRF retrieval score, normalized to the interval $[0,1]$ across the current candidate set:
+
+\begin{equation}
+\hat{s}_{\mathrm{sem}}(c_i) = \frac{s_{\mathrm{rrf}}(c_i) - s_{\min}}{s_{\max} - s_{\min}}
+\label{eq:exp2-semantic-normalization}
+\end{equation}
+
+The style term is a heuristic content-tag alignment score derived from the learner profile's reranking preferences:
+
+\begin{equation}
+s_{\mathrm{style}}(c_i) = \frac{\left(h_i^{+} - h_i^{-}\right) + M}{2M}
+\label{eq:exp2-style-score}
+\end{equation}
+
+where $h_i^{+}$ is the number of matched bias tags, $h_i^{-}$ is the number of matched deprioritized tags, and $M$ is the number of active bias tags for the current profile. This maps the net tag-alignment signal to $[0,1]$. In implementation terms, the reranker therefore combines normalized retrieval relevance with profile-conditioned heuristic tag alignment, rather than combining two embedding cosine similarities.
 
 \section{Student Agent Prompts}
 \subsection{Virtual Student Agent System Prompt}

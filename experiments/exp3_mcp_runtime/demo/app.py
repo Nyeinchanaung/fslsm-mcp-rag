@@ -297,13 +297,39 @@ def render_replay_demo() -> None:
     selected = st.selectbox("Replay Session", range(len(replays)), format_func=lambda idx: labels[idx])
     row = replays[selected]
     st.subheader("Replay Summary")
-    c1, c2, c3 = st.columns(3)
+    c1, c2, c3, c4 = st.columns(4)
     c1.metric("Condition", row.get("condition", row.get("mode", "R2")))
     c2.metric("Selected Tool", str(row.get("selected_tool_id", "n/a")))
-    c3.metric("Execution", "Yes" if row.get("execution_success", False) else "No")
+    c3.metric("Task-TSA", "Hit" if row.get("task_tsa_hit", row.get("tsa_hit", False)) else "Miss")
+    c4.metric("Execution", "Yes" if row.get("execution_success", False) else "No")
+
+    st.subheader("Evaluation")
+    e1, e2, e3, e4 = st.columns(4)
+    e1.metric("Task Optimal Tool", str(row.get("task_optimal_tool_id", row.get("optimal_tool_id", "n/a"))))
+    e2.metric("Profile Optimal Tool", str(row.get("profile_optimal_tool_id", "n/a")))
+    e3.metric("Profile-TSA", "Hit" if row.get("profile_tsa_hit", False) else "Miss")
+    e4.metric("PTS Delta", f"{row.get('pts_delta', 0):.1f}%")
+
+    st.write(f"Selected tool name: **{row.get('selected_tool_name', 'n/a')}**")
+    st.write(f"Profile eligible: `{row.get('profile_eval_eligible', False)}`")
+    st.write(f"Latency: `{row.get('latency_ms', 0):.1f} ms`")
+
+    if row.get("query"):
+        st.subheader("Question")
+        st.write(row["query"])
+
     if row.get("final_response"):
         st.subheader("Final Response")
         st.write(row["final_response"])
+
+    evidence = row.get("retrieved_evidence") or []
+    if evidence:
+        st.subheader("Retrieved Evidence")
+        for idx, item in enumerate(evidence, 1):
+            label = item.get("chunk_id", item.get("source", "source"))
+            with st.expander(f"Evidence {idx}: {label}"):
+                st.write(item.get("text", item.get("content", "")))
+
     st.subheader("Replay JSON")
     st.json(row)
 

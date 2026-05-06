@@ -8,6 +8,7 @@ from pathlib import Path
 from typing import Any
 
 import pandas as pd
+import yaml
 
 from experiments.exp3_mcp_runtime.client.runtime_client import MCPRuntimeClient
 from experiments.exp3_mcp_runtime.config import (
@@ -30,6 +31,9 @@ from experiments.exp3_mcp_runtime.core.session_runner import Exp3SessionRunner
 from experiments.exp3_mcp_runtime.server.app import create_mcp_server
 from experiments.exp3_mcp_runtime.tools.tool_index import ToolIndex
 from experiments.exp3_mcp_runtime.runtime_types import Condition
+from src.agents.prompts.ils_answering import build_ils_question_prompt
+from src.agents.prompts.student_system import build_student_system_prompt
+from src.utils.helpers import extract_ab_choice
 
 
 FINAL_EXP3_RUN_ID = "exp3_core_real_20260503_1"
@@ -38,7 +42,10 @@ FINAL_EXP3_METRICS_PATH = FINAL_EXP3_RUN_DIR / METRICS_JSON_FILENAME
 FINAL_EXP3_REPLAY_PATH = FINAL_EXP3_RUN_DIR / "exp2_r2_passive_log.jsonl"
 
 EXP1_METRICS_DIR = REPO_ROOT / "results" / "exp1" / "metrics"
+EXP1_CONFIG_PATH = REPO_ROOT / "experiments" / "exp1_agent_fidelity" / "config.yaml"
+EXP1_RAW_DIR = REPO_ROOT / "results" / "exp1" / "raw_responses"
 EXP1_FIGURES_DIR = REPO_ROOT / "experiments" / "exp1_agent_fidelity" / "results" / "exp1" / "final_defense_figures"
+EXP2_QUESTIONS_PATH = REPO_ROOT / "data" / "exp2" / "filtered_questions.json"
 EXP2_RESULTS_DIR = REPO_ROOT / "experiments" / "exp2_tutor_personalization" / "results"
 EXP2_FIGURES_DIR = EXP2_RESULTS_DIR / "final_defense_figures"
 EXP3_FIGURES_DIR = FINAL_EXP3_RUN_DIR / "final_defense_figures"
@@ -91,6 +98,11 @@ COURSE_SCOPE_KEYWORDS = {
     "tensorflow",
     "transformer",
     "vgg",
+}
+
+API_MODEL_PREFIXES = ("gpt-", "claude-")
+EXP1_DISABLED_LIVE_MODELS = {
+    "gemma3:12b": "Disabled for live demo on this Mac because it can hang the local runtime.",
 }
 
 
@@ -258,6 +270,338 @@ def run_demo_session(
     return record.to_dict()
 
 
+@lru_cache(maxsize=1)
+def load_exp1_config() -> dict[str, Any]:
+    if not EXP1_CONFIG_PATH.exists():
+        return {}
+    return yaml.safe_load(EXP1_CONFIG_PATH.read_text()) or {}
+
+
+def load_exp1_model_options() -> list[dict[str, Any]]:
+    models = load_exp1_config().get("models", [])
+    options = []
+    for row in models:
+        name = row["name"]
+        is_api = name.startswith(API_MODEL_PREFIXES)
+        options.append({
+            "name": name,
+            "temperature": row.get("temperature", 0.3),
+            "litellm_model": name,
+            "source": "API" if is_api else "Local",
+            "disabled": name in EXP1_DISABLED_LIVE_MODELS,
+            "disabled_reason": EXP1_DISABLED_LIVE_MODELS.get(name, ""),
+        })
+    return options
+
+
+@lru_cache(maxsize=1)
+def load_ils_questions() -> list[dict[str, Any]]:
+    path = REPO_ROOT / "data" / "fslsm" / "ils_questionnaire.json"
+    if not path.exists():
+        return []
+    return json.loads(path.read_text())
+
+
+def get_exp1_mini_questions(size: int = 4) -> list[dict[str, Any]]:
+    questions = load_ils_questions()
+    if size == 44:
+        return questions
+    if size not in (4, 8, 10):
+        size = 4
+    per_dim = 1 if size == 4 else 2
+    selected = []
+    counts = {"act_ref": 0, "sen_int": 0, "vis_ver": 0, "seq_glo": 0}
+    for question in questions:
+        dim = question["dimension"]
+        if counts[dim] < per_dim:
+            selected.append(question)
+            counts[dim] += 1
+        if len(selected) == size:
+            break
+    if size == 10:
+        selected_ids = {question["q_num"] for question in selected}
+        for question in questions:
+            if question["q_num"] not in selected_ids:
+                selected.append(question)
+                selected_ids.add(question["q_num"])
+            if len(selected) == size:
+                break
+    return selected
+
+
+@lru_cache(maxsize=1)
+def load_fslsm_profiles_by_label() -> dict[str, dict[str, Any]]:
+    path = REPO_ROOT / "data" / "fslsm" / "profiles.json"
+    if not path.exists():
+        return {}
+    profiles = json.loads(path.read_text())
+    return {
+        profile["label"]: profile
+        for profile in profiles
+        if profile.get("dimensions", {}).get("act_ref") != 0
+    }
+
+
+def _profile_by_label(profile_label: str) -> dict[str, Any]:
+    profile = load_fslsm_profiles_by_label().get(profile_label)
+    if profile:
+        return profile
+    raise ValueError(f"Unknown profile label: {profile_label}")
+
+
+def _detected_from_scores(scores: dict[str, int]) -> dict[str, int]:
+    return {
+        dim: 1 if score > 0 else (-1 if score < 0 else 0)
+        for dim, score in scores.items()
+    }
+
+
+def _pole_label(dim: str, value: int) -> str:
+    labels = {
+        "act_ref": {-1: "Active", 1: "Reflective", 0: "Tie"},
+        "sen_int": {-1: "Sensing", 1: "Intuitive", 0: "Tie"},
+        "vis_ver": {-1: "Visual", 1: "Verbal", 0: "Tie"},
+        "seq_glo": {-1: "Sequential", 1: "Global", 0: "Tie"},
+    }
+    return labels.get(dim, {}).get(value, str(value))
+
+
+def _expected_answer_for_profile(question: dict[str, Any], assigned_pole: int) -> str:
+    if question["option_a"]["pole"] == assigned_pole:
+        return "a"
+    if question["option_b"]["pole"] == assigned_pole:
+        return "b"
+    return ""
+
+
+def format_exp1_questions_for_profile(
+    profile_label: str,
+    question_count: int = 4,
+) -> list[dict[str, Any]]:
+    profile = _profile_by_label(profile_label)
+    assigned = profile["dimensions"]
+    rows = []
+    for question in get_exp1_mini_questions(question_count):
+        dim = question["dimension"]
+        expected_pole = assigned[dim]
+        expected_answer = _expected_answer_for_profile(question, expected_pole)
+        rows.append({
+            "q_num": question["q_num"],
+            "dimension": dim,
+            "question": question["text"],
+            "option_a": question["option_a"]["text"],
+            "option_b": question["option_b"]["text"],
+            "expected_answer": expected_answer,
+            "expected_pole": expected_pole,
+            "expected_label": _pole_label(dim, expected_pole),
+        })
+    return rows
+
+
+def run_exp1_mini_demo(
+    model_name: str,
+    profile_label: str,
+    knowledge_level: str | None,
+    question_count: int = 4,
+    client: Any | None = None,
+) -> dict[str, Any]:
+    if client is None:
+        from src.utils.llm_client import LLMClient
+        client = LLMClient(model_name, temperature=0.3)
+
+    profile = _profile_by_label(profile_label)
+    questions = get_exp1_mini_questions(question_count)
+    system_prompt = build_student_system_prompt(profile, knowledge_level=knowledge_level)
+    raw_scores = {dim: 0 for dim in ("act_ref", "sen_int", "vis_ver", "seq_glo")}
+    rows = []
+    started_at = time.perf_counter()
+    total_cost = 0.0
+    total_tokens = 0
+
+    for question in questions:
+        dim = question["dimension"]
+        expected_pole = profile["dimensions"][dim]
+        expected_answer = _expected_answer_for_profile(question, expected_pole)
+        prompt = build_ils_question_prompt(question)
+        response = client.chat(system=system_prompt, user=prompt, max_tokens=10)
+        total_cost += response.cost
+        total_tokens += response.total_tokens
+        answer = extract_ab_choice(response.content)
+        pole = None
+        if answer in ("a", "b"):
+            pole = question[f"option_{answer}"]["pole"]
+            raw_scores[dim] += pole
+        rows.append({
+            "q_num": question["q_num"],
+            "dimension": dim,
+            "question": question["text"],
+            "option_a": question["option_a"]["text"],
+            "option_b": question["option_b"]["text"],
+            "expected_answer": expected_answer,
+            "expected_pole": expected_pole,
+            "expected_label": _pole_label(dim, expected_pole),
+            "answer": answer or "unparsed",
+            "detected_answer": answer or "unparsed",
+            "detected_pole": pole,
+            "detected_label": _pole_label(dim, pole or 0),
+            "match": pole == expected_pole,
+            "raw_text": response.content.strip(),
+            "selected_pole": pole,
+            "selected_label": _pole_label(dim, pole or 0),
+        })
+
+    assigned = dict(profile["dimensions"])
+    detected = _detected_from_scores(raw_scores)
+    represented_dims = sorted({question["dimension"] for question in questions})
+    matches = [
+        dim for dim in represented_dims
+        if detected[dim] != 0 and detected[dim] == assigned[dim]
+    ]
+    mini_pra = len(matches) / len(represented_dims) if represented_dims else 0.0
+    question_matches = sum(1 for row in rows if row["match"])
+    question_accuracy = question_matches / len(rows) if rows else 0.0
+
+    return {
+        "model": model_name,
+        "litellm_model": client.litellm_model,
+        "source": "Local" if client.litellm_model.startswith("ollama/") else "API",
+        "profile_label": profile_label,
+        "knowledge_level": knowledge_level or "general",
+        "question_count": len(questions),
+        "assigned": assigned,
+        "detected": detected,
+        "raw_scores": raw_scores,
+        "mini_pra": mini_pra,
+        "dimension_matches": len(matches),
+        "dimension_count": len(represented_dims),
+        "question_accuracy": question_accuracy,
+        "question_matches": question_matches,
+        "rows": rows,
+        "latency_ms": (time.perf_counter() - started_at) * 1000,
+        "token_count": total_tokens,
+        "cost_usd": total_cost,
+        "note": "Mini-ILS is a dashboard demonstration, not the full 44-item Exp1 protocol.",
+    }
+
+
+def list_exp1_raw_artifacts(limit: int = 5000) -> list[dict[str, Any]]:
+    if not EXP1_RAW_DIR.exists():
+        return []
+    rows = []
+    for path in sorted(EXP1_RAW_DIR.glob("*.json"))[:limit]:
+        stem = path.stem
+        if "_trial" not in stem:
+            continue
+        agent_uid, trial = stem.rsplit("_trial", 1)
+        rows.append({
+            "label": f"{agent_uid} | trial {trial}",
+            "agent_uid": agent_uid,
+            "trial": trial,
+            "path": str(path),
+        })
+    return rows
+
+
+def load_exp1_raw_artifact(path: str) -> dict[str, Any]:
+    raw_path = Path(path)
+    if not raw_path.exists() or raw_path.parent != EXP1_RAW_DIR:
+        raise FileNotFoundError(f"Exp1 raw artifact not found: {path}")
+    payload = json.loads(raw_path.read_text())
+    scores = payload.get("dim_scores", {})
+    detected = _detected_from_scores(scores)
+    return {
+        "path": str(raw_path),
+        "agent_uid": payload.get("agent_uid", raw_path.stem),
+        "model": payload.get("model", ""),
+        "trial": payload.get("trial", ""),
+        "knowledge_level": payload.get("knowledge_level") or "general",
+        "raw_scores": scores,
+        "detected": detected,
+        "raw": payload.get("raw", []),
+        "total_cost_usd": payload.get("total_cost_usd", 0.0),
+    }
+
+
+@lru_cache(maxsize=1)
+def load_exp2_questions() -> list[dict[str, Any]]:
+    if EXP2_QUESTIONS_PATH.exists():
+        return json.loads(EXP2_QUESTIONS_PATH.read_text())
+    return []
+
+
+@lru_cache(maxsize=1)
+def get_exp2_demo_tutor() -> TutorAgent:
+    from src.tutor.profile_agent import ProfileAgent
+    from src.tutor.retrieval_agent import RetrievalAgent
+    from src.tutor.tutor_agent import TutorAgent
+    from src.utils.llm_client import LLMClient
+
+    profile_agent = ProfileAgent(profiles_path=REPO_ROOT / "data" / "fslsm" / "profiles.json")
+    decompose_client = LLMClient("gpt-4.1-mini", temperature=0.0)
+    retrieval_agent = RetrievalAgent(decompose_client=decompose_client)
+    tutor_client = LLMClient("gpt-4.1-mini", temperature=0.3)
+    student_client = LLMClient("gpt-4.1-mini", temperature=0.0)
+    return TutorAgent(
+        tutor_client=tutor_client,
+        student_client=student_client,
+        profile_agent=profile_agent,
+        retrieval_agent=retrieval_agent,
+    )
+
+
+def _normalize_exp2_result(result: dict[str, Any]) -> dict[str, Any]:
+    chunks = result.get("retrieved_chunks", [])
+    return {
+        "mode": result.get("mode"),
+        "response": result.get("response", ""),
+        "system_prompt_used": result.get("system_prompt_used", ""),
+        "retrieved_chunk_ids": result.get("retrieved_chunk_ids", []),
+        "retrieved_chunks": chunks,
+        "reformulated_query": result.get("reformulated_query", ""),
+        "engagement_score": result.get("engagement_score"),
+        "latency_ms": result.get("latency_ms", 0),
+        "token_count": result.get("token_count", 0),
+        "tutor_cost": result.get("tutor_cost", 0.0),
+    }
+
+
+def run_exp2_pair_demo(
+    question: str,
+    profile: dict[str, Any],
+    question_record: dict[str, Any] | None = None,
+) -> dict[str, Any]:
+    tutor = get_exp2_demo_tutor()
+    profile_agent = tutor.profile_agent
+    plan = profile_agent.generate_reasoning_plan(profile)
+    base_session = {
+        "agent_id": "demo_exp2",
+        "profile_label": profile_to_label(profile),
+        "fslsm_vector": profile,
+        "question_id": question_record.get("question_id", "custom") if question_record else "custom",
+        "question": question_record.get("question", question) if question_record else question,
+        "gold_chunk_ids": question_record.get("gold_chunk_ids", []) if question_record else [],
+        "essential_chunk_ids": question_record.get("essential_chunk_ids", []) if question_record else [],
+        "gold_answer": question_record.get("gold_answer", "") if question_record else "",
+    }
+    r0 = tutor.run_session({**base_session, "mode": "R0"})
+    r1 = tutor.run_session({**base_session, "mode": "R1"})
+    r0_ids = set(r0.get("retrieved_chunk_ids", []))
+    r1_ids = set(r1.get("retrieved_chunk_ids", []))
+    return {
+        "question": base_session["question"],
+        "question_id": base_session["question_id"],
+        "profile_label": base_session["profile_label"],
+        "fslsm_vector": profile,
+        "reasoning_plan": plan,
+        "r0": _normalize_exp2_result(r0),
+        "r1": _normalize_exp2_result(r1),
+        "retrieval_overlap": len(r0_ids & r1_ids),
+        "retrieval_union": len(r0_ids | r1_ids),
+        "gold_chunk_ids": base_session["gold_chunk_ids"],
+        "essential_chunk_ids": base_session["essential_chunk_ids"],
+    }
+
+
 def load_replays(limit: int = 25) -> list[dict[str, Any]]:
     for path in REPLAY_PATHS:
         path = Path(path)
@@ -397,6 +741,10 @@ def get_demo_status() -> dict[str, Any]:
         "core_dataset_available": CORE_QUESTIONS_PATH.exists(),
         "chunks_available": CHUNKS_PATH.exists(),
         "tool_index_available": TOOL_INDEX_PATH.exists() and TOOL_META_PATH.exists(),
+        "exp1_config_available": EXP1_CONFIG_PATH.exists(),
+        "exp1_raw_artifacts": len(list(EXP1_RAW_DIR.glob("*.json"))) if EXP1_RAW_DIR.exists() else 0,
+        "exp2_questions_available": EXP2_QUESTIONS_PATH.exists(),
+        "exp2_question_count": len(load_exp2_questions()),
         "openai_key_loaded": bool(os.environ.get("OPENAI_API_KEY")),
         "tavily_key_loaded": bool(os.environ.get("TAVILY_API_KEY")),
         "metrics_available": FINAL_EXP3_METRICS_PATH.exists() or METRICS_JSON_PATH.exists(),

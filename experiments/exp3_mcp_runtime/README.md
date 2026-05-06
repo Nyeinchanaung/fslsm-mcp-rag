@@ -121,7 +121,7 @@ Timestamped thesis runs are written under `results/runs/<run_id>/` and do not ap
 ### Run Streamlit demo
 
 ```bash
-./venv/bin/streamlit run experiments/exp3_mcp_runtime/demo/app.py
+./venv/bin/streamlit run demo/app.py
 ```
 
 ## Notes

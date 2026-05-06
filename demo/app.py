@@ -6,18 +6,27 @@ import sys
 import pandas as pd
 import streamlit as st
 
-sys.path.insert(0, str(Path(__file__).resolve().parents[3]))
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
-from experiments.exp3_mcp_runtime.demo.service import (
+from demo.service import (
+    get_exp1_mini_questions,
     get_demo_status,
+    format_exp1_questions_for_profile,
+    list_exp1_raw_artifacts,
     load_core_answer_key,
     load_core_questions,
+    load_exp1_model_options,
+    load_exp1_raw_artifact,
     load_exp1_summary,
     load_exp2_summary,
+    load_exp2_questions,
     load_exp3_summary,
+    load_fslsm_profiles_by_label,
     load_metrics,
     load_profiles,
     load_replays,
+    run_exp1_mini_demo,
+    run_exp2_pair_demo,
     run_demo_session,
 )
 
@@ -32,6 +41,32 @@ def render_check(label: str, ok: bool, detail: str = "") -> None:
     prefix = "OK" if ok else "MISSING"
     suffix = f" - {detail}" if detail else ""
     st.write(f"{prefix} {label}{suffix}")
+
+
+def render_runtime_checklist(status: dict) -> None:
+    st.divider()
+    st.subheader("Runtime Checklist")
+    render_check("Profiles", status["profiles_loaded"], f"{status['profile_count']} loaded")
+    render_check("Exp3-Core dataset", status["core_dataset_available"])
+    render_check("D2L chunks", status["chunks_available"])
+    render_check("Tool index", status["tool_index_available"])
+    render_check("Exp1 config", status["exp1_config_available"])
+    render_check("Exp1 raw artifacts", status["exp1_raw_artifacts"] > 0, f"{status['exp1_raw_artifacts']} files")
+    render_check("Exp2 questions", status["exp2_questions_available"], f"{status['exp2_question_count']} loaded")
+    render_check("FastMCP runtime", status["runtime_ready"], f"{status['registered_tool_count']} tools")
+    render_check("FastMCP backend", status["fastmcp_active"])
+    render_check("OPENAI_API_KEY", status["openai_key_loaded"])
+    render_check("TAVILY_API_KEY", status["tavily_key_loaded"])
+    render_check("Metrics artifact", status["metrics_available"])
+    render_check(
+        "Replay sessions",
+        (status["replay_count"] + status["legacy_replay_count"]) > 0,
+        f"{status['replay_count']} current / {status['legacy_replay_count']} legacy",
+    )
+    if status["status_errors"]:
+        st.warning("Startup issues detected")
+        for err in status["status_errors"]:
+            st.code(err)
 
 
 def render_figure_grid(paths: list[str], captions: dict[str, str], columns: int = 2) -> None:
@@ -216,6 +251,265 @@ def render_exp3_tab() -> None:
     render_figure_grid(summary["figures"], captions)
 
 
+def render_exp1_live(profile_labels: dict[str, dict]) -> None:
+    st.subheader("Experiment 1 Live: Virtual Student Fidelity")
+    st.caption("Hybrid demo: short live mini-ILS check plus cached full-run artifact inspection.")
+
+    live_tab, artifact_tab = st.tabs(["Quick Live Check", "Artifact Explorer"])
+
+    with live_tab:
+        model_options = load_exp1_model_options()
+        if not model_options:
+            st.warning("Exp1 model configuration is not available.")
+            return
+
+        model_labels = {
+            f"{row['name']} ({row['source']}{', disabled' if row.get('disabled') else ''})": row
+            for row in model_options
+        }
+        c1, c2, c3, c4 = st.columns([1.3, 1.5, 1.0, 1.0])
+        with c1:
+            selected_model_label = st.selectbox("Model", sorted(model_labels), key="exp1_live_model")
+            selected_model = model_labels[selected_model_label]
+        with c2:
+            profile_label = st.selectbox("Profile", sorted(profile_labels), key="exp1_live_profile")
+        with c3:
+            level_label = st.selectbox(
+                "Knowledge Level",
+                ["general", "beginner", "intermediate", "advanced"],
+                key="exp1_live_level",
+            )
+            knowledge_level = None if level_label == "general" else level_label
+        with c4:
+            question_count = st.selectbox("Mini-ILS Size", [4, 8, 10, 44], index=0, key="exp1_live_qcount")
+
+        if selected_model["source"] == "Local":
+            st.info("Local model selected. The model is loaded only when this run starts and requires the local Ollama backend.")
+        if selected_model.get("disabled"):
+            st.warning(selected_model.get("disabled_reason") or "This model is disabled for live demo runs.")
+        if question_count == 44:
+            st.warning("Full 44-question ILS is available for validation-style demos, but it will take longer and may cost more.")
+
+        with st.expander("Mini-ILS Questions"):
+            preview_rows = format_exp1_questions_for_profile(profile_label, question_count)
+            st.dataframe(
+                pd.DataFrame(preview_rows)[
+                    ["q_num", "dimension", "question", "option_a", "option_b", "expected_answer", "expected_label"]
+                ],
+                use_container_width=True,
+                hide_index=True,
+            )
+
+        if st.button("Run Mini-ILS", key="exp1_live_run", disabled=bool(selected_model.get("disabled"))):
+            try:
+                result = run_exp1_mini_demo(
+                    selected_model["name"],
+                    profile_label,
+                    knowledge_level,
+                    question_count,
+                )
+            except Exception as exc:
+                st.error(f"Exp1 live run failed: {exc}")
+                return
+
+            st.success("Mini-ILS run completed.")
+            m1, m2, m3, m4, m5, m6, m7 = st.columns(7)
+            m1.metric("Model Source", result["source"])
+            m2.metric(
+                "Mini-PRA",
+                f"{result['mini_pra']:.3f}",
+                f"{result['dimension_matches']}/{result['dimension_count']} dims",
+            )
+            m3.metric(
+                "Question Accuracy",
+                f"{result['question_accuracy']:.3f}",
+                f"{result['question_matches']}/{result['question_count']} questions",
+            )
+            m4.metric("Questions", result["question_count"])
+            m5.metric("Latency", f"{result['latency_ms']:.0f} ms")
+            m6.metric("Cost", f"${result['cost_usd']:.5f}")
+            m7.metric("Tokens", f"{result['token_count']:,}")
+
+            col1, col2 = st.columns(2)
+            with col1:
+                st.subheader("Assigned vs Recovered")
+                rows = []
+                for dim, assigned in result["assigned"].items():
+                    rows.append({
+                        "dimension": dim,
+                        "assigned": assigned,
+                        "detected": result["detected"][dim],
+                        "mini_score": result["raw_scores"][dim],
+                        "match": result["detected"][dim] == assigned,
+                    })
+                st.dataframe(pd.DataFrame(rows), use_container_width=True, hide_index=True)
+            with col2:
+                st.subheader("Question Answers")
+                st.dataframe(
+                    pd.DataFrame(result["rows"])[
+                        [
+                            "q_num",
+                            "dimension",
+                            "question",
+                            "option_a",
+                            "option_b",
+                            "expected_answer",
+                            "expected_label",
+                            "detected_answer",
+                            "detected_label",
+                            "match",
+                            "raw_text",
+                        ]
+                    ],
+                    use_container_width=True,
+                    hide_index=True,
+                )
+            st.caption(result["note"])
+
+    with artifact_tab:
+        artifacts = list_exp1_raw_artifacts()
+        if not artifacts:
+            st.warning("No cached Exp1 raw artifacts found under results/exp1/raw_responses.")
+            return
+        labels = {row["label"]: row for row in artifacts}
+        selected = st.selectbox("Cached Trial", sorted(labels), key="exp1_artifact")
+        if st.button("Load Cached Trial", key="exp1_artifact_load"):
+            try:
+                record = load_exp1_raw_artifact(labels[selected]["path"])
+            except Exception as exc:
+                st.error(f"Could not load Exp1 artifact: {exc}")
+                return
+
+            a1, a2, a3, a4 = st.columns(4)
+            a1.metric("Model", record["model"])
+            a2.metric("Trial", record["trial"])
+            a3.metric("Knowledge", record["knowledge_level"])
+            a4.metric("Cost", f"${record['total_cost_usd']:.5f}")
+
+            score_rows = [
+                {
+                    "dimension": dim,
+                    "raw_score": score,
+                    "detected": record["detected"].get(dim),
+                }
+                for dim, score in record["raw_scores"].items()
+            ]
+            st.subheader("Recovered Profile Scores")
+            st.dataframe(pd.DataFrame(score_rows), use_container_width=True, hide_index=True)
+
+            st.subheader("Raw ILS Responses")
+            raw_rows = pd.DataFrame(record["raw"])
+            if not raw_rows.empty:
+                st.dataframe(
+                    raw_rows[["q_num", "answer", "raw_text", "cost_usd"]],
+                    use_container_width=True,
+                    hide_index=True,
+                )
+
+
+def render_exp2_live(profile_labels: dict[str, dict]) -> None:
+    st.subheader("Experiment 2 Live: R0 vs R1 Tutor Personalization")
+    st.caption("Live paired run for generic RAG and FSLSM-conditioned RAG using the same question and profile.")
+
+    questions = load_exp2_questions()
+    profiles_by_label = load_fslsm_profiles_by_label()
+    source = st.sidebar.selectbox("Exp2 Question Source", ["Exp2 Dataset", "Custom"], key="exp2_source")
+    question_record = None
+    st.metric("Exp2 Questions Loaded", len(questions))
+    if source == "Exp2 Dataset" and questions:
+        question_labels = {
+            f"{q['question_id']} - {q.get('question_type', 'question')}": q
+            for q in questions
+        }
+        selected_question = st.selectbox("Question", sorted(question_labels), key="exp2_question")
+        question_record = question_labels[selected_question]
+        question = question_record["question"]
+        st.subheader("Selected Question")
+        st.write(question)
+        st.caption(
+            f"{question_record['question_id']} - {question_record.get('quality_tier', 'n/a')} - "
+            f"{len(question_record.get('gold_chunk_ids', []))} gold chunks"
+        )
+    else:
+        question = st.text_area(
+            "Question",
+            value="Compare minibatch stochastic gradient descent and batch normalization.",
+            key="exp2_custom_question",
+        )
+
+    profile_label = st.sidebar.selectbox("Exp2 Profile", sorted(profile_labels), key="exp2_profile")
+    show_internals = st.sidebar.toggle("Show Exp2 Internals", value=True, key="exp2_internals")
+    selected_profile = profiles_by_label.get(profile_label, {})
+    vector = profile_labels[profile_label]["fslsm_vector"]
+
+    p1, p2 = st.columns([1, 2])
+    p1.metric("Learning Style Profile", profile_label)
+    p2.write(f"FSLSM vector: `{vector}`")
+    with st.expander("Learning Style Profile", expanded=True):
+        profile_rows = [
+            {"dimension": dim, "pole": value}
+            for dim, value in vector.items()
+        ]
+        st.dataframe(pd.DataFrame(profile_rows), use_container_width=True, hide_index=True)
+        descriptor = selected_profile.get("style_descriptor_graf")
+        if descriptor:
+            st.write(descriptor)
+
+    if st.button("Run R0/R1 Pair", key="exp2_run_pair"):
+        try:
+            result = run_exp2_pair_demo(
+                question,
+                vector,
+                question_record=question_record,
+            )
+        except Exception as exc:
+            st.error(f"Exp2 live run failed: {exc}")
+            return
+
+        st.success("Paired Exp2 run completed.")
+        r0 = result["r0"]
+        r1 = result["r1"]
+        m1, m2, m3, m4, m5 = st.columns(5)
+        m1.metric("Profile", result["profile_label"])
+        m2.metric("R0 Engagement", r0.get("engagement_score", 0))
+        m3.metric("R1 Engagement", r1.get("engagement_score", 0))
+        m4.metric("Retrieval Overlap", f"{result['retrieval_overlap']}/{result['retrieval_union']}")
+        m5.metric("Gold Chunks", len(result["gold_chunk_ids"]))
+
+        col1, col2 = st.columns(2)
+        with col1:
+            st.subheader("R0 Generic RAG")
+            st.write(r0["response"])
+            st.caption(f"Latency {r0['latency_ms']} ms | Tokens {r0['token_count']} | Cost ${r0['tutor_cost']:.5f}")
+        with col2:
+            st.subheader("R1 FSLSM-Personalized RAG")
+            st.write(r1["response"])
+            st.caption(f"Latency {r1['latency_ms']} ms | Tokens {r1['token_count']} | Cost ${r1['tutor_cost']:.5f}")
+
+        e1, e2 = st.columns(2)
+        with e1:
+            st.subheader("R0 Retrieved Evidence")
+            for idx, chunk in enumerate(r0["retrieved_chunks"], 1):
+                with st.expander(f"R0 Evidence {idx}: {chunk.get('chunk_id', 'source')}"):
+                    st.write(chunk.get("text", ""))
+        with e2:
+            st.subheader("R1 Retrieved Evidence")
+            for idx, chunk in enumerate(r1["retrieved_chunks"], 1):
+                with st.expander(f"R1 Evidence {idx}: {chunk.get('chunk_id', 'source')}"):
+                    st.write(chunk.get("text", ""))
+
+        if show_internals:
+            plan = result["reasoning_plan"]
+            with st.expander("ProfileAgent Reasoning Plan", expanded=True):
+                st.write(f"Retrieval directive: {plan['retrieval_directive']}")
+                st.write(f"Generation directive: {plan['generation_directive']}")
+                st.write(f"Reranking bias: `{plan['reranking_bias']}`")
+                st.write(f"Deprioritize: `{plan['deprioritize']}`")
+            with st.expander("Query Reformulation"):
+                st.write(f"R0: {r0['reformulated_query']}")
+                st.write(f"R1: {r1['reformulated_query']}")
+
+
 def render_live_demo(profile_labels: dict[str, dict]) -> None:
     input_mode = st.sidebar.selectbox("Question Source", ["Exp3-Core", "Custom"], index=0)
     core_questions = load_core_questions()
@@ -342,29 +636,12 @@ st.title("FSLSM-RAG-MCP Final Defense Dashboard")
 st.caption("Presentation dashboard for Exp1 agent fidelity, Exp2 tutor personalization, and Exp3 FastMCP runtime results.")
 
 with st.sidebar:
-    st.subheader("Presentation Mode")
-    page = st.radio("View", ["Overview", "Exp1", "Exp2", "Exp3", "Live Demo", "Replay Demo"], index=0)
-
-    st.divider()
-    st.subheader("Runtime Checklist")
-    render_check("Profiles", status["profiles_loaded"], f"{status['profile_count']} loaded")
-    render_check("Exp3-Core dataset", status["core_dataset_available"])
-    render_check("D2L chunks", status["chunks_available"])
-    render_check("Tool index", status["tool_index_available"])
-    render_check("FastMCP runtime", status["runtime_ready"], f"{status['registered_tool_count']} tools")
-    render_check("FastMCP backend", status["fastmcp_active"])
-    render_check("OPENAI_API_KEY", status["openai_key_loaded"])
-    render_check("TAVILY_API_KEY", status["tavily_key_loaded"])
-    render_check("Metrics artifact", status["metrics_available"])
-    render_check(
-        "Replay sessions",
-        (status["replay_count"] + status["legacy_replay_count"]) > 0,
-        f"{status['replay_count']} current / {status['legacy_replay_count']} legacy",
+    st.subheader("FSLSM-RAG-MCP")
+    page = st.radio(
+        "Dashboard Section",
+        ["Overview", "Exp1", "Exp1 Live", "Exp2", "Exp2 Live", "Exp3", "Live Demo", "Replay Demo"],
+        index=0,
     )
-    if status["status_errors"]:
-        st.warning("Startup issues detected")
-        for err in status["status_errors"]:
-            st.code(err)
 
 if page == "Overview":
     exp1 = load_exp1_summary()
@@ -403,14 +680,21 @@ if page == "Overview":
 
 elif page == "Exp1":
     render_exp1_tab()
+elif page == "Exp1 Demo":
+    render_exp1_live(profile_labels)
 elif page == "Exp2":
     render_exp2_tab()
+elif page == "Exp2 Demo":
+    render_exp2_live(profile_labels)
 elif page == "Exp3":
     render_exp3_tab()
-elif page == "Live Demo":
+elif page == "Exp3 Demo":
     render_live_demo(profile_labels)
-elif page == "Replay Demo":
+elif page == "Exp3 Replay Demo":
     render_replay_demo()
+
+with st.sidebar:
+    render_runtime_checklist(status)
 
 with st.expander("Raw Exp3 Metrics JSON"):
     st.json(load_metrics())

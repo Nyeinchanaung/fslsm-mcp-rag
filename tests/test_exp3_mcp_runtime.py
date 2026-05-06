@@ -17,7 +17,16 @@ from experiments.exp3_mcp_runtime.core.profile_sets import load_canonical_profil
 from experiments.exp3_mcp_runtime.core.selector import build_s0_selector_prompt, select_retrieved_tool
 from experiments.exp3_mcp_runtime.core.session_runner import Exp3SessionRunner
 from experiments.exp3_mcp_runtime.core.session_runner import _SCHEMA
-from experiments.exp3_mcp_runtime.demo.service import infer_question_type
+from demo.service import (
+    format_exp1_questions_for_profile,
+    get_exp1_mini_questions,
+    infer_question_type,
+    list_exp1_raw_artifacts,
+    load_exp1_model_options,
+    load_exp2_questions,
+    run_exp1_mini_demo,
+    run_exp2_pair_demo,
+)
 from experiments.exp3_mcp_runtime.server.app import create_mcp_server
 from experiments.exp3_mcp_runtime.tools.tool_index import ToolIndex
 from experiments.exp3_mcp_runtime.tools.tool_registry import TOOL_REGISTRY
@@ -110,6 +119,103 @@ def test_replay_service_shape(tmp_path: Path):
     rows = [json.loads(line) for line in replay_path.read_text().splitlines()]
     assert rows[0]["session_id"] == "demo"
     assert infer_question_type("What are the latest transformer models?") == "search"
+
+
+def test_exp1_live_demo_static_contracts():
+    models = load_exp1_model_options()
+    assert {row["source"] for row in models} >= {"API", "Local"}
+    assert any(row["name"] == "gpt-4.1-mini" for row in models)
+    assert any(row["name"] == "gemma3:12b" for row in models)
+    gemma12 = next(row for row in models if row["name"] == "gemma3:12b")
+    assert gemma12["disabled"] is True
+    assert gemma12["disabled_reason"]
+
+    mini4 = get_exp1_mini_questions(4)
+    assert len(mini4) == 4
+    assert {q["dimension"] for q in mini4} == {"act_ref", "sen_int", "vis_ver", "seq_glo"}
+
+    mini8 = get_exp1_mini_questions(8)
+    assert len(mini8) == 8
+    assert {q["dimension"] for q in mini8} == {"act_ref", "sen_int", "vis_ver", "seq_glo"}
+
+    mini10 = get_exp1_mini_questions(10)
+    assert len(mini10) == 10
+    assert {q["dimension"] for q in mini10} == {"act_ref", "sen_int", "vis_ver", "seq_glo"}
+
+    full = get_exp1_mini_questions(44)
+    assert len(full) == 44
+
+    preview = format_exp1_questions_for_profile("Active-Sensing-Visual-Sequential", 4)
+    assert {"question", "option_a", "option_b", "expected_answer", "expected_label"} <= set(preview[0])
+
+
+def test_exp1_mini_demo_row_contains_expected_detected_fields():
+    responses = iter(["b", "a", "a", "b", "b", "a", "a", "a", "b", "a"])
+
+    class FakeResponse:
+        def __init__(self, content: str):
+            self.content = content
+            self.cost = 0.001
+            self.total_tokens = 10
+
+    class FakeClient:
+        litellm_model = "fake/test"
+
+        def chat(self, **kwargs):
+            return FakeResponse(next(responses))
+
+    result = run_exp1_mini_demo(
+        "fake-model",
+        "Reflective-Sensing-Visual-Global",
+        knowledge_level=None,
+        question_count=10,
+        client=FakeClient(),
+    )
+    row = result["rows"][0]
+    assert {
+        "question",
+        "option_a",
+        "option_b",
+        "expected_pole",
+        "expected_label",
+        "expected_answer",
+        "detected_pole",
+        "detected_label",
+        "match",
+    } <= set(row)
+    assert result["question_matches"] == 9
+    assert result["question_accuracy"] == 0.9
+    assert result["raw_scores"]["seq_glo"] == 0
+    assert result["mini_pra"] == 0.75
+
+
+def test_exp1_artifact_listing_shape():
+    artifacts = list_exp1_raw_artifacts(limit=5)
+    if artifacts:
+        row = artifacts[0]
+        assert {"label", "agent_uid", "trial", "path"} <= set(row)
+
+
+def test_exp2_live_demo_static_contracts(monkeypatch):
+    questions = load_exp2_questions()
+    assert len(questions) == 72
+    assert {"question_id", "question", "gold_chunk_ids"} <= set(questions[0])
+
+    def fake_pair(question, profile, question_record=None):
+        return {
+            "question": question_record["question"] if question_record else question,
+            "profile_label": "Active-Sensing-Visual-Sequential",
+            "r0": {"mode": "R0", "response": "generic"},
+            "r1": {"mode": "R1", "response": "personalized"},
+        }
+
+    monkeypatch.setattr(
+        "demo.service.run_exp2_pair_demo",
+        fake_pair,
+    )
+    result = fake_pair("Explain gradient descent.", PROFILE, question_record=questions[0])
+    assert result["r0"]["mode"] == "R0"
+    assert result["r1"]["mode"] == "R1"
 
 
 def test_core_dataset_balance_and_profiles():

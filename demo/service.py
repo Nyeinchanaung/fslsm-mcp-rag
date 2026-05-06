@@ -48,6 +48,7 @@ EXP1_FIGURES_DIR = REPO_ROOT / "experiments" / "exp1_agent_fidelity" / "results"
 EXP2_QUESTIONS_PATH = REPO_ROOT / "data" / "exp2" / "filtered_questions.json"
 EXP2_RESULTS_DIR = REPO_ROOT / "experiments" / "exp2_tutor_personalization" / "results"
 EXP2_FIGURES_DIR = EXP2_RESULTS_DIR / "final_defense_figures"
+EXP2_PAIRWISE_DIR = EXP2_RESULTS_DIR / "pairwise"
 EXP3_FIGURES_DIR = FINAL_EXP3_RUN_DIR / "final_defense_figures"
 REPLAY_PATHS = (FINAL_EXP3_REPLAY_PATH, DEMO_REPLAY_PATH, LEGACY_REPLAY_PATH)
 
@@ -69,34 +70,52 @@ COURSE_SCOPE_KEYWORDS = {
     "attention",
     "backprop",
     "batch normalization",
+    "broadcasting",
+    "calculus",
     "classification",
     "cnn",
     "convolution",
     "d2l",
+    "derivative",
     "deep learning",
     "dropout",
+    "eigenvalue",
+    "factorization",
     "embedding",
     "gradient",
     "gru",
+    "jax",
     "learning rate",
+    "linear algebra",
     "linear regression",
     "logistic regression",
     "loss",
     "machine learning",
+    "matrix",
+    "matrix multiplication",
+    "multilayer perceptron",
     "ml",
+    "mlp",
     "model",
     "mxnet",
     "neural",
+    "normalization",
     "optimizer",
     "overfitting",
+    "parameter",
+    "probability",
     "pytorch",
     "regularization",
     "resnet",
     "rnn",
     "self-attention",
     "softmax",
+    "tensor",
+    "tokenization",
     "tensorflow",
     "transformer",
+    "vector",
+    "vectorization",
     "vgg",
 }
 
@@ -306,9 +325,10 @@ def get_exp1_mini_questions(size: int = 4) -> list[dict[str, Any]]:
     questions = load_ils_questions()
     if size == 44:
         return questions
-    if size not in (4, 8, 10):
+    per_dim_by_size = {4: 1, 8: 2, 16: 4, 32: 8}
+    if size not in per_dim_by_size:
         size = 4
-    per_dim = 1 if size == 4 else 2
+    per_dim = per_dim_by_size[size]
     selected = []
     counts = {"act_ref": 0, "sen_int": 0, "vis_ver": 0, "seq_glo": 0}
     for question in questions:
@@ -318,14 +338,6 @@ def get_exp1_mini_questions(size: int = 4) -> list[dict[str, Any]]:
             counts[dim] += 1
         if len(selected) == size:
             break
-    if size == 10:
-        selected_ids = {question["q_num"] for question in selected}
-        for question in questions:
-            if question["q_num"] not in selected_ids:
-                selected.append(question)
-                selected_ids.add(question["q_num"])
-            if len(selected) == size:
-                break
     return selected
 
 
@@ -565,11 +577,64 @@ def _normalize_exp2_result(result: dict[str, Any]) -> dict[str, Any]:
     }
 
 
+def build_exp2_out_of_scope_pair(question: str, profile: dict[str, Any], reason: str) -> dict[str, Any]:
+    started_at = time.perf_counter()
+    profile_label = profile_to_label(profile)
+    message = (
+        "This Exp2 demo is scoped to D2L machine-learning tutoring. I skipped RAG "
+        "retrieval because the custom question does not appear to be a D2L or "
+        "machine-learning course question. Try a question about neural networks, "
+        "optimization, deep learning, PyTorch, TensorFlow, or D2L textbook topics."
+    )
+    latency_ms = (time.perf_counter() - started_at) * 1000
+    base = {
+        "response": message,
+        "system_prompt_used": "Demo Scope Guard",
+        "retrieved_chunk_ids": [],
+        "retrieved_chunks": [],
+        "reformulated_query": "",
+        "engagement_score": None,
+        "latency_ms": latency_ms,
+        "token_count": 0,
+        "tutor_cost": 0.0,
+    }
+    return {
+        "question": question,
+        "question_id": "custom_out_of_scope",
+        "profile_label": profile_label,
+        "fslsm_vector": profile,
+        "reasoning_plan": {
+            "profile_code": "scope_guard",
+            "style_label": profile_label,
+            "retrieval_directive": "No retrieval: custom question is outside the D2L machine-learning scope.",
+            "generation_directive": message,
+            "reranking_bias": [],
+            "deprioritize": [],
+            "metadata": {"reason": reason},
+        },
+        "r0": {"mode": "R0", **base},
+        "r1": {"mode": "R1", **base},
+        "retrieval_overlap": 0,
+        "retrieval_union": 0,
+        "gold_chunk_ids": [],
+        "essential_chunk_ids": [],
+        "out_of_scope": True,
+        "scope_guard_reason": reason,
+    }
+
+
 def run_exp2_pair_demo(
     question: str,
     profile: dict[str, Any],
     question_record: dict[str, Any] | None = None,
 ) -> dict[str, Any]:
+    if question_record is None and not should_use_corpus_for_custom_question(question):
+        return build_exp2_out_of_scope_pair(
+            question=question,
+            profile=profile,
+            reason="custom_question_outside_course_scope",
+        )
+
     tutor = get_exp2_demo_tutor()
     profile_agent = tutor.profile_agent
     plan = profile_agent.generate_reasoning_plan(profile)
@@ -599,6 +664,53 @@ def run_exp2_pair_demo(
         "retrieval_union": len(r0_ids | r1_ids),
         "gold_chunk_ids": base_session["gold_chunk_ids"],
         "essential_chunk_ids": base_session["essential_chunk_ids"],
+    }
+
+
+def judge_exp2_pair_demo(
+    pair_result: dict[str, Any],
+    judge_client: Any | None = None,
+) -> dict[str, Any]:
+    from src.evaluation.metrics import judge_pairwise
+
+    if judge_client is None:
+        from src.utils.llm_client import LLMClient
+        judge_client = LLMClient("gpt-4o", temperature=0.0)
+
+    session = {
+        "session_id": f"demo_exp2__{pair_result.get('question_id', 'custom')}",
+        "agent_id": "demo_exp2",
+        "profile_label": pair_result.get("profile_label", ""),
+        "fslsm_vector": pair_result.get("fslsm_vector", {}),
+        "question_id": pair_result.get("question_id", ""),
+        "question_text": pair_result.get("question", ""),
+        "question_type": "",
+        "r0_response": pair_result.get("r0", {}).get("response", ""),
+        "r1_response": pair_result.get("r1", {}).get("response", ""),
+    }
+    return judge_pairwise(
+        session=session,
+        swap=False,
+        judge_client=judge_client,
+        max_tokens=200,
+        response_token_cap=1200,
+    )
+
+
+@lru_cache(maxsize=1)
+def load_exp2_pairwise_track() -> dict[str, Any]:
+    summary_path = EXP2_PAIRWISE_DIR / "summary_overall.json"
+    profile_path = EXP2_PAIRWISE_DIR / "summary_by_profile.csv"
+    if not summary_path.exists():
+        return {}
+    summary = json.loads(summary_path.read_text())
+    profiles = []
+    if profile_path.exists():
+        profiles = pd.read_csv(profile_path).to_dict(orient="records")
+    return {
+        "summary": summary,
+        "profiles": profiles,
+        "figures": [str(p) for p in _existing_images(EXP2_PAIRWISE_DIR / "figures")],
     }
 
 

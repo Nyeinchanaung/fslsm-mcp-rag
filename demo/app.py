@@ -20,11 +20,13 @@ from demo.service import (
     load_exp1_summary,
     load_exp2_summary,
     load_exp2_questions,
+    load_exp2_pairwise_track,
     load_exp3_summary,
     load_fslsm_profiles_by_label,
     load_metrics,
     load_profiles,
     load_replays,
+    judge_exp2_pair_demo,
     run_exp1_mini_demo,
     run_exp2_pair_demo,
     run_demo_session,
@@ -41,6 +43,13 @@ def render_check(label: str, ok: bool, detail: str = "") -> None:
     prefix = "OK" if ok else "MISSING"
     suffix = f" - {detail}" if detail else ""
     st.write(f"{prefix} {label}{suffix}")
+
+
+def format_latency(latency_ms: float | int | None) -> str:
+    latency = float(latency_ms or 0)
+    if latency >= 1000:
+        return f"{latency / 1000:.2f} sec"
+    return f"{latency:.0f} ms"
 
 
 def render_runtime_checklist(status: dict) -> None:
@@ -281,7 +290,7 @@ def render_exp1_live(profile_labels: dict[str, dict]) -> None:
             )
             knowledge_level = None if level_label == "general" else level_label
         with c4:
-            question_count = st.selectbox("Mini-ILS Size", [4, 8, 10, 44], index=0, key="exp1_live_qcount")
+            question_count = st.selectbox("Mini-ILS Size", [4, 8, 16, 32, 44], index=0, key="exp1_live_qcount")
 
         if selected_model["source"] == "Local":
             st.info("Local model selected. The model is loaded only when this run starts and requires the local Ollama backend.")
@@ -326,7 +335,7 @@ def render_exp1_live(profile_labels: dict[str, dict]) -> None:
                 f"{result['question_matches']}/{result['question_count']} questions",
             )
             m4.metric("Questions", result["question_count"])
-            m5.metric("Latency", f"{result['latency_ms']:.0f} ms")
+            m5.metric("Latency", format_latency(result["latency_ms"]))
             m6.metric("Cost", f"${result['cost_usd']:.5f}")
             m7.metric("Tokens", f"{result['token_count']:,}")
 
@@ -439,12 +448,11 @@ def render_exp2_live(profile_labels: dict[str, dict]) -> None:
 
     profile_label = st.sidebar.selectbox("Exp2 Profile", sorted(profile_labels), key="exp2_profile")
     show_internals = st.sidebar.toggle("Show Exp2 Internals", value=True, key="exp2_internals")
+    run_pairwise_judge = st.sidebar.toggle("Run Pairwise Judge", value=True, key="exp2_pairwise_judge")
     selected_profile = profiles_by_label.get(profile_label, {})
     vector = profile_labels[profile_label]["fslsm_vector"]
 
-    p1, p2 = st.columns([1, 2])
-    p1.metric("Learning Style Profile", profile_label)
-    p2.write(f"FSLSM vector: `{vector}`")
+    st.caption(f"Profile: {profile_label} | FSLSM vector: `{vector}`")
     with st.expander("Learning Style Profile", expanded=True):
         profile_rows = [
             {"dimension": dim, "pole": value}
@@ -455,6 +463,34 @@ def render_exp2_live(profile_labels: dict[str, dict]) -> None:
         if descriptor:
             st.write(descriptor)
 
+    pairwise = load_exp2_pairwise_track()
+    if pairwise:
+        summary = pairwise["summary"]
+        profile_rows = pairwise.get("profiles", [])
+        current_profile = next(
+            (row for row in profile_rows if row.get("profile_label") == profile_label),
+            None,
+        )
+        with st.expander("Track B Pairwise Preference", expanded=True):
+            b1, b2, b3, b4 = st.columns(4)
+            b1.metric("R1 Win Rate", f"{summary.get('win_rate_r1', 0):.3f}")
+            b2.metric("R1 Wins", f"{summary.get('n_r1_win', 0):,}")
+            b3.metric("R0 Wins", f"{summary.get('n_r0_win', 0):,}")
+            b4.metric("Valid Pairs", f"{summary.get('n_valid', 0):,}")
+            st.caption(
+                f"95% CI: {summary.get('win_rate_r1_ci_lo', 0):.3f}-"
+                f"{summary.get('win_rate_r1_ci_hi', 0):.3f}; "
+                f"p={summary.get('binomial_p_value', 0):.3g}"
+            )
+            if current_profile:
+                st.write(
+                    f"Selected profile pairwise win rate: "
+                    f"`{current_profile.get('win_rate_r1', 0):.3f}` "
+                    f"({int(current_profile.get('n_r1_win', 0))} R1 wins / "
+                    f"{int(current_profile.get('n_decisive', 0))} decisive pairs)"
+                )
+            st.caption("This summarizes the completed offline Track B pairwise evaluation.")
+
     if st.button("Run R0/R1 Pair", key="exp2_run_pair"):
         try:
             result = run_exp2_pair_demo(
@@ -464,6 +500,14 @@ def render_exp2_live(profile_labels: dict[str, dict]) -> None:
             )
         except Exception as exc:
             st.error(f"Exp2 live run failed: {exc}")
+            return
+
+        if result.get("out_of_scope"):
+            st.warning(result["r0"]["response"])
+            if show_internals:
+                with st.expander("ProfileAgent Reasoning Plan", expanded=True):
+                    st.write(result["reasoning_plan"]["retrieval_directive"])
+                    st.write(result["reasoning_plan"]["generation_directive"])
             return
 
         st.success("Paired Exp2 run completed.")
@@ -480,11 +524,30 @@ def render_exp2_live(profile_labels: dict[str, dict]) -> None:
         with col1:
             st.subheader("R0 Generic RAG")
             st.write(r0["response"])
-            st.caption(f"Latency {r0['latency_ms']} ms | Tokens {r0['token_count']} | Cost ${r0['tutor_cost']:.5f}")
+            st.caption(f"Latency {format_latency(r0['latency_ms'])} | Tokens {r0['token_count']} | Cost ${r0['tutor_cost']:.5f}")
         with col2:
             st.subheader("R1 FSLSM-Personalized RAG")
             st.write(r1["response"])
-            st.caption(f"Latency {r1['latency_ms']} ms | Tokens {r1['token_count']} | Cost ${r1['tutor_cost']:.5f}")
+            st.caption(f"Latency {format_latency(r1['latency_ms'])} | Tokens {r1['token_count']} | Cost ${r1['tutor_cost']:.5f}")
+
+        if run_pairwise_judge:
+            with st.spinner("Running pairwise judge..."):
+                try:
+                    judge = judge_exp2_pair_demo(result)
+                except Exception as exc:
+                    st.error(f"Pairwise judge failed: {exc}")
+                    judge = None
+            if judge:
+                st.subheader("Live Pairwise Evaluation")
+                j1, j2, j3, j4 = st.columns(4)
+                j1.metric("Verdict", judge["verdict_normalized"])
+                j2.metric("Raw", judge["verdict_raw"])
+                j3.metric("Judge Tokens", f"{judge['prompt_tokens'] + judge['completion_tokens']:,}")
+                j4.metric("Judge Cost", f"${judge['cost']:.5f}")
+                if judge.get("rationale"):
+                    st.write(judge["rationale"])
+                if judge.get("truncated"):
+                    st.caption("Responses were symmetrically truncated before judging.")
 
         e1, e2 = st.columns(2)
         with e1:
@@ -547,7 +610,7 @@ def render_live_demo(profile_labels: dict[str, dict]) -> None:
         stat1, stat2, stat3, stat4 = st.columns(4)
         stat1.metric("Condition", result["condition"])
         stat2.metric("Selected Tool", f"{result['selected_tool_id']}")
-        stat3.metric("Latency (ms)", f"{result['latency_ms']:.1f}")
+        stat3.metric("Latency", format_latency(result["latency_ms"]))
         stat4.metric("Task-TSA Hit", "Yes" if result["task_tsa_hit"] else "No")
 
         col1, col2 = st.columns([2, 1])
@@ -606,7 +669,7 @@ def render_replay_demo() -> None:
 
     st.write(f"Selected tool name: **{row.get('selected_tool_name', 'n/a')}**")
     st.write(f"Profile eligible: `{row.get('profile_eval_eligible', False)}`")
-    st.write(f"Latency: `{row.get('latency_ms', 0):.1f} ms`")
+    st.write(f"Latency: `{format_latency(row.get('latency_ms', 0))}`")
 
     if row.get("query"):
         st.subheader("Question")
@@ -639,7 +702,7 @@ with st.sidebar:
     st.subheader("FSLSM-RAG-MCP")
     page = st.radio(
         "Dashboard Section",
-        ["Overview", "Exp1", "Exp1 Live", "Exp2", "Exp2 Live", "Exp3", "Live Demo", "Replay Demo"],
+        ["Overview", "Exp1", "Exp1 Demo", "Exp2", "Exp2 Demo", "Exp3", "Exp3 Demo", "Replay Demo"],
         index=0,
     )
 

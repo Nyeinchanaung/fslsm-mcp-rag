@@ -21,11 +21,14 @@ from demo.service import (
     format_exp1_questions_for_profile,
     get_exp1_mini_questions,
     infer_question_type,
+    judge_exp2_pair_demo,
     list_exp1_raw_artifacts,
     load_exp1_model_options,
+    load_exp2_pairwise_track,
     load_exp2_questions,
     run_exp1_mini_demo,
     run_exp2_pair_demo,
+    should_use_corpus_for_custom_question,
 )
 from experiments.exp3_mcp_runtime.server.app import create_mcp_server
 from experiments.exp3_mcp_runtime.tools.tool_index import ToolIndex
@@ -138,9 +141,13 @@ def test_exp1_live_demo_static_contracts():
     assert len(mini8) == 8
     assert {q["dimension"] for q in mini8} == {"act_ref", "sen_int", "vis_ver", "seq_glo"}
 
-    mini10 = get_exp1_mini_questions(10)
-    assert len(mini10) == 10
-    assert {q["dimension"] for q in mini10} == {"act_ref", "sen_int", "vis_ver", "seq_glo"}
+    mini16 = get_exp1_mini_questions(16)
+    assert len(mini16) == 16
+    assert {q["dimension"] for q in mini16} == {"act_ref", "sen_int", "vis_ver", "seq_glo"}
+
+    mini32 = get_exp1_mini_questions(32)
+    assert len(mini32) == 32
+    assert {q["dimension"] for q in mini32} == {"act_ref", "sen_int", "vis_ver", "seq_glo"}
 
     full = get_exp1_mini_questions(44)
     assert len(full) == 44
@@ -150,7 +157,7 @@ def test_exp1_live_demo_static_contracts():
 
 
 def test_exp1_mini_demo_row_contains_expected_detected_fields():
-    responses = iter(["b", "a", "a", "b", "b", "a", "a", "a", "b", "a"])
+    responses = iter(["b", "a", "a", "a", "b", "a", "a", "b"])
 
     class FakeResponse:
         def __init__(self, content: str):
@@ -168,7 +175,7 @@ def test_exp1_mini_demo_row_contains_expected_detected_fields():
         "fake-model",
         "Reflective-Sensing-Visual-Global",
         knowledge_level=None,
-        question_count=10,
+        question_count=8,
         client=FakeClient(),
     )
     row = result["rows"][0]
@@ -183,8 +190,8 @@ def test_exp1_mini_demo_row_contains_expected_detected_fields():
         "detected_label",
         "match",
     } <= set(row)
-    assert result["question_matches"] == 9
-    assert result["question_accuracy"] == 0.9
+    assert result["question_matches"] == 7
+    assert result["question_accuracy"] == 0.875
     assert result["raw_scores"]["seq_glo"] == 0
     assert result["mini_pra"] == 0.75
 
@@ -216,6 +223,50 @@ def test_exp2_live_demo_static_contracts(monkeypatch):
     result = fake_pair("Explain gradient descent.", PROFILE, question_record=questions[0])
     assert result["r0"]["mode"] == "R0"
     assert result["r1"]["mode"] == "R1"
+
+
+def test_exp2_pairwise_track_loads():
+    pairwise = load_exp2_pairwise_track()
+    assert pairwise["summary"]["n_valid"] == 5760
+    assert pairwise["summary"]["win_rate_r1"] > 0.9
+    assert pairwise["profiles"]
+
+
+def test_exp2_live_pairwise_judge_with_fake_client():
+    class FakeResponse:
+        content = "Verdict: [[B]]\nRationale: Response B better matches the profile."
+        prompt_tokens = 100
+        completion_tokens = 20
+        cost = 0.01
+
+    class FakeJudgeClient:
+        def chat(self, **kwargs):
+            return FakeResponse()
+
+    pair_result = {
+        "question_id": "demo",
+        "question": "Explain matrix multiplication.",
+        "profile_label": "Active-Sensing-Visual-Sequential",
+        "fslsm_vector": PROFILE,
+        "r0": {"response": "Generic explanation."},
+        "r1": {"response": "Step-by-step explanation with a diagram."},
+    }
+    result = judge_exp2_pair_demo(pair_result, judge_client=FakeJudgeClient())
+    assert result["verdict_normalized"] == "R1_WIN"
+    assert "better matches" in result["rationale"]
+
+
+def test_exp2_custom_out_of_scope_skips_corpus_retrieval():
+    result = run_exp2_pair_demo("What is the best restaurant near me?", PROFILE)
+    assert result["out_of_scope"] is True
+    assert result["retrieval_union"] == 0
+    assert result["r0"]["retrieved_chunks"] == []
+    assert "skipped RAG retrieval" in result["r0"]["response"]
+
+
+def test_custom_scope_guard_accepts_d2l_math_questions():
+    question = "How do the concepts of matrix multiplication work in deep learning?"
+    assert should_use_corpus_for_custom_question(question) is True
 
 
 def test_core_dataset_balance_and_profiles():

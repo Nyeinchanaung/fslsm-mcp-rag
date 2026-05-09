@@ -368,6 +368,20 @@ def _detected_from_scores(scores: dict[str, int]) -> dict[str, int]:
     }
 
 
+def _mini_das_scores(
+    raw_scores: dict[str, int],
+    assigned: dict[str, int],
+    question_counts: dict[str, int],
+) -> tuple[dict[str, float], float]:
+    dim_scores = {}
+    for dim, count in question_counts.items():
+        if count <= 0:
+            continue
+        dim_scores[dim] = (raw_scores[dim] * assigned[dim] + count) / (2 * count)
+    overall = sum(dim_scores.values()) / len(dim_scores) if dim_scores else 0.0
+    return dim_scores, overall
+
+
 def _pole_label(dim: str, value: int) -> str:
     labels = {
         "act_ref": {-1: "Active", 1: "Reflective", 0: "Tie"},
@@ -425,6 +439,7 @@ def run_exp1_mini_demo(
     questions = get_exp1_mini_questions(question_count)
     system_prompt = build_student_system_prompt(profile, knowledge_level=knowledge_level)
     raw_scores = {dim: 0 for dim in ("act_ref", "sen_int", "vis_ver", "seq_glo")}
+    question_counts = {dim: 0 for dim in ("act_ref", "sen_int", "vis_ver", "seq_glo")}
     rows = []
     started_at = time.perf_counter()
     total_cost = 0.0
@@ -432,6 +447,7 @@ def run_exp1_mini_demo(
 
     for question in questions:
         dim = question["dimension"]
+        question_counts[dim] += 1
         expected_pole = profile["dimensions"][dim]
         expected_answer = _expected_answer_for_profile(question, expected_pole)
         prompt = build_ils_question_prompt(question)
@@ -472,6 +488,7 @@ def run_exp1_mini_demo(
     mini_pra = len(matches) / len(represented_dims) if represented_dims else 0.0
     question_matches = sum(1 for row in rows if row["match"])
     question_accuracy = question_matches / len(rows) if rows else 0.0
+    dimension_das, mini_das = _mini_das_scores(raw_scores, assigned, question_counts)
 
     return {
         "model": model_name,
@@ -483,6 +500,8 @@ def run_exp1_mini_demo(
         "assigned": assigned,
         "detected": detected,
         "raw_scores": raw_scores,
+        "dimension_das": dimension_das,
+        "mini_das": mini_das,
         "mini_pra": mini_pra,
         "dimension_matches": len(matches),
         "dimension_count": len(represented_dims),
@@ -768,6 +787,7 @@ def load_exp1_summary() -> dict[str, Any]:
         "das_pass_n": int(summary["h2_das_pass"].sum()),
         "both_pass_n": int(summary["h2_both_pass"].sum()),
         "top_models": summary.head(5).to_dict(orient="records"),
+        "top_das_models": summary.sort_values(["das", "pra"], ascending=False).head(5).to_dict(orient="records"),
         "table": summary.to_dict(orient="records"),
         "figures": [str(p) for p in _existing_images(EXP1_FIGURES_DIR)],
     }

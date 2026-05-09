@@ -37,9 +37,23 @@ Overall result:
 
 - 15 models evaluated
 - 8/15 models pass the PRA >= 0.82 target
+- 6/15 models pass the DAS >= 0.75 target
 - 6/15 models pass both PRA >= 0.82 and DAS >= 0.75
+- Mean PRA across all models: 0.773
+- Mean DAS across all models: 0.717
 - Best models: `claude-sonnet-4-20250514` PRA 1.000 / DAS 0.927, `gemma3:12b` PRA 1.000 / DAS 0.882, `gpt-4.1-mini` PRA 0.996 / DAS 0.924
 - Smaller models around 1-2B parameters mostly collapse to chance-level PRA around 0.50
+
+Top DAS results:
+
+| Model | PRA | DAS |
+|---|---:|---:|
+| `claude-sonnet-4-20250514` | 1.000 | 0.927 |
+| `gpt-4.1-mini` | 0.996 | 0.924 |
+| `gemma3:12b` | 1.000 | 0.882 |
+| `gemma2:9b` | 0.948 | 0.837 |
+| `qwen2.5:7b` | 0.956 | 0.785 |
+| `qwen2.5:3b` | 0.890 | 0.752 |
 
 Run:
 

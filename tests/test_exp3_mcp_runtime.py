@@ -24,6 +24,7 @@ from demo.service import (
     judge_exp2_pair_demo,
     list_exp1_raw_artifacts,
     load_exp1_model_options,
+    load_exp1_summary,
     load_exp2_pairwise_track,
     load_exp2_questions,
     run_exp1_mini_demo,
@@ -193,6 +194,8 @@ def test_exp1_mini_demo_row_contains_expected_detected_fields():
     assert result["question_matches"] == 7
     assert result["question_accuracy"] == 0.875
     assert result["raw_scores"]["seq_glo"] == 0
+    assert result["dimension_das"]["seq_glo"] == 0.5
+    assert result["mini_das"] == 0.875
     assert result["mini_pra"] == 0.75
 
 
@@ -201,6 +204,14 @@ def test_exp1_artifact_listing_shape():
     if artifacts:
         row = artifacts[0]
         assert {"label", "agent_uid", "trial", "path"} <= set(row)
+
+
+def test_exp1_summary_includes_das_results():
+    summary = load_exp1_summary()
+    assert summary["das_pass_n"] >= 0
+    assert summary["mean_das"] >= 0
+    assert summary["top_das_models"]
+    assert {"model", "pra", "das", "h2_das_pass"} <= set(summary["top_das_models"][0])
 
 
 def test_exp2_live_demo_static_contracts(monkeypatch):

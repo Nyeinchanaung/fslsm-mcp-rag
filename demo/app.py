@@ -98,12 +98,13 @@ def render_exp1_tab() -> None:
     st.subheader("Experiment 1: Virtual Student Agent Fidelity")
     st.caption("Validation experiment for FSLSM-conditioned virtual student agents.")
 
-    c1, c2, c3, c4, c5 = st.columns(5)
+    c1, c2, c3, c4, c5, c6 = st.columns(6)
     c1.metric("Models", summary["n_models"])
     c2.metric("Mean PRA", f"{summary['mean_pra']:.3f}")
     c3.metric("Mean DAS", f"{summary['mean_das']:.3f}")
     c4.metric("PRA >= 0.82", f"{summary['pra_pass_n']}/{summary['n_models']}")
-    c5.metric("Both H2 Targets", f"{summary['both_pass_n']}/{summary['n_models']}")
+    c5.metric("DAS >= 0.75", f"{summary['das_pass_n']}/{summary['n_models']}")
+    c6.metric("Both H2 Targets", f"{summary['both_pass_n']}/{summary['n_models']}")
 
     st.markdown(
         "Exp1 supports the methodological use of FSLSM-conditioned virtual agents. "
@@ -111,12 +112,35 @@ def render_exp1_tab() -> None:
         "not proof of human learning-style validity."
     )
 
-    top_df = pd.DataFrame(summary["top_models"])[["model", "pra", "das", "h2_both_pass"]]
-    st.dataframe(
-        top_df.style.format({"pra": "{:.3f}", "das": "{:.3f}"}),
-        use_container_width=True,
-        hide_index=True,
-    )
+    top_tab, das_tab, all_tab = st.tabs(["Top PRA/DAS", "DAS Results", "All Models"])
+    with top_tab:
+        top_df = pd.DataFrame(summary["top_models"])[
+            ["model", "pra", "das", "h2_pra_pass", "h2_das_pass", "h2_both_pass"]
+        ]
+        st.dataframe(
+            top_df.style.format({"pra": "{:.3f}", "das": "{:.3f}"}),
+            use_container_width=True,
+            hide_index=True,
+        )
+    with das_tab:
+        das_df = pd.DataFrame(summary["top_das_models"])[
+            ["model", "das", "pra", "h2_das_pass", "h2_pra_pass", "h2_both_pass"]
+        ]
+        st.caption("DAS is the dimension agreement score; H2 target threshold is DAS >= 0.75.")
+        st.dataframe(
+            das_df.style.format({"pra": "{:.3f}", "das": "{:.3f}"}),
+            use_container_width=True,
+            hide_index=True,
+        )
+    with all_tab:
+        all_df = pd.DataFrame(summary["table"])[
+            ["model", "pra", "das", "h2_pra_pass", "h2_das_pass", "h2_both_pass"]
+        ]
+        st.dataframe(
+            all_df.style.format({"pra": "{:.3f}", "das": "{:.3f}"}),
+            use_container_width=True,
+            hide_index=True,
+        )
 
     captions = {
         "exp1_defense_pra_das_by_model.png": "PRA and DAS by model with H2 thresholds",
@@ -322,7 +346,7 @@ def render_exp1_live(profile_labels: dict[str, dict]) -> None:
                 return
 
             st.success("Mini-ILS run completed.")
-            m1, m2, m3, m4, m5, m6, m7 = st.columns(7)
+            m1, m2, m3, m4, m5, m6, m7, m8 = st.columns(8)
             m1.metric("Model Source", result["source"])
             m2.metric(
                 "Mini-PRA",
@@ -330,14 +354,19 @@ def render_exp1_live(profile_labels: dict[str, dict]) -> None:
                 f"{result['dimension_matches']}/{result['dimension_count']} dims",
             )
             m3.metric(
+                "Mini-DAS",
+                f"{result['mini_das']:.3f}",
+                "1.0 aligned, 0.5 neutral",
+            )
+            m4.metric(
                 "Question Accuracy",
                 f"{result['question_accuracy']:.3f}",
                 f"{result['question_matches']}/{result['question_count']} questions",
             )
-            m4.metric("Questions", result["question_count"])
-            m5.metric("Latency", format_latency(result["latency_ms"]))
-            m6.metric("Cost", f"${result['cost_usd']:.5f}")
-            m7.metric("Tokens", f"{result['token_count']:,}")
+            m5.metric("Questions", result["question_count"])
+            m6.metric("Latency", format_latency(result["latency_ms"]))
+            m7.metric("Cost", f"${result['cost_usd']:.5f}")
+            m8.metric("Tokens", f"{result['token_count']:,}")
 
             col1, col2 = st.columns(2)
             with col1:
@@ -349,9 +378,14 @@ def render_exp1_live(profile_labels: dict[str, dict]) -> None:
                         "assigned": assigned,
                         "detected": result["detected"][dim],
                         "mini_score": result["raw_scores"][dim],
+                        "mini_das": result["dimension_das"].get(dim),
                         "match": result["detected"][dim] == assigned,
                     })
-                st.dataframe(pd.DataFrame(rows), use_container_width=True, hide_index=True)
+                st.dataframe(
+                    pd.DataFrame(rows).style.format({"mini_das": "{:.3f}"}),
+                    use_container_width=True,
+                    hide_index=True,
+                )
             with col2:
                 st.subheader("Question Answers")
                 st.dataframe(
